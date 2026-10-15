@@ -1,0 +1,19 @@
+{
+  "result": "pass",
+  "source_freeze": "79003a8b1905f94ed8c681ca4bab8ebdb8a3dc1d",
+  "evidence_commit": "fb72b95972a5cfc834062260fb7e7a95adde5c09",
+  "peer_full_logs_byte_identical": true,
+  "peer_source_hashmaps_identical": true,
+  "integrated_8_source_files_byte_identical": {
+    "StabilizerLearning/Quantum/AssignmentCharacters.lean": "c7cf2887c30cbe20fbe650816178e4d8a6442a433f67520ffe1ac55005e57307",
+    "StabilizerLearning/Quantum/AssignmentExistence.lean": "f07cd1d1e6a423f712b393a005f426f207caa5546957eeb65379c5c568e04302",
+    "StabilizerLearning/Quantum/CommonEigenvector.lean": "f6c3c041ea9b24f20f512482454b6e8224df1fcfaf0e76cf9003fe1baab2555c",
+    "StabilizerLearning/Quantum/CompleteMeasurement.lean": "e4df1d27555c3f70cae352a3b549bba5abff0ef47c2beb6e09e95c3cc20fd74f",
+    "StabilizerLearning/Quantum/ComplexProjector.lean": "f9b19693c3fe1d8316dadca742a6ed5009373c66b9ca996436135e71df91ecfe",
+    "StabilizerLearning/Quantum/JointEigenspace.lean": "a4ff8fd61e14eec2b44882dedcb84f56005fb18332160125d5c155e87ac262c1",
+    "StabilizerLearning/Quantum/PhaseEncoding.lean": "2ea9a802d072b8840cb6a3a025cd660ceb0ef185c4ff66becd0c7e8b5de66ff7",
+    "StabilizerLearning/Quantum/ProjectorResolution.lean": "9419a925d37bf910355f81360a0b606de903e7967b3f187bc417b2e35979273a"
+  },
+  "peer_initial_project_oleans": 0,
+  "scope": "read-only verification of peer evidence plus exact source integration; current physical root is separately being audited"
+}

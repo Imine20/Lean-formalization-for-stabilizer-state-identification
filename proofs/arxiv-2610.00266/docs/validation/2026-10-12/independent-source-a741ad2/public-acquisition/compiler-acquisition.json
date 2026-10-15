@@ -1,0 +1,10 @@
+{
+  "method": "Copy of original official distribution archive; verified against the pre-existing frozen SHA-256 lock before use; fresh extraction in independent checkout",
+  "source_archive": "/data/lean/projects/StabilizerLearning-github-sync/.toolchain/lean-4.24.0-linux.tar.zst",
+  "destination_archive": "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/project/.toolchain/lean-4.24.0-linux.tar.zst",
+  "sha256": "b14f5e5159219dd1a1956c3b806813319f5e94ccd5bdfd56f54520609a5bb5ec",
+  "bytes": 459625674,
+  "copied_at": "2026-10-12T12:49:14.910199+00:00",
+  "copied_installed_toolchain": false,
+  "copied_project_or_dependency_build_cache": false
+}

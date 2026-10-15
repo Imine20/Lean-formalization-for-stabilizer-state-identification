@@ -1,0 +1,24 @@
+{
+  "frozen_commit": "491d0ab769d8073a517d80e47f52e775b08072f0",
+  "result": "dependencies_closed_for_listed_local_claims",
+  "main_complete": false,
+  "closed": [
+    "all-prime literal phase character algebra and faithfulness",
+    "actual XZ Pauli product, adjoint, unitarity, trace and Hilbert-Schmidt orthogonality",
+    "actual compatible-assignment representation and joint-projector idempotence, Hermitian, positivity and exact trace",
+    "every legal Lagrangian label gives the original pure stabilizer density matrix",
+    "Pauli Fourier coefficients recover the defining subspace and assignment",
+    "actual legal-label to distinct-state bijection"
+  ],
+  "remaining": [
+    "Assignment existence on every isotropic subspace",
+    "completeness of ZMod(2p) encoding for arbitrary compatible complex phases",
+    "complete projector family and exact assignment/state counts",
+    "physical standard-chart state, target, prior and all-POVM equivalence",
+    "arbitrary frame/Clifford and fixed-W task comparison, exceptional mass and verification",
+    "unrestricted direct construction and final unchanged main proof"
+  ],
+  "next_coordinated_owner": "uniform-asymptotic primary task; only writer of Mac checkout",
+  "calendar_deadline": null,
+  "estimate_basis": "Remove only proved and recursively audited local obligations. No calibrated completed sample exists yet for the remaining physical comparison/direct branches; do not extrapolate mathematical work from compiler timing."
+}

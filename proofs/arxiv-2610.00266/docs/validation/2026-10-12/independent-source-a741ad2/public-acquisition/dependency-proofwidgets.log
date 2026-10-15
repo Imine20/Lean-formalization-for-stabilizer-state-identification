@@ -1,0 +1,26 @@
+
+COMMAND ['git', 'init'] attempt 1
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /data/lean/acceptance/ExactCriticalCurve-independent-2db1594/project/.lake/packages/proofwidgets/.git/
+
+COMMAND ['git', 'remote', 'add', 'origin', 'https://github.com/leanprover-community/ProofWidgets4'] attempt 1
+
+COMMAND ['git', '-c', 'core.hooksPath=/dev/null', '-c', 'http.version=HTTP/1.1', 'fetch', '--depth=1', 'origin', '556caed0eadb7901e068131d1be208dd907d07a2'] attempt 1
+From https://github.com/leanprover-community/ProofWidgets4
+ * branch            556caed0eadb7901e068131d1be208dd907d07a2 -> FETCH_HEAD
+
+COMMAND ['git', '-c', 'core.hooksPath=/dev/null', 'checkout', '--detach', '556caed0eadb7901e068131d1be208dd907d07a2'] attempt 1
+HEAD is now at 556caed Merge pull request #135 from leanprover-community/ignore-hash
+
+COMMAND ['git', '-c', 'http.version=HTTP/1.1', 'fetch', '--depth=1', 'origin', 'refs/tags/v0.0.74:refs/tags/v0.0.74'] attempt 1
+From https://github.com/leanprover-community/ProofWidgets4
+ * [new tag]         v0.0.74    -> v0.0.74

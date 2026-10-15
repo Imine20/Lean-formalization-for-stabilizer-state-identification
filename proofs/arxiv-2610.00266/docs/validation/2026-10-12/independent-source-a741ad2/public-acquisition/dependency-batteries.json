@@ -1,0 +1,61 @@
+{
+  "name": "batteries",
+  "url": "https://github.com/leanprover-community/batteries",
+  "expected_revision": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+  "commands": [
+    {
+      "command": [
+        "git",
+        "init"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 0.007784040994010866
+    },
+    {
+      "command": [
+        "git",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/batteries"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 0.007748784963041544
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "-c",
+        "http.version=HTTP/1.1",
+        "fetch",
+        "--depth=1",
+        "origin",
+        "8da40b72fece29b7d3fe3d768bac4c8910ce9bee"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 11.681753991986625
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "checkout",
+        "--detach",
+        "8da40b72fece29b7d3fe3d768bac4c8910ce9bee"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 0.032106003956869245
+    }
+  ],
+  "started_at": "2026-10-12T12:54:43.024942+00:00",
+  "result": "pass",
+  "ended_at": "2026-10-12T12:54:54.768867+00:00",
+  "log_sha256": "1ef3f2188f4d1f0909e706f8b84555ab40e68216d3724307a8a7fdf45e19c782"
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Cli",
+  "url": "https://github.com/leanprover/lean4-cli",
+  "expected_revision": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+  "commands": [
+    {
+      "command": [
+        "git",
+        "init"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 0.00778702599927783
+    },
+    {
+      "command": [
+        "git",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover/lean4-cli"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 0.0036316150799393654
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "-c",
+        "http.version=HTTP/1.1",
+        "fetch",
+        "--depth=1",
+        "origin",
+        "91c18fa62838ad0ab7384c03c9684d99d306e1da"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 5.122027943027206
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "checkout",
+        "--detach",
+        "91c18fa62838ad0ab7384c03c9684d99d306e1da"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 0.00784093898255378
+    }
+  ],
+  "started_at": "2026-10-12T12:54:44.494388+00:00",
+  "result": "pass",
+  "ended_at": "2026-10-12T12:54:49.644275+00:00",
+  "log_sha256": "32810bb9d48f03f5a2b8fffb47826524be37509c0e623f2dddc9179ba002da8e"
+}

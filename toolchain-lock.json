@@ -1,0 +1,26 @@
+{
+  "lean_version": "4.24.0",
+  "lean_commit": "797c613eb9b6d4ec95db23e3e00af9ac6657f24b",
+  "mathlib_commit": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "tested_platform": "arm64-apple-darwin",
+  "compiler_asset": "https://github.com/leanprover/lean4/releases/download/v4.24.0/lean-4.24.0-darwin_aarch64.tar.zst",
+  "compiler_sha256": "17ee554702c199fc03f37b1c3708245671c93f5d932dcff55a03fa6cdb5e5adf",
+  "started_at": "2026-10-11T02:31:17Z",
+  "source_archive_sha256": "063355b4c2e53c8623d126eb1bcd738c97fd2b575d72bed4129df3c58bba1640",
+  "compiler_assets": {
+    "Darwin-arm64": {
+      "directory": "lean-4.24.0-darwin_aarch64",
+      "url": "https://github.com/leanprover/lean4/releases/download/v4.24.0/lean-4.24.0-darwin_aarch64.tar.zst",
+      "sha256": "17ee554702c199fc03f37b1c3708245671c93f5d932dcff55a03fa6cdb5e5adf"
+    },
+    "Linux-x86_64": {
+      "directory": "lean-4.24.0-linux",
+      "url": "https://github.com/leanprover/lean4/releases/download/v4.24.0/lean-4.24.0-linux.tar.zst",
+      "sha256": "b14f5e5159219dd1a1956c3b806813319f5e94ccd5bdfd56f54520609a5bb5ec"
+    }
+  },
+  "tested_platforms": [
+    "arm64-apple-darwin",
+    "x86_64-unknown-linux-gnu"
+  ]
+}

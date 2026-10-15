@@ -1,0 +1,40 @@
+{
+  "name": "importGraph",
+  "url": "https://github.com/leanprover-community/import-graph",
+  "expected_revision": "d768126816be17600904726ca7976b185786e6b9",
+  "commands": [
+    {
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "-c",
+        "http.version=HTTP/1.1",
+        "fetch",
+        "--depth=1",
+        "origin",
+        "d768126816be17600904726ca7976b185786e6b9"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 6.627433544956148
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "checkout",
+        "--detach",
+        "d768126816be17600904726ca7976b185786e6b9"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 0.007854002993553877
+    }
+  ],
+  "started_at": "2026-10-12T12:54:30.262501+00:00",
+  "result": "pass",
+  "ended_at": "2026-10-12T12:54:36.914526+00:00",
+  "log_sha256": "1003ce3369ac340dc8e476b85f27612c2dc5294207a9bf4fd4bdc1703ddaa56a"
+}

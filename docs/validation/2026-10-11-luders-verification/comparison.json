@@ -1,0 +1,129 @@
+{
+  "checked_at": "2026-10-11T08:39:15.492291+00:00",
+  "result": "pass",
+  "frozen_commit": "20e9cd5188a435ac561c64825b20203070e141eb",
+  "comparison_scope": "Development recheck after a completed clean project build at 3e60465, whose mathematical Lean files are byte-identical to this freeze; the corrected Audit is rerun. Second build starts with zero project oleans and independently fetches exact dependency commits and official cache. Same pinned Linux compiler reused, not a new OS or cross-machine test.",
+  "development_mathematical_oleans_reused_from_completed_clean_build_at_3e60465": true,
+  "mathematical_Lean_source_byte_identical_to_that_clean_build": true,
+  "source_hashes_identical": true,
+  "full_axiom_logs_byte_identical": true,
+  "kernel_dependency_graphs_identical": true,
+  "fresh_project_oleans_before_build": 0,
+  "independent_dependency_checkout_and_cache": true,
+  "compiler_reused_but_pin_checked": true,
+  "axiom_allowlist": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "theorem_declarations_audited": 1741,
+  "total_declarations_audited": 2222,
+  "required_transitive_proof_links": 206,
+  "new_transitive_proof_links": 39,
+  "main_theorem_complete": false,
+  "main_release": "correctly rejected: statement_only",
+  "development_steps": [
+    {
+      "args": [
+        "build"
+      ],
+      "seconds": 4.009,
+      "exit_code": 0,
+      "log": "build.log"
+    },
+    {
+      "args": [
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "seconds": 1165.892,
+      "exit_code": 0,
+      "log": "axioms.log"
+    },
+    {
+      "args": [
+        "env",
+        "lean",
+        "scripts/ReleaseAudit.lean"
+      ],
+      "seconds": 3.325,
+      "exit_code": 1,
+      "log": "main-release-gate.log"
+    }
+  ],
+  "fresh_steps": [
+    {
+      "command": [
+        "lake",
+        "exe",
+        "cache",
+        "get",
+        "Mathlib.Algebra.Field.ZMod",
+        "Mathlib.Algebra.Group.Equiv.Basic",
+        "Mathlib.Analysis.Asymptotics.Lemmas",
+        "Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality",
+        "Mathlib.Analysis.Matrix.Order",
+        "Mathlib.Analysis.SpecialFunctions.Complex.Circle",
+        "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar",
+        "Mathlib.Analysis.SpecialFunctions.Log.Base",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Analysis.SpecificLimits.Basic",
+        "Mathlib.Data.Fin.Tuple.Basic",
+        "Mathlib.Data.Matrix.Block",
+        "Mathlib.Data.Sym.Card",
+        "Mathlib.Data.Sym.Sym2.Order",
+        "Mathlib.Data.ZMod.Basic",
+        "Mathlib.FieldTheory.Finiteness",
+        "Mathlib.LinearAlgebra.Basis.VectorSpace",
+        "Mathlib.LinearAlgebra.BilinearForm.Orthogonal",
+        "Mathlib.LinearAlgebra.Dimension.Constructions",
+        "Mathlib.LinearAlgebra.Dimension.Free",
+        "Mathlib.LinearAlgebra.Eigenspace.Triangularizable",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas",
+        "Mathlib.LinearAlgebra.Matrix.Basis",
+        "Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Card",
+        "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+        "Mathlib.LinearAlgebra.Matrix.PosDef",
+        "Mathlib.LinearAlgebra.Matrix.Rank",
+        "Mathlib.LinearAlgebra.Matrix.Reindex",
+        "Mathlib.LinearAlgebra.Matrix.SchurComplement",
+        "Mathlib.LinearAlgebra.Matrix.Symmetric",
+        "Mathlib.LinearAlgebra.Matrix.ToLin",
+        "Mathlib.LinearAlgebra.Matrix.Trace",
+        "Mathlib.LinearAlgebra.Pi",
+        "Mathlib.LinearAlgebra.Quotient.Basic",
+        "Mathlib.Order.LiminfLimsup",
+        "Mathlib.Probability.Distributions.Uniform",
+        "Mathlib.Tactic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Topology.Algebra.Order.LiminfLimsup"
+      ],
+      "seconds": 71.173,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "seconds": 189.735,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "seconds": 1113.256,
+      "exit_code": 0
+    }
+  ],
+  "fresh_total_seconds": 1388.399,
+  "temporary_download_proxy": "loopback-only SSH forwarding closed after downloads; no credentials in repository"
+}

@@ -1,0 +1,7 @@
+Cloning into '/data/lean/tasks/frame-validation-source'...
+done.
+HEAD is now at 85db6d8 Close original uniform exact converse and full worst-case frame transport
+Traceback (most recent call last):
+  File "/tmp/frame-validation-driver.py", line 16, in <module>
+    with archive.open('rb') as f: archive_sha=hashlib.file_digest(f,'sha256').hexdigest()
+AttributeError: module 'hashlib' has no attribute 'file_digest'

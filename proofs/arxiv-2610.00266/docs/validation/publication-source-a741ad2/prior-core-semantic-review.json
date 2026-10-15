@@ -1,0 +1,70 @@
+{
+  "review_kind": "Independent AI source-to-paper semantic review; not a human mathematical referee report",
+  "source_commit": "2db1594c32ca762c2fc01006fdcaa4ebbf155628",
+  "upstream_evidence_container": "d25ca3ba736625f54f429c9b34862ce530578cce",
+  "status": "No discrepancy identified in the reviewed main theorem statements and underlying model/formula definitions; independent mechanical acceptance and publication verification are still pending.",
+  "targets": [
+    {
+      "paper": "Theorem 1",
+      "declaration": "ExactCriticalCurve.finiteSpectrum",
+      "findings": [
+        "Parameters are natural n,k with only 1<=n and 1<=k, matching the paper's positive integer range. No stable-range n>=k assumption or spectral conclusion is supplied as a premise.",
+        "Physical states are rank-one projectors obtained from actual scalar-free signed Pauli subgroups of cardinality 2^n. POVMs have only positive effects and normalization; success is the mean trace Born score. The conclusion optimizes over every such POVM and includes attainment and minimax.",
+        "Ordinary eigenvalues expand to N/Z times stochastic isometry-group cardinality times F_r(2^(n+3-k)); Z is D times the product j=0..k-2 of (D+2^j). Exceptional values use exactly (k-1,r-1).",
+        "Numerical ordinary multiplicities match the odd, 2 mod 4, and 0 mod 4 formulas after m=floor(k/2)-r. Orthogonal and symplectic numerical factors have the standard explicit product orders.",
+        "Admissibility matches every plus/minus ordinary range and both exceptional ranges. Odd plus m=0 gives multiplicity D; even-zero plus terminal m=1 gives D^2-1; exceptional plus terminal gives 1. Excluded minus endpoints cannot enter the sector-label type.",
+        "All multiplicities are proved nonnegative integral physical ranks. Replicated multiset counts add coincident eigenvalues, drop zero multiplicities, and give all remaining zero eigenvalues. Finite success is exactly the normalized multiplicity-weighted square-root sum squared."
+      ]
+    },
+    {
+      "paper": "Theorem 2, including required first-moment conclusions",
+      "declaration": "ExactCriticalCurve.criticalCurve",
+      "findings": [
+        "Universally quantified over every fixed integer c, with no asymptotic, normalization, summability or spectral hypotheses.",
+        "A and Q are the paper's infinite products with positivity and Multipliable conclusions; r is natural starting at zero, with u=2r-c.",
+        "W, Lambda_0, Lambda_r, F_r, and R_c match the paper literally. The c>=2 product is reindexed by j -> -j to a range of length c-1; c=1 is the empty product.",
+        "Both amplitude and first-moment summability are conclusions and the exact sum of W_r*Lambda_r is 1.",
+        "Convergence is proved both for the closed finite formula and the actual physical PGM success, with eventual optimality. Eventual positivity and exact integer identity of toNat(n+c) prevent negative-offset truncation from weakening the asymptotic statement."
+      ]
+    },
+    {
+      "paper": "Proposition 16",
+      "declaration": "ExactCriticalCurve.criticalCurveTails",
+      "findings": [
+        "The parameter-free theorem states both unit-ratio tail limits with the paper's exact scale constants.",
+        "The left tail denominator is 2^(-(m^2+3m+4)/2)/(A*Q), and the right tail denominator is 2^(-m).",
+        "Both natural and full integer m -> +infinity formulations are provided, over the same literal critical curve used in Theorem 2; there are no tail assumptions."
+      ]
+    }
+  ],
+  "checker_review": [
+    "ReleaseAudit checks the three declarations are theorems, independently restates their full types, and compares type/universe generality.",
+    "Literal formula guards expand the finite spectrum and limiting curve; these were compared with the paper rather than accepting a same-name wrapper.",
+    "Kernel.Environment.addDeclCore checks the theorem constants and their original proof bodies against the independently restated types without a skipKernelTC flag.",
+    "ProjectAudit traverses all declarations whose defining module lies under ExactCriticalCurve and uses transitive collectAxioms; only propext, Classical.choice and Quot.sound are allowed.",
+    "Upstream 398 source/build/audit input hashes and five execution-log hashes matched immutable objects. Upstream completion is not substituted for the new independent run."
+  ],
+  "remaining": [
+    "Complete the independently sourced compiler/dependency setup, empty-project build and full strict gate.",
+    "Check exact result/log hashes, expected-type/body inventory and whole-project axiom coverage from the independent run.",
+    "Prepare and review an English source-only release while preserving all frozen formal inputs and first-paper checks.",
+    "Verify the exact proposed merge tree in both projects on the server and GitHub Actions, inspect artifacts, then perform the authorized guarded merge."
+  ],
+  "reviewed_at": "2026-10-12T12:42:43.933132+00:00",
+  "reviewed_file_sha256": {
+    "paper/main.tex": "11f64748ec02799536eea76ca0d42557f1ba94a90c68d6ef3632d100451d2a33",
+    "paper/source.json": "bd9ecb686d638c00d24ebda406ac9ed877423f3d3e924fc6e6a02af5b4966226",
+    "scripts/ReleaseAudit.lean": "255d809107896daf4787580710af89b0bdde137021287bd0bc6b73992a03ef3c",
+    "scripts/ProjectAudit.lean": "7380aa1a0b41f07f8c6d88be067e1086cdeff7d5edcda2eab938c9a3ba897635",
+    "ExactCriticalCurve/FiniteSpectrum/FiniteSpectrum.lean": "a533846c40f8d75c4f7014f969d819a08ac73c0ddf83eba6b80875a80f03f17c",
+    "ExactCriticalCurve/FiniteSpectrum/PhysicalClosedSpectrum.lean": "8272846199167e904db556cc02eff800e07fe40f608fd256cf68f243964c187b",
+    "ExactCriticalCurve/Quantum/PhysicalMultiplicityValues.lean": "1efbe4fd50dd64527bf29b90c40769b538253faaa5ad29c1bc9655e50236444c",
+    "ExactCriticalCurve/Quantum/PhysicalSectorRanges.lean": "404c7980d7357d546eaa2c9dffa347f13afc9e26587e182be5fd7bb17fa35427",
+    "ExactCriticalCurve/Quantum/PhysicalGramSpectrum.lean": "4c0d907812155fe8a038a7da496b70c94beab0c7a09f4e3fd1d3b8a74251d9a8",
+    "ExactCriticalCurve/Quantum/StabilizerGroup.lean": "3009033f86bb94bfd2f2f7548ed2ccf32f58e9c1d96f2ec241fe55cf4067d2ab",
+    "ExactCriticalCurve/Quantum/Finite.lean": "5bd9f14871b8215b6bcff1ddb055e7b285ad982f3f10c3b614abb0382f928b2b",
+    "ExactCriticalCurve/Asymptotics/CriticalCurve.lean": "2c41e4bc6879d16b57e1380898c87d3b5c10e73f2e9275bd9a88adbde86756dd",
+    "ExactCriticalCurve/Asymptotics/CriticalCurveModel.lean": "18c0bf05ca83cb7806600def78884e4db21f19dc3773de48f5e6e03f0da29d31",
+    "ExactCriticalCurve/Asymptotics/CriticalCurveTails.lean": "5f12c80cae2ce180429d1ab0aa9d51bca1c4817a053ed12adb9512f5483b10fa"
+  }
+}

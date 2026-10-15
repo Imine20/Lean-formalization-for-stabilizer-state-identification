@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-11T17:09:48+08:00",
+  "cloud_vcpus": 8,
+  "cloud_memory_total_gib_approx": 30,
+  "cloud_memory_available_gib_approx": 27,
+  "root_volume_available_gib_approx": 4.4,
+  "data_volume_available_gib_approx": 119,
+  "own_download_tunnel": {
+    "local_pid": 92941,
+    "remote_loopback_port": 17894,
+    "status": "closed with SIGTERM after all downloads and root build; remote ss listener absent"
+  },
+  "unrelated_tunnels_modified": false,
+  "source_and_cache_directories_retained": true,
+  "github_actions_modified": false
+}

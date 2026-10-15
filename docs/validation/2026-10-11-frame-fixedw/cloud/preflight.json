@@ -1,0 +1,13 @@
+{
+  "source_directory": "/data/lean/tasks/frame-validation-source-ff7e57b13fb0",
+  "host": "lean-server",
+  "frozen_git_commit": "ff7e57b13fb0bae723c48f969daf72fef590f972",
+  "compiler_version": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "compiler_archive_actual_sha256": "b14f5e5159219dd1a1956c3b806813319f5e94ccd5bdfd56f54520609a5bb5ec",
+  "reproduction_directory": "/data/lean/StabilizerLearning-clean-20261011-frame-ff7e57b13fb0",
+  "vcpus": 8,
+  "storage_before": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/vda2        40G   34G  4.4G  89% /\n/dev/vdb1       196G   59G  136G  31% /data",
+  "memory_before": "total        used        free      shared  buff/cache   available\nMem:            30Gi       1.1Gi       3.9Gi       2.0Mi        25Gi        28Gi\nSwap:             0B          0B          0B",
+  "network": "Task-scoped six proxy variables; own loopback SSH reverse tunnel 17894 to existing Mac proxy 7890. No global changes.",
+  "started_at": "2026-10-11T08:38:41.331690+00:00"
+}

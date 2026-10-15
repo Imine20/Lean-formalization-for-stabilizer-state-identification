@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "source_revision": "a741ad2633d99a28fb4bbbe86e3a9a0ac5b7970b",
+  "command": [
+    "python3",
+    "docs/validation/2026-10-12/evidence-tools-v3/verify_joint_gate_strict.py",
+    "--root",
+    "/data/lean/projects/ExactCriticalCurve",
+    "--source",
+    "a741ad2633d99a28fb4bbbe86e3a9a0ac5b7970b",
+    "--acceptance",
+    "/data/lean/acceptance/ExactCriticalCurve-correspondence-release-20261012-a741ad2",
+    "--driver",
+    "/data/lean/projects/ExactCriticalCurve/artifacts/main-release-correspondence-a741ad2",
+    "--timing",
+    "/data/lean/projects/ExactCriticalCurve/artifacts/proof-timing-correspondence-release-a741ad2",
+    "--require-main-proof",
+    "--evidence",
+    "/data/lean/projects/ExactCriticalCurve/docs/validation/2026-10-12/main-release-correspondence-a741ad2-strict-v3"
+  ],
+  "runner_sha256": "f41d47c870c66b0267b9b681af5b570f28f5450e9c14c5f1830400ad1105f93d",
+  "started_at_utc": "2026-10-12T15:34:49.552890+00:00",
+  "tool_candidate_commit": "c1b5c5278591000e36e2f56f279dfb924198f08c",
+  "evidence_tool_successor_before": {
+    "bundle_directory": "docs/validation/2026-10-12/evidence-tools-v3",
+    "manifest_path": "docs/validation/2026-10-12/evidence-tools-v3/tool-bundle.json",
+    "manifest_sha256": "12beee2fc13c1ec393f4357397e190f6af4cd423035e9ab77927a4486c26482f",
+    "accepted_mathematical_source": "a741ad2633d99a28fb4bbbe86e3a9a0ac5b7970b",
+    "parent_tools_sha256": {
+      "scripts/audit_call_inventory.py": "098b3da14f15aa30b5fb8029dde5dcc68500647012e3aca57a0c308e24c333eb",
+      "scripts/verify_joint_gate_strict.py": "1cae99f8be0cced31e36e39db9002e90a956c96a53e397aa29be47b9c5a0b85b",
+      "scripts/snapshot_verified_release.py": "76736d965061254671ae6483bcfae075787a59d73cd4a8d5c9251cded6d0ef8f"
+    },
+    "tools_sha256": {
+      "audit_call_inventory.py": "1d5a8489c7299ddd1d00024bebfe20ec7d19c74c8a0b0bc364b37e6f09541120",
+      "verify_joint_gate_strict.py": "9baafd93a372062b0dda8540c564a03ed0bd4d2a47de835bff9930fc7d23ce8b",
+      "snapshot_verified_release.py": "f7df1446d37bab4777bae539829d8fbf8f6901f673bc225066668c8f0efce14b"
+    }
+  },
+  "exit_code": 0,
+  "finished_at_utc": "2026-10-12T15:34:53.175150+00:00",
+  "elapsed_seconds": 3.6222473919624463,
+  "stdout_sha256": "0b41abcfacb9571223be9da043b772172b21c7be0bcbef148d4e7d0846bfda12",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_tool_successor_after": {
+    "bundle_directory": "docs/validation/2026-10-12/evidence-tools-v3",
+    "manifest_path": "docs/validation/2026-10-12/evidence-tools-v3/tool-bundle.json",
+    "manifest_sha256": "12beee2fc13c1ec393f4357397e190f6af4cd423035e9ab77927a4486c26482f",
+    "accepted_mathematical_source": "a741ad2633d99a28fb4bbbe86e3a9a0ac5b7970b",
+    "parent_tools_sha256": {
+      "scripts/audit_call_inventory.py": "098b3da14f15aa30b5fb8029dde5dcc68500647012e3aca57a0c308e24c333eb",
+      "scripts/verify_joint_gate_strict.py": "1cae99f8be0cced31e36e39db9002e90a956c96a53e397aa29be47b9c5a0b85b",
+      "scripts/snapshot_verified_release.py": "76736d965061254671ae6483bcfae075787a59d73cd4a8d5c9251cded6d0ef8f"
+    },
+    "tools_sha256": {
+      "audit_call_inventory.py": "1d5a8489c7299ddd1d00024bebfe20ec7d19c74c8a0b0bc364b37e6f09541120",
+      "verify_joint_gate_strict.py": "9baafd93a372062b0dda8540c564a03ed0bd4d2a47de835bff9930fc7d23ce8b",
+      "snapshot_verified_release.py": "f7df1446d37bab4777bae539829d8fbf8f6901f673bc225066668c8f0efce14b"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "purpose": "Display JavaScript assets only; no Lean oleans or native proof binaries.",
+  "proofwidgets_commit": "556caed0eadb7901e068131d1be208dd907d07a2",
+  "source": "Existing mathlib cache at that exact package revision; original lake.trace retained inside archive.",
+  "archive_sha256": "40b9557e53657031ac4f6b4b5446fe3925a01709e65089a1139ddf65a0b315e9",
+  "files": {
+    "animatedHtml.js": "8fae7654cd169cca8799fd54243df28cc66df5a6df6771ad8d5efb6ef4917669",
+    "cancellable.js": "1fe9ff8a19369576cdb91fb71926694294e8a70d492193b03a877bc8334062e8",
+    "d3Graph.js": "a1d475925f84ee98c07ab7f47b66d723ce6fdbe1fe541358c562d9335d3dcb12",
+    "exprPresentation.js": "f2e3ead7d8be112529fa18917b905a02d7993c306bf0b4d6c5e02b4be44aea7c",
+    "filterDetails.js": "31e446fef2dd4a6153c219ebf91b59947aa9811e0a6cd7ce03b403ba0a3769cb",
+    "goalTypePanel.js": "07da0623874c113da0d4b6fbb66176cda54857cbad8fe25eea371388cc5cb15c",
+    "htmlDisplay.js": "8847d96c30793801ca5561b3a7eea28ff1edd1be86776407bcfcf46e45236b92",
+    "htmlDisplayPanel.js": "7dbe9fa6a6ca34efba86eb9cc3f3156111e616591bddcd2a9190c37105f8b183",
+    "index.js": "a5336c5425f7cbeefbb15b84ce8fecdbb0fe52b98cfc4ea1bc50a6c2c5a548a9",
+    "interactiveExpr.js": "2f90d386b9207893de70dc589d8bdd375ea063d4d4e4f88371a9949cfa2f540e",
+    "interactiveSvg.js": "29de79351db3cc2ccc36bfe73a2ed7698d87a5b1339d558787caacd7b39f13a8",
+    "lake.trace": "6a81083435c8990216abdbd1ad87d86a34152dd22f4c4d9057fed8e2140b288c",
+    "makeEditLink.js": "ad9b49e146566a1552956e89525ff3784660da014027d06e9e5eda6df88ceb4d",
+    "ofRpcMethod.js": "0dfe44a337580532de92f3815e13870a9e4d1a8ebd4cd292392ca7b4fbebe83a",
+    "penroseCanvas.js": "f7709c9797a59f3791552ab074eda980c6831225cc1d42b36872941b014c197a",
+    "penroseDisplay.js": "1e8b4473f0bb7f1e70ed74e1fd31d095121ad107bd99ca7569730cad22905d4a",
+    "presentSelection.js": "c5b01c4664372e640bcead9ceb75f8a76ff4d45d02dd63a22b400d4cb8fcfd1f",
+    "rbTree.js": "c0f8fbf000e2a05614083c0aa1082d2eda77a3ff7123d33fc8adcad16db0bae8",
+    "recharts.js": "a46287b0ee37bb92d76e56ca605fc63439c3fe592256f4c5ad4eb388595f1451",
+    "rubiks.js": "8026cb0e2485f26dcc4ae1067b5a9827dc893904c8697abf51ed4cedb5e2b073"
+  }
+}

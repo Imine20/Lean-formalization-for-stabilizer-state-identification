@@ -1,0 +1,156 @@
+\documentclass[10pt]{amsart}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.4em,itemsep=3pt}
+\title{Verification guide for stabilizer-state identification}
+\date{15 October 2026}
+\begin{document}
+\maketitle
+\noindent
+This repository contains two independent Lean 4 projects accompanying papers
+by Masahito Hayashi and Yimin Lu. This guide describes the accepted formal
+scope and how to verify an exact release. It does not certify a future commit.
+
+\section{Paper correspondence}
+\subsection*{arXiv:2609.13923}
+\emph{Partial Stabilizer Learning under Fixed Commuting Constraints and the
+Absence of a Copy-Rate Discount}~\cite{partial}.
+The root project uses the namespace \texttt{StabilizerLearning}.
+Its main endpoint is
+\begin{center}\small
+\texttt{StabilizerLearning.fixedW\_noCopyRateDiscount}.
+\end{center}
+Its exact type is \texttt{StabilizerLearning.FixedWNoCopyRateDiscount}.
+The complete original fixed-$W$ target includes the common-$J$ converse,
+four uniform limits to zero, four uniform limits to one under the original
+condition $k_n-n\to+\infty$, and the exact copy-rate identities.
+The formalization retains every prime local dimension, the actual states
+and POVMs, and the original order of worst-case optimization.
+This is closure of the original main theorem, not a claim that every
+auxiliary statement in the manuscript is formalized.
+The itemized coverage and remaining interfaces are in
+\texttt{docs/theorem-map.md}.
+
+\subsection*{arXiv:2610.00266}
+\emph{Exact Critical Curve for Uniform Stabilizer-State
+Identification}~\cite{critical}.
+The independent project under \texttt{proofs/arxiv-2610.00266/}
+uses the namespace \texttt{ExactCriticalCurve}.
+Its three main endpoints are
+\texttt{finiteSpectrum}, \texttt{criticalCurve} and
+\texttt{criticalCurveTails}, all in that namespace.
+They cover the actual finite Gram spectrum and optimal PGM for $n,k\geq1$,
+the literal limiting critical curve for every fixed integer offset $c$,
+the exact first-moment identity, and both coefficient-one tails.
+Additional results cover actual stochastic-group orders, ordinary/nonzero/zero
+spectral-mass limits, and the exceptional-amplitude inequality.
+The nested \texttt{docs/theorem-map.md} gives the precise quantifiers and
+endpoint conventions.
+
+The package does not certify the displayed numerical evaluation at $c=0$,
+a joint limit with a growing offset, full spectral-measure weak
+convergence, or a complete exceptional shortening equality merely from
+the amplitude bound. The formal convergence proof uses sufficient summable
+bounds and does not certify the paper's exact displayed auxiliary majorant.
+
+\section{Meaning of verification}
+The strict gates check compilation, recursive axiom dependencies,
+independently expanded theorem types, and required original proof bodies.
+Only \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}
+are permitted by the recursive audits; placeholders or new mathematical
+axioms do not pass.
+
+These checks certify formal declarations relative to the pinned Lean kernel
+and libraries. They do not independently decide whether every formal
+definition faithfully expresses the intended paper semantics.
+Recorded semantic reviews are AI reviews.
+Independent human mathematical review remains outstanding.
+\newpage
+
+\section{Reproducing an immutable release}
+Supported pinned compiler platforms are Linux x86\_64 and macOS ARM64.
+Install Git, Python 3.10 or newer, curl, tar and zstd.
+Keep the two projects' dependencies, compiler directories and build outputs
+separate. The second complete audit may take several hours.
+
+Obtain the repository from
+\href{https://github.com/Imine20/Lean-formalization-for-stabilizer-state-identification}
+{the release repository}, then check out the exact commit to be tested.
+Run all commands below from its root.
+Record \texttt{git rev-parse HEAD} and \texttt{git rev-parse HEAD\^{}\{tree\}}
+and confirm that \texttt{git status --porcelain} is empty.
+
+\subsection*{First paper}
+\begin{verbatim}
+python3 scripts/bootstrap.py
+./scripts/lake.sh exe cache get $(cat scripts/cache-imports.txt)
+python3 scripts/check.py --require-main-proof
+\end{verbatim}
+Also kernel-check the independently expanded original Main statement:
+\begin{verbatim}
+expected=docs/validation/2026-10-11-direct-integration
+./scripts/lake.sh env lean \
+  "$expected/independent-expected/IndependentAcceptance.lean"
+\end{verbatim}
+Require successful command exits and the independent acceptance marker.
+The strict gate writes its source hashes and logs under
+\texttt{artifacts/check/}.
+
+\subsection*{Second paper}
+\begin{verbatim}
+python3 scripts/verify_arxiv_2610.py \
+  --dest /absolute/new/reproduction/path
+\end{verbatim}
+The destination must not already exist.
+The wrapper reconstructs the immutable checked-out commit, obtains its pinned
+public dependencies, begins with no project proof artifacts, and runs the
+complete strict release gate.
+Official Mathlib dependency caches are used by default.
+The option \texttt{--dependency-mode source} instead compiles the required
+dependency modules from their pinned source.
+Neither mode rebuilds the Lean compiler from C++ sources.
+
+\section{Pins, provenance and release acceptance}
+Both projects pin Lean 4.24.0 and Mathlib at the same commits:
+\begin{center}\footnotesize\ttfamily
+Lean: 797c613eb9b6d4ec95db23e3e00af9ac6657f24b\\
+Mathlib: f897ebcf72cd16f89ab4577d0c826cd14afaafc7
+\end{center}
+Each project retains its own complete transitive lock.
+Historical evidence retains its original frozen inputs and execution paths.
+Those paths are records of earlier checks, not public reproduction dependencies.
+
+GitHub Actions runs both strict gates on pushes and pull requests.
+For the final \texttt{main} commit, require both jobs to succeed and inspect
+the artifacts for the exact commit/tree, unchanged input hashes,
+all command exits and complete logs.
+A prior successful run is historical evidence, not acceptance of later edits.
+The release preparation preserves the mathematical source, paper snapshots,
+version pins and verification tooling.
+
+\section{Citation for manuscript revisions}
+Cite the versioned
+\href{https://github.com/Imine20/Lean-formalization-for-stabilizer-state-identification/releases/tag/v1.0.0}
+{v1.0.0 release}, using \texttt{CITATION.bib}, together with the relevant
+paper or papers. The release record identifies the tested commit and tree;
+the evidence bundle retains the new command logs, axiom audits and type/body
+checks for both projects. A source-file checksum manifest binds the cited
+snapshot. The moving \texttt{main} branch is not a substitute for the
+version tag. The documented scope boundaries continue to apply.
+
+\begin{thebibliography}{9}
+\bibitem{partial}
+M.~Hayashi and Y.~Lu,
+\emph{Partial Stabilizer Learning under Fixed Commuting Constraints and the
+Absence of a Copy-Rate Discount},
+\href{https://arxiv.org/abs/2609.13923}{arXiv:2609.13923v1} (2026).
+\bibitem{critical}
+M.~Hayashi and Y.~Lu,
+\emph{Exact Critical Curve for Uniform Stabilizer-State Identification},
+\href{https://arxiv.org/abs/2610.00266}{arXiv:2610.00266v1} (2026).
+\end{thebibliography}
+\end{document}

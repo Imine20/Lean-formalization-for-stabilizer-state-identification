@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "source_commit": "a741ad2633d99a28fb4bbbe86e3a9a0ac5b7970b",
+  "evidence_container": "eb39f8270ea0bb736b388748c456c5b0ab7fee16",
+  "reviewed_at": "2026-10-12T16:07:21.989631+00:00",
+  "review_kind": "Independent AI semantic/source review; not human review and not a mechanical compilation result.",
+  "result": "No mathematical correspondence blocker identified in reviewed scope.",
+  "reviewer_context": "Fresh read-only semantic-review subagent, reconciled by publication coordinator; no research changes or Lean compilation performed by the reviewer.",
+  "prior_core_review": {
+    "source": "2db1594c32ca762c2fc01006fdcaa4ebbf155628",
+    "sha256": "b4bed34a7f318da449ebeec01e0b5da34e8e3fa9eb2fc4b6b68a3217869413cb",
+    "reason_for_reuse": "Original three main theorem statements/proof files and prior ReleaseAudit prefix are unchanged. New imports/additions were separately reviewed."
+  },
+  "frozen_input_manifest_sha256": "979ad88dd6b4a9f1c699be09c90419f272042a10d20492ba0bf8e8e1df056073",
+  "paper_sha256": "11f64748ec02799536eea76ca0d42557f1ba94a90c68d6ef3632d100451d2a33",
+  "changed_formal_and_main_audit_files": [
+    "ExactCriticalCurve/Asymptotics/PhysicalCriticalSpectralMass.lean",
+    "ExactCriticalCurve/Asymptotics/StochasticGroupOrder.lean",
+    "ExactCriticalCurve/Main.lean",
+    "scripts/ReleaseAudit.lean"
+  ],
+  "checks": [
+    {
+      "interface": "ExactCriticalCurve.Asymptotics.paperStochasticGroup_order",
+      "source": "ExactCriticalCurve/Asymptotics/StochasticGroupOrder.lean:207",
+      "paper": "paper/main.tex:499-525",
+      "finding": "Actual binary linear automorphisms preserve the full mod-four quadratic refinement and fix all-ones. Every k>=1, all three residue branches, original-k signs and factors agree. Actual cardinalities 1 and 2 for k=1,2 are proved. The zero-dimensional minus numerical convention does not assert an actual zero-order group."
+    },
+    {
+      "interface": "ExactCriticalCurve.Asymptotics.criticalSpectralMass",
+      "source": "ExactCriticalCurve/Asymptotics/PhysicalCriticalSpectralMass.lean:155",
+      "paper": "paper/main.tex:3164-3178",
+      "finding": "Explicit ordinary multiplicities bridge genuine admissible physical ranks. Nonzero mass uses actual Gram eigenvalue multiset cardinality, retaining repeated values. Zero mass uses additive spectral cardinality. Ordinary and actual nonzero mass converge to the sum of weights, and actual zero mass to its complement, for every fixed integer c. Eventual positivity and exact integer-to-natural copy count justify the physical window."
+    },
+    {
+      "interface": "ExactCriticalCurve.Asymptotics.physicalExceptionalAmplitude_le_inverse_dimension",
+      "source": "ExactCriticalCurve/Asymptotics/PhysicalCriticalSpectralMass.lean:72",
+      "paper": "paper/main.tex:1234-1243",
+      "finding": "Actual exceptional amplitude <=2^(-n) for n>=0,k>0 follows by Cauchy-Schwarz from independently proved counting mass and first-moment bounds, each <=2^(-n); the desired bound is not assumed."
+    },
+    {
+      "interface": "Independent new release expected types and original bodies",
+      "source": "scripts/ReleaseAudit.lean:512-656",
+      "finding": "Appended checks separately expand new formulas, original-parameter signs, quantifiers, rank weights and actual eigenvalue multiset objects; constants and original proof bodies are both checked. Full mechanical execution is a separate pending run."
+    },
+    {
+      "interface": "Original finiteSpectrum / criticalCurve / criticalCurveTails",
+      "finding": "Three original theorem statements/proof files and previous release-audit prefix are byte-identical to the prior reviewed source; original review covers all positive n,k, fixed integer c, exact first moment and both coefficient-one tails. Added modules impose no new main theorem assumptions."
+    }
+  ],
+  "documentation_findings": [
+    {
+      "path": "docs/theorem-map.md:13-14",
+      "container": "eb39f8270ea0bb736b388748c456c5b0ab7fee16",
+      "finding": "Two stale pending clauses conflict with final passed V3 receipt. Current release guides state the source-bound result; raw historical evidence remains unchanged."
+    }
+  ],
+  "scope_boundaries": [
+    "No certification of the paper's literal C_c 2^(-r^2) majorant from alternative sufficient DCT bounds.",
+    "No c=0 decimal evaluation.",
+    "No arbitrary growing-offset limit.",
+    "No full spectral-measure weak convergence.",
+    "No claim that the new amplitude inequality alone supplies a newly packaged full shortening equality.",
+    "Independent human mathematical review remains outstanding."
+  ],
+  "mechanical_status_at_review": "Fresh independent strict gate running, not yet accepted.",
+  "reviewed_file_sha256": {
+    "ExactCriticalCurve/Asymptotics/PhysicalCriticalSpectralMass.lean": "23ddc06c6bdbcf34620117f9397a10009a8e0e71c37a1741291cfea768ab04c3",
+    "ExactCriticalCurve/Asymptotics/StochasticGroupOrder.lean": "8fa300df677a4c9b762f8dabf7a0e81560be6e9329a6dffa865129bd48f6f077",
+    "ExactCriticalCurve/Main.lean": "c6c05635a1a6d7cf0d3e4cea0dd7539ace44d11de7ede5e4a19b059a4c141fc9",
+    "scripts/ReleaseAudit.lean": "0f3a5365b6c9c5bdc02a619caab85da3222185604abf96a3e3bdbaa9fb0ce62b",
+    "paper/main.tex": "11f64748ec02799536eea76ca0d42557f1ba94a90c68d6ef3632d100451d2a33",
+    "scripts/PilotExpectedTypes.lean": "19a2283d9f60a43bcdba4e24d05cb53efb73e949c0c3828ea100b312218095cd",
+    "scripts/ProjectAudit.lean": "7380aa1a0b41f07f8c6d88be067e1086cdeff7d5edcda2eab938c9a3ba897635"
+  }
+}

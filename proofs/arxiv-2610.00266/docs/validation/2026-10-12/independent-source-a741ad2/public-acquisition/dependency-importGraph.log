@@ -1,0 +1,7 @@
+
+COMMAND ['git', '-c', 'core.hooksPath=/dev/null', '-c', 'http.version=HTTP/1.1', 'fetch', '--depth=1', 'origin', 'd768126816be17600904726ca7976b185786e6b9'] attempt 1
+From https://github.com/leanprover-community/import-graph
+ * branch            d768126816be17600904726ca7976b185786e6b9 -> FETCH_HEAD
+
+COMMAND ['git', '-c', 'core.hooksPath=/dev/null', 'checkout', '--detach', 'd768126816be17600904726ca7976b185786e6b9'] attempt 1
+HEAD is now at d768126 Merge pull request #84 from leanprover-community/bump_to_v4.24.0

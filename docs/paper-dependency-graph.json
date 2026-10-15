@@ -1,0 +1,3894 @@
+{
+  "schema_version": 1,
+  "source_file": "paper/main-stabilizer2.tex",
+  "source_sha256": "c172bf686f08d7c0b643fa45b29323ba07416c494db6531edd5990fced34bd61",
+  "main_theorem": "thm:fixed-W-no-discount",
+  "edge_direction": "prerequisite_to_dependent",
+  "graph_kind": "curated paper proof-obligation DAG, not Lean elaborator dependency graph",
+  "scope_warning": "Curated paper obligation DAG with scoped theorem mappings. The exact original Main is closed; its actual checked proof graph is separately extracted. Full Main closure does not imply every paper auxiliary statement or coefficient has been formalized.",
+  "main_semantics": {
+    "prime": "fixed arbitrary prime p, including 2",
+    "target_fraction": "m_n/n -> beta, 0 < beta <= 1",
+    "constraint": "every isotropic W_n in F_p^(2n) of dimension n-m_n, uniformly",
+    "converse": "k_n/n -> alpha with 0 <= alpha < 1: exact wc/av and outcome-averaged verification wc/av -> 0",
+    "direct": "k_n-n -> +infinity: all four -> 1",
+    "rate": "for each epsilon in (0,1), exact wc/av infimal achievable copy rate is 1",
+    "not_claimed": [
+      "bounded offset k=n+O(1)",
+      "general sublinear m=o(n)",
+      "uniform-average pure quadratic exponent without exceptional term"
+    ]
+  },
+  "pilot_candidates": [
+    {
+      "branch": "complex_matrix_optimization",
+      "node": "lem:blockwise-seed-optimum",
+      "required_closure": "PSD implies off-diagonal bound; real quadratic objective upper bound; feasible constant rank-one optimizer and equality"
+    },
+    {
+      "branch": "finite_field_counting",
+      "node": "foundation:symmetric-matrix-cardinality",
+      "required_closure": "explicit equivalence with upper-triangle coordinates, index cardinality, finite-function cardinality",
+      "scope_limit": "atomic count used by completion/shell proofs; not a proof of full rank-restricted count"
+    },
+    {
+      "branch": "asymptotic_direct_tail",
+      "node": "foundation:scalar-damped-tail",
+      "required_closure": "finite damped geometric tail domination; signed integer k_n−n→infinity implies natural overhead k_n−n−1→infinity; fixed real coefficient times tail tends to zero",
+      "scope_limit": "Historical pilot selection. Actual normalized PGM energy comparison and exact Lagrangian shell counts are now closed and feed the unchanged original Main through the proved real-overhead direct chain."
+    }
+  ],
+  "external_reference_audit": [
+    {
+      "reference": "MacWilliams1969",
+      "paper_role": "exact full-rank enumeration and a cited upper bound in symmetric-rank lemma",
+      "main_route": "The weaker upper bound can be proven by subset cardinality plus total symmetric-matrix count; graph uses this semantics-preserving bypass. Exact enumeration remains paper-only."
+    },
+    {
+      "reference": "Gross2006; SingalEtAl2023Counting",
+      "paper_role": "total Lagrangian count",
+      "formal_obligation": "prove required line-incidence probability; citation alone is not a Lean proof"
+    },
+    {
+      "reference": "Brown1972Kervaire; Taylor2022GaussSums",
+      "paper_role": "auxiliary binary Gauss phase consistency",
+      "in_main_proof_slice": false
+    },
+    {
+      "reference": "HausladenWootters1994PGM; EldarForney2001SRM; ItenRenesSutter2017PGM",
+      "paper_role": "background, independent optimization proof provided",
+      "in_main_proof_slice": false
+    }
+  ],
+  "acceptance": {
+    "full_statement_preserved": true,
+    "full_dependency_closure": true,
+    "main_theorem_axiom_audit": "Complete exact Main and all project declarations: propext, Classical.choice, Quot.sound only.",
+    "clean_rebuild": "docs/validation/2026-10-11-direct-integration/comparison.json",
+    "statement_review": {
+      "concrete_target_semantically_reviewed": true,
+      "physical_equivalences_formally_proved": true,
+      "standard_physical_P_id_equivalence_formally_proved": true,
+      "arbitrary_frame_and_fixed_W_equivalences_formally_proved": true
+    },
+    "original_paper_main_and_public_definitions_byte_unchanged": false,
+    "statement_preservation_scope": "Main target definition, Rates, Task, public Quantum objects, paper and pins unchanged; Main file adds exact-type proof and updates comment.",
+    "original_luders_verification_reduction_formally_proved": true,
+    "verification_asymptotic_converse_complete": true,
+    "original_paper_and_public_definitions_byte_unchanged": true,
+    "original_main_target_definition_unchanged": true
+  },
+  "counts": {
+    "catalog_and_obligation_nodes": 121,
+    "edges": 156,
+    "main_proof_slice_nodes": 87
+  },
+  "nodes": [
+    {
+      "id": "thm:complete-identification-achievability",
+      "kind": "theorem",
+      "title": "Complete stabilizer identification with diverging overhead",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 393,
+      "statement_end_line": 411,
+      "formal_status": "partial_verified_source_scope",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.stabilizerPGM_success_ge_bound",
+        "StabilizerLearning.Quantum.dampedOverlapBound_tendsto_zero",
+        "StabilizerLearning.fixedConstraint_four_uniform_limits_one"
+      ],
+      "paper_coverage": "The pointwise error of the actual full-identification PGM vanishes uniformly, and the original four quantities tend to one for every fixed W (including W=0).",
+      "semantic_scope": "The pointwise error of the actual full-identification PGM vanishes uniformly, and the original four quantities tend to one for every fixed W (including W=0).",
+      "remaining": "The common optimal value equating worst-case and average full identification for finite n,k, and the wrapper equating W=0 with fullIdentificationOptimal, have not yet been stated separately.",
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json"
+    },
+    {
+      "id": "prop:frame-conditioned-coordinate-reduction",
+      "kind": "proposition",
+      "title": "Frame-to-coordinate equivalence",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 639,
+      "statement_end_line": 651,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.referenceIdentificationOptimal_eq_physical",
+        "StabilizerLearning.Quantum.range_referenceExact_worst",
+        "StabilizerLearning.Quantum.range_referenceVerification_average",
+        "StabilizerLearning.Quantum.range_referenceVerification_worst"
+      ],
+      "remaining": "",
+      "paper_coverage": "Bidirectional transport of actual states, the complete target, the uniform prior, all POVMs, and test projectors for any public frame; both average and worst-case problems are preserved."
+    },
+    {
+      "id": "thm:refined-exact-converse",
+      "kind": "theorem",
+      "title": "Converse for exact learning in the refined problem",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 704,
+      "statement_end_line": 720,
+      "formal_status": "partial_closed_frame_fixedW_scope",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.reference_common_converse_source",
+        "StabilizerLearning.Quantum.range_referenceExact_worst"
+      ],
+      "paper_coverage": "For any frame sequence, the uniform J bound, a common little-o remainder, the log-limsup bound, and vanishing average P_id are closed; transport of the exact worst-case quantity over the full parameter range is proved.",
+      "remaining": "The complete named interface for refined worst≤average in the original item is not yet closed; ease of derivation does not justify marking the entire displayed chain as closed."
+    },
+    {
+      "id": "thm:refined-verification-threshold",
+      "kind": "theorem",
+      "title": "Verification converse for the refined problem",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 722,
+      "statement_end_line": 734,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "lem:fixed-W-frame-target-equivalence",
+      "kind": "lemma",
+      "title": "Equivalence of the generic and frame-relative targets",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 810,
+      "statement_end_line": 828,
+      "formal_status": "partial_closed_frame_fixedW_scope",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.valid_referenceState_iff",
+        "StabilizerLearning.FixedConstraints.referenceReportForget_injective",
+        "StabilizerLearning.Quantum.referenceSpanCoordinates"
+      ],
+      "paper_coverage": "The unique correct event, complete assignments, and the map forgetting the basis are closed for the actual chosen W-adapted frame.",
+      "remaining": "The uniform wrapper for any admissible ordered T and any tail span=W in the paper is not yet formalized; the current results suffice for the proved finite exact operational comparison."
+    },
+    {
+      "id": "lem:fixed-W-frame-verification-score",
+      "kind": "lemma",
+      "title": "Outcome-averaged score of a basis-free report",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 841,
+      "statement_end_line": 864,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "not_in_main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.verificationPayoff_eq_born",
+        "StabilizerLearning.FixedConstraints.verificationStatewise_eq_born",
+        "StabilizerLearning.FixedConstraints.verificationConditionalScore_mem_Icc"
+      ],
+      "semantic_scope": "Original full basis-free report alphabet and all original inputs; no generic/frame premise. Actual normalized Luders average, including zero-probability outcomes, reduces to report Born score.",
+      "remaining": ""
+    },
+    {
+      "id": "lem:fixed-W-generic-lagrangian-transitivity",
+      "kind": "lemma",
+      "title": "Transitivity on the generic Lagrangian stratum",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 894,
+      "statement_end_line": 906,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.exists_symplectic_map_fixing_constraint"
+      ],
+      "paper_coverage": "A linear automorphism preserving the symplectic form, fixing W pointwise, and sending L to L′ is constructed from the actual geometry, including characteristic two.",
+      "remaining": ""
+    },
+    {
+      "id": "lem:fixed-W-ordered-completion-regularity",
+      "kind": "lemma",
+      "title": "Regularity of ordered transverse completions",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 938,
+      "statement_end_line": 956,
+      "formal_status": "partial_closed_frame_fixedW_scope",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.card_lagrangianCompletion_eq",
+        "StabilizerLearning.FixedConstraints.card_lagrangianCompletion_pos",
+        "StabilizerLearning.FixedConstraints.card_stateCompletion_eq"
+      ],
+      "paper_coverage": "The bijection, constant cardinality, and positivity of actual Lagrangian completion fibers are closed.",
+      "remaining": "The literal count |GL(m)| p^(m(n-m)) of the original ordered-tuple fibers remains open; an alternative route does not justify claiming the entire original item is proved."
+    },
+    {
+      "id": "lem:uniform-frame-generic-decomposition",
+      "kind": "lemma",
+      "title": "Incidence decomposition of the generic prior",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 978,
+      "statement_end_line": 995,
+      "formal_status": "partial_closed_frame_fixedW_scope",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.generic_mean_eq_chart_mixture",
+        "StabilizerLearning.FixedConstraints.uniform_incidence_state_marginal",
+        "StabilizerLearning.FixedConstraints.sum_incidenceFrameWeight"
+      ],
+      "paper_coverage": "The actual incidence relation, uniform state marginal, and normalized chart-mixture formula on unordered Lagrangian completion sets are fully proved.",
+      "remaining": "The specific marginal interface for the original ordered T remains open; the alternative route through actual M-mixtures closes the final exact bounds."
+    },
+    {
+      "id": "prop:chartwise-comparison-after-revelation",
+      "kind": "proposition",
+      "title": "Chartwise comparison after revealing the completion",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1018,
+      "statement_end_line": 1035,
+      "formal_status": "partial_closed_frame_fixedW_scope",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.genericExactPerformance_le_physicalIdentification",
+        "StabilizerLearning.FixedConstraints.genericExactOptimal_le_physicalIdentification"
+      ],
+      "paper_coverage": "The reduction of the exact target to physical P_id through actual M-mixtures is closed.",
+      "remaining": "The general weighted-sum-of-chart-suprema formula for both exact and verification criteria and the literal T interface are not fully formalized; verification is not restricted to the refined alphabet."
+    },
+    {
+      "id": "cor:chartwise-fixed-frame-optima",
+      "kind": "corollary",
+      "title": "Identification of the chartwise exact optimum",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1061,
+      "statement_end_line": 1070,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.chartExactOptimal_eq_referenceIdentificationOptimal",
+        "StabilizerLearning.FixedConstraints.chartExactOptimal_eq_physicalIdentificationOptimal"
+      ],
+      "paper_coverage": "For each actual completion M, the original chart exact optimum over all reports equals refined/physical P_id; POVM conversions in both directions are proved.",
+      "remaining": "The intrinsic subspace chart is complete; the literal ordered-T wrapper has not been stated separately, which does not affect this equality of optimal values."
+    },
+    {
+      "id": "thm:fixed-W-operational-comparison",
+      "kind": "theorem",
+      "title": "Finite exact comparison of the fixed-constraint and refined tasks",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1153,
+      "statement_end_line": 1178,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.fixedW_exact_operational_comparison_general",
+        "StabilizerLearning.FixedConstraints.optimal_worstCase_le_average"
+      ],
+      "paper_coverage": "The two exact inequalities and verification worst≤average for the original finite n,m,k are closed; the actual δ is fully retained.",
+      "remaining": "The original graded-to-exact comparison and uniform vanishing of verification are closed in their respective entries; this entry records the finite exact comparison."
+    },
+    {
+      "id": "thm:generic-fixed-W-Bayes-verification-converse",
+      "kind": "theorem",
+      "title": "Verification converse for the generic fixed-constraint Bayes problem",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1258,
+      "statement_end_line": 1275,
+      "formal_status": "partial_closed_uniform_quantitative_envelope",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.fixedConstraint_verification_uniform_bounds_source",
+        "StabilizerLearning.tendsto_gradedConverseEnvelope_zero",
+        "StabilizerLearning.tendsto_gradedTail_zero"
+      ],
+      "semantic_scope": "The explicit uniform J bound, common o(N²) remainder, and vanishing envelope for the original generic task are proved; uniform limits for the original full task have separate explicit interfaces.",
+      "paper_coverage": "The explicit uniform J bound, common o(N²) remainder, and vanishing envelope for the original generic task are proved; uniform limits for the original full task have separate explicit interfaces.",
+      "remaining": "A generic-only UniformLimit/Tendsto wrapper has not yet been stated separately; the existing quantified bounds and vanishing envelope are not presented as that named endpoint.",
+      "validation": "docs/validation/2026-10-11-graded-integration/comparison.json"
+    },
+    {
+      "id": "cor:full-fixed-W-verification-converse",
+      "kind": "corollary",
+      "title": "Verification converse for the full fixed-constraint task",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1288,
+      "statement_end_line": 1298,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.fixedConstraint_verification_uniformLimits_source",
+        "StabilizerLearning.fixedConstraint_four_uniform_limits_zero"
+      ],
+      "semantic_scope": "Average and worst-case verification UniformLimit 0 for the original full state prior and all POVMs are closed; the four original converse limits are also closed.",
+      "paper_coverage": "Average and worst-case verification UniformLimit 0 for the original full state prior and all POVMs are closed; the four original converse limits are also closed.",
+      "remaining": "",
+      "validation": "docs/validation/2026-10-11-graded-integration/comparison.json"
+    },
+    {
+      "id": "prop:fixed-W-dimension-only-covariance",
+      "kind": "proposition",
+      "title": "Dimension-only covariance of the prescribed constraint",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1314,
+      "statement_end_line": 1321,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.optimal_constraint_independent",
+        "StabilizerLearning.FixedConstraints.four_optimal_constraint_independent"
+      ],
+      "paper_coverage": "Actual transport between W of the same dimension, with full bijections of states, reports, and all POVMs including section phases, preserves the original prior, verification scores, and the sup_M inf_x order; the four original optimal values are equal.",
+      "semantic_scope": "Actual transport between W of the same dimension, with full bijections of states, reports, and all POVMs including section phases, preserves the original prior, verification scores, and the sup_M inf_x order; the four original optimal values are equal.",
+      "remaining": "",
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json"
+    },
+    {
+      "id": "thm:fixed-W-no-discount",
+      "kind": "theorem",
+      "title": "No copy-rate discount under fixed commuting constraints",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1397,
+      "statement_end_line": 1431,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.fixedW_noCopyRateDiscount"
+      ],
+      "lean_source": "StabilizerLearning/Main.lean",
+      "semantic_scope": "The exact type of the original complete target is closed: both original J bounds, uniform convergence of all four quantities to zero, uniform convergence of all four quantities to one under the original real condition k−n→∞, and both original liminf/sInf exact rates equal to one. All primes, all original inputs/POVMs, and ∀ε∃N∀n∀W are preserved.",
+      "remaining": "",
+      "paper_coverage": "The exact type of the original complete target is closed: both original J bounds, uniform convergence of all four quantities to zero, uniform convergence of all four quantities to one under the original real condition k−n→∞, and both original liminf/sInf exact rates equal to one. All primes, all original inputs/POVMs, and ∀ε∃N∀n∀W are preserved.",
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json",
+      "actual_proof_route": [
+        "StabilizerLearning.fixedConstraint_uniform_converse",
+        "StabilizerLearning.fixedConstraint_four_uniform_limits_one",
+        "StabilizerLearning.FixedConstraints.exactCopyRate_eq_one"
+      ],
+      "paper_route_note": "The paper obligation DAG is retained for source correspondence. The checked proof uses a genuine statewise PGM energy inequality instead of the unformalized transitive-PGM optimality/equal-success statements; exact original Main meaning is preserved."
+    },
+    {
+      "id": "lem:transverse-symmetric-matrix-normal-form",
+      "kind": "lemma",
+      "title": "Symmetric-matrix normal form for transverse Lagrangians",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1546,
+      "statement_end_line": 1551,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.exists_unique_symmetric_graph",
+        "StabilizerLearning.Quantum.transverseLagrangianEquivSymmetricMatrices"
+      ],
+      "remaining": "Complete all-prime two-way unique classification of the actual transverse Lagrangians, including zero dimension.",
+      "validation": "docs/validation/2026-10-11-physical-coordinate/comparison.json"
+    },
+    {
+      "id": "lem:odd-eigenvalue-character",
+      "kind": "lemma",
+      "title": "Eigenvalue character",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1599,
+      "statement_end_line": 1613,
+      "formal_status": "partial_closed_XZ_eigenvalue",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.oddGraph_pauli_eigenvector",
+        "StabilizerLearning.Quantum.jointProjector_oddGraphAssignment"
+      ],
+      "remaining": "The original XZ section eigenvalue and density are proved, with the exact quadratic correction. The paper literal phase-adjusted Weyl operator W and its named eigenvalue identity have not separately been declared; do not conflate that interface with the closed physical task bridge.",
+      "validation": "docs/validation/2026-10-11-physical-coordinate/comparison.json"
+    },
+    {
+      "id": "lem:fixed-A-orthonormality",
+      "kind": "lemma",
+      "title": "Fixed-$A$ orthonormality",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1671,
+      "statement_end_line": 1679,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "main_proof_slice"
+    },
+    {
+      "id": "prop:rank-dependent-overlap",
+      "kind": "proposition",
+      "title": "Rank-dependent overlap",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1730,
+      "statement_end_line": 1751,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "cor:common-stabilizer-structure",
+      "kind": "corollary",
+      "title": "Common stabilizer structure",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1777,
+      "statement_end_line": 1787,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "lem:integrated-qubit-symmetric-matrix-representation",
+      "kind": "lemma",
+      "title": "Qubit symmetric-matrix representation and eigenvalue character",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1984,
+      "statement_end_line": 2000,
+      "formal_status": "partial_closed_actual_binary_graph",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.binaryGraphQ_add",
+        "StabilizerLearning.Quantum.binaryGraph_pauli_eigen",
+        "StabilizerLearning.Quantum.binaryParametersPhysicalGraphEquiv",
+        "StabilizerLearning.Quantum.jointProjector_eq_binaryGraphDensity"
+      ],
+      "remaining": "Complete actual binary graph labels, ZMod 4 phases and densities are closed. The paper literal phase-adjusted W_A representation and named (-1)^(b dot u) eigenvalue statement remain to be declared.",
+      "validation": "docs/validation/2026-10-11-physical-coordinate/comparison.json"
+    },
+    {
+      "id": "lem:integrated-qubit-announced-representation",
+      "kind": "lemma",
+      "title": "Qubit announced-family representation and character projector",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 2041,
+      "statement_end_line": 2064,
+      "formal_status": "partial_closed_actual_projector_family",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.canonicalAssignmentEquiv",
+        "StabilizerLearning.Quantum.complete_jointProjector_family"
+      ],
+      "remaining": "All assignments on the actual announced subspace and the complete original projector family are closed. Literal W_C, Pi_C,gamma and their operator identities are not yet separately formalized.",
+      "validation": "docs/validation/2026-10-11-physical-coordinate/comparison.json"
+    },
+    {
+      "id": "lem:qubit-intrinsic-coordinate-report-bridge",
+      "kind": "lemma",
+      "title": "Intrinsic realization of a qubit coordinate report",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 2080,
+      "statement_end_line": 2109,
+      "formal_status": "partial_closed_actual_report_equivalence",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.binaryCanonicalReportEquiv",
+        "StabilizerLearning.Quantum.binaryCanonicalReportEquiv_physicalCanonicalTarget",
+        "StabilizerLearning.physicalCanonicalTarget_surjective"
+      ],
+      "remaining": "Every actual canonical report and its full original assignment are bijective with binary coordinates, targets are identified, and realizability is proved. The source lemma also states unique s_C, specified phase formulas and equality of named verifier projectors; these literal interfaces remain open.",
+      "validation": "docs/validation/2026-10-11-physical-coordinate/comparison.json"
+    },
+    {
+      "id": "lem:integrated-qubit-score-spectrum",
+      "kind": "lemma",
+      "title": "Qubit verifier score",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 2213,
+      "statement_end_line": 2233,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "lem:uniform-partial-labels",
+      "kind": "lemma",
+      "title": "Uniform partial labels and constant fibers",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 2410,
+      "statement_end_line": 2421,
+      "formal_status": "partial_closed_uniform_prior_transport",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.oddReportedPhysicalStateEquiv",
+        "StabilizerLearning.binaryReportedPhysicalStateEquiv",
+        "StabilizerLearning.uniformFiniteMean_prod",
+        "StabilizerLearning.Quantum.transverse_uniform_prior"
+      ],
+      "remaining": "Full visible/hidden product bijections and actual distinct-state uniform prior transport are proved. A separately named literal q_m fiber cardinality p^(b(b+1)/2+b) statement is still absent; this is a source-interface limit, not a gap in the probability prior used by the converse.",
+      "validation": "docs/validation/2026-10-11-physical-coordinate/comparison.json"
+    },
+    {
+      "id": "prop:partial-no-information-baseline",
+      "kind": "proposition",
+      "title": "Input-independent score $p^{-m}$",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 2616,
+      "statement_end_line": 2623,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "prop:fixed-query-equivalence",
+      "kind": "proposition",
+      "title": "Explicit equivalence of fixed full-rank queries",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 2710,
+      "statement_end_line": 2755,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "cor:complete-fidelity-endpoint",
+      "kind": "corollary",
+      "title": "Recovery of full-label fidelity learning",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 2868,
+      "statement_end_line": 2895,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "lem:orbit-moment-expansion",
+      "kind": "lemma",
+      "title": "Moment expansion of the orbit states",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 3061,
+      "statement_end_line": 3069,
+      "formal_status": "partial_closed_tensor_moment_density",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.ordinary_conditioned_tensorPower_eq_moment",
+        "StabilizerLearning.oddQuadraticDensity_eq_character"
+      ],
+      "remaining": "Actual tensor-copy density and hidden-average identities are closed. The source normalized-sector-vector expansion as a separate named vector identity is not claimed."
+    },
+    {
+      "id": "lem:unreported-moment-cosets",
+      "kind": "lemma",
+      "title": "Coordinate description of the $H^\\perp$-cosets",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 3123,
+      "statement_end_line": 3147,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "main_proof_slice"
+    },
+    {
+      "id": "prop:conditioned-average-block-form",
+      "kind": "proposition",
+      "title": "Block form of the exact-identification ensemble",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 3215,
+      "statement_end_line": 3233,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "main_proof_slice"
+    },
+    {
+      "id": "lem:binary-tuple-phase-factorization",
+      "kind": "lemma",
+      "title": "Tuple phase factors through the enhanced moment",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 3296,
+      "statement_end_line": 3306,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "main_proof_slice"
+    },
+    {
+      "id": "lem:binary-orbit-moment-expansion",
+      "kind": "lemma",
+      "title": "Moment expansion of the binary orbit states",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 3346,
+      "statement_end_line": 3356,
+      "formal_status": "partial_closed_tensor_moment_density",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.binary_conditioned_tensorPower_eq_moment",
+        "StabilizerLearning.CoordinateCharacters.binarySourceDensity_assembled_eq_character"
+      ],
+      "remaining": "Literal binary source phases and actual tensor-density identities are closed. Separate normalized-sector-vector and PGM formula statements are not claimed."
+    },
+    {
+      "id": "lem:binary-annihilator-cosets",
+      "kind": "lemma",
+      "title": "Coordinate description of the binary annihilator cosets",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 3390,
+      "statement_end_line": 3406,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "main_proof_slice"
+    },
+    {
+      "id": "prop:binary-conditioned-average-block-form",
+      "kind": "proposition",
+      "title": "Binary block form of the exact-identification ensemble",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 3444,
+      "statement_end_line": 3463,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "main_proof_slice"
+    },
+    {
+      "id": "thm:detailed-seed-solution",
+      "kind": "theorem",
+      "title": "PGM optimality for quotient-conditioned character-sector ensembles",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 3619,
+      "statement_end_line": 3646,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "main_proof_slice"
+    },
+    {
+      "id": "lem:covariant-seed-reduction",
+      "kind": "lemma",
+      "title": "Covariant seed reduction",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 3652,
+      "statement_end_line": 3674,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "main_proof_slice"
+    },
+    {
+      "id": "lem:coset-fixed-diagonal",
+      "kind": "lemma",
+      "title": "Annihilator-coset blocks and fixed diagonal",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 3707,
+      "statement_end_line": 3722,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "main_proof_slice"
+    },
+    {
+      "id": "lem:blockwise-seed-optimum",
+      "kind": "lemma",
+      "title": "Rank-one solution of one block of the seed",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 3752,
+      "statement_end_line": 3768,
+      "formal_status": "Lean_verified_pilot_not_integrated_into_main",
+      "curated_dependency_scope": "main_proof_slice",
+      "formal_source": {
+        "file": "StabilizerLearning/FiniteCopy/MatrixOptimization.lean",
+        "declarations": [
+          "StabilizerLearning.MatrixOptimization.blockwise_seed_optimum",
+          "StabilizerLearning.MatrixOptimization.blockQuadratic_eq_real"
+        ],
+        "semantic_audit": "docs/history/pilot-milestones.md (historical verified report links)",
+        "kernel_build_verification": "docs/validation/2026-10-11-organization",
+        "source_revision_note": "Frozen source hash equals independently rebuilt source hash.",
+        "pre_migration_sha256": "d6c50629a1f53c1650eaefac9f5851e9eb2bdfa10317d9004b43c10de147c54d",
+        "sha256": "9b2e93f3fc9b0de1abba8ce579394371d2d2deb1cde7a32f68726de2fa896ddd",
+        "historical_evidence_note": "Pre-migration reports and original SHA retained in d8d2b7f and backup receipts; current validation is in docs/validation/2026-10-11-organization."
+      }
+    },
+    {
+      "id": "cor:abstract-theorem-all-prime-application",
+      "kind": "corollary",
+      "title": "Finite-size PGM optimality for every prime",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 3865,
+      "statement_end_line": 3877,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "main_proof_slice"
+    },
+    {
+      "id": "thm:converse-weighted-probability-completion-reduction",
+      "kind": "theorem",
+      "title": "Weighted probability--completion reduction",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 3943,
+      "statement_end_line": 4000,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.physicalIdentificationOptimal_eq_coordinate",
+        "StabilizerLearning.odd_coordinate_probability_completion_reduction",
+        "StabilizerLearning.binary_coordinate_probability_completion_reduction",
+        "StabilizerLearning.card_completionPairs_rank_only"
+      ],
+      "remaining": "Closed by composing the proved physical optimum equality with the existing exact finite reductions; original probabilities, visible denominator, binary 2^m, rank-only count and min(1,...) are retained. This upper-bound route does not assume or require exact PGM optimality.",
+      "validation": "docs/validation/2026-10-11-physical-coordinate/comparison.json"
+    },
+    {
+      "id": "prop:converse-weighted-moment-fiber-reduction",
+      "kind": "proposition",
+      "title": "Weighted counting bound",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 4021,
+      "statement_end_line": 4059,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.physicalIdentificationOptimal_eq_coordinate",
+        "StabilizerLearning.characterOptimalSuccess_le_weighted_support",
+        "StabilizerLearning.ordinary_codedWeightedSupport_eq_lower_average",
+        "StabilizerLearning.binary_codedWeightedSupport_eq_lower_average",
+        "StabilizerLearning.finiteFiberProbability_nonneg",
+        "StabilizerLearning.sum_finiteFiberProbability"
+      ],
+      "remaining": "Actual physical optimum transported to the proved arbitrary-POVM weighted support bound, with true normalized nonnegative lower-event probabilities. Exact PGM formula is a different statement and is not a missing premise for this upper bound.",
+      "validation": "docs/validation/2026-10-11-physical-coordinate/comparison.json"
+    },
+    {
+      "id": "prop:all-prime-prescribed-radical-bound",
+      "kind": "proposition",
+      "title": "All-prime prescribed-radical subspace bound",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 4223,
+      "statement_end_line": 4243,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.prescribed_radical_subspace_bound",
+        "StabilizerLearning.prescribed_radical_containing_bound",
+        "StabilizerLearning.exists_prescribed_radical_constant"
+      ],
+      "semantic_scope": "Actual finite sets and uniform matrix PMF; original source statements preserved. K=16q witnesses the permitted field-dependent constant. Includes zero dimensions and characteristic two.",
+      "integration": "Actual finite averages invoke both the proved row-event probabilities and genuine moment-to-completion maps, exact ambient count, Gram-radical identity and prescribed-rank bounds."
+    },
+    {
+      "id": "prop:all-prime-row-space-event-bound",
+      "kind": "proposition",
+      "title": "All-prime row-space event bound",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 4302,
+      "statement_end_line": 4324,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.rowSpace_event_probability_bound",
+        "StabilizerLearning.rowSpace_event_probability_bound_containing"
+      ],
+      "semantic_scope": "Actual finite sets and uniform matrix PMF; original source statements preserved. K=16q witnesses the permitted field-dependent constant. Includes zero dimensions and characteristic two.",
+      "integration": "Actual finite averages invoke both the proved row-event probabilities and genuine moment-to-completion maps, exact ambient count, Gram-radical identity and prescribed-rank bounds."
+    },
+    {
+      "id": "cor:all-prime-augmented-row-space-event-bound",
+      "kind": "corollary",
+      "title": "All-prime augmented row-space event bound",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 4341,
+      "statement_end_line": 4359,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.augmentedRowSpace_event_probability_bound"
+      ],
+      "semantic_scope": "Actual finite sets and uniform matrix PMF; original source statements preserved. K=16q witnesses the permitted field-dependent constant. Includes zero dimensions and characteristic two.",
+      "integration": "Actual finite averages invoke both the proved row-event probabilities and genuine moment-to-completion maps, exact ambient count, Gram-radical identity and prescribed-rank bounds."
+    },
+    {
+      "id": "lem:common-Gram-radical-rank",
+      "kind": "lemma",
+      "title": "Common Gram--radical rank identity",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 4377,
+      "statement_end_line": 4393,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.rank_gram_eq_finrank_sub_radical",
+        "StabilizerLearning.rank_augmented_gram"
+      ],
+      "semantic_scope": "Actual finite sets and uniform matrix PMF; original source statements preserved. K=16q witnesses the permitted field-dependent constant. Includes zero dimensions and characteristic two.",
+      "integration": "Actual finite averages invoke both the proved row-event probabilities and genuine moment-to-completion maps, exact ambient count, Gram-radical identity and prescribed-rank bounds."
+    },
+    {
+      "id": "thm:converse-odd-prime-finite-structural-estimate",
+      "kind": "theorem",
+      "title": "Odd-prime finite structural estimate",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 4600,
+      "statement_end_line": 4674,
+      "formal_status": "partial_closed_finite_source_exponent",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.odd_coordinate_probability_source_bound",
+        "StabilizerLearning.sourceFiniteExponent_eq_integer_formula",
+        "StabilizerLearning.ordinaryFiniteStructuralFactor_source",
+        "StabilizerLearning.physicalIdentificationOptimal_eq_coordinate"
+      ],
+      "remaining": "Original physical P_id is now identified, and source finite exponents/full feasibility feed the closed common J. Valid explicit constants 16 and 16*p are proved. Identification with the paper named infinite-product prefactors remains open; that interface is not assumed in the common-J proof."
+    },
+    {
+      "id": "thm:converse-binary-finite-structural-estimate",
+      "kind": "theorem",
+      "title": "Characteristic-two finite structural estimate",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 4717,
+      "statement_end_line": 4793,
+      "formal_status": "partial_closed_finite_source_exponent",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.binary_coordinate_probability_source_bound",
+        "StabilizerLearning.binaryFiniteStructuralFactor_source",
+        "StabilizerLearning.physicalIdentificationOptimal_eq_coordinate"
+      ],
+      "remaining": "Original physical P_id is now identified, and source finite exponents/full feasibility feed the closed common J. Valid explicit constants 16 and 16*p are proved. Identification with the paper named infinite-product prefactors remains open; that interface is not assumed in the common-J proof."
+    },
+    {
+      "id": "cor:binary-structural-asymptotic-form",
+      "kind": "corollary",
+      "title": "Asymptotic form of the characteristic-two structural estimate",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 4822,
+      "statement_end_line": 4839,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "thm:converse-common-asymptotic-reduction",
+      "kind": "theorem",
+      "title": "All-prime converse exponent bound",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 4872,
+      "statement_end_line": 4902,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.physical_common_converse_source",
+        "StabilizerLearning.physicalIdentificationOptimal_eq_coordinate",
+        "StabilizerLearning.coordinate_common_converse_source"
+      ],
+      "remaining": "The original standard transverse physical P_id is identified through actual states, targets, uniform priors and all POVMs. Original little-o assumptions, complete feasibility, uniform explicit o(N^2), real log-limsup and decay are closed. Arbitrary-frame and fixed-W comparisons remain separate paper statements.",
+      "validation": "docs/validation/2026-10-11-physical-coordinate/comparison.json"
+    },
+    {
+      "id": "thm:transitive-pure-pgm",
+      "kind": "theorem",
+      "title": "PGM optimality for transitive pure-state ensembles",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 5239,
+      "statement_end_line": 5253,
+      "formal_status": "partial_verified_source_scope",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.PGM.born_prettyGoodMeasurement",
+        "StabilizerLearning.Quantum.PGM.prettyGoodMeasurement_success_ge_overlap"
+      ],
+      "paper_coverage": "The actual normalized PGM on singular support, the exact Gram success probability, and the general pointwise energy lower bound are proved.",
+      "semantic_scope": "The actual normalized PGM on singular support, the exact Gram success probability, and the general pointwise energy lower bound are proved.",
+      "remaining": "Transitive-ensemble minimum-error optimality, constant diagonal, and the explicit dual certificate in the original item are not yet formalized.",
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json"
+    },
+    {
+      "id": "lem:transitive-pgm-overlap-energy",
+      "kind": "lemma",
+      "title": "Squared-overlap control of the transitive PGM error",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 5392,
+      "statement_end_line": 5403,
+      "formal_status": "partial_verified_source_scope",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.PGM.prettyGoodMeasurement_success_ge_overlap",
+        "StabilizerLearning.Quantum.stabilizerPGM_success_ge_overlap"
+      ],
+      "paper_coverage": "For every input, the success probability of the actual original PGM is ≥1−the actual overlap row energy of that input; invertibility is not required.",
+      "semantic_scope": "For every input, the success probability of the actual original PGM is ≥1−the actual overlap row energy of that input; invertibility is not required.",
+      "remaining": "The transitivity/equal-success wrapper in the paper that bounds the overall average PGM error using the row energy at a fixed center has not been stated separately; the pointwise lemma is not claimed to cover the entire original item.",
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json"
+    },
+    {
+      "id": "lem:unrestricted-stabilizer-overlaps",
+      "kind": "lemma",
+      "title": "Unrestricted stabilizer overlaps",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 5452,
+      "statement_end_line": 5466,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.born_labelProjector_eq",
+        "StabilizerLearning.Quantum.card_compatibleAssignments",
+        "StabilizerLearning.Quantum.born_tensorPower",
+        "StabilizerLearning.Quantum.StabilizerState.tensor_born_eq_normSq"
+      ],
+      "paper_coverage": "For actual original pure states, the Born overlap is p^−r when assignments agree on the intersection and zero otherwise; for each actual L, there are exactly p^r compatible original assignments. The actual tensor-Born and unit-vector-overlap bridges are proved.",
+      "semantic_scope": "For actual original pure states, the Born overlap is p^−r when assignments agree on the intersection and zero otherwise; for each actual L, there are exactly p^r compatible original assignments. The actual tensor-Born and unit-vector-overlap bridges are proved.",
+      "remaining": "",
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json"
+    },
+    {
+      "id": "lem:lagrangian-intersection-shells",
+      "kind": "lemma",
+      "title": "Classes of Fixed Lagrangian-Intersection Codimension",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 5527,
+      "statement_end_line": 5536,
+      "formal_status": "partial_verified_source_scope",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.lagrangianIntersectionFiberEquivSymmetricMatrices",
+        "StabilizerLearning.Quantum.card_lagrangianIntersectionFiber_eq",
+        "StabilizerLearning.Quantum.lagrangianShellCount_eq",
+        "StabilizerLearning.Quantum.lagrangianShellCount_eq_gaussian_product"
+      ],
+      "paper_coverage": "The actual intersection shell is in bijection with Σ of actual fibers; each fiber has cardinality p^(r(r+1)/2), multiplied by the actual (n−r)-dimensional Grassmann cardinality and expanded into the literal Gaussian product.",
+      "semantic_scope": "The actual intersection shell is in bijection with Σ of actual fibers; each fiber has cardinality p^(r(r+1)/2), multiplied by the actual (n−r)-dimensional Grassmann cardinality and expanded into the literal Gaussian product.",
+      "remaining": "The product is indexed by Fin(n−r); the Gaussian-symmetry wrapper rewriting it with the paper's Fin r index has not been stated separately, so this rearrangement is not marked as formalized.",
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json"
+    },
+    {
+      "id": "thm:unrestricted-stabilizer-direct",
+      "kind": "theorem",
+      "title": "Finite unrestricted PGM bound and proof of Theorem~\\ref{thm:complete-identification-achievability}",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 5595,
+      "statement_end_line": 5612,
+      "formal_status": "partial_verified_source_scope",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.stabilizerPGM_success_ge_overlap",
+        "StabilizerLearning.Quantum.stabilizerOverlapEnergy_eq_gaussian_product_sum",
+        "StabilizerLearning.stabilizerPGM_success_ge_bound",
+        "StabilizerLearning.Quantum.dampedOverlapBound_tendsto_zero"
+      ],
+      "paper_coverage": "The normalized PGM on all actual distinct states, its exact energy, the pointwise 1−4*dampedTail bound, and uniform vanishing of the error under the original real overhead are closed.",
+      "semantic_scope": "The normalized PGM on all actual distinct states, its exact energy, the pointwise 1−4*dampedTail bound, and uniform vanishing of the error under the original real overhead are closed.",
+      "remaining": "The paper's specified finite constant κ_GL^−1, PGM optimality, and the named fullIdentificationOptimal limit wrapper are not closed.",
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json"
+    },
+    {
+      "id": "cor:statewise-fixed-W-achievability",
+      "kind": "corollary",
+      "title": "Statewise complete-identification and fixed-$W$ achievability",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 5652,
+      "statement_end_line": 5670,
+      "formal_status": "partial_verified_source_scope",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.valid_fullStateReport",
+        "StabilizerLearning.FixedConstraints.fixedWPostprocess",
+        "StabilizerLearning.fixedConstraint_direct_finite",
+        "StabilizerLearning.fixedConstraint_four_uniform_limits_one"
+      ],
+      "paper_coverage": "Actual fixed-W postprocessing on all inputs, the pointwise finite bound, and the four original UniformLimit1 conclusions are closed; exceptional inputs are retained.",
+      "semantic_scope": "Actual fixed-W postprocessing on all inputs, the pointwise finite bound, and the four original UniformLimit1 conclusions are closed; exceptional inputs are retained.",
+      "remaining": "PGM covariance, equal success probability, and the κ constant in this corollary are not proved; the fixed complement is constructed by noncomputable choice, with no claim to implement Gaussian elimination.",
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json"
+    },
+    {
+      "id": "prop:prob-one-equivalence",
+      "kind": "proposition",
+      "title": "Finite exact-to-verification comparison",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 5733,
+      "statement_end_line": 5742,
+      "formal_status": "partial_original_basis_free_optimal_comparison",
+      "curated_dependency_scope": "not_in_main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.optimal_exact_le_verification",
+        "StabilizerLearning.FixedConstraints.optimal_verification_le_affine_exact",
+        "StabilizerLearning.FixedConstraints.optimal_exact_eq_one_iff_verification_eq_one"
+      ],
+      "semantic_scope": "Sharp original basis-free optimum sandwich and probability-one equivalence for both average and worstCase; unchanged learner class and sup_M inf_x order.",
+      "remaining": "Here the paper's notation denotes refined identification/verification optima. Analogous results for both original basis-free aggregations are proved; transport to the literal refined-experiment interface remains necessary, so this does not claim closure of all interfaces in the paper."
+    },
+    {
+      "id": "lem:binary-enhanced-difference-compatibility",
+      "kind": "lemma",
+      "title": "Binary enhanced compatibility depends only on the quotient difference",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 5858,
+      "statement_end_line": 5869,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "lem:binary-compatible-character-fiber",
+      "kind": "lemma",
+      "title": "Binary compatible character fiber",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 5909,
+      "statement_end_line": 5920,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "prop:compatible-neighborhood-translation",
+      "kind": "proposition",
+      "title": "Translation invariance of compatible neighborhoods",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 5985,
+      "statement_end_line": 5994,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "lem:compatible-rank-neighborhood-cardinality",
+      "kind": "lemma",
+      "title": "Cardinality of a compatible rank neighborhood",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 6006,
+      "statement_end_line": 6047,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "lem:compatible-list-povm-conversion",
+      "kind": "lemma",
+      "title": "POVM conversion from a compatible list to exact identification",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 6098,
+      "statement_end_line": 6132,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "lem:bounded-list-povm-conversion",
+      "kind": "lemma",
+      "title": "POVM conversion under a uniform list-size upper bound",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 6177,
+      "statement_end_line": 6213,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "thm:rank-truncated-graded-to-exact",
+      "kind": "theorem",
+      "title": "Finite-size bounded-rank graded-to-exact comparison",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 6237,
+      "statement_end_line": 6259,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "cor:graded-score-to-zero",
+      "kind": "corollary",
+      "title": "Vanishing graded score below one learner copy per qudit",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 6319,
+      "statement_end_line": 6340,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "lem:generic-original-score-spectrum",
+      "kind": "lemma",
+      "title": "Basis-free generic verifier score",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 6424,
+      "statement_end_line": 6440,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.verificationPayoff_eq_generic_spectrum",
+        "StabilizerLearning.FixedConstraints.reportsCompatible_genericLabel_iff"
+      ],
+      "semantic_scope": "The intersection space and full phase compatibility of the actual generic target are connected to the original Lüders score spectrum.",
+      "remaining": "",
+      "paper_coverage": "The intersection space and full phase compatibility of the actual generic target are connected to the original Lüders score spectrum.",
+      "validation": "docs/validation/2026-10-11-graded-integration/comparison.json"
+    },
+    {
+      "id": "lem:generic-bayes-bounded-list-conversion",
+      "kind": "lemma",
+      "title": "Bayes conversion under a uniform exact-target-list bound",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 6504,
+      "statement_end_line": 6522,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.POVM.boundedListDecoder",
+        "StabilizerLearning.Quantum.POVM.boundedList_bayes_le_decoder",
+        "StabilizerLearning.FixedConstraints.compatibleNearProbability_mean_le_list_mul_exact"
+      ],
+      "semantic_scope": "An actual positive normalized decoding POVM is constructed, allowing different alphabets, noninjective targets, and a nonuniform target prior; the original generic optimal bound is closed.",
+      "paper_coverage": "An actual positive normalized decoding POVM is constructed, allowing different alphabets, noninjective targets, and a nonuniform target prior; the original generic optimal bound is closed.",
+      "remaining": "",
+      "validation": "docs/validation/2026-10-11-graded-integration/comparison.json"
+    },
+    {
+      "id": "lem:generic-original-list-count",
+      "kind": "lemma",
+      "title": "Uniform basis-free list bound",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 6582,
+      "statement_end_line": 6596,
+      "formal_status": "partial_actual_compatible_cover_bound",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.genericCompatibleListSize_le_phase",
+        "StabilizerLearning.FixedConstraints.genericCompatibleListSize_le_coarse",
+        "StabilizerLearning.Quantum.card_assignmentRestrictionFiber"
+      ],
+      "semantic_scope": "The uniform bound 16*p^(2*n*D+D) on actual realizable phase-compatible lists for D≤m is closed; the original Gaussian shell sum is not the literal result covered here.",
+      "paper_coverage": "The uniform bound 16*p^(2*n*D+D) on actual realizable phase-compatible lists for D≤m is closed; the original Gaussian shell sum is not the literal result covered here.",
+      "remaining": "The original Gaussian intersection-dimension shell bijection, summation formula, and specified kappa factor remain open; the exact phase-extension factor is closed.",
+      "validation": "docs/validation/2026-10-11-graded-integration/comparison.json"
+    },
+    {
+      "id": "thm:generic-original-bounded-rank-graded-to-exact",
+      "kind": "theorem",
+      "title": "Generic original bounded-rank graded-to-exact comparison",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 6633,
+      "statement_end_line": 6651,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.genericVerificationOptimal_le_graded_exact",
+        "StabilizerLearning.FixedConstraints.optimal_verification_average_le_graded_exact"
+      ],
+      "semantic_scope": "Both finite graded-to-exact bounds for all original basis-free POVMs are closed, preserving the actual L, delta, 1-delta, and p^(-(D+1)).",
+      "remaining": "",
+      "paper_coverage": "Both finite graded-to-exact bounds for all original basis-free POVMs are closed, preserving the actual L, delta, 1-delta, and p^(-(D+1)).",
+      "validation": "docs/validation/2026-10-11-graded-integration/comparison.json"
+    },
+    {
+      "id": "thm:fixed-diagonal-graph-basis-threshold",
+      "kind": "theorem",
+      "title": "Copy-rate threshold for fixed-diagonal graph-basis submodels",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 6804,
+      "statement_end_line": 6825,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "thm:completion-bound-converse",
+      "kind": "theorem",
+      "title": "Rank-constrained completion bound for a fixed set with fixed lower coordinates",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 7070,
+      "statement_end_line": 7138,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "lem:visible-to-ambient-completion",
+      "kind": "lemma",
+      "title": "Inclusion of moment-derived data in the low-rank completion set",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 7200,
+      "statement_end_line": 7216,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.momentFiberVisibleEquiv",
+        "StabilizerLearning.card_momentFiber_eq_visible",
+        "StabilizerLearning.visibleToCompletion",
+        "StabilizerLearning.occurringMomentCount_le_exact_completion"
+      ],
+      "semantic_scope": "Actual finite sets and uniform matrix PMF; original source statements preserved. K=16q witnesses the permitted field-dependent constant. Includes zero dimensions and characteristic two.",
+      "integration": "Actual finite averages invoke both the proved row-event probabilities and genuine moment-to-completion maps, exact ambient count, Gram-radical identity and prescribed-rank bounds."
+    },
+    {
+      "id": "lem:first-congruence",
+      "kind": "lemma",
+      "title": "Schur-complement rank reduction",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 7279,
+      "statement_end_line": 7313,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.rank_completion_first_reduction",
+        "StabilizerLearning.schurTranslationEquiv",
+        "StabilizerLearning.exists_symmetric_normal_form"
+      ],
+      "semantic_scope": "Actual ambient pairs (Q,C), Q symmetric, rank of the full block matrix <= k. Original finite sum and rank-only dependence; arbitrary finite fields include both prime branches.",
+      "integration": "Actual ordinary and binary enhanced moments, exact completion counts and row-space event probabilities feed the closed normalized/clipped finite coordinate-state converse over all POVMs. These counts and row events are now actual dependencies of the closed original Main through the physical/frame/fixed-W converse. Separate quotient/coset PGM formula and optimality interfaces retain their scoped statuses."
+    },
+    {
+      "id": "lem:radical-rank-identity",
+      "kind": "lemma",
+      "title": "Radical-coupling rank identity",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 7338,
+      "statement_end_line": 7360,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.rank_radical_blocks",
+        "StabilizerLearning.rank_radical_of_normalizers"
+      ],
+      "semantic_scope": "Actual ambient pairs (Q,C), Q symmetric, rank of the full block matrix <= k. Original finite sum and rank-only dependence; arbitrary finite fields include both prime branches.",
+      "integration": "Actual ordinary and binary enhanced moments, exact completion counts and row-space event probabilities feed the closed normalized/clipped finite coordinate-state converse over all POVMs. These counts and row events are now actual dependencies of the closed original Main through the physical/frame/fixed-W converse. Separate quotient/coset PGM formula and optimality interfaces retain their scoped statuses."
+    },
+    {
+      "id": "lem:completion-bijective-parameterization",
+      "kind": "lemma",
+      "title": "Bijective parameterization at fixed completion ranks",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 7416,
+      "statement_end_line": 7432,
+      "formal_status": "Lean_verified_counting_route",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.completionAllEquiv",
+        "StabilizerLearning.completionAllEquiv_rank",
+        "StabilizerLearning.completionFiberRankEquiv",
+        "StabilizerLearning.completionPairsRankEquiv"
+      ],
+      "semantic_scope": "A genuine full-space equivalence with once-chosen proved normalizers, then genuine rank stratification and budget restriction, fully proves the actual count. The source lemma interface quantified over arbitrary externally supplied P/R/S and a single fixed-rank fiber is not separately declared.",
+      "integration": "Actual ordinary and binary enhanced moments, exact completion counts and row-space event probabilities feed the closed normalized/clipped finite coordinate-state converse over all POVMs. These counts and row events are now actual dependencies of the closed original Main through the physical/frame/fixed-W converse. Separate quotient/coset PGM formula and optimality interfaces retain their scoped statuses."
+    },
+    {
+      "id": "prop:exact-ambient-completion-count",
+      "kind": "proposition",
+      "title": "Exact count of the enlarged low-rank completion set",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 7447,
+      "statement_end_line": 7463,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.card_completionPairs_eq_source",
+        "StabilizerLearning.card_completionPairs_zero",
+        "StabilizerLearning.card_completionPairs_rank_only"
+      ],
+      "semantic_scope": "Actual ambient pairs (Q,C), Q symmetric, rank of the full block matrix <= k. Original finite sum and rank-only dependence; arbitrary finite fields include both prime branches.",
+      "integration": "Actual ordinary and binary enhanced moments, exact completion counts and row-space event probabilities feed the closed normalized/clipped finite coordinate-state converse over all POVMs. These counts and row events are now actual dependencies of the closed original Main through the physical/frame/fixed-W converse. Separate quotient/coset PGM formula and optimality interfaces retain their scoped statuses."
+    },
+    {
+      "id": "prop:lower-block-class-probability",
+      "kind": "proposition",
+      "title": "Odd-prime lower-block class probability",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 7707,
+      "statement_end_line": 7718,
+      "formal_status": "partial_verified_local_coverage",
+      "curated_dependency_scope": "not_in_main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.augmentedRowSpace_event_probability_bound",
+        "StabilizerLearning.exists_uniform_rowSpace_event_constant",
+        "StabilizerLearning.lowerAugmentedRealization_eq_augmentRows",
+        "StabilizerLearning.rowSpace_augmentRows"
+      ],
+      "remaining": "The general augmented-row event bound covers the original finite probability inequality by F=ZMod p, r=n-m, v=1; the actual finite average already uses this specialization. A separately named paper-specific statement is not yet present."
+    },
+    {
+      "id": "lem:symmetric-rank-bound",
+      "kind": "lemma",
+      "title": "Uniform symmetric-rank bound",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 7764,
+      "statement_end_line": 7773,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.odd_prime_symmetric_rank_bound",
+        "StabilizerLearning.exists_uniform_symmetric_rank_constant"
+      ],
+      "lean_source": "StabilizerLearning/Foundations/RankConsequences.lean",
+      "semantic_scope": "Actual standard Matrix.rank and transpose-symmetric matrices. Constant 4 is independent of field and dimensions; original prime specializations and exponent are preserved.",
+      "integration": "Actual ordinary and binary enhanced moments, exact completion counts and row-space event probabilities feed the closed normalized/clipped finite coordinate-state converse over all POVMs. These counts and row events are now actual dependencies of the closed original Main through the physical/frame/fixed-W converse. Separate quotient/coset PGM formula and optimality interfaces retain their scoped statuses."
+    },
+    {
+      "id": "cor:symmetric-rank-partial-sum",
+      "kind": "corollary",
+      "title": "Symmetric rank partial sums",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 7848,
+      "statement_end_line": 7856,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "not_in_main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.symmetric_rank_partial_sum",
+        "StabilizerLearning.card_symmetric_rank_le_bound"
+      ],
+      "lean_source": "StabilizerLearning/Foundations/RankConsequences.lean",
+      "semantic_scope": "Actual standard Matrix.rank and transpose-symmetric matrices. Constant 4 is independent of field and dimensions; original prime specializations and exponent are preserved.",
+      "integration": "Actual ordinary and binary enhanced moments, exact completion counts and row-space event probabilities feed the closed normalized/clipped finite coordinate-state converse over all POVMs. These counts and row events are now actual dependencies of the closed original Main through the physical/frame/fixed-W converse. Separate quotient/coset PGM formula and optimality interfaces retain their scoped statuses."
+    },
+    {
+      "id": "prop:uniform-completion-bound",
+      "kind": "proposition",
+      "title": "Finite completion bound for rank $a-u$",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 7892,
+      "statement_end_line": 7918,
+      "formal_status": "partial_actual_set_bound_constant_16",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.completionPairs_count_bound"
+      ],
+      "remaining": "Source named kappa_GL^-1*K_sym coefficient remains. Actual moment inclusion, Gram rank a-u, normalized/clipped finite probability reduction and the source-domain finite exponent are proved with the explicit uniform constant 16.",
+      "semantic_scope": "Actual ambient matrix-completion set <=16*(m+1)^2*q^(grid.sup E), unconditionally in the rank budget."
+    },
+    {
+      "id": "lem:binary-Schur-reduction",
+      "kind": "lemma",
+      "title": "Binary Schur reduction",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 8190,
+      "statement_end_line": 8215,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.rank_completion_first_reduction",
+        "StabilizerLearning.schurTranslationEquiv",
+        "StabilizerLearning.exists_symmetric_normal_form"
+      ],
+      "semantic_scope": "Actual ambient pairs (Q,C), Q symmetric, rank of the full block matrix <= k. Original finite sum and rank-only dependence; arbitrary finite fields include both prime branches.",
+      "integration": "Actual ordinary and binary enhanced moments, exact completion counts and row-space event probabilities feed the closed normalized/clipped finite coordinate-state converse over all POVMs. These counts and row events are now actual dependencies of the closed original Main through the physical/frame/fixed-W converse. Separate quotient/coset PGM formula and optimality interfaces retain their scoped statuses."
+    },
+    {
+      "id": "lem:binary-radical-rank-identity",
+      "kind": "lemma",
+      "title": "Binary radical-coupling rank identity",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 8225,
+      "statement_end_line": 8243,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.rank_radical_blocks",
+        "StabilizerLearning.rank_radical_of_normalizers",
+        "StabilizerLearning.radicalKernelEquiv"
+      ],
+      "semantic_scope": "Actual ambient pairs (Q,C), Q symmetric, rank of the full block matrix <= k. Original finite sum and rank-only dependence; arbitrary finite fields include both prime branches.",
+      "integration": "Actual ordinary and binary enhanced moments, exact completion counts and row-space event probabilities feed the closed normalized/clipped finite coordinate-state converse over all POVMs. These counts and row events are now actual dependencies of the closed original Main through the physical/frame/fixed-W converse. Separate quotient/coset PGM formula and optimality interfaces retain their scoped statuses."
+    },
+    {
+      "id": "lem:binary-completion-parameterization",
+      "kind": "lemma",
+      "title": "Explicit binary completion parameterization",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 8287,
+      "statement_end_line": 8302,
+      "formal_status": "Lean_verified_counting_route",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.completionAllEquiv",
+        "StabilizerLearning.completionAllEquiv_rank",
+        "StabilizerLearning.completionFiberRankEquiv",
+        "StabilizerLearning.completionPairsRankEquiv"
+      ],
+      "semantic_scope": "A genuine full-space equivalence with once-chosen proved normalizers, then genuine rank stratification and budget restriction, fully proves the actual count. The source lemma interface quantified over arbitrary externally supplied P/R/S and a single fixed-rank fiber is not separately declared.",
+      "integration": "Actual ordinary and binary enhanced moments, exact completion counts and row-space event probabilities feed the closed normalized/clipped finite coordinate-state converse over all POVMs. These counts and row events are now actual dependencies of the closed original Main through the physical/frame/fixed-W converse. Separate quotient/coset PGM formula and optimality interfaces retain their scoped statuses."
+    },
+    {
+      "id": "lem:integrated-binary-completion-count",
+      "kind": "lemma",
+      "title": "Binary completion count",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 8317,
+      "statement_end_line": 8328,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.binary_completion_count",
+        "StabilizerLearning.card_completionPairs_zero",
+        "StabilizerLearning.card_completionPairs_rank_only"
+      ],
+      "semantic_scope": "Actual ambient pairs (Q,C), Q symmetric, rank of the full block matrix <= k. Original finite sum and rank-only dependence; arbitrary finite fields include both prime branches.",
+      "integration": "Actual ordinary and binary enhanced moments, exact completion counts and row-space event probabilities feed the closed normalized/clipped finite coordinate-state converse over all POVMs. These counts and row events are now actual dependencies of the closed original Main through the physical/frame/fixed-W converse. Separate quotient/coset PGM formula and optimality interfaces retain their scoped statuses."
+    },
+    {
+      "id": "prop:binary-enhanced-bilinear-comparison",
+      "kind": "proposition",
+      "title": "Comparison between enhanced moments and bilinear completions",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 8449,
+      "statement_end_line": 8472,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.binaryEnhancedCoordinatesEquiv",
+        "StabilizerLearning.binaryFiberToCompletion",
+        "StabilizerLearning.binary_forgetful_fiber_card_le",
+        "StabilizerLearning.binaryOccurringFiber_card_le_exact_completion"
+      ],
+      "semantic_scope": "Actual finite sets and uniform matrix PMF; original source statements preserved. K=16q witnesses the permitted field-dependent constant. Includes zero dimensions and characteristic two.",
+      "integration": "Actual finite averages invoke both the proved row-event probabilities and genuine moment-to-completion maps, exact ambient count, Gram-radical identity and prescribed-rank bounds."
+    },
+    {
+      "id": "prop:binary-finite-weighted-completion-reduction",
+      "kind": "proposition",
+      "title": "Binary finite weighted completion reduction",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 8538,
+      "statement_end_line": 8549,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.physicalIdentificationOptimal_eq_binaryCoordinate",
+        "StabilizerLearning.binary_coordinate_probability_completion_reduction",
+        "StabilizerLearning.binary_weighted_support_eq_normalized_average"
+      ],
+      "remaining": "Original binary physical P_id now identified. Exact normalized and clipped finite completion upper bound is closed; general frames and verification remain separate.",
+      "validation": "docs/validation/2026-10-11-physical-coordinate/comparison.json"
+    },
+    {
+      "id": "lem:integrated-binary-lower-block-probability",
+      "kind": "lemma",
+      "title": "Binary row-space probability bound",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 8610,
+      "statement_end_line": 8626,
+      "formal_status": "partial_verified_local_coverage",
+      "curated_dependency_scope": "not_in_main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.rowSpace_event_probability_bound",
+        "StabilizerLearning.exists_uniform_rowSpace_event_constant"
+      ],
+      "remaining": "The finite event probability inequality is covered by F=ZMod 2, r=n-m with constant 32. Absorbing 32^k into a uniform o(n^2) term for k=O(n) remains unformalized."
+    },
+    {
+      "id": "lem:integrated-binary-symmetric-rank-bound",
+      "kind": "lemma",
+      "title": "Uniform binary symmetric-rank bound",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 8633,
+      "statement_end_line": 8643,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.binary_symmetric_rank_bound",
+        "StabilizerLearning.exists_uniform_symmetric_rank_constant"
+      ],
+      "lean_source": "StabilizerLearning/Foundations/RankConsequences.lean",
+      "semantic_scope": "Actual standard Matrix.rank and transpose-symmetric matrices. Constant 4 is independent of field and dimensions; original prime specializations and exponent are preserved.",
+      "integration": "Actual ordinary and binary enhanced moments, exact completion counts and row-space event probabilities feed the closed normalized/clipped finite coordinate-state converse over all POVMs. These counts and row events are now actual dependencies of the closed original Main through the physical/frame/fixed-W converse. Separate quotient/coset PGM formula and optimality interfaces retain their scoped statuses."
+    },
+    {
+      "id": "lem:endpoint-uniform-clipping-passage",
+      "kind": "lemma",
+      "title": "Endpoint-uniform passage through clipping",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 9020,
+      "statement_end_line": 9040,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "prop:elementary-support-dimension",
+      "kind": "proposition",
+      "title": "Elementary support-dimension bound",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 9070,
+      "statement_end_line": 9079,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "lem:appB-character-orthogonality",
+      "kind": "lemma",
+      "title": "Character orthogonality",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 9219,
+      "statement_end_line": 9237,
+      "formal_status": "partial_closed_character_orthogonality",
+      "curated_dependency_scope": "not_in_main_proof_slice",
+      "remaining": "Full-dual hidden character orthogonality and the actual hidden-average block identity are proved. The source one-dimensional and vector standard-character coordinate sum statements have not yet been separately instantiated and checked; do not identify this as full source-node coverage."
+    },
+    {
+      "id": "lem:appB-one-dimensional-Gauss-absolute-value",
+      "kind": "lemma",
+      "title": "Absolute value of a nondegenerate Gauss sum",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 9258,
+      "statement_end_line": 9266,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "lem:appB-congruence-diagonalization",
+      "kind": "lemma",
+      "title": "Congruence diagonalization",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 9303,
+      "statement_end_line": 9314,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "lem:appB-image-kernel-orthogonality",
+      "kind": "lemma",
+      "title": "Image--kernel orthogonality",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 9354,
+      "statement_end_line": 9361,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "prop:appB-degenerate-Gauss-dichotomy",
+      "kind": "proposition",
+      "title": "Degenerate quadratic Gauss-sum dichotomy",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 9373,
+      "statement_end_line": 9389,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "thm:MacWilliams-full-rank-count",
+      "kind": "theorem",
+      "title": "MacWilliams full-rank count",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 9606,
+      "statement_end_line": 9617,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "thm:exact-symmetric-rank-count",
+      "kind": "theorem",
+      "title": "Symmetric matrices of rank \\texorpdfstring{$t$}{t}",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 9660,
+      "statement_end_line": 9670,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "cor:uniform-symmetric-rank-count",
+      "kind": "corollary",
+      "title": "Uniform rank-count bounds",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 9729,
+      "statement_end_line": 9750,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "model:fixed-W-semantics",
+      "kind": "model",
+      "title": "Pure stabilizer states, fixed section cocycle, state-independent report alphabet, POVM optima, independent-copy outcome-averaged verification",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 181,
+      "statement_end_line": 518,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "main_proof_slice"
+    },
+    {
+      "id": "foundation:fixed-W-dimension",
+      "kind": "lemma_obligation",
+      "title": "dim(L∩W⊥)=m+dim(L∩W); deterministic complement extraction",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 224,
+      "statement_end_line": 241,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.finrank_fullTargetSlice",
+        "StabilizerLearning.FixedConstraints.fullReportSubspace_sup",
+        "StabilizerLearning.FixedConstraints.valid_fullStateReport"
+      ],
+      "paper_coverage": "For all actual inputs, dim(L∩W⊥)=m+dim(L∩W), an actual complement K, and phase restriction yielding a valid report are closed, including exceptional inputs.",
+      "remaining": "",
+      "semantic_scope": "For all actual inputs, dim(L∩W⊥)=m+dim(L∩W), an actual complement K, and phase restriction yielding a valid report are closed, including exceptional inputs.",
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json"
+    },
+    {
+      "id": "foundation:pauli-stabilizer",
+      "kind": "foundation_obligation",
+      "title": "Pauli representation, cocycle-compatible character projectors, rank-one stabilizer/Lagrangian correspondence",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 181,
+      "statement_end_line": 217,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.pauli_mul",
+        "StabilizerLearning.Quantum.pauli_conjTranspose_mul_self",
+        "StabilizerLearning.Quantum.assignmentComplexEquiv",
+        "StabilizerLearning.Quantum.nonempty_assignment_of_isIsotropic",
+        "StabilizerLearning.Quantum.complete_jointProjector_family",
+        "StabilizerLearning.Quantum.jointProjector_mulVec_eq_self_iff",
+        "StabilizerLearning.Quantum.stabilizerLabelStateEquiv"
+      ],
+      "remaining": "Closed for the fixed actual XZ section and every prime: arbitrary complex-compatible phases are encoded, all isotropic subspaces have assignments, full projector families and distinct-state/label equivalence. Arbitrary-section gauge transport, Clifford action and total Lagrangian counts are separate obligations.",
+      "validation": "docs/validation/2026-10-11-physical-coordinate/comparison.json"
+    },
+    {
+      "id": "foundation:finite-character-orthogonality",
+      "kind": "foundation_obligation",
+      "title": "Finite additive character orthogonality, including all-prime intrinsic uses",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 9219,
+      "statement_end_line": 9247,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.CharacterEnsemble.hidden_character_average",
+        "StabilizerLearning.CharacterEnsemble.conditioned_apply"
+      ],
+      "remaining": "The listed finite-character orthogonality and actual mixture identities are closed; the physical Pauli representation has been accepted separately."
+    },
+    {
+      "id": "foundation:symplectic-witt",
+      "kind": "external_standard_fact",
+      "title": "Symplectic Witt extension theorem",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 931,
+      "statement_end_line": 934,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "main_proof_slice"
+    },
+    {
+      "id": "foundation:clifford-action",
+      "kind": "external_standard_fact",
+      "title": "Symplectic transformations implemented by Clifford unitaries with correct section phases; transitivity",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1323,
+      "statement_end_line": 1377,
+      "formal_status": "partial_verified_source_scope",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.exists_unitary_pauli_implementation",
+        "StabilizerLearning.Quantum.symplecticStabilizerStateEquiv_density",
+        "StabilizerLearning.FixedConstraints.exists_constraint_symplecticMap",
+        "StabilizerLearning.FixedConstraints.four_optimal_constraint_independent"
+      ],
+      "paper_coverage": "Actual Clifford implementation of symplectic maps for all primes with full section phases, actual transport of isotropic W of the same dimension, and covariance of the four operational optima are closed.",
+      "remaining": "The full stabilizer-group action on the PGM, equal success probability, and minimum-error optimality are listed separately and do not follow automatically from constraint covariance.",
+      "semantic_scope": "Actual Clifford implementation of symplectic maps for all primes with full section phases, actual transport of isotropic W of the same dimension, and covariance of the four operational optima are closed.",
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json"
+    },
+    {
+      "id": "foundation:subspace-counts",
+      "kind": "counting_obligation",
+      "title": "Gaussian binomial counts/bounds, GL basis count, positive infinite-product constant",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 9553,
+      "statement_end_line": 9590,
+      "formal_status": "partial_verified_source_scope",
+      "curated_dependency_scope": "main_proof_slice",
+      "partial_lean_result": {
+        "declaration": "StabilizerLearning.card_rankSubspaces_le",
+        "scope": "Dimension-uniform Grassmann upper bound from genuine independent-frame encoding; full incidence/exact formulas not claimed."
+      },
+      "lean_declarations": [
+        "StabilizerLearning.card_rankSubspaces_mul_card_GL_eq",
+        "StabilizerLearning.card_rankSubspaces_prime_eq_gaussian_product",
+        "StabilizerLearning.card_rankSubspaces_le"
+      ],
+      "remaining": "Positivity and two-sided bounds for the specified infinite product κ, and the Gaussian-product symmetry wrapper r↔n−r, remain open.",
+      "paper_coverage": "An actual independent-ordered-basis bijection gives the exact GL product and literal Gaussian product for the actual Grassmann cardinality; the upper bound with uniform constant 4 is also closed.",
+      "semantic_scope": "An actual independent-ordered-basis bijection gives the exact GL product and literal Gaussian product for the actual Grassmann cardinality; the upper bound with uniform constant 4 is also closed.",
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json"
+    },
+    {
+      "id": "foundation:rectangular-rank-count",
+      "kind": "counting_obligation",
+      "title": "Exact count and dimension-uniform upper bound for rectangular matrices of prescribed rank",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 7745,
+      "statement_end_line": 7757,
+      "formal_status": "partial_verified_local_coverage",
+      "curated_dependency_scope": "main_proof_slice",
+      "partial_lean_result": {
+        "declaration": "StabilizerLearning.rectangular_rank_bound",
+        "scope": "Actual count ≤ 4*q^[L(M+S-L)]. The source coefficient kappa_GL^-1 is not claimed."
+      },
+      "lean_declarations": [
+        "StabilizerLearning.rectangular_rank_bound",
+        "StabilizerLearning.exists_uniform_rectangular_rank_constant",
+        "StabilizerLearning.odd_prime_rectangular_rank_bound",
+        "StabilizerLearning.card_rectangular_rank_le"
+      ],
+      "remaining": "Actual prescribed-rank set has the proved bound 4*q^(L*(M+S-L)). The original exact product count and prescribed inverse kappa_GL coefficient remain open."
+    },
+    {
+      "id": "foundation:symmetric-matrix-cardinality",
+      "kind": "counting_obligation",
+      "title": "Symmetric matrices biject with upper-triangular entries; cardinal q^(d(d+1)/2)",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 7479,
+      "statement_end_line": 7488,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "formal_source": {
+        "file": "StabilizerLearning/Foundations/FiniteCounting.lean",
+        "declarations": [
+          "StabilizerLearning.card_symmetricMatrices_prime",
+          "StabilizerLearning.symmetricMatrixEquivUpperTriangle"
+        ],
+        "semantic_audit": "docs/history/pilot-milestones.md (historical verified report links)",
+        "kernel_build_verification": "docs/validation/2026-10-11-organization",
+        "source_revision_note": "Frozen source hash equals independently rebuilt source hash.",
+        "pre_migration_sha256": "d34dbdb8a74cd5df2f1763237ecc6192b8c055637c17481f5f39df86fa7da5ca",
+        "sha256": "aa10f5856aff983563ecb365fac1e5e8386a75c914892c507d8b7f76dce742a8",
+        "historical_evidence_note": "Pre-migration reports and original SHA retained in d8d2b7f and backup receipts; current validation is in docs/validation/2026-10-11-organization."
+      },
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json",
+      "paper_coverage": "The listed actual results and their actual Main dependencies have been audited; the previously closed lemmas are now integrated into the complete main proof."
+    },
+    {
+      "id": "foundation:character-extension-count",
+      "kind": "counting_obligation",
+      "title": "Compatible character torsor; fixed restriction has p^r extensions",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 5508,
+      "statement_end_line": 5524,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.exists_assignment_extension",
+        "StabilizerLearning.Quantum.card_assignmentRestrictionFiber",
+        "StabilizerLearning.Quantum.card_compatibleAssignments"
+      ],
+      "remaining": "",
+      "validation": "docs/validation/2026-10-11-graded-integration/comparison.json",
+      "semantic_scope": "Surjectivity of restriction for the actual original assignments, exact fibers, and counts of assignments compatible on intersections are closed for all primes.",
+      "paper_coverage": "Surjectivity of restriction for the actual original assignments, exact fibers, and counts of assignments compatible on intersections are closed for all primes."
+    },
+    {
+      "id": "foundation:lagrangian-line-incidence",
+      "kind": "counting_obligation",
+      "title": "Probability a fixed line belongs to a uniform Lagrangian equals 1/(p^n+1)",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1144,
+      "statement_end_line": 1149,
+      "formal_status": "partial_closed_frame_fixedW_scope",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.directionIncidence_nonzero"
+      ],
+      "paper_coverage": "Under the uniform prior on distinct actual stabilizer states, the probability of containing a nonzero direction is exactly 1/(p^n+1).",
+      "remaining": "The literal interface for a uniform-Lagrangian prior alone has not been stated separately; the current actual full-state interface closes the probability needed for the original δ."
+    },
+    {
+      "id": "foundation:exceptional-mass",
+      "kind": "lemma_obligation",
+      "title": "Union bound over lines of W yields delta≤(p^(n−m)−1)/((p−1)(p^n+1))",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1140,
+      "statement_end_line": 1151,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.exceptionalProbability_le",
+        "StabilizerLearning.FixedConstraints.exceptionalProbability_le_inv_pow",
+        "StabilizerLearning.fixedConstraint_exceptionalProbability_tendsto_zero_source"
+      ],
+      "paper_coverage": "The sharp exceptional bound, the p^-m bound, and convergence of the actual δ to zero for positive β are closed under the uniform prior on all actual states, including n=0.",
+      "remaining": ""
+    },
+    {
+      "id": "foundation:finite-PSD-spectral",
+      "kind": "foundation_obligation",
+      "title": "Finite complex PSD spectral calculus, support pseudoinverse/SVD, trace, weak duality",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 5249,
+      "statement_end_line": 5385,
+      "formal_status": "partial_verified_source_scope",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.PGM.supportedSynthesis_adjoint_mul",
+        "StabilizerLearning.Quantum.PGM.supportProjection_idempotent",
+        "StabilizerLearning.Quantum.PGM.supportProjection_mul_synthesis",
+        "StabilizerLearning.Quantum.PGM.born_prettyGoodMeasurement"
+      ],
+      "paper_coverage": "The actual finite PSD spectral inverse square root and support projector, a normalized POVM for a singular Gram matrix, the Gram-square-root success probability, and pointwise energy estimates are closed.",
+      "semantic_scope": "The actual finite PSD spectral inverse square root and support projector, a normalized POVM for a singular Gram matrix, the Gram-square-root success probability, and pointwise energy estimates are closed.",
+      "remaining": "The original PGM-optimality dual certificate within this broader node is not proved.",
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json"
+    },
+    {
+      "id": "foundation:odd-state-moment-bridge",
+      "kind": "model_bridge",
+      "title": "Odd Weyl operators and symmetric-matrix states represent the same physical stabilizer labels",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1472,
+      "statement_end_line": 1799,
+      "formal_status": "partial_closed_physical_task_bridge",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.oddCoordinateTransverseStateEquiv",
+        "StabilizerLearning.Quantum.oddCoordinateTransverseStateEquiv_density",
+        "StabilizerLearning.Quantum.oddCanonicalReportEquiv",
+        "StabilizerLearning.physicalIdentificationOptimal_eq_oddCoordinate"
+      ],
+      "remaining": "Physical states, targets, exact uniform prior and all POVMs are fully identified with the literal source coordinate experiment. The node also covers literal Weyl operator interfaces and overlap statements; those have not all been formalized.",
+      "validation": "docs/validation/2026-10-11-physical-coordinate/comparison.json"
+    },
+    {
+      "id": "foundation:binary-state-moment-bridge",
+      "kind": "model_bridge",
+      "title": "Binary enhanced mod-4 coordinates and phase-corrected physical stabilizer labels",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1819,
+      "statement_end_line": 2292,
+      "formal_status": "partial_closed_physical_task_bridge",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.binaryCoordinateTransverseStateEquiv",
+        "StabilizerLearning.Quantum.binarySourceDensity_eq_transverseState",
+        "StabilizerLearning.Quantum.binaryCanonicalReportEquiv",
+        "StabilizerLearning.physicalIdentificationOptimal_eq_binaryCoordinate"
+      ],
+      "remaining": "Actual all-state, target, prior and all-POVM binary bridge is closed, preserving full ZMod 4 phases. Separate literal W_A/W_C and verifier-projector interfaces in the wider source section remain open.",
+      "validation": "docs/validation/2026-10-11-physical-coordinate/comparison.json"
+    },
+    {
+      "id": "foundation:asymptotic-uniformity",
+      "kind": "asymptotic_obligation",
+      "title": "Uniform O(n) finite errors and polynomial largest-term bound on full feasible domains",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 4910,
+      "statement_end_line": 5195,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.positiveMassAugmented_scalarFeasible",
+        "StabilizerLearning.positiveMassRow_scalarFeasible",
+        "StabilizerLearning.ordinaryFinite_net_le_converseCost",
+        "StabilizerLearning.binaryFinite_net_le_converseCost",
+        "StabilizerLearning.isGreatest_limiting_clipped_objective",
+        "StabilizerLearning.coordinate_probability_le_converseEnvelope",
+        "StabilizerLearning.tendsto_converseRemainder_div_sq",
+        "StabilizerLearning.coordinate_converse_explicit_remainder"
+      ],
+      "semantic_scope": "Complete actual positive-mass support and original finite completion domain. Exact finite-to-real conversion gives ordinary correction at most k and binary correction at most zero, all ranks uniformly; augmented dimension is removed by proved cost monotonicity. The clipped scalar objective has exact maximum -J on the full closed domain. Proved support cardinality and explicit logarithmic remainder yield o(N^2) for every source scaling sequence. alpha=0, beta=1, transition, zero-rank and all finite feasibility boundaries are covered; no universal convergence threshold for all arbitrary little-o sequences is claimed."
+    },
+    {
+      "id": "foundation:slack-optimization",
+      "kind": "scalar_obligation",
+      "title": "Visible-deficit and hidden-gap identities plus B max(c−s,0)+s²/2 minimization",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 4990,
+      "statement_end_line": 5171,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.completion_deficit_slack_identity",
+        "StabilizerLearning.hidden_cost_slack_identity",
+        "StabilizerLearning.converseCost_le_quadratic_deficit",
+        "StabilizerLearning.isGreatest_limiting_clipped_objective"
+      ],
+      "remaining": "Full scalar feasible-domain optimization and attained clipped maximum equal to -J, including all boundary regimes, are closed in the accepted uniform-asymptotic and current physical chain.",
+      "validation": "docs/validation/2026-10-11-physical-coordinate/comparison.json"
+    },
+    {
+      "id": "foundation:rate-infimum",
+      "kind": "asymptotic_obligation",
+      "title": "Exact rate infimum: subunit rate excluded; k=n+ceil(sqrt n) attains rate one",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1382,
+      "statement_end_line": 1395,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.AchievableExactRate.one_le",
+        "StabilizerLearning.FixedConstraints.achievableExactRate_one",
+        "StabilizerLearning.FixedConstraints.exactCopyRate_eq_one"
+      ],
+      "paper_coverage": "The original achievable-rate set has actual witnesses m=floor(βn), k=n+Nat.sqrt n, and valid W; the original liminf=1 and the lower bound ≥1 on all achievable rates give both sInf=1 conclusions.",
+      "semantic_scope": "The original achievable-rate set has actual witnesses m=floor(βn), k=n+Nat.sqrt n, and valid W; the original liminf=1 and the lower bound ≥1 on all achievable rates give both sInf=1 conclusions.",
+      "remaining": "",
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json"
+    },
+    {
+      "id": "external:MacWilliams1969",
+      "kind": "external_reference",
+      "title": "MacWilliams full-rank symmetric count, Theorem 2 pp.154–155; bypassable for main upper bound",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 9606,
+      "statement_end_line": 9624,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "not_in_main_proof_slice"
+    },
+    {
+      "id": "external:Gross2006-Singal2023",
+      "kind": "external_reference",
+      "title": "Total Lagrangian count product_(j=1)^n(p^j+1)",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 1561,
+      "statement_end_line": 1567,
+      "formal_status": "paper_only_not_Lean_verified",
+      "curated_dependency_scope": "main_proof_slice"
+    },
+    {
+      "id": "foundation:scalar-damped-tail",
+      "kind": "asymptotic_obligation",
+      "title": "Finite damped geometric domination and signed copy-overhead to zero limit, including a fixed real coefficient",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 5620,
+      "statement_end_line": 5636,
+      "formal_status": "Lean_verified_statement",
+      "curated_dependency_scope": "main_proof_slice",
+      "formal_source": {
+        "file": "StabilizerLearning/Bounds/Asymptotic.lean",
+        "declarations": [
+          "StabilizerLearning.dampedTail_le",
+          "StabilizerLearning.primeBase_tail_tendsto_zero",
+          "StabilizerLearning.overhead_tendsto",
+          "StabilizerLearning.direct_tail_of_copy_overhead"
+        ],
+        "semantic_audit": "docs/history/pilot-milestones.md (historical verified report links)",
+        "kernel_build_verification": "docs/validation/2026-10-11-organization",
+        "source_revision_note": "Frozen source hash equals independently rebuilt source hash.",
+        "pre_migration_sha256": "0820cb80222368f2d8d74410f9c10b69c8ac32b3746e91003bc82addf42546e3",
+        "sha256": "48cfb87f4e4ef519e85691acb0afa14c4a213f98a2ebe759678482ed915aed7c",
+        "historical_evidence_note": "Pre-migration reports and original SHA retained in d8d2b7f and backup receipts; current validation is in docs/validation/2026-10-11-organization."
+      },
+      "validation": "docs/validation/2026-10-11-direct-integration/comparison.json",
+      "paper_coverage": "The listed actual results and their actual Main dependencies have been audited; the previously closed lemmas are now integrated into the complete main proof."
+    },
+    {
+      "id": "foundation:finite-PSD-basic",
+      "kind": "foundation_obligation",
+      "title": "Hermitian PSD quadratic-form nonnegativity, all-ones outer-product positivity and finite sums",
+      "source_file": "paper/main-stabilizer2.tex",
+      "statement_start_line": 3752,
+      "statement_end_line": 3783,
+      "formal_status": "partial_verified_local_coverage",
+      "curated_dependency_scope": "main_proof_slice",
+      "lean_declarations": [
+        "StabilizerLearning.MatrixOptimization.blockQuadratic_eq_real",
+        "StabilizerLearning.MatrixOptimization.entry_re_le_diagonal",
+        "StabilizerLearning.MatrixOptimization.rankOneSeed_posSemidef",
+        "StabilizerLearning.MatrixOptimization.blockValue_eq_sum"
+      ],
+      "remaining": "The listed concrete PSD and finite-sum lemmas are closed; actual PGM support-spectrum and normalization proofs are now also available."
+    }
+  ],
+  "edges": [
+    {
+      "from": "model:fixed-W-semantics",
+      "to": "thm:fixed-W-no-discount",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1397,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:fixed-W-operational-comparison",
+      "to": "thm:fixed-W-no-discount",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1397,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:refined-exact-converse",
+      "to": "thm:fixed-W-no-discount",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1397,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:exceptional-mass",
+      "to": "thm:fixed-W-no-discount",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1397,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:generic-fixed-W-Bayes-verification-converse",
+      "to": "thm:fixed-W-no-discount",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1397,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "cor:full-fixed-W-verification-converse",
+      "to": "thm:fixed-W-no-discount",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1397,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:complete-identification-achievability",
+      "to": "thm:fixed-W-no-discount",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1397,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:fixed-W-dimension",
+      "to": "thm:fixed-W-no-discount",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1397,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:fixed-W-dimension-only-covariance",
+      "to": "thm:fixed-W-no-discount",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1397,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:rate-infimum",
+      "to": "thm:fixed-W-no-discount",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1397,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:pauli-stabilizer",
+      "to": "model:fixed-W-semantics",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 181,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:fixed-W-dimension",
+      "to": "model:fixed-W-semantics",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 181,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:clifford-action",
+      "to": "prop:fixed-W-dimension-only-covariance",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1314,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:pauli-stabilizer",
+      "to": "prop:fixed-W-dimension-only-covariance",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1314,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:pauli-stabilizer",
+      "to": "foundation:fixed-W-dimension",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 224,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:lagrangian-line-incidence",
+      "to": "foundation:exceptional-mass",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1140,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:subspace-counts",
+      "to": "foundation:exceptional-mass",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1140,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "external:Gross2006-Singal2023",
+      "to": "foundation:lagrangian-line-incidence",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1144,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:chartwise-comparison-after-revelation",
+      "to": "thm:fixed-W-operational-comparison",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1153,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "cor:chartwise-fixed-frame-optima",
+      "to": "thm:fixed-W-operational-comparison",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1153,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:uniform-frame-generic-decomposition",
+      "to": "thm:fixed-W-operational-comparison",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1153,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:uniform-frame-generic-decomposition",
+      "to": "prop:chartwise-comparison-after-revelation",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1018,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:fixed-W-frame-target-equivalence",
+      "to": "cor:chartwise-fixed-frame-optima",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1061,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:frame-conditioned-coordinate-reduction",
+      "to": "cor:chartwise-fixed-frame-optima",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1061,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:fixed-W-ordered-completion-regularity",
+      "to": "lem:uniform-frame-generic-decomposition",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 978,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:fixed-W-generic-lagrangian-transitivity",
+      "to": "lem:fixed-W-ordered-completion-regularity",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 938,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:subspace-counts",
+      "to": "lem:fixed-W-ordered-completion-regularity",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 938,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:symplectic-witt",
+      "to": "lem:fixed-W-generic-lagrangian-transitivity",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 894,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:fixed-W-dimension",
+      "to": "lem:fixed-W-frame-target-equivalence",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 810,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:clifford-action",
+      "to": "prop:frame-conditioned-coordinate-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 639,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:odd-state-moment-bridge",
+      "to": "prop:frame-conditioned-coordinate-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 639,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:binary-state-moment-bridge",
+      "to": "prop:frame-conditioned-coordinate-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 639,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:frame-conditioned-coordinate-reduction",
+      "to": "thm:refined-exact-converse",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 704,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:converse-common-asymptotic-reduction",
+      "to": "thm:refined-exact-converse",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 704,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:converse-odd-prime-finite-structural-estimate",
+      "to": "thm:converse-common-asymptotic-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4872,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:converse-binary-finite-structural-estimate",
+      "to": "thm:converse-common-asymptotic-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4872,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:asymptotic-uniformity",
+      "to": "thm:converse-common-asymptotic-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4872,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:slack-optimization",
+      "to": "thm:converse-common-asymptotic-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4872,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:converse-weighted-probability-completion-reduction",
+      "to": "thm:converse-odd-prime-finite-structural-estimate",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4600,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:uniform-completion-bound",
+      "to": "thm:converse-odd-prime-finite-structural-estimate",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4600,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "cor:all-prime-augmented-row-space-event-bound",
+      "to": "thm:converse-odd-prime-finite-structural-estimate",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4600,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:converse-weighted-probability-completion-reduction",
+      "to": "thm:converse-binary-finite-structural-estimate",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4717,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:binary-finite-weighted-completion-reduction",
+      "to": "thm:converse-binary-finite-structural-estimate",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4717,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:integrated-binary-symmetric-rank-bound",
+      "to": "thm:converse-binary-finite-structural-estimate",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4717,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:rectangular-rank-count",
+      "to": "thm:converse-binary-finite-structural-estimate",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4717,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:all-prime-row-space-event-bound",
+      "to": "thm:converse-binary-finite-structural-estimate",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4717,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:converse-weighted-moment-fiber-reduction",
+      "to": "thm:converse-weighted-probability-completion-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3943,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:visible-to-ambient-completion",
+      "to": "thm:converse-weighted-probability-completion-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3943,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:exact-ambient-completion-count",
+      "to": "thm:converse-weighted-probability-completion-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3943,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:common-Gram-radical-rank",
+      "to": "thm:converse-weighted-probability-completion-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3943,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:binary-enhanced-bilinear-comparison",
+      "to": "thm:converse-weighted-probability-completion-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3943,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:integrated-binary-completion-count",
+      "to": "thm:converse-weighted-probability-completion-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3943,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "cor:abstract-theorem-all-prime-application",
+      "to": "prop:converse-weighted-moment-fiber-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4021,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:unreported-moment-cosets",
+      "to": "prop:converse-weighted-moment-fiber-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4021,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:binary-annihilator-cosets",
+      "to": "prop:converse-weighted-moment-fiber-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4021,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:detailed-seed-solution",
+      "to": "cor:abstract-theorem-all-prime-application",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3865,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:conditioned-average-block-form",
+      "to": "cor:abstract-theorem-all-prime-application",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3865,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:binary-conditioned-average-block-form",
+      "to": "cor:abstract-theorem-all-prime-application",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3865,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:covariant-seed-reduction",
+      "to": "thm:detailed-seed-solution",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3619,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:coset-fixed-diagonal",
+      "to": "thm:detailed-seed-solution",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3619,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:blockwise-seed-optimum",
+      "to": "thm:detailed-seed-solution",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3619,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:finite-PSD-spectral",
+      "to": "thm:detailed-seed-solution",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3619,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:finite-character-orthogonality",
+      "to": "lem:covariant-seed-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3652,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:finite-character-orthogonality",
+      "to": "lem:coset-fixed-diagonal",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3707,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:finite-PSD-basic",
+      "to": "lem:blockwise-seed-optimum",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3752,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:orbit-moment-expansion",
+      "to": "prop:conditioned-average-block-form",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3215,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:unreported-moment-cosets",
+      "to": "prop:conditioned-average-block-form",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3215,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:uniform-partial-labels",
+      "to": "prop:conditioned-average-block-form",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3215,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:finite-character-orthogonality",
+      "to": "prop:conditioned-average-block-form",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3215,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:binary-orbit-moment-expansion",
+      "to": "prop:binary-conditioned-average-block-form",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3444,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:binary-annihilator-cosets",
+      "to": "prop:binary-conditioned-average-block-form",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3444,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:finite-character-orthogonality",
+      "to": "prop:binary-conditioned-average-block-form",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3444,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:odd-state-moment-bridge",
+      "to": "lem:orbit-moment-expansion",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3061,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:binary-tuple-phase-factorization",
+      "to": "lem:binary-orbit-moment-expansion",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3346,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:binary-state-moment-bridge",
+      "to": "lem:binary-tuple-phase-factorization",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 3296,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:symmetric-matrix-cardinality",
+      "to": "lem:uniform-partial-labels",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 2410,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:transverse-symmetric-matrix-normal-form",
+      "to": "foundation:odd-state-moment-bridge",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1472,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:odd-eigenvalue-character",
+      "to": "foundation:odd-state-moment-bridge",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1472,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:fixed-A-orthonormality",
+      "to": "foundation:odd-state-moment-bridge",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1472,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:pauli-stabilizer",
+      "to": "lem:odd-eigenvalue-character",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1599,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:finite-character-orthogonality",
+      "to": "lem:fixed-A-orthonormality",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1671,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:integrated-qubit-symmetric-matrix-representation",
+      "to": "foundation:binary-state-moment-bridge",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1819,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:qubit-intrinsic-coordinate-report-bridge",
+      "to": "foundation:binary-state-moment-bridge",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1819,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:integrated-qubit-announced-representation",
+      "to": "lem:qubit-intrinsic-coordinate-report-bridge",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 2080,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:pauli-stabilizer",
+      "to": "lem:integrated-qubit-announced-representation",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 2041,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:pauli-stabilizer",
+      "to": "lem:integrated-qubit-symmetric-matrix-representation",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1984,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:subspace-counts",
+      "to": "prop:all-prime-prescribed-radical-bound",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4223,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:all-prime-prescribed-radical-bound",
+      "to": "prop:all-prime-row-space-event-bound",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4302,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:all-prime-prescribed-radical-bound",
+      "to": "cor:all-prime-augmented-row-space-event-bound",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 4341,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:exact-ambient-completion-count",
+      "to": "prop:uniform-completion-bound",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 7892,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:symmetric-rank-bound",
+      "to": "prop:uniform-completion-bound",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 7892,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:rectangular-rank-count",
+      "to": "prop:uniform-completion-bound",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 7892,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:first-congruence",
+      "to": "prop:exact-ambient-completion-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 7447,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Source proof route; verified concrete kernel dependencies are in completion-lean-dependencies.json."
+    },
+    {
+      "from": "lem:radical-rank-identity",
+      "to": "prop:exact-ambient-completion-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 7447,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Source proof route; verified concrete kernel dependencies are in completion-lean-dependencies.json."
+    },
+    {
+      "from": "lem:completion-bijective-parameterization",
+      "to": "prop:exact-ambient-completion-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 7447,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Source proof route; verified concrete kernel dependencies are in completion-lean-dependencies.json."
+    },
+    {
+      "from": "foundation:symmetric-matrix-cardinality",
+      "to": "prop:exact-ambient-completion-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 7447,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Source proof route; verified concrete kernel dependencies are in completion-lean-dependencies.json."
+    },
+    {
+      "from": "lem:first-congruence",
+      "to": "lem:completion-bijective-parameterization",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 7416,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Source proof route; verified concrete kernel dependencies are in completion-lean-dependencies.json."
+    },
+    {
+      "from": "lem:radical-rank-identity",
+      "to": "lem:completion-bijective-parameterization",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 7416,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Source proof route; verified concrete kernel dependencies are in completion-lean-dependencies.json."
+    },
+    {
+      "from": "foundation:rectangular-rank-count",
+      "to": "lem:symmetric-rank-bound",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 7764,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Paper proof route. The verified Lean proof uses compression, independent frames, and a finite GL product; see rank-lean-dependencies.json."
+    },
+    {
+      "from": "foundation:subspace-counts",
+      "to": "lem:symmetric-rank-bound",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 7764,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Paper proof route. The verified Lean proof uses compression, independent frames, and a finite GL product; see rank-lean-dependencies.json."
+    },
+    {
+      "from": "foundation:symmetric-matrix-cardinality",
+      "to": "lem:symmetric-rank-bound",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 7764,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Paper proof route. The verified Lean proof uses compression, independent frames, and a finite GL product; see rank-lean-dependencies.json."
+    },
+    {
+      "from": "foundation:subspace-counts",
+      "to": "foundation:rectangular-rank-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 7745,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:binary-Schur-reduction",
+      "to": "lem:integrated-binary-completion-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 8317,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Source proof route; verified concrete kernel dependencies are in completion-lean-dependencies.json."
+    },
+    {
+      "from": "lem:binary-radical-rank-identity",
+      "to": "lem:integrated-binary-completion-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 8317,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Source proof route; verified concrete kernel dependencies are in completion-lean-dependencies.json."
+    },
+    {
+      "from": "lem:binary-completion-parameterization",
+      "to": "lem:integrated-binary-completion-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 8317,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Source proof route; verified concrete kernel dependencies are in completion-lean-dependencies.json."
+    },
+    {
+      "from": "foundation:symmetric-matrix-cardinality",
+      "to": "lem:integrated-binary-completion-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 8317,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Source proof route; verified concrete kernel dependencies are in completion-lean-dependencies.json."
+    },
+    {
+      "from": "lem:binary-Schur-reduction",
+      "to": "lem:binary-completion-parameterization",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 8287,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Source proof route; verified concrete kernel dependencies are in completion-lean-dependencies.json."
+    },
+    {
+      "from": "lem:binary-radical-rank-identity",
+      "to": "lem:binary-completion-parameterization",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 8287,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Source proof route; verified concrete kernel dependencies are in completion-lean-dependencies.json."
+    },
+    {
+      "from": "foundation:binary-state-moment-bridge",
+      "to": "prop:binary-enhanced-bilinear-comparison",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 8449,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:common-Gram-radical-rank",
+      "to": "prop:binary-enhanced-bilinear-comparison",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 8449,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:converse-weighted-moment-fiber-reduction",
+      "to": "prop:binary-finite-weighted-completion-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 8538,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "prop:binary-enhanced-bilinear-comparison",
+      "to": "prop:binary-finite-weighted-completion-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 8538,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:integrated-binary-completion-count",
+      "to": "prop:binary-finite-weighted-completion-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 8538,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:common-Gram-radical-rank",
+      "to": "prop:binary-finite-weighted-completion-reduction",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 8538,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:subspace-counts",
+      "to": "lem:integrated-binary-symmetric-rank-bound",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 8633,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Paper proof route. The verified Lean proof uses compression, independent frames, and a finite GL product; see rank-lean-dependencies.json."
+    },
+    {
+      "from": "foundation:symmetric-matrix-cardinality",
+      "to": "lem:integrated-binary-symmetric-rank-bound",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 8633,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed",
+      "route_note": "Paper proof route. The verified Lean proof uses compression, independent frames, and a finite GL product; see rank-lean-dependencies.json."
+    },
+    {
+      "from": "thm:generic-original-bounded-rank-graded-to-exact",
+      "to": "thm:generic-fixed-W-Bayes-verification-converse",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1258,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:generic-original-list-count",
+      "to": "thm:generic-fixed-W-Bayes-verification-converse",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1258,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:fixed-W-operational-comparison",
+      "to": "thm:generic-fixed-W-Bayes-verification-converse",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1258,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:refined-exact-converse",
+      "to": "thm:generic-fixed-W-Bayes-verification-converse",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1258,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:generic-fixed-W-Bayes-verification-converse",
+      "to": "cor:full-fixed-W-verification-converse",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1288,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:exceptional-mass",
+      "to": "cor:full-fixed-W-verification-converse",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 1288,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:generic-bayes-bounded-list-conversion",
+      "to": "thm:generic-original-bounded-rank-graded-to-exact",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 6633,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:generic-original-score-spectrum",
+      "to": "thm:generic-original-bounded-rank-graded-to-exact",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 6633,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:pauli-stabilizer",
+      "to": "lem:generic-original-score-spectrum",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 6424,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:finite-character-orthogonality",
+      "to": "lem:generic-original-score-spectrum",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 6424,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:subspace-counts",
+      "to": "lem:generic-original-list-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 6582,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:character-extension-count",
+      "to": "lem:generic-original-list-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 6582,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:pauli-stabilizer",
+      "to": "foundation:character-extension-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5508,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:finite-character-orthogonality",
+      "to": "foundation:character-extension-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5508,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:unrestricted-stabilizer-direct",
+      "to": "thm:complete-identification-achievability",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 393,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "cor:statewise-fixed-W-achievability",
+      "to": "thm:complete-identification-achievability",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 393,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:transitive-pure-pgm",
+      "to": "thm:unrestricted-stabilizer-direct",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5595,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:transitive-pgm-overlap-energy",
+      "to": "thm:unrestricted-stabilizer-direct",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5595,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:unrestricted-stabilizer-overlaps",
+      "to": "thm:unrestricted-stabilizer-direct",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5595,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:lagrangian-intersection-shells",
+      "to": "thm:unrestricted-stabilizer-direct",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5595,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:subspace-counts",
+      "to": "thm:unrestricted-stabilizer-direct",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5595,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:clifford-action",
+      "to": "thm:unrestricted-stabilizer-direct",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5595,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:finite-PSD-spectral",
+      "to": "thm:transitive-pure-pgm",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5239,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:transitive-pure-pgm",
+      "to": "lem:transitive-pgm-overlap-energy",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5392,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:finite-PSD-spectral",
+      "to": "lem:transitive-pgm-overlap-energy",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5392,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:pauli-stabilizer",
+      "to": "lem:unrestricted-stabilizer-overlaps",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5452,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:finite-character-orthogonality",
+      "to": "lem:unrestricted-stabilizer-overlaps",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5452,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:character-extension-count",
+      "to": "lem:unrestricted-stabilizer-overlaps",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5452,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:subspace-counts",
+      "to": "lem:lagrangian-intersection-shells",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5527,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:symmetric-matrix-cardinality",
+      "to": "lem:lagrangian-intersection-shells",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5527,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "lem:transverse-symmetric-matrix-normal-form",
+      "to": "lem:lagrangian-intersection-shells",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5527,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:unrestricted-stabilizer-direct",
+      "to": "cor:statewise-fixed-W-achievability",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5652,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:fixed-W-dimension",
+      "to": "cor:statewise-fixed-W-achievability",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5652,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:clifford-action",
+      "to": "cor:statewise-fixed-W-achievability",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5652,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "external:MacWilliams1969",
+      "to": "thm:MacWilliams-full-rank-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 9606,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:MacWilliams-full-rank-count",
+      "to": "thm:exact-symmetric-rank-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 9660,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:subspace-counts",
+      "to": "thm:exact-symmetric-rank-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 9660,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "thm:exact-symmetric-rank-count",
+      "to": "cor:uniform-symmetric-rank-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 9729,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:subspace-counts",
+      "to": "cor:uniform-symmetric-rank-count",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 9729,
+        "basis": "manual reading of proof and required unnumbered bridge; see dependency-audit.md"
+      },
+      "status": "not_Lean_closed"
+    },
+    {
+      "from": "foundation:scalar-damped-tail",
+      "to": "thm:unrestricted-stabilizer-direct",
+      "relation": "proof_dependency",
+      "evidence": {
+        "source_file": "paper/main-stabilizer2.tex",
+        "dependent_statement_line": 5595,
+        "proof_lines": [
+          5620,
+          5636
+        ],
+        "basis": "explicit finite scalar geometric bound in direct proof"
+      },
+      "status": "not_Lean_closed"
+    }
+  ],
+  "overview_file": "docs/main-dependency-overview.md",
+  "overview_status": "Exact original Main is proved and passes identical-source Mac clean/Linux fresh audit; separate paper interfaces retain scoped statuses.",
+  "validation": {
+    "acyclic": true,
+    "node_ids_unique": true,
+    "closed_pilot_nodes": 3,
+    "main_theorem_formalized": true,
+    "main_theorem_axiom_audit": "Exact-type strict gate passed; full recursive allowlist audit passed.",
+    "source_hashes_match_clean_build": true,
+    "closed_rank_source_statements": 3,
+    "closed_completion_source_statements": 6,
+    "verified_completion_counting_route_variants": 2,
+    "closed_rowspace_moment_source_statements": 6,
+    "main_statement_typechecked": true,
+    "organization_stage_evidence": "docs/validation/2026-10-11-organization/index.json",
+    "physical_bridge_stage_evidence": "docs/validation/2026-10-11-physical-coordinate/comparison.json"
+  },
+  "rank_update": {
+    "verified_at": "2026-10-11T02:57:48.452526+00:00",
+    "closed_source_statements": [
+      "lem:symmetric-rank-bound",
+      "lem:integrated-binary-symmetric-rank-bound",
+      "cor:symmetric-rank-partial-sum"
+    ],
+    "paths_to_main": {
+      "lem:symmetric-rank-bound": [
+        "lem:symmetric-rank-bound",
+        "prop:uniform-completion-bound",
+        "thm:converse-odd-prime-finite-structural-estimate",
+        "thm:converse-common-asymptotic-reduction",
+        "thm:refined-exact-converse",
+        "thm:fixed-W-no-discount"
+      ],
+      "lem:integrated-binary-symmetric-rank-bound": [
+        "lem:integrated-binary-symmetric-rank-bound",
+        "thm:converse-binary-finite-structural-estimate",
+        "thm:converse-common-asymptotic-reduction",
+        "thm:refined-exact-converse",
+        "thm:fixed-W-no-discount"
+      ]
+    },
+    "real_Lean_chain": [
+      "geometric_product_lower",
+      "card_GL_lower",
+      "card_rankSubspaces_le",
+      "symmetric_rank_bound",
+      "symmetric_rank_partial_sum",
+      "completion_rank_slice_symmetric_bound"
+    ],
+    "full_expression_chain": [
+      "symmetric_rank_bound",
+      "rectangular_rank_bound",
+      "completion_rank_summand_bound",
+      "completion_count_expression_bound"
+    ],
+    "main_theorem_complete": false
+  },
+  "completion_update": {
+    "verified_at": "2026-10-11T03:19:02.665550+00:00",
+    "closed_source_statements": [
+      "lem:first-congruence",
+      "lem:radical-rank-identity",
+      "prop:exact-ambient-completion-count",
+      "lem:binary-Schur-reduction",
+      "lem:binary-radical-rank-identity",
+      "lem:integrated-binary-completion-count"
+    ],
+    "verified_counting_route_variants": [
+      "lem:binary-completion-parameterization",
+      "lem:completion-bijective-parameterization"
+    ],
+    "actual_completion_count_complete": true,
+    "moment_realizable_count_exact": false,
+    "main_theorem_complete": false,
+    "public_count": "StabilizerLearning.card_completionPairs_eq_source",
+    "public_bound": "StabilizerLearning.completionPairs_count_bound"
+  },
+  "rowspace_update": {
+    "verified_at": "2026-10-11T03:40:09.773875+00:00",
+    "closed_source_statements": [
+      "prop:all-prime-prescribed-radical-bound",
+      "prop:all-prime-row-space-event-bound",
+      "cor:all-prime-augmented-row-space-event-bound",
+      "lem:common-Gram-radical-rank",
+      "lem:visible-to-ambient-completion",
+      "prop:binary-enhanced-bilinear-comparison"
+    ],
+    "actual_moment_maps_complete": true,
+    "binary_enhanced_lift_complete": true,
+    "actual_row_event_bounds_complete": true,
+    "actual_finite_average_complete": true,
+    "operational_weighted_success_bound_complete": false,
+    "main_theorem_complete": false
+  },
+  "physical_update": {
+    "frozen_commit": "ce043d6c1de0cda69dc3ed6163aedf23717833a5",
+    "validation": "docs/validation/2026-10-11-physical-coordinate/comparison.json",
+    "main_complete": false,
+    "standard_physical_P_id_to_common_J_closed": true,
+    "all_primes": true,
+    "all_POVMs": true,
+    "source_assumptions_preserved": true,
+    "critical_equivalences_are_premises": false
+  },
+  "semantic_milestones": {
+    "phase-completeness": {
+      "proof_status": "Dependencies closed",
+      "paper_coverage": "Full equivalence between arbitrary original compatible complex-phase assignments and the finite ZMod(2p) encoding; the root-of-unity condition follows from compatibility.",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.eigenPhase_injective",
+        "StabilizerLearning.Quantum.complexAssignment_pow_two_mul",
+        "StabilizerLearning.Quantum.assignmentComplexEquiv"
+      ],
+      "remaining": "All primes and zero dimension; no claim of gauge transport for an arbitrary section."
+    },
+    "pauli-representation": {
+      "proof_status": "Dependencies closed",
+      "paper_coverage": "Multiplication, unitarity, trace, and commutation for isotropic assignments in the actual XZ section are proved.",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.pauli_mul",
+        "StabilizerLearning.Quantum.pauli_conjTranspose_mul_self",
+        "StabilizerLearning.Quantum.trace_pauli_conjTranspose_mul",
+        "StabilizerLearning.Quantum.pauli_commute_of_isIsotropic"
+      ],
+      "remaining": "The original XZ section is fixed; actual Clifford implementation of arbitrary symplectic transformations with full phase correction is now proved."
+    },
+    "projectors": {
+      "proof_status": "Dependencies closed",
+      "paper_coverage": "The complete projector family over all original assignments: existence, exact count, orthogonality, resolution of the identity, joint eigenspaces, and exact ranks.",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.complete_jointProjector_family",
+        "StabilizerLearning.Quantum.jointProjector_mulVec_eq_self_iff",
+        "StabilizerLearning.Quantum.assignmentMeasurement"
+      ],
+      "remaining": "Assignment existence and resolution of the identity are closed within the proof, without an externally supplied reference assignment."
+    },
+    "stabilizer-ensemble": {
+      "proof_status": "Dependencies closed",
+      "paper_coverage": "A bijection between all valid Lagrangian labels and the original distinct pure stabilizer density matrices.",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.stabilizerLabelStateEquiv",
+        "StabilizerLearning.Quantum.labelProjector_injective",
+        "StabilizerLearning.Quantum.labelProjector_isPureStabilizer"
+      ],
+      "remaining": "A closed formula for the total number of all Lagrangians or all states is not yet proved; the correspondence stated by this node is closed."
+    },
+    "section-bridges": {
+      "proof_status": "Checked",
+      "paper_coverage": "Actual P_id for standard and arbitrary public frames, the original fixed-W finite exact comparison, and uniform J are closed, preserving the complete target and all POVMs.",
+      "lean_declarations": [
+        "StabilizerLearning.physicalIdentificationOptimal_eq_coordinate",
+        "StabilizerLearning.physicalCanonicalTarget_surjective",
+        "StabilizerLearning.physical_common_converse_source",
+        "StabilizerLearning.Quantum.referenceIdentificationOptimal_eq_physical",
+        "StabilizerLearning.fixedConstraint_exact_uniform_converse"
+      ],
+      "remaining": "The literal phase-adjusted Weyl/W_A/W_C operators, named verifier operators, and interfaces specific to refined verification remain partially open; the original physical bridges, complete converse, direct result, and Main have been accepted."
+    },
+    "nonempty": {
+      "proof_status": "Dependencies closed",
+      "paper_coverage": "Nonemptiness of the original stabilizer input set, reports for every valid W, and the set of all learner POVMs is established by construction.",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.stabilizerState_nonempty",
+        "StabilizerLearning.FixedConstraints.nonempty_report",
+        "StabilizerLearning.FixedConstraints.nonempty_learner"
+      ],
+      "remaining": "Actual nonemptiness is proved; nonempty report or measurement sets are not added as new hypotheses."
+    },
+    "exact-criterion": {
+      "proof_status": "Dependencies closed",
+      "paper_coverage": "The original physical Valid predicate is exactly equivalent to containment of K in the input Lagrangian and restriction of the assignment; multiple correct reports for exceptional inputs are retained.",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.valid_iff_label_restriction",
+        "StabilizerLearning.FixedConstraints.valid_iff_reportProjector_mul_eq_self",
+        "StabilizerLearning.FixedConstraints.verificationPayoff_eq_one_iff_valid"
+      ],
+      "remaining": "The complete original report event is closed; it is not replaced by a canonical label, and target uniqueness is not assumed."
+    },
+    "probabilities": {
+      "proof_status": "Dependencies closed",
+      "paper_coverage": "Positivity and normalization of the original tensorPower density, actual Born weights, [0,1] bounds for pointwise scores, both aggregations, and all four optima, and the sharp affine comparison are closed.",
+      "lean_declarations": [
+        "StabilizerLearning.Quantum.tensorPower_posSemidef",
+        "StabilizerLearning.Quantum.trace_tensorPower",
+        "StabilizerLearning.FixedConstraints.sum_learner_born",
+        "StabilizerLearning.FixedConstraints.performance_mem_Icc",
+        "StabilizerLearning.FixedConstraints.optimal_mem_Icc",
+        "StabilizerLearning.FixedConstraints.optimal_worstCase_le_average",
+        "StabilizerLearning.FixedConstraints.optimal_verification_le_affine_exact"
+      ],
+      "remaining": "The sup_M inf_x order and the original uniform prior on distinct states are preserved; actual fixed-W report/learner nonemptiness is also proved in this round."
+    },
+    "luders-reduction": {
+      "proof_status": "Dependencies closed",
+      "paper_coverage": "The original normalization on positive-probability branches, zero-probability branches, averaging over all assignments, score exactly one for correct reports, and score ≤1/p for incorrect reports are proved without assuming the key bounds.",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.verificationPayoff_eq_born",
+        "StabilizerLearning.FixedConstraints.verificationConditionalScore_mem_Icc",
+        "StabilizerLearning.FixedConstraints.verificationPayoff_eq_one_iff_valid",
+        "StabilizerLearning.FixedConstraints.verificationPayoff_le_inv_prime_of_not_valid",
+        "StabilizerLearning.FixedConstraints.optimal_exact_eq_one_iff_verification_eq_one"
+      ],
+      "remaining": "The averaged identity does not assert equality of conditional scores for each ν. A fixed 1/p remainder cannot imply convergence to zero; the original verification converse is now closed using actual phase-compatible lists and a tail that vanishes with D."
+    },
+    "covariance-rates": {
+      "proof_status": "Dependencies closed",
+      "paper_coverage": "Covariance over all W, all POVMs, an actual rate-one witness, both original liminf/sInf exact rates, and the original Main are closed.",
+      "lean_declarations": [
+        "StabilizerLearning.FixedConstraints.four_optimal_constraint_independent",
+        "StabilizerLearning.FixedConstraints.achievableExactRate_one",
+        "StabilizerLearning.FixedConstraints.exactCopyRate_eq_one",
+        "StabilizerLearning.fixedW_noCopyRateDiscount"
+      ],
+      "remaining": ""
+    }
+  },
+  "frame_fixedW_validation": "docs/validation/2026-10-11-frame-fixedw/comparison.json",
+  "graded_validation": {
+    "record": "docs/validation/2026-10-11-graded-integration/comparison.json",
+    "frozen_commit": "583897b83f2714c9b1a4d27fb1cfd2fc988ee7e8",
+    "entire_original_converse_closed": true,
+    "main_complete": false
+  },
+  "direct_validation": {
+    "record": "docs/validation/2026-10-11-direct-integration/comparison.json",
+    "frozen_commit": "6d17da20d7a7625333ecf87d23824f031a01a6ae",
+    "main_complete": true,
+    "exact_type": "StabilizerLearning.FixedWNoCopyRateDiscount"
+  }
+}

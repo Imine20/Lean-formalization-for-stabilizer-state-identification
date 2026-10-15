@@ -1,0 +1,29 @@
+{
+  "frozen_source_commit": "08c15fea0aca23c8b8b93839551a222dfa83f857",
+  "scope": "uniform coordinate asymptotic converse; original physical comparison and fixed-W main remain open",
+  "files_sha256": {
+    "README.md": "bdd930be88723106688da90ea6f21639a2c99581858e2c8c176963b34e71856d",
+    "backup-receipt.json": "cc29a67782aaa15e62cae0dc4bb19f72449adca351156d7eaa7ee42661b22bf8",
+    "cloud/Cli-fetch.log": "1e2c67895abcbc87a404cc41fbb2f4261e5075698d1f9dfb14d0b7fdfb1f385e",
+    "cloud/LeanSearchClient-fetch.log": "ff0ca4bdc03a926eed899053aa38b18673cc8461d915f1ed3ca1a9524984eeca",
+    "cloud/Qq-fetch.log": "17523d50e427d3b072359fc7c5d224229724c1ea8809122e65d7d74c842efd78",
+    "cloud/aesop-fetch.log": "265c876a349c0661f7aeff08a190f2f758b72673fb4661ba906d426dcaaf3cbd",
+    "cloud/axioms.log": "46fe2ce44868349e74b7eb1feeeda9f55cc2d9c328c2f3d3000c1dc7812e533a",
+    "cloud/batteries-fetch.log": "cb24356fe8309c9c36d81d725306ce52613abd026c697d184d675efb24e18bdd",
+    "cloud/build.log": "ab6e7b90087386082230837f3307588649b6e536a508b856853918d783eaebb2",
+    "cloud/cache.log": "39440f40a4b3ff6be4ad3623ba964b1f3d75fa009a493d6e3917009d0a8753be",
+    "cloud/importGraph-fetch.log": "3c27ff3d5297f61abbed18cd5a6b3b2208a0d0944b362ba0e75728c8ff2ef881",
+    "cloud/main-release-gate.log": "94e9c5ec4f100d3c1f52a11b60d4688008f7e9b44c25384257880900b034abc5",
+    "cloud/mathlib-fetch.log": "4dddf689d4d14ec7ba34c9b57726a5fd7e81dd433f83df64a640898d26b5f55a",
+    "cloud/plausible-fetch.log": "8b006ddcd3a83a573732a8e52862b81d8418cf384cb436aeec4d9ea583770972",
+    "cloud/proofwidgets-fetch.log": "893f7a72b079a5115e47f8a8c387ab5e9b0b52bd9a2daf7bbd9ce6dcd8a88739",
+    "cloud/reproduction.json": "2b1d18a5f52b9d62f72d027ad04221516d7d0af69b98257fba8e35ac974e2ba3",
+    "compare.py": "4c5d19e9b56c2e3b2a2773a6f6dc67aed5434886adbb1897a0545f973ae75e96",
+    "comparison.json": "04d8fca88728e8340cb4695682964b22a81ab9365902ee7d5f6bcb9ed2cefea3",
+    "local/axioms.log": "46fe2ce44868349e74b7eb1feeeda9f55cc2d9c328c2f3d3000c1dc7812e533a",
+    "local/build.log": "b7769a809ad43d82c9f01e5cbe532a1d2bd774fae3e1c2854bf49f6df1bd7030",
+    "local/check.json": "a5b223f0157ba36ec1f0e5ef2bb01aa64d73b975e275c8bc2250cb7ea625fc32",
+    "local/main-release-gate.log": "94e9c5ec4f100d3c1f52a11b60d4688008f7e9b44c25384257880900b034abc5",
+    "semantic-review.json": "f252776cb0ddedf2b2a861fd286e0aa08bc2ee5bea19a8852ebf4da413e4359f"
+  }
+}

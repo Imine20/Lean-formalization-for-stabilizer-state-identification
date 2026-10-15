@@ -1,0 +1,78 @@
+[
+  {
+    "target": "StabilizerLearning.FixedConstraints.learner_born_nonneg",
+    "dependency": "StabilizerLearning.Quantum.tensorPower_posSemidef"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.sum_learner_born",
+    "dependency": "StabilizerLearning.Quantum.trace_tensorPower"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationStatewise_mem_Icc",
+    "dependency": "StabilizerLearning.FixedConstraints.verificationPayoff_mem_Icc"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.exactStatewise_le_verificationStatewise",
+    "dependency": "StabilizerLearning.FixedConstraints.verificationPayoff_eq_one_of_valid"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationStatewise_le_affine_exact",
+    "dependency": "StabilizerLearning.FixedConstraints.verificationPayoff_le_inv_prime_of_not_valid"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationStatewise_le_affine_exact",
+    "dependency": "StabilizerLearning.FixedConstraints.sum_learner_born"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.performance_mem_Icc",
+    "dependency": "StabilizerLearning.FixedConstraints.stabilizerState_nonempty"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.performance_worstCase_le_average",
+    "dependency": "StabilizerLearning.FixedConstraints.stabilizerState_nonempty"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationPerformance_le_affine_exact",
+    "dependency": "StabilizerLearning.FixedConstraints.verificationStatewise_le_affine_exact"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.optimal_mem_Icc",
+    "dependency": "StabilizerLearning.FixedConstraints.performance_mem_Icc"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.optimal_worstCase_le_average",
+    "dependency": "StabilizerLearning.FixedConstraints.performance_worstCase_le_average"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.optimal_exact_le_verification",
+    "dependency": "StabilizerLearning.FixedConstraints.exactPerformance_le_verificationPerformance"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.stabilizerState_nonempty",
+    "dependency": "StabilizerLearning.Quantum.nonempty_assignment_of_isIsotropic"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.optimal_verification_le_affine_exact",
+    "dependency": "StabilizerLearning.FixedConstraints.verificationPerformance_le_affine_exact"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.optimal_verification_le_affine_exact",
+    "dependency": "StabilizerLearning.FixedConstraints.performance_mem_Icc"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.optimal_exact_eq_one_iff_verification_eq_one",
+    "dependency": "StabilizerLearning.FixedConstraints.optimal_verification_le_affine_exact"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.optimal_exact_eq_one_iff_verification_eq_one",
+    "dependency": "StabilizerLearning.FixedConstraints.optimal_exact_le_verification"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.optimal_exact_eq_one_iff_verification_eq_one",
+    "dependency": "StabilizerLearning.FixedConstraints.optimal_mem_Icc"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.optimal_verification_le_affine_exact",
+    "dependency": "Real.sSup_empty"
+  }
+]

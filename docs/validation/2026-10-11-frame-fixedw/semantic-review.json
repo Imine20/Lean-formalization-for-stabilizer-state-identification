@@ -1,0 +1,58 @@
+{
+  "scope": "Arbitrary announced frame, original distinct states and full assignments, all collective POVMs; original fixed-W finite exact comparison, actual exceptional mass, and original uniform exact converse with W-independent remainder",
+  "frozen_commit": "ff7e57b13fb0bae723c48f969daf72fef590f972",
+  "result": "pass_no_blocking_semantic_issue_found",
+  "reviewers": [
+    "frame_geometry: independent review of Clifford implementation, state incidence and original fixed-W comparisons",
+    "clifford_implementation: independent review of reference transports and final uniform-converse quantifiers",
+    "root: integration and original paper/public-definition correspondence"
+  ],
+  "reviewed_files_sha256": {
+    "StabilizerLearning/Quantum/ReferenceChart.lean": "4287506870bd952e4e7b366499ce484353339c6ca25a1f24af734b54325f10b9",
+    "StabilizerLearning/Quantum/ReferenceVerification.lean": "768133d1867c49af505361114b232916bc8e6f30a448748eb4e577b6571fb8df",
+    "StabilizerLearning/Quantum/CliffordImplementation.lean": "6d701cb4e0f9025ba6deb67edea3808c89138a21bebe63e0c11322132f246454",
+    "StabilizerLearning/Quantum/CliffordStates.lean": "1727c8712810a7464b6885f24f71978f72387f49efb7c1f68843d2fabc134a16",
+    "StabilizerLearning/Quantum/SymplecticTransitivity.lean": "f417143237c18e9f3441bbcf72cb58f3bd17962b3993005c0dd5d60b957c4dcd",
+    "StabilizerLearning/Quantum/StabilizerIncidence.lean": "696c2ef3bca54c727a40324fc082e7ba64cc32fb696b1554d8ad2276202768b5",
+    "StabilizerLearning/FixedConstraints/OperationalComparison.lean": "baa6052cf9afab996f4e694f3ac959e34f4817336e075c4fc5237aa98ce53525",
+    "StabilizerLearning/FixedConstraints/ExceptionalProbability.lean": "37132569cff2834b12db21206010160f670dc4a84ffe70a188357208cfff51fc",
+    "StabilizerLearning/Bounds/ReferenceConverse.lean": "07bc12453a983b29c113df6b0dc4084fd36eeb344bc23f37c64e2f4d0975f1af",
+    "StabilizerLearning/Bounds/FixedConstraintConverse.lean": "e93a6c089e80838e0be484edc81b6f357a39ac3371da6a5e62747f5e4bd201e1"
+  },
+  "preserved_source_files": {
+    "paper/main-stabilizer2.tex": "c172bf686f08d7c0b643fa45b29323ba07416c494db6531edd5990fced34bd61",
+    "StabilizerLearning/Main.lean": "8590061e1a175697333ab9c7aadf19cae093fca4f4043dfc9fdce1291a73c02e",
+    "StabilizerLearning/Quantum/Finite.lean": "a9698c12fcae47c964fc532102abbca80bde69855d39856c66872a74910455fc",
+    "StabilizerLearning/Quantum/Pauli.lean": "51905c8eed26d3c343d8269a38267c5b8c379d933ec79171b51d4d4bbe2d7d0e",
+    "StabilizerLearning/Quantum/Stabilizer.lean": "00eb0c655930879fb9efe38d6f81ae7dd9a5e015c392b99679666d4f988d775d",
+    "StabilizerLearning/FixedConstraints/Rates.lean": "38dfbbe055c71bd7384abd6de79d85e11e7f84adb93a1b6fd3b9648df40bd357",
+    "StabilizerLearning/FixedConstraints/Task.lean": "9c9d9e5c3b38e0c9b1e111b9e45775f4dc06736b3c19a1820d40fb6738498c42"
+  },
+  "independent_review_documents": {
+    "docs/validation/2026-10-11-frame-fixedw/semantic-review-converse.md": "6805eb8e814cedf2e8bae82e068acc1ce081530b9817df1357a81a57a545c333",
+    "docs/validation/2026-10-11-frame-fixedw/semantic-review-geometry.md": "5cd1c65ceafa29366ad72060eb452c7d09663ccc10d92995c4ee92299183a066",
+    "docs/validation/2026-10-11-frame-fixedw/semantic-review-transport.md": "9ceee9b6ca0135e4ccca1512cba112c8de311ff066cae4d3e3b71e9f9bf71c39"
+  },
+  "specific_checks": [
+    "State and report domains are original intrinsic subtypes, not coordinate images; prior counts distinct density matrices.",
+    "Symplectic frame standardization and actual unitary XZ Pauli implementation are proved; full phase cocycle is transported including p=2.",
+    "A true equivalence of all k-copy POVMs preserves exact and verification scores; worst-case keeps sup over measurements outside inf over inputs.",
+    "Actual generic target uniqueness, pointwise-W symplectic transitivity, positive constant completion degree and incidence probability are proved.",
+    "Full basis-free exact POVMs are coarsened to chart reports; inverse pushforward is proved. No alphabet equality is asserted for verification.",
+    "Actual full uniform exceptional probability has sharp first-moment bound and p^-m bound, with n=0 handled.",
+    "Original n,m,k constraints suffice for finite operational comparison; no genericity, incidence, comparison or probability premise.",
+    "Final Rates interface uses the original definitions: common e and C=1 precede eventual forall W, and both exact UniformLimit epsilon thresholds are shared across all W.",
+    "All prime, zero-copy, zero-dimensional finite transport/comparison boundaries remain legal. Uniform converse covers original alpha=0, beta=1 and alpha+beta=1.",
+    "Original Main, Task, Rates, Finite, Pauli, Stabilizer and paper bytes are unchanged."
+  ],
+  "scope_limits": [
+    "Original ordered-completion tuple count |GL(m)| p^(m(n-m)) is not separately formalized: exact operational conclusion is closed by the actual unordered-Lagrangian incidence route.",
+    "Reference-frame verification transport is not an equality of full basis-free fixed-W verification and refined verification optima.",
+    "Lueders score and spectrum do not prove the compatible-list near-event bound or verification asymptotic decay; nearReportProbability lacks phase compatibility.",
+    "Unrestricted direct construction, state-uniform direct limit, dimension-only fixed-W covariance, exact rates and final Main theorem remain open.",
+    "The original full-prior average retains p^-m; no pure quadratic J decay rate is claimed for that objective.",
+    "StabilizerEquivalence.lean contains an outdated non-semantic comment about label existence, now proved separately in AssignmentExistence. The underlying source is retained unchanged."
+  ],
+  "main_theorem_complete": false,
+  "build_status": "Recorded separately in comparison.json; this document is a semantic review, not a clean-build certificate."
+}

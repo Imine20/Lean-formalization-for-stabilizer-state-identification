@@ -1,0 +1,8 @@
+{
+  "git_commit": "6d17da20d7a7625333ecf87d23824f031a01a6ae",
+  "time": "2026-10-11T10:42:11.266333+00:00",
+  "project_oleans_before_build": 0,
+  "command": "scripts/lake.sh clean",
+  "dependencies": "existing pinned official cache",
+  "platform": "Darwin-arm64"
+}

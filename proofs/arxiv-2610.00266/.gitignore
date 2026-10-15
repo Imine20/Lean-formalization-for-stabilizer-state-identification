@@ -1,0 +1,5 @@
+.lake/
+.toolchain/
+Scratch/
+artifacts/
+__pycache__/

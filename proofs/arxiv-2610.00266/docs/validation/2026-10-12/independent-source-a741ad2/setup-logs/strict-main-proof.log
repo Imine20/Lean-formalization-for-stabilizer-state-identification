@@ -1,0 +1,6 @@
+compiler 0 0.04
+build 0 2242.731
+axioms 0 88.674
+pilot_types 0 5978.976
+release 0 105.064
+{"status": "pass", "scope": "main_release", "paper_main_complete": true, "record": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/acceptance/result.json"}

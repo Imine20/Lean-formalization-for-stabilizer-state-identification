@@ -1,0 +1,141 @@
+{
+  "result": "pass",
+  "checked_at": "2026-10-11T09:52:23.887702+00:00",
+  "peer_frozen_commit": "583897b83f2714c9b1a4d27fb1cfd2fc988ee7e8",
+  "local_integration_commit": "9c6bacadd5fd4231f0e59955e17e565e17b7b56e",
+  "frozen_inputs_identical_across_three_runs": true,
+  "formal_input_files": 160,
+  "mac_project_clean_and_two_cloud_checks_passed": true,
+  "fresh_project_oleans_before_build": 0,
+  "fresh_dependencies_and_cache_independent": true,
+  "compiler_reused_and_version_archive_pin_checked": true,
+  "complete_audit_logs_byte_identical": true,
+  "audit_sha256": "8e22415ed360e727c7313e1605bc6a87e0d0e5e7710ee9fd0e7b41b8b0bfb195",
+  "received_cloud_evidence_hashes_verified": true,
+  "theorem_declarations_audited": 2434,
+  "total_declarations_audited": 3060,
+  "required_transitive_proof_links": 283,
+  "independent_semantic_review": "no unresolved blocker",
+  "original_public_definitions_and_paper_unchanged": true,
+  "axiom_allowlist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "closed_scope": "Original compatible-list Bayes reduction, graded comparison and full original converse component, including all four uniform limits to zero.",
+  "main_theorem_complete": false,
+  "main_release": "correctly rejected: statement_only",
+  "mac_steps": [
+    {
+      "args": [
+        "build"
+      ],
+      "seconds": 305.634,
+      "exit_code": 0,
+      "log": "build.log"
+    },
+    {
+      "args": [
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "seconds": 1055.622,
+      "exit_code": 0,
+      "log": "axioms.log"
+    },
+    {
+      "args": [
+        "env",
+        "lean",
+        "scripts/ReleaseAudit.lean"
+      ],
+      "seconds": 20.416,
+      "exit_code": 1,
+      "log": "main-release-gate.log"
+    }
+  ],
+  "cloud_steps": [
+    {
+      "command": [
+        "lake",
+        "exe",
+        "cache",
+        "get",
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Algebra.Field.ZMod",
+        "Mathlib.Algebra.Group.Equiv.Basic",
+        "Mathlib.Analysis.Asymptotics.Lemmas",
+        "Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality",
+        "Mathlib.Analysis.Matrix.Order",
+        "Mathlib.Analysis.SpecialFunctions.Complex.Circle",
+        "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar",
+        "Mathlib.Analysis.SpecialFunctions.Log.Base",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Analysis.SpecificLimits.Basic",
+        "Mathlib.Data.Fin.Tuple.Basic",
+        "Mathlib.Data.Matrix.Block",
+        "Mathlib.Data.Nat.Sqrt",
+        "Mathlib.Data.Sym.Card",
+        "Mathlib.Data.Sym.Sym2.Order",
+        "Mathlib.Data.ZMod.Basic",
+        "Mathlib.FieldTheory.Finiteness",
+        "Mathlib.GroupTheory.Index",
+        "Mathlib.LinearAlgebra.Basis.Prod",
+        "Mathlib.LinearAlgebra.Basis.VectorSpace",
+        "Mathlib.LinearAlgebra.BilinearForm.Orthogonal",
+        "Mathlib.LinearAlgebra.Dimension.Constructions",
+        "Mathlib.LinearAlgebra.Dimension.Free",
+        "Mathlib.LinearAlgebra.Dual.Lemmas",
+        "Mathlib.LinearAlgebra.Eigenspace.Triangularizable",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas",
+        "Mathlib.LinearAlgebra.Matrix.Basis",
+        "Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Card",
+        "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+        "Mathlib.LinearAlgebra.Matrix.PosDef",
+        "Mathlib.LinearAlgebra.Matrix.Rank",
+        "Mathlib.LinearAlgebra.Matrix.Reindex",
+        "Mathlib.LinearAlgebra.Matrix.SchurComplement",
+        "Mathlib.LinearAlgebra.Matrix.Symmetric",
+        "Mathlib.LinearAlgebra.Matrix.ToLin",
+        "Mathlib.LinearAlgebra.Matrix.Trace",
+        "Mathlib.LinearAlgebra.Pi",
+        "Mathlib.LinearAlgebra.Projection",
+        "Mathlib.LinearAlgebra.Quotient.Basic",
+        "Mathlib.LinearAlgebra.UnitaryGroup",
+        "Mathlib.Order.ConditionallyCompleteLattice.Finset",
+        "Mathlib.Order.LiminfLimsup",
+        "Mathlib.Order.Preorder.Finite",
+        "Mathlib.Probability.Distributions.Uniform",
+        "Mathlib.Tactic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Topology.Algebra.Order.LiminfLimsup"
+      ],
+      "seconds": 92.445,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "seconds": 276.017,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "seconds": 1950.997,
+      "exit_code": 0
+    }
+  ],
+  "fresh_cloud_total_seconds": 2334.636,
+  "remaining_scope": "Unrestricted direct, all four uniform limits to one, copy-rate identities and original Main; separately tracked exact Gaussian shells/refined-verification/covariance interfaces."
+}

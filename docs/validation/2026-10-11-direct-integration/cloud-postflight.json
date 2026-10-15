@@ -1,0 +1,102 @@
+{
+  "checked_at": "2026-10-11T11:30:20.880020+00:00",
+  "frozen_commit": "6d17da20d7a7625333ecf87d23824f031a01a6ae",
+  "fresh_directory": "/data/lean/StabilizerLearning-clean-20261011-direct-6d17da2",
+  "packages_directory_is_symlink": false,
+  "cache_directory_is_symlink": false,
+  "packages": [
+    {
+      "name": "mathlib",
+      "expected_rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "actual_rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": ""
+    },
+    {
+      "name": "plausible",
+      "expected_rev": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "actual_rev": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": ""
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected_rev": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "actual_rev": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": ""
+    },
+    {
+      "name": "importGraph",
+      "expected_rev": "d768126816be17600904726ca7976b185786e6b9",
+      "actual_rev": "d768126816be17600904726ca7976b185786e6b9",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": ""
+    },
+    {
+      "name": "proofwidgets",
+      "expected_rev": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "actual_rev": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": ""
+    },
+    {
+      "name": "aesop",
+      "expected_rev": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "actual_rev": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": ""
+    },
+    {
+      "name": "Qq",
+      "expected_rev": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "actual_rev": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": ""
+    },
+    {
+      "name": "batteries",
+      "expected_rev": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "actual_rev": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": ""
+    },
+    {
+      "name": "Cli",
+      "expected_rev": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "actual_rev": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": ""
+    }
+  ],
+  "compiler_version": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "compiler_archive_actual_sha256": "b14f5e5159219dd1a1956c3b806813319f5e94ccd5bdfd56f54520609a5bb5ec",
+  "evidence_sha256": {
+    "reproduction.json": "4dc3bfbf2165e22a79db1b33755fc43f6d632850040c9ad761f8e421d5143882",
+    "logs/build.log": "9316bf97cde140fb9c4183fdc9c77a84ea3eda69bbb6c31c03c1cf939726a16d",
+    "logs/axioms.log": "582de57787468bcfdb132eeb7a7f895127a1751c9b7ed0a6cdcc5fc3217b7b73",
+    "logs/main-release-gate.log": "4d962027fd0d87a239bef40dba431a7370932f9385ef9676017ba618422d9442",
+    "logs/cache.log": "5747bb2d8adc148b31f3605796f7992acac9384ee36f3bc023005766ccb450c6"
+  },
+  "storage": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/vda2        40G   34G  4.4G  89% /\n/dev/vdb1       196G   87G  108G  45% /data",
+  "memory": "total        used        free      shared  buff/cache   available\nMem:            30Gi       660Mi       5.4Gi       2.0Mi        24Gi        29Gi\nSwap:             0B          0B          0B",
+  "resource_policy": "One final whole-proof Linux fresh reproduction on /data; separate Mac whole-root clean check. Earlier PGM-only runs are supplementary, not identical-source final acceptance."
+}

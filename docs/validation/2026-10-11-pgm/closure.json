@@ -1,0 +1,16 @@
+{
+  "frozen_commit": "a1f4d122949298a9f8dd465dd16f5680287cb275",
+  "validation": "docs/validation/2026-10-11-pgm/comparison.json",
+  "actual_normalized_POVM": true,
+  "singular_support_handled": true,
+  "original_state_vector_tensor_bridge": true,
+  "actual_Gram_Born_identity": true,
+  "statewise_overlap_energy_bound": true,
+  "critical_matrix_or_probability_bounds_are_premises": false,
+  "original_definitions_changed": false,
+  "project_root_imports_PGM": true,
+  "original_full_Main_proved_in_this_frozen_package": false,
+  "paper_transitive_PGM_optimality_complete": false,
+  "paper_transitive_average_error_fixed_center_wrapper_complete": false,
+  "status": "dependencies_closed_after_clean_build_and_full_axiom_audit"
+}

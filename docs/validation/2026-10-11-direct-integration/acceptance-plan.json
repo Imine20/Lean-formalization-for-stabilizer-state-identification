@@ -1,0 +1,34 @@
+{
+  "frozen_commit": "6d17da20d7a7625333ecf87d23824f031a01a6ae",
+  "recorded_at": "2026-10-11T10:49:06.109913+00:00",
+  "independent_semantic_review": "pass_no_blocking_semantic_issue_found",
+  "review_documents_sha256": {
+    "docs/pgm-semantic-review.md": "b6801a37807741947bffe8f8c21e9e8caa132b19b5d4676f24c5ae3573c2d914",
+    "docs/pgm-peer-shell-review.md": "4dbb6c84d04a3004e006cffd5713daec7a2aa2cbea535b6bcd6227e7ae53bbba",
+    "docs/pgm-peer-overlap-review.md": "d25fba7fd52c18bb9417936867fef2f605277393238ebe4e724c50ebf67d237f",
+    "docs/direct-main-semantic-review.md": "cae08f2b80616b7ae95fe66f67d80c3b995a97276e50f1d17a3b8d385ca84869",
+    "docs/direct-main-semantic-review-source.json": "095d86bd2f4c79d8433d5f84849b7fb4399976c34d22ad20a8168d78c2644777",
+    "docs/validation/2026-10-11-direct-final/semantic-review-fixedw.md": "6b3f3f435279720fb18513b0404c7323353291dee98a860e2fd3ac17e8cc09ce",
+    "docs/validation/2026-10-11-direct-final/source-bindings.json": "4ce1f1c5c209ddf0f0e5d1c00a3f862e32a24f21e8aa3b24a9871a1fa13b30aa",
+    "docs/validation/2026-10-11-direct/semantic-review-covariance-shell-product.md": "5b58a826d257524e8afad64892d10e810ab18a24041480bff1547948b3cb5417",
+    "docs/validation/2026-10-11-direct-integration/independent-review.md": "4a525099d65f2b5c8750655e39cbeb8e10727718e24a1e51652c3c3491f5d499",
+    "docs/validation/2026-10-11-direct-identification/semantic-review-paper-coverage.md": "95780cfd836eedd3cf3eff5789815776ea70814d051359b88982b8e56008611d"
+  },
+  "acceptance_required": [
+    "Mac zero-project-artifact root build",
+    "Linux fresh exact-dependency independent official-cache root build",
+    "all declarations recursive axiom audit on both",
+    "strict exact original Main type on both",
+    "identical frozen formal/tooling inputs and complete audit logs",
+    "actual proof-term transitive dependency checks and extracted paths",
+    "source statement/public definition preservation"
+  ],
+  "clean_environment_scope": "Independent project and dependency directories/cache on existing Linux host; reused version- and archive-SHA-checked compiler. Mac project artifacts also cleared; lake clean additionally caused source recompilation of imported mathlib dependencies. No full OS/bootstrap rebuild claimed.",
+  "not_claimed": [
+    "whole paper auxiliary theorem coverage",
+    "PGM minimum-error optimality/equal success",
+    "paper specified kappa constants",
+    "Gaussian product symmetry wrapper",
+    "GitHub synchronization by this process"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "papers": [
+    {
+      "arxiv": "2609.13923",
+      "label": "lean proof of https://arxiv.org/abs/2609.13923",
+      "status": "complete_original_main_verified",
+      "entry": "proofs/arxiv-2609.13923/README.md",
+      "lake_project": ".",
+      "theorem": "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "target": "StabilizerLearning.FixedWNoCopyRateDiscount"
+    },
+    {
+      "arxiv": "2610.00266",
+      "label": "lean proof of https://arxiv.org/abs/2610.00266",
+      "status": "independently_verified_frozen_source",
+      "entry": "proofs/arxiv-2610.00266/README.md",
+      "lake_project": "proofs/arxiv-2610.00266",
+      "source_commit": "a741ad2633d99a28fb4bbbe86e3a9a0ac5b7970b",
+      "evidence_container": "eb39f8270ea0bb736b388748c456c5b0ab7fee16",
+      "theorems": [
+        "ExactCriticalCurve.finiteSpectrum",
+        "ExactCriticalCurve.criticalCurve",
+        "ExactCriticalCurve.criticalCurveTails"
+      ],
+      "additional_interfaces": [
+        "ExactCriticalCurve.Asymptotics.paperStochasticGroup_order",
+        "ExactCriticalCurve.Asymptotics.criticalSpectralMass",
+        "ExactCriticalCurve.Asymptotics.physicalExceptionalAmplitude_le_inverse_dimension"
+      ],
+      "verification_requirement": "Independent server checks and both exact-content GitHub jobs must pass before merge.",
+      "independent_source_evidence": "proofs/arxiv-2610.00266/docs/validation/2026-10-12/independent-source-a741ad2/independent-source-binding.json"
+    }
+  ]
+}

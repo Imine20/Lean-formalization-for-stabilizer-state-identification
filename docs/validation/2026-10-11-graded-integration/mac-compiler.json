@@ -1,0 +1,6 @@
+{
+  "checked_at": "2026-10-11T09:42:43.902597+00:00",
+  "compiler_archive_actual_sha256": "17ee554702c199fc03f37b1c3708245671c93f5d932dcff55a03fa6cdb5e5adf",
+  "compiler_version": "Lean (version 4.24.0, arm64-apple-darwin23.6.0, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "existing_pinned_compiler_reused": true
+}

@@ -1,0 +1,61 @@
+{
+  "name": "aesop",
+  "url": "https://github.com/leanprover-community/aesop",
+  "expected_revision": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+  "commands": [
+    {
+      "command": [
+        "git",
+        "init"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 0.007846176973544061
+    },
+    {
+      "command": [
+        "git",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/aesop"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 0.0036729429848492146
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "-c",
+        "http.version=HTTP/1.1",
+        "fetch",
+        "--depth=1",
+        "origin",
+        "725ac8cd67acd70a7beaf47c3725e23484c1ef50"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 14.03673761896789
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "checkout",
+        "--detach",
+        "725ac8cd67acd70a7beaf47c3725e23484c1ef50"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 0.03216321102809161
+    }
+  ],
+  "started_at": "2026-10-12T12:54:30.400610+00:00",
+  "result": "pass",
+  "ended_at": "2026-10-12T12:54:44.494086+00:00",
+  "log_sha256": "5ab3560fcf62bd4acb9851909576080c0989caf2800fc6b64160ad691a50a3e7"
+}

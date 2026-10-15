@@ -1,0 +1,1099 @@
+✔ [3169/3304] Built ExactCriticalCurve.Foundations.MatrixTensorPower (5.7s)
+✔ [3170/3304] Built ExactCriticalCurve.Foundations.PowerSum (5.0s)
+✔ [3172/3307] Built ExactCriticalCurve.Counting.Complements (8.2s)
+✔ [3175/3307] Built ExactCriticalCurve.FiniteQuadratic.MetabolicCore (8.4s)
+✔ [3177/3424] Built ExactCriticalCurve.Foundations.QuotientPointedLift (8.5s)
+✔ [3178/3424] Built ExactCriticalCurve.Counting.AffineContainment (8.8s)
+✔ [3179/3424] Built ExactCriticalCurve.Binary.Quadratic (9.7s)
+✔ [3181/3461] Built ExactCriticalCurve.Counting.FunctionOrbits (10s)
+✔ [3183/3461] Built ExactCriticalCurve.Quantum.Finite (5.0s)
+✔ [3184/3461] Built ExactCriticalCurve.Foundations.MatrixSpectrum (6.6s)
+✔ [3185/3461] Built ExactCriticalCurve.FiniteQuadratic.Quotient (4.2s)
+⚠ [3186/3461] Built ExactCriticalCurve.Foundations.PositiveFrameSupport (5.0s)
+warning: ExactCriticalCurve/Foundations/PositiveFrameSupport.lean:75:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.matrix_range_smul`:
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ExactCriticalCurve/Foundations/PositiveFrameSupport.lean:80:10: This simp argument is unused:
+  Matrix.mulVecLin_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.m̵u̵l̵V̵e̵c̵L̵i̵n̵_̵a̵p̵p̵l̵y̵,̵ ̵M̵a̵t̵r̵i̵x̵.̵smul_mulVec]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/Foundations/PositiveFrameSupport.lean:80:34: This simp argument is unused:
+  Matrix.smul_mulVec
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mulVecLin_apply,̵ ̵M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵V̵e̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3187/3461] Built ExactCriticalCurve.Foundations.PointedQuotientAutomorphisms (4.0s)
+✔ [3188/3461] Built ExactCriticalCurve.Quantum.FiniteGroupProjection (5.8s)
+✔ [3189/3461] Built ExactCriticalCurve.Foundations.TensorTrace (3.8s)
+✔ [3190/3461] Built ExactCriticalCurve.FiniteQuadratic.ZeroCounting (7.2s)
+✔ [3191/3461] Built ExactCriticalCurve.Foundations.SurjectiveBinaryVector (3.2s)
+✔ [3192/3461] Built ExactCriticalCurve.Foundations.MatrixTensorFamily (2.9s)
+✔ [3194/3461] Built ExactCriticalCurve.Foundations.PullbackRank (4.8s)
+✔ [3196/3461] Built ExactCriticalCurve.Foundations.NonnegativeTriangular (4.2s)
+✔ [3197/3461] Built ExactCriticalCurve.Counting.PointedHyperplanes (4.7s)
+✔ [3198/3461] Built ExactCriticalCurve.Quantum.BornProbability (6.5s)
+✔ [3199/3461] Built ExactCriticalCurve.Counting.BinaryGaussian (9.0s)
+✔ [3200/3461] Built ExactCriticalCurve.Binary.QuadraticPhase (9.9s)
+✔ [3201/3461] Built ExactCriticalCurve.Binary.Coordinates (8.8s)
+✔ [3202/3461] Built ExactCriticalCurve.Foundations.GramFrame (7.2s)
+✔ [3204/3461] Built ExactCriticalCurve.Foundations.SqrtTrace (9.4s)
+⚠ [3205/3461] Built ExactCriticalCurve.Foundations.MatrixPolynomialSupport (6.3s)
+warning: ExactCriticalCurve/Foundations/MatrixPolynomialSupport.lean:31:17: This simp argument is unused:
+  Pi.add_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵,̵ ̵P̵olynomial.eval_add, Complex.ofReal_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3206/3461] Built ExactCriticalCurve.Foundations.MatrixTensorFixed (3.8s)
+✔ [3207/3461] Built ExactCriticalCurve.Quantum.PureProjection (5.6s)
+✔ [3208/3461] Built ExactCriticalCurve.Binary.Geometry (17s)
+✔ [3209/3462] Built ExactCriticalCurve.Counting.BinaryQBinomial (4.6s)
+✔ [3210/3462] Built ExactCriticalCurve.Quantum.WeakDuality (4.9s)
+✔ [3211/3462] Built ExactCriticalCurve.Quantum.CosetProjection (18s)
+✔ [3212/3462] Built ExactCriticalCurve.Foundations.PointedQuotientBlocks (9.5s)
+✔ [3213/3462] Built ExactCriticalCurve.Quantum.PGM.ColumnMeasurement (7.0s)
+✔ [3214/3462] Built ExactCriticalCurve.Binary.QuadraticPhaseBasis (5.7s)
+✔ [3215/3462] Built ExactCriticalCurve.FiniteQuadratic.MetabolicQuotient (13s)
+✔ [3216/3462] Built ExactCriticalCurve.Foundations.PositiveSumRanges (4.6s)
+⚠ [3217/3462] Built ExactCriticalCurve.Foundations.MatrixProjectionGrades (5.7s)
+warning: ExactCriticalCurve/Foundations/MatrixProjectionGrades.lean:14:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.matrixProjection_mem_range_iff`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ExactCriticalCurve/Foundations/MatrixProjectionGrades.lean:39:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.matrixProjection_posSemidef`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ExactCriticalCurve/Foundations/MatrixProjectionGrades.lean:44:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.matrixProjection_sub_isHermitian`:
+  [Fintype ι]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ExactCriticalCurve/Foundations/MatrixProjectionGrades.lean:110:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.matrixProjectionGrade_isHermitian`:
+  [Fintype ι]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ExactCriticalCurve/Foundations/MatrixProjectionGrades.lean:158:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.matrixProjectionGrade_sum`:
+  [Fintype ι]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3218/3462] Built ExactCriticalCurve.Binary.DefectFamilies (6.0s)
+⚠ [3219/3462] Built ExactCriticalCurve.Binary.MixedSignature (10s)
+warning: ExactCriticalCurve/Binary/MixedSignature.lean:56:31: This simp argument is unused:
+  signatureRow
+
+Hint: Omit it from the simp argument list.
+  simp [signatureSwitch_apply,̵ ̵s̵i̵g̵n̵a̵t̵u̵r̵e̵R̵o̵w̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/Binary/MixedSignature.lean:67:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3220/3462] Built ExactCriticalCurve.Counting.DefectFibers (10s)
+✔ [3221/3462] Built ExactCriticalCurve.Foundations.BinaryOrthonormalBasis (11s)
+✔ [3223/3462] Built ExactCriticalCurve.Quantum.PGM.SupportedSynthesis (12s)
+⚠ [3224/3462] Built ExactCriticalCurve.Counting.GNWCoefficients (6.9s)
+warning: ExactCriticalCurve/Counting/GNWCoefficients.lean:28:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.Counting.stabilizerPhaseWeight_coefficients`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ExactCriticalCurve/Counting/GNWCoefficients.lean:47:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ExactCriticalCurve/Counting/GNWCoefficients.lean:47:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ExactCriticalCurve/Counting/GNWCoefficients.lean:73:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.Counting.shiftedBinaryProduct_step`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ExactCriticalCurve/Counting/GNWCoefficients.lean:82:16: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ExactCriticalCurve/Counting/GNWCoefficients.lean:82:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ExactCriticalCurve/Counting/GNWCoefficients.lean:82:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ExactCriticalCurve/Counting/GNWCoefficients.lean:100:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ExactCriticalCurve/Counting/GNWCoefficients.lean:107:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ExactCriticalCurve/Counting/GNWCoefficients.lean:153:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3225/3462] Built ExactCriticalCurve.Counting.BinaryNewtonQBinomial (4.7s)
+⚠ [3226/3462] Built ExactCriticalCurve.Counting.BinaryGaussianProduct (4.6s)
+warning: ExactCriticalCurve/Counting/BinaryGaussianProduct.lean:29:62: This simp argument is unused:
+  pow_one
+
+Hint: Omit it from the simp argument list.
+  simp only [̵b̵i̵n̵a̵r̵y̵G̵a̵u̵s̵s̵i̵a̵n̵_̵z̵e̵r̵o̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵a̵d̵d̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵m̵u̵l̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵p̵o̵w̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵f̵N̵a̵t̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵n̵e̵,̵N̵a̵t̵.̵z̵e̵r̵o̵_̵a̵d̵d̵,̵N̵a̵t̵.̵s̵u̵b̵_̵z̵e̵r̵o̵,̵p̵o̵w̵_̵o̵n̵e̵,̵o̵n̵e̵_̵m̵u̵l̵,̵p̵o̵w̵_̵s̵u̵c̵c̵]̵[̲b̲i̲n̲a̲r̲y̲G̲a̲u̲s̲s̲i̲a̲n̲_̲z̲e̲r̲o̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲a̲d̲d̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲m̲u̲l̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲p̲o̲w̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲o̲f̲N̲a̲t̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲o̲n̲e̲,̲ ̲N̲a̲t̲.̲z̲e̲r̲o̲_̲a̲d̲d̲,̲ ̲N̲a̲t̲.̲s̲u̲b̲_̲z̲e̲r̲o̲,̲ ̲o̲n̲e̲_̲m̲u̲l̲,̲ ̲p̲o̲w̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3227/3462] Built ExactCriticalCurve.Binary.StochasticIsometry (12s)
+✔ [3228/3462] Built ExactCriticalCurve.Quantum.POVMPostprocessing (5.3s)
+✔ [3229/3462] Built ExactCriticalCurve.Quantum.BinaryPauli (13s)
+⚠ [3230/3462] Built ExactCriticalCurve.Counting.SymplecticIncrementNewton (4.2s)
+warning: ExactCriticalCurve/Counting/SymplecticIncrementNewton.lean:26:23: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [pow_zero, o̵n̵e̵_̵m̵u̵l̵,̵ ̵mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3231/3463] Built ExactCriticalCurve.Counting.BinaryGaussianIdentities (4.1s)
+✔ [3232/3463] Built ExactCriticalCurve.Foundations.OrthogonalIdempotentSpan (5.8s)
+✔ [3233/3463] Built ExactCriticalCurve.Binary.RelationHalf (16s)
+✔ [3235/3463] Built ExactCriticalCurve.Quantum.PGM.PrettyGoodMeasurement (5.8s)
+✔ [3236/3463] Built ExactCriticalCurve.Foundations.BinaryAlternatingCard (8.8s)
+✔ [3237/3463] Built ExactCriticalCurve.FiniteQuadratic.SingularCorrespondence (13s)
+✔ [3238/3463] Built ExactCriticalCurve.Quantum.StabilizerGroup (7.7s)
+✔ [3239/3463] Built ExactCriticalCurve.Quantum.PhaseAverage (11s)
+✔ [3240/3463] Built ExactCriticalCurve.Binary.RelationDefects (13s)
+✔ [3241/3463] Built ExactCriticalCurve.FiniteQuadratic.BinaryWittCharacter (14s)
+✔ [3242/3463] Built ExactCriticalCurve.Quantum.CSS (27s)
+✔ [3243/3470] Built ExactCriticalCurve.FiniteQuadratic.MaximalCounting (9.1s)
+✔ [3244/3470] Built ExactCriticalCurve.Quantum.ComputationalStabilizer (6.9s)
+✔ [3245/3470] Built ExactCriticalCurve.Binary.StochasticQuadraticReduction (16s)
+✔ [3246/3470] Built ExactCriticalCurve.Quantum.PGM.DualCertificate (18s)
+⚠ [3247/3470] Built ExactCriticalCurve.FiniteQuadratic.OrdinaryWittCoordinates (26s)
+warning: ExactCriticalCurve/FiniteQuadratic/OrdinaryWittCoordinates.lean:174:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.FiniteQuadratic.ModFourQuadraticSpace.quadratic_smul`:
+  [FiniteDimensional (ZMod 2) V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional (ZMod 2) V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrdinaryWittCoordinates.lean:210:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.FiniteQuadratic.ModFourQuadraticSpace.primalSum_mem`:
+  [FiniteDimensional (ZMod 2) V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional (ZMod 2) V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrdinaryWittCoordinates.lean:293:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.FiniteQuadratic.ModFourQuadraticSpace.primalSum_pairing`:
+  [FiniteDimensional (ZMod 2) V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional (ZMod 2) V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrdinaryWittCoordinates.lean:380:51: This simp argument is unused:
+  Module.finrank_self
+
+Hint: Omit it from the simp argument list.
+  simp only [̵M̵o̵d̵u̵l̵e̵.̵f̵i̵n̵r̵a̵n̵k̵_̵p̵r̵o̵d̵,̵M̵o̵d̵u̵l̵e̵.̵f̵i̵n̵r̵a̵n̵k̵_̵p̵i̵,̵M̵o̵d̵u̵l̵e̵.̵f̵i̵n̵r̵a̵n̵k̵_̵s̵e̵l̵f̵,̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵c̵o̵n̵s̵t̵,̵
+  ̵ ̵ ̵ ̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵u̵n̵i̵v̵,̵F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵f̵i̵n̵,̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵m̵u̵l̵_̵o̵n̵e̵]̵[̲M̲o̲d̲u̲l̲e̲.̲f̲i̲n̲r̲a̲n̲k̲_̲p̲r̲o̲d̲,̲ ̲M̲o̲d̲u̲l̲e̲.̲f̲i̲n̲r̲a̲n̲k̲_̲p̲i̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲s̲u̲m̲_̲c̲o̲n̲s̲t̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲c̲a̲r̲d̲_̲u̲n̲i̲v̲,̲
+  ̲ ̲ ̲ ̲ ̲F̲i̲n̲t̲y̲p̲e̲.̲c̲a̲r̲d̲_̲f̲i̲n̲,̲ ̲s̲m̲u̲l̲_̲e̲q̲_̲m̲u̲l̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrdinaryWittCoordinates.lean:380:71: This simp argument is unused:
+  Finset.sum_const
+
+Hint: Omit it from the simp argument list.
+  simp only [̵M̵o̵d̵u̵l̵e̵.̵f̵i̵n̵r̵a̵n̵k̵_̵p̵r̵o̵d̵,̵M̵o̵d̵u̵l̵e̵.̵f̵i̵n̵r̵a̵n̵k̵_̵p̵i̵,̵M̵o̵d̵u̵l̵e̵.̵f̵i̵n̵r̵a̵n̵k̵_̵s̵e̵l̵f̵,̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵c̵o̵n̵s̵t̵,̵
+  ̵ ̵ ̵ ̵ ̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵u̵n̵i̵v̵,̵F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵f̵i̵n̵,̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵m̵u̵l̵_̵o̵n̵e̵]̵[̲M̲o̲d̲u̲l̲e̲.̲f̲i̲n̲r̲a̲n̲k̲_̲p̲r̲o̲d̲,̲ ̲M̲o̲d̲u̲l̲e̲.̲f̲i̲n̲r̲a̲n̲k̲_̲p̲i̲,̲ ̲M̲o̲d̲u̲l̲e̲.̲f̲i̲n̲r̲a̲n̲k̲_̲s̲e̲l̲f̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲c̲a̲r̲d̲_̲u̲n̲i̲v̲,̲
+  ̲ ̲ ̲ ̲ ̲F̲i̲n̲t̲y̲p̲e̲.̲c̲a̲r̲d̲_̲f̲i̲n̲,̲ ̲s̲m̲u̲l̲_̲e̲q̲_̲m̲u̲l̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrdinaryWittCoordinates.lean:381:4: This simp argument is unused:
+  Finset.card_univ
+
+Hint: Omit it from the simp argument list.
+  simp only [Module.finrank_prod, ̲Module.finrank_pi, ̲Module.finrank_self, ̲Finset.sum_const,
+      Fins̵e̵t.̵c̵a̵r̵d̵_̵u̵n̵i̵v̵,̵F̵i̵n̵t̵ype.card_fin, ̲smul_eq_mul, ̲mul_one] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrdinaryWittCoordinates.lean:381:38: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [Module.finrank_prod, ̲Module.finrank_pi, ̲Module.finrank_self, ̲Finset.sum_const,
+      Finset.card_univ, ̲Fintype.card_fin,s̵ ̲mul_e̵q̵_̵m̵u̵l̵,̵m̵u̵l̵_̵one] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrdinaryWittCoordinates.lean:381:50: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  simp only [Module.finrank_prod, ̲Module.finrank_pi, ̲Module.finrank_self, ̲Finset.sum_const,
+      Finset.card_univ, ̲Fintype.card_fin, ̲smul_eq_mul,̵m̵u̵l̵_̵o̵n̵e̵] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3248/3470] Built ExactCriticalCurve.Quantum.CliffordAction (14s)
+✔ [3249/3470] Built ExactCriticalCurve.FiniteQuadratic.BinaryWittExtension (10s)
+✔ [3250/3470] Built ExactCriticalCurve.FiniteQuadratic.BinaryAlternatingWitt (13s)
+✔ [3251/3470] Built ExactCriticalCurve.Quantum.StabilizerGeometry (18s)
+✔ [3253/3470] Built ExactCriticalCurve.Binary.RelationQuotient (38s)
+✔ [3254/3470] Built ExactCriticalCurve.Quantum.CSSPauliAverage (11s)
+✔ [3255/3470] Built ExactCriticalCurve.Quantum.RelationTrace (11s)
+✔ [3256/3470] Built ExactCriticalCurve.Quantum.StabilizerEnsemble (4.8s)
+✔ [3257/3470] Built ExactCriticalCurve.Quantum.DefectProjectionProduct (10s)
+✔ [3258/3470] Built ExactCriticalCurve.FiniteQuadratic.ModFourQuadraticReduction (13s)
+✔ [3259/3470] Built ExactCriticalCurve.Quantum.PGM.Covariance (14s)
+✔ [3260/3470] Built ExactCriticalCurve.Quantum.StochasticIsometry (28s)
+✔ [3261/3470] Built ExactCriticalCurve.Quantum.CSSAffine (23s)
+✔ [3263/3470] Built ExactCriticalCurve.FiniteQuadratic.QuadraticTupleOrbits (15s)
+✔ [3264/3470] Built ExactCriticalCurve.Quantum.StabilizerSupport (9.9s)
+✔ [3265/3470] Built ExactCriticalCurve.FiniteQuadratic.SymplecticTupleOrbits (12s)
+✔ [3266/3470] Built ExactCriticalCurve.FiniteQuadratic.AlternatingEmbedding (13s)
+✔ [3267/3470] Built ExactCriticalCurve.Binary.StochasticWittExtension (27s)
+✔ [3268/3472] Built ExactCriticalCurve.Quantum.SelectivePauli (8.2s)
+✔ [3270/3472] Built ExactCriticalCurve.Quantum.RelationTracePolynomial (6.9s)
+✔ [3271/3472] Built ExactCriticalCurve.Quantum.PGM.DecodedOptimality (6.9s)
+✔ [3272/3472] Built ExactCriticalCurve.Quantum.WuLineProjection (12s)
+⚠ [3273/3472] Built ExactCriticalCurve.FiniteQuadratic.OrdinarySingularGraphs (42s)
+warning: ExactCriticalCurve/FiniteQuadratic/OrdinarySingularGraphs.lean:170:77: This simp argument is unused:
+  LinearMap.flip_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [̵m̵a̵p̵_̵s̵u̵m̵,̵m̵a̵p̵_̵s̵m̵u̵l̵,̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵f̵o̵r̵m̵C̵o̵e̵f̵f̵i̵c̵i̵e̵n̵t̵,̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵p̵i̵_̵a̵p̵p̵l̵y̵,̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵f̵l̵i̵p̵_̵a̵p̵p̵l̵y̵]̵[̲m̲a̲p̲_̲s̲u̲m̲,̲ ̲m̲a̲p̲_̲s̲m̲u̲l̲,̲ ̲s̲m̲u̲l̲_̲e̲q̲_̲m̲u̲l̲,̲ ̲f̲o̲r̲m̲C̲o̲e̲f̲f̲i̲c̲i̲e̲n̲t̲,̲ ̲L̲i̲n̲e̲a̲r̲M̲a̲p̲.̲p̲i̲_̲a̲p̲p̲l̲y̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrdinarySingularGraphs.lean:372:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.FiniteQuadratic.ModFourQuadraticSpace.singularOpposite_finrank`:
+  [FiniteDimensional (ZMod 2) V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional (ZMod 2) V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrdinarySingularGraphs.lean:378:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.FiniteQuadratic.ModFourQuadraticSpace.singularOpposite_disjoint`:
+  [FiniteDimensional (ZMod 2) V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional (ZMod 2) V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrdinarySingularGraphs.lean:388:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.FiniteQuadratic.ModFourQuadraticSpace.singularOpposite_wu_not_mem`:
+  [FiniteDimensional (ZMod 2) V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional (ZMod 2) V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrdinarySingularGraphs.lean:397:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.FiniteQuadratic.ModFourQuadraticSpace.primalPair_eq_zero_iff`:
+  [FiniteDimensional (ZMod 2) V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional (ZMod 2) V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3274/3472] Built ExactCriticalCurve.FiniteQuadratic.QuadraticFixedPolynomial (12s)
+✔ [3275/3472] Built ExactCriticalCurve.Quantum.StabilizerPhase (7.4s)
+⚠ [3276/3472] Built ExactCriticalCurve.Quantum.CSSAffineOverlap (20s)
+warning: ExactCriticalCurve/Quantum/CSSAffineOverlap.lean:73:66: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ExactCriticalCurve/Quantum/CSSAffineOverlap.lean:74:66: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3277/3474] Built ExactCriticalCurve.FiniteQuadratic.BinaryQuadraticGaussIsometry (17s)
+✔ [3280/3474] Built ExactCriticalCurve.Binary.StochasticRelationComposition (72s)
+✔ [3281/3474] Built ExactCriticalCurve.Binary.StochasticDefectOrbits (12s)
+✔ [3282/3474] Built ExactCriticalCurve.Quantum.WuProjectorSum (6.9s)
+✔ [3283/3474] Built ExactCriticalCurve.Quantum.CliffordRaySymmetry (7.9s)
+✔ [3284/3474] Built ExactCriticalCurve.Binary.RelationCorrespondence (42s)
+⚠ [3289/3474] Built ExactCriticalCurve.FiniteQuadratic.AlternatingRealizability (17s)
+warning: ExactCriticalCurve/FiniteQuadratic/AlternatingRealizability.lean:80:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.FiniteQuadratic.alternating_embedding_dimension_bound`:
+  [FiniteDimensional (ZMod 2) E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional (ZMod 2) E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3290/3474] Built ExactCriticalCurve.Quantum.CSSClifford (11s)
+warning: ExactCriticalCurve/Quantum/CSSClifford.lean:63:57: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp [Pi.single_apply, hb,̵ ̵e̵q̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/Quantum/CSSClifford.lean:63:70: 'rfl' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ExactCriticalCurve/Quantum/CSSClifford.lean:63:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ExactCriticalCurve/Quantum/CSSClifford.lean:41:66: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ExactCriticalCurve/Quantum/CSSClifford.lean:52:66: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3291/3474] Built ExactCriticalCurve.Quantum.StochasticRelationProduct (5.4s)
+⚠ [3293/3474] Built ExactCriticalCurve.FiniteQuadratic.ModFourGroupReduction (36s)
+warning: ExactCriticalCurve/FiniteQuadratic/ModFourGroupReduction.lean:97:11: unused variable `g`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/FiniteQuadratic/ModFourGroupReduction.lean:98:12: unused variable `g`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/FiniteQuadratic/ModFourGroupReduction.lean:99:11: unused variable `g`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/FiniteQuadratic/ModFourGroupReduction.lean:99:13: unused variable `h`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3295/3577] Built ExactCriticalCurve.Quantum.CSSOverlapPairing (7.5s)
+✔ [3309/3577] Built ExactCriticalCurve.Quantum.QuadraticRefinement (10s)
+✔ [3312/3577] Built ExactCriticalCurve.Binary.StochasticCounting (7.8s)
+✔ [3313/3577] Built ExactCriticalCurve.Quantum.CSSFiltration (9.1s)
+✔ [3314/3577] Built ExactCriticalCurve.Asymptotics.CriticalLatticeReindex (5.6s)
+✔ [3315/3577] Built ExactCriticalCurve.Asymptotics.WeightedUniformError (3.9s)
+ℹ [3316/3577] Built ExactCriticalCurve.Asymptotics.GaussianMajorants (6.4s)
+info: ExactCriticalCurve/Asymptotics/GaussianMajorants.lean:40:36: Try this:
+  ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: ExactCriticalCurve/Asymptotics/GaussianMajorants.lean:40:36: Try this:
+  ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [3317/3577] Built ExactCriticalCurve.Asymptotics.SqrtRemainder (6.6s)
+✔ [3318/3577] Built ExactCriticalCurve.FiniteQuadratic.BinaryQuadraticRadical (17s)
+✔ [3319/3577] Built ExactCriticalCurve.Asymptotics.BinaryExponentialRates (5.1s)
+✔ [3320/3577] Built ExactCriticalCurve.FiniteQuadratic.AlternatingQuotient (12s)
+⚠ [3321/3577] Built ExactCriticalCurve.Asymptotics.AmplitudeSquareAsymptotics (6.1s)
+warning: ExactCriticalCurve/Asymptotics/AmplitudeSquareAsymptotics.lean:20:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ExactCriticalCurve/Asymptotics/AmplitudeSquareAsymptotics.lean:29:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ExactCriticalCurve/Asymptotics/AmplitudeSquareAsymptotics.lean:37:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3323/3577] Built ExactCriticalCurve.Quantum.PauliOrthogonality (5.5s)
+✔ [3324/3577] Built ExactCriticalCurve.Quantum.PGM.SpectralFormula (6.0s)
+✔ [3325/3577] Built ExactCriticalCurve.FiniteSpectrum.MultiplicityPositivity (5.6s)
+✔ [3326/3577] Built ExactCriticalCurve.FiniteQuadratic.AlternatingRankParity (18s)
+✔ [3327/3577] Built ExactCriticalCurve.Quantum.CSSFiltrationAction (7.6s)
+✔ [3328/3577] Built ExactCriticalCurve.Asymptotics.BilateralGaussian (6.7s)
+✔ [3329/3577] Built ExactCriticalCurve.FiniteQuadratic.ModFourWuKernel (19s)
+⚠ [3330/3577] Built ExactCriticalCurve.Binary.StochasticOrthogonalReduction (48s)
+warning: ExactCriticalCurve/Binary/StochasticOrthogonalReduction.lean:56:11: unused variable `g`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/Binary/StochasticOrthogonalReduction.lean:57:12: unused variable `g`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/Binary/StochasticOrthogonalReduction.lean:58:11: unused variable `g`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/Binary/StochasticOrthogonalReduction.lean:58:13: unused variable `h`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3331/3577] Built ExactCriticalCurve.Asymptotics.WeightedSqrtRemainder (6.9s)
+✔ [3332/3577] Built ExactCriticalCurve.Quantum.PhaseCoordinates (20s)
+✔ [3334/3577] Built ExactCriticalCurve.FiniteQuadratic.SymplecticRealizedData (9.3s)
+✔ [3335/3577] Built ExactCriticalCurve.Quantum.StabilizerUniqueness (5.9s)
+⚠ [3336/3577] Built ExactCriticalCurve.Binary.ConfigurationRelations (24s)
+warning: ExactCriticalCurve/Binary/ConfigurationRelations.lean:255:20: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [3337/3577] Built ExactCriticalCurve.Asymptotics.SqrtSecondOrderPerturbation (16s)
+✔ [3340/3577] Built ExactCriticalCurve.Quantum.FixedCSSFiltration (6.5s)
+✔ [3341/3577] Built ExactCriticalCurve.Asymptotics.MovingGaussianSupport (8.4s)
+✔ [3342/3577] Built ExactCriticalCurve.FiniteQuadratic.AlternatingBlock (14s)
+✔ [3343/3577] Built ExactCriticalCurve.Quantum.CSSQuotientGeometry (30s)
+✔ [3344/3577] Built ExactCriticalCurve.FiniteQuadratic.BinaryQuadraticEnvelope (22s)
+⚠ [3345/3577] Built ExactCriticalCurve.Asymptotics.RightTailRawMoments (9.7s)
+warning: ExactCriticalCurve/Asymptotics/RightTailRawMoments.lean:55:41: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ExactCriticalCurve/Asymptotics/RightTailRawMoments.lean:55:53: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ExactCriticalCurve/Asymptotics/RightTailRawMoments.lean:97:35: This simp argument is unused:
+  one_div
+
+Hint: Omit it from the simp argument list.
+  simp only [rightTailPsi, ̲add_zero,o̵n̵e̵_̵ ̲div,̵d̵i̵v̵_eq_mul_inv, ̲mul_comm, ̲one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3346/3577] Built ExactCriticalCurve.Asymptotics.CriticalProducts (5.7s)
+✔ [3347/3577] Built ExactCriticalCurve.Asymptotics.MovingGaussianTails (5.4s)
+✔ [3348/3577] Built ExactCriticalCurve.Quantum.ClockExtension (39s)
+✔ [3349/3577] Built ExactCriticalCurve.Asymptotics.ProductSecondOrderRemainder (13s)
+✔ [3350/3577] Built ExactCriticalCurve.FiniteQuadratic.AlternatingFirstFiber (14s)
+✔ [3351/3577] Built ExactCriticalCurve.Quantum.ParabolicKernel (15s)
+✔ [3352/3577] Built ExactCriticalCurve.Quantum.CSSStableSupport (21s)
+✔ [3353/3577] Built ExactCriticalCurve.Quantum.CSSLogicalPauli (21s)
+✔ [3354/3577] Built ExactCriticalCurve.Asymptotics.RightTailMomentMajorant (15s)
+✔ [3355/3577] Built ExactCriticalCurve.Quantum.ShorteningCoordinates (23s)
+✔ [3356/3577] Built ExactCriticalCurve.Quantum.CSSSignedClassification (31s)
+⚠ [3357/3577] Built ExactCriticalCurve.Quantum.RelationNormalForm (31s)
+warning: ExactCriticalCurve/Quantum/RelationNormalForm.lean:161:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3358/3577] Built ExactCriticalCurve.Asymptotics.GeometricProductTails (5.4s)
+✔ [3359/3577] Built ExactCriticalCurve.Asymptotics.NormalizedGaussian (8.1s)
+⚠ [3360/3577] Built ExactCriticalCurve.FiniteQuadratic.NonsingularWuGeometry (19s)
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuGeometry.lean:36:46: This simp argument is unused:
+  smul_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [̵m̵a̵p̵_̵a̵d̵d̵,̵m̵a̵p̵_̵s̵m̵u̵l̵,̵b̵i̵n̵a̵r̵y̵Q̵u̵a̵d̵r̵a̵t̵i̵c̵_̵p̵o̵l̵a̵r̵_̵i̵s̵A̵l̵t̵[̲m̲a̲p̲_̲a̲d̲d̲,̲ ̲m̲a̲p̲_̲s̲m̲u̲l̲,̲ ̲b̲i̲n̲a̲r̲y̲Q̲u̲a̲d̲r̲a̲t̲i̲c̲_̲p̲o̲l̲a̲r̲_̲i̲s̲A̲l̲t̲ Q w, binaryQuadratic_polar_isAlt Q v̵,̵h̵w̵v̵,̵h̵v̵w̵,̵s̵m̵u̵l̵_̵z̵e̵r̵o̵,̵a̵d̵d̵_̵z̵e̵r̵o̵,̵z̵e̵r̵o̵_̵a̵d̵d̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵m̵u̵l̵_̵o̵n̵e̵,̵m̵u̵l̵_̵z̵e̵r̵o̵]̵v̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲h̲w̲v̲,̲ ̲h̲v̲w̲,̲ ̲a̲d̲d̲_̲z̲e̲r̲o̲,̲ ̲z̲e̲r̲o̲_̲a̲d̲d̲,̲ ̲s̲m̲u̲l̲_̲e̲q̲_̲m̲u̲l̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲,̲ ̲m̲u̲l̲_̲z̲e̲r̲o̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuGeometry.lean:36:65: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [̵m̵a̵p̵_̵a̵d̵d̵,̵m̵a̵p̵_̵s̵m̵u̵l̵,̵b̵i̵n̵a̵r̵y̵Q̵u̵a̵d̵r̵a̵t̵i̵c̵_̵p̵o̵l̵a̵r̵_̵i̵s̵A̵l̵t̵[̲m̲a̲p̲_̲a̲d̲d̲,̲ ̲m̲a̲p̲_̲s̲m̲u̲l̲,̲ ̲b̲i̲n̲a̲r̲y̲Q̲u̲a̲d̲r̲a̲t̲i̲c̲_̲p̲o̲l̲a̲r̲_̲i̲s̲A̲l̲t̲ Q w, binaryQuadratic_polar_isAlt Q v̵,̵h̵w̵v̵,̵h̵v̵w̵,̵s̵m̵u̵l̵_̵z̵e̵r̵o̵,̵a̵d̵d̵_̵z̵e̵r̵o̵,̵z̵e̵r̵o̵_̵a̵d̵d̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵m̵u̵l̵_̵o̵n̵e̵,̵m̵u̵l̵_̵z̵e̵r̵o̵]̵v̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲h̲w̲v̲,̲ ̲h̲v̲w̲,̲ ̲s̲m̲u̲l̲_̲z̲e̲r̲o̲,̲ ̲a̲d̲d̲_̲z̲e̲r̲o̲,̲ ̲s̲m̲u̲l̲_̲e̲q̲_̲m̲u̲l̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲,̲ ̲m̲u̲l̲_̲z̲e̲r̲o̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuGeometry.lean:65:8: This simp argument is unused:
+  smul_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [̵m̵a̵p̵_̵a̵d̵d̵,̵m̵a̵p̵_̵s̵m̵u̵l̵,̵c̵o̵m̵p̵l̵e̵m̵e̵n̵t̵_̵v̵,̵h̵v̵w̵,̵b̵i̵n̵a̵r̵y̵Q̵u̵a̵d̵r̵a̵t̵i̵c̵_̵p̵o̵l̵a̵r̵_̵i̵s̵A̵l̵t̵[̲m̲a̲p̲_̲a̲d̲d̲,̲ ̲m̲a̲p̲_̲s̲m̲u̲l̲,̲ ̲c̲o̲m̲p̲l̲e̲m̲e̲n̲t̲_̲v̲,̲ ̲h̲v̲w̲,̲ ̲b̲i̲n̲a̲r̲y̲Q̲u̲a̲d̲r̲a̲t̲i̲c̲_̲p̲o̲l̲a̲r̲_̲i̲s̲A̲l̲t̲ Q v, s̵m̵u̵l̵_̵z̵e̵r̵o̵,̵z̵e̵r̵o̵_̵a̵d̵d̵,̵a̵d̵d̵_̵z̵e̵r̵o̵,̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵m̵u̵l̵_̵o̵n̵e̵,̵m̵u̵l̵_̵z̵e̵r̵o̵]̵z̲e̲r̲o̲_̲a̲d̲d̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲a̲d̲d̲_̲z̲e̲r̲o̲,̲ ̲s̲m̲u̲l̲_̲e̲q̲_̲m̲u̲l̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲,̲ ̲m̲u̲l̲_̲z̲e̲r̲o̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuGeometry.lean:68:8: This simp argument is unused:
+  smul_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [̵m̵a̵p̵_̵a̵d̵d̵,̵m̵a̵p̵_̵s̵m̵u̵l̵,̵c̵o̵m̵p̵l̵e̵m̵e̵n̵t̵_̵w̵,̵h̵w̵v̵,̵b̵i̵n̵a̵r̵y̵Q̵u̵a̵d̵r̵a̵t̵i̵c̵_̵p̵o̵l̵a̵r̵_̵i̵s̵A̵l̵t̵[̲m̲a̲p̲_̲a̲d̲d̲,̲ ̲m̲a̲p̲_̲s̲m̲u̲l̲,̲ ̲c̲o̲m̲p̲l̲e̲m̲e̲n̲t̲_̲w̲,̲ ̲h̲w̲v̲,̲ ̲b̲i̲n̲a̲r̲y̲Q̲u̲a̲d̲r̲a̲t̲i̲c̲_̲p̲o̲l̲a̲r̲_̲i̲s̲A̲l̲t̲ Q w, s̵m̵u̵l̵_̵z̵e̵r̵o̵,̵z̵e̵r̵o̵_̵a̵d̵d̵,̵a̵d̵d̵_̵z̵e̵r̵o̵,̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵m̵u̵l̵_̵o̵n̵e̵,̵m̵u̵l̵_̵z̵e̵r̵o̵]̵z̲e̲r̲o̲_̲a̲d̲d̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲a̲d̲d̲_̲z̲e̲r̲o̲,̲ ̲s̲m̲u̲l̲_̲e̲q̲_̲m̲u̲l̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲,̲ ̲m̲u̲l̲_̲z̲e̲r̲o̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuGeometry.lean:114:32: Try `simp at hw` instead of `simpa using hw`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [3361/3577] Built ExactCriticalCurve.FiniteQuadratic.BinaryQuadraticAdjustment (12s)
+⚠ [3362/3577] Built ExactCriticalCurve.Asymptotics.BinaryGeometricProductExpansion (7.0s)
+warning: ExactCriticalCurve/Asymptotics/BinaryGeometricProductExpansion.lean:17:59: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ExactCriticalCurve/Asymptotics/BinaryGeometricProductExpansion.lean:21:64: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ExactCriticalCurve/Asymptotics/BinaryGeometricProductExpansion.lean:49:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3363/3577] Built ExactCriticalCurve.FiniteQuadratic.BinaryHyperbolicSplit (18s)
+⚠ [3364/3577] Built ExactCriticalCurve.Quantum.PairedDefectQuotient (43s)
+warning: ExactCriticalCurve/Quantum/PairedDefectQuotient.lean:196:23: unused variable `hN`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3365/3577] Built ExactCriticalCurve.Asymptotics.RightTailMovingMoments (5.6s)
+✔ [3366/3577] Built ExactCriticalCurve.FiniteQuadratic.AlternatingNondegenerateCount (12s)
+✔ [3367/3577] Built ExactCriticalCurve.Quantum.CSSStableWitness (9.6s)
+✔ [3368/3577] Built ExactCriticalCurve.Quantum.ShorteningUnitary (8.6s)
+✔ [3369/3577] Built ExactCriticalCurve.Quantum.PhaseStabilizer (17s)
+✔ [3370/3577] Built ExactCriticalCurve.Asymptotics.CenteredGaussianFinite (7.9s)
+✔ [3371/3577] Built ExactCriticalCurve.Quantum.CSSPairedQuotient (14s)
+✔ [3372/3577] Built ExactCriticalCurve.FiniteQuadratic.BinaryQuadraticRefinements (11s)
+✔ [3373/3577] Built ExactCriticalCurve.Quantum.ShorteningDefects (18s)
+⚠ [3374/3577] Built ExactCriticalCurve.FiniteQuadratic.NonsingularWuReduction (15s)
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuReduction.lean:20:83: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [projection_val, ̲hvw, ̲binaryQuadratic_polar_isAlt Q w, ̲one_smul, ̲zero_smul,a̵d̵d̵_̵z̵e̵r̵o̵,̵
+      module_add_self, ̲Submodule.coe_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuReduction.lean:76:71: This simp argument is unused:
+  hx
+
+Hint: Omit it from the simp argument list.
+  simp only [map_add, ̲map_smul, ̲LinearMap.add_apply, ̲LinearMap.smul_apply, ̲hx̵,̵h̵y, ̲hxw,
+      binaryQuadratic_polar_isAlt Q w, ̲smul_zero, ̲add_zero, ̲zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuReduction.lean:77:55: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [map_add, ̲map_smul, ̲LinearMap.add_apply, ̲LinearMap.smul_apply, ̲hx, ̲hy, ̲hxw,
+      binaryQuadratic_polar_isAlt Q w, ̲smul_zero, ̲add_̵z̵e̵r̵o̵,̵z̵e̵r̵o̵_̵a̵d̵d̵_̲z̲e̲r̲o̲]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3375/3577] Built ExactCriticalCurve.FiniteQuadratic.BinaryQuadraticRealizability (13s)
+warning: ExactCriticalCurve/FiniteQuadratic/BinaryQuadraticRealizability.lean:16:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.FiniteQuadratic.binaryQuadratic_orthogonal_zero_boundary`:
+  [FiniteDimensional (ZMod 2) A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional (ZMod 2) A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3376/3577] Built ExactCriticalCurve.Asymptotics.RightTailMovingAbsoluteMoments (4.0s)
+✔ [3377/3577] Built ExactCriticalCurve.Counting.SymplecticNumericalFactors (5.6s)
+✔ [3378/3577] Built ExactCriticalCurve.Quantum.CSSQuotientLift (22s)
+✔ [3379/3577] Built ExactCriticalCurve.Quantum.ParabolicFixer (30s)
+✔ [3380/3577] Built ExactCriticalCurve.Quantum.PhysicalCSSGrades (7.2s)
+✔ [3381/3577] Built ExactCriticalCurve.Asymptotics.ThetaNormalization (6.0s)
+⚠ [3382/3577] Built ExactCriticalCurve.FiniteQuadratic.BinaryHyperbolicStabilizer (17s)
+warning: ExactCriticalCurve/FiniteQuadratic/BinaryHyperbolicStabilizer.lean:178:23: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [̵m̵u̵l̵_̵o̵n̵e̵,̵z̵e̵r̵o̵_̵m̵u̵l̵,̵m̵a̵p̵_̵z̵e̵r̵o̵,̵a̵d̵d̵_̵z̵e̵r̵o̵]̵[̲m̲u̲l̲_̲o̲n̲e̲,̲ ̲m̲a̲p̲_̲z̲e̲r̲o̲,̲ ̲a̲d̲d̲_̲z̲e̲r̲o̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3383/3577] Built ExactCriticalCurve.Quantum.PhaseStabilizerRecovery (8.7s)
+✔ [3384/3577] Built ExactCriticalCurve.FiniteQuadratic.AlternatingRadicalData (10s)
+✔ [3385/3577] Built ExactCriticalCurve.Counting.SymplecticFactorProducts (5.5s)
+✔ [3386/3577] Built ExactCriticalCurve.FiniteQuadratic.BinaryQuadraticRefinementGauss (9.8s)
+✔ [3387/3577] Built ExactCriticalCurve.FiniteQuadratic.QuadraticQuotientData (8.9s)
+⚠ [3388/3577] Built ExactCriticalCurve.Quantum.CSSOverlapLiftFiber (11s)
+warning: ExactCriticalCurve/Quantum/CSSOverlapLiftFiber.lean:93:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ExactCriticalCurve/Quantum/CSSOverlapLiftFiber.lean:141:10: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵m̵u̵l̵_̵a̵s̵s̵o̵c̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/Quantum/CSSOverlapLiftFiber.lean:145:10: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵m̵u̵l̵_̵a̵s̵s̵o̵c̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3389/3577] Built ExactCriticalCurve.Quantum.ShorteningRelations (19s)
+✔ [3390/3577] Built ExactCriticalCurve.Quantum.ShorteningPauli (23s)
+✔ [3391/3577] Built ExactCriticalCurve.Quantum.PairedDefectFlags (35s)
+✔ [3392/3577] Built ExactCriticalCurve.FiniteQuadratic.BinarySingularStabilizer (11s)
+✔ [3393/3577] Built ExactCriticalCurve.Asymptotics.RightTailNormalization (13s)
+✔ [3394/3577] Built ExactCriticalCurve.FiniteQuadratic.NonsingularWuLifting (22s)
+✔ [3395/3577] Built ExactCriticalCurve.Quantum.ParabolicCard (16s)
+✔ [3396/3577] Built ExactCriticalCurve.Quantum.AffineStabilizer (8.6s)
+✔ [3397/3577] Built ExactCriticalCurve.Quantum.CliffordGates (10s)
+✔ [3398/3577] Built ExactCriticalCurve.Counting.SymplecticIncrementCoefficients (6.1s)
+✔ [3399/3577] Built ExactCriticalCurve.Quantum.PhaseStabilizerProjector (9.6s)
+✔ [3400/3577] Built ExactCriticalCurve.FiniteQuadratic.OrthogonalRealizedData (7.0s)
+✔ [3401/3577] Built ExactCriticalCurve.FiniteQuadratic.AlternatingBoundary (11s)
+✔ [3402/3577] Built ExactCriticalCurve.Quantum.ShorteningCSS (7.2s)
+✔ [3403/3577] Built ExactCriticalCurve.Quantum.CSSOverlapSphericalRow (13s)
+✔ [3404/3577] Built ExactCriticalCurve.FiniteQuadratic.BinaryQuadraticSignedTargets (16s)
+✔ [3405/3577] Built ExactCriticalCurve.Quantum.ShorteningSaturation (14s)
+✔ [3406/3577] Built ExactCriticalCurve.Asymptotics.CriticalCurveModel (7.5s)
+✔ [3407/3577] Built ExactCriticalCurve.Counting.SymplecticIncrementSum (6.1s)
+⚠ [3408/3577] Built ExactCriticalCurve.FiniteQuadratic.NonsingularWuKernel (15s)
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuKernel.lean:49:2: Try `simp at hw` instead of `simpa using hw`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [3409/3577] Built ExactCriticalCurve.Quantum.AffineCounting (10s)
+✔ [3410/3577] Built ExactCriticalCurve.Quantum.CliffordHadamard (10s)
+✔ [3411/3577] Built ExactCriticalCurve.Quantum.ParabolicClosedCard (17s)
+✔ [3412/3577] Built ExactCriticalCurve.Quantum.CSSQuotientGauss (7.4s)
+✔ [3413/3577] Built ExactCriticalCurve.Quantum.ShorteningFiltration (7.6s)
+✔ [3414/3577] Built ExactCriticalCurve.FiniteQuadratic.AlternatingBoundaryCount (11s)
+✔ [3415/3577] Built ExactCriticalCurve.FiniteQuadratic.BinaryQuadraticRefinementRadical (37s)
+⚠ [3416/3577] Built ExactCriticalCurve.Asymptotics.CriticalLambdaProducts (9.3s)
+warning: ExactCriticalCurve/Asymptotics/CriticalLambdaProducts.lean:34:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ExactCriticalCurve/Asymptotics/CriticalLambdaProducts.lean:34:8: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [3417/3577] Built ExactCriticalCurve.Quantum.CSSIntersectionCount (13s)
+✔ [3418/3577] Built ExactCriticalCurve.Asymptotics.CriticalWeightMassBound (5.2s)
+✔ [3419/3577] Built ExactCriticalCurve.Asymptotics.CriticalAmplitudeBounds (8.0s)
+⚠ [3420/3577] Built ExactCriticalCurve.Asymptotics.PhysicalCriticalMajorants (5.0s)
+info: ExactCriticalCurve/Asymptotics/PhysicalCriticalMajorants.lean:101:2: Try this:
+  ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: ExactCriticalCurve/Asymptotics/PhysicalCriticalMajorants.lean:108:27: unused variable `hw`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/Asymptotics/PhysicalCriticalMajorants.lean:114:103: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3421/3577] Built ExactCriticalCurve.Quantum.ShorteningTransverse (13s)
+✔ [3422/3577] Built ExactCriticalCurve.Quantum.CSSQuotientIsometryGroup (28s)
+✔ [3423/3577] Built ExactCriticalCurve.Counting.OrthogonalIncrementDefinitions (4.9s)
+✔ [3424/3577] Built ExactCriticalCurve.Quantum.ShorteningFreeRegister (5.4s)
+⚠ [3425/3577] Built ExactCriticalCurve.Asymptotics.CriticalLambdaInfiniteProducts (5.9s)
+warning: ExactCriticalCurve/Asymptotics/CriticalLambdaInfiniteProducts.lean:61:15: This simp argument is unused:
+  neg_one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [̵n̵e̵g̵_̵o̵n̵e̵_̵m̵u̵l̵,̵n̵e̵g̵_̵m̵u̵l̵,̵o̵n̵e̵_̵m̵u̵l̵,̵←̵[̲n̲e̲g̲_̲m̲u̲l̲,̲ ̲o̲n̲e̲_̲m̲u̲l̲,̲ ̲←̲ sub_eq_add_neg] at hh
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3426/3577] Built ExactCriticalCurve.FiniteQuadratic.BinaryQuadraticRefinementCounts (7.2s)
+✔ [3427/3577] Built ExactCriticalCurve.FiniteQuadratic.SymplecticIncrementCount (8.7s)
+✔ [3428/3577] Built ExactCriticalCurve.Asymptotics.NormalizedRightTailMoments (6.0s)
+⚠ [3429/3577] Built ExactCriticalCurve.FiniteQuadratic.BinarySingularFixedSpaces (51s)
+warning: ExactCriticalCurve/FiniteQuadratic/BinarySingularFixedSpaces.lean:86:4: 'change
+  q.polarBilin (h.val x + x) (h.val (f.val + x)) + q (h.val x + x) = 0 ∧
+    h.val (f.val + x) + (h.val x + x) = f.val + x' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ExactCriticalCurve/FiniteQuadratic/BinarySingularFixedSpaces.lean:110:30: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3430/3577] Built ExactCriticalCurve.Quantum.CliffordOrbit (13s)
+✔ [3431/3577] Built ExactCriticalCurve.Asymptotics.PhysicalCriticalDominated (6.5s)
+✔ [3432/3577] Built ExactCriticalCurve.Quantum.GNWSupportSum (18s)
+⚠ [3433/3577] Built ExactCriticalCurve.Asymptotics.CriticalLeftTail (10s)
+warning: ExactCriticalCurve/Asymptotics/CriticalLeftTail.lean:34:15: This simp argument is unused:
+  Int.cast_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [̵I̵n̵t̵.̵c̵a̵s̵t̵_̵n̵e̵g̵,̵I̵n̵t̵.̵c̵a̵s̵t̵_̵n̵a̵t̵C̵a̵s̵t̵,̵m̵u̵l̵_̵n̵e̵g̵,̵s̵u̵b̵_̵n̵e̵g̵_̵e̵q̵_̵a̵d̵d̵]̵[̲I̲n̲t̲.̲c̲a̲s̲t̲_̲n̲a̲t̲C̲a̲s̲t̲,̲ ̲m̲u̲l̲_̲n̲e̲g̲,̲ ̲s̲u̲b̲_̲n̲e̲g̲_̲e̲q̲_̲a̲d̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/Asymptotics/CriticalLeftTail.lean:35:107: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ExactCriticalCurve/Asymptotics/CriticalLeftTail.lean:35:119: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3434/3577] Built ExactCriticalCurve.Quantum.DefectStabilizerFactorization (7.9s)
+✔ [3435/3577] Built ExactCriticalCurve.Asymptotics.PhysicalWeightProducts (6.3s)
+✔ [3436/3577] Built ExactCriticalCurve.Counting.OrthogonalHalfScale (5.1s)
+⚠ [3437/3577] Built ExactCriticalCurve.Asymptotics.CriticalLambdaGlobalBounds (16s)
+warning: ExactCriticalCurve/Asymptotics/CriticalLambdaGlobalBounds.lean:191:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3438/3577] Built ExactCriticalCurve.Counting.OrthogonalWeightedFlags (5.3s)
+warning: ExactCriticalCurve/Counting/OrthogonalWeightedFlags.lean:12:22: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [̵p̵o̵w̵_̵z̵e̵r̵o̵,̵o̵n̵e̵_̵m̵u̵l̵,̵m̵u̵l̵_̵o̵n̵e̵,̵p̵o̵w̵_̵s̵u̵c̵c̵]̵[̲p̲o̲w̲_̲z̲e̲r̲o̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲,̲ ̲p̲o̲w̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3439/3577] Built ExactCriticalCurve.Quantum.ShorteningFibers (13s)
+✔ [3440/3577] Built ExactCriticalCurve.Asymptotics.NormalizedMovingTailMoments (5.3s)
+✔ [3441/3577] Built ExactCriticalCurve.Asymptotics.CriticalLambdaBulkExpansion (8.5s)
+✔ [3442/3577] Built ExactCriticalCurve.FiniteQuadratic.BinaryQuadraticEmbeddableRefinements (10s)
+✔ [3443/3577] Built ExactCriticalCurve.FiniteQuadratic.SymplecticFixedPolynomial (11s)
+⚠ [3444/3577] Built ExactCriticalCurve.FiniteQuadratic.NonsingularWuFixedSpaces (35s)
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuFixedSpaces.lean:58:11: unused variable `x`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuFixedSpaces.lean:59:12: unused variable `x`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuFixedSpaces.lean:60:11: unused variable `x`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuFixedSpaces.lean:60:13: unused variable `y`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuFixedSpaces.lean:61:12: unused variable `a`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuFixedSpaces.lean:61:14: unused variable `x`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3445/3577] Built ExactCriticalCurve.Quantum.GNWMoment (7.7s)
+✔ [3446/3577] Built ExactCriticalCurve.Asymptotics.CriticalLeftTailInteger (5.2s)
+✔ [3447/3577] Built ExactCriticalCurve.Quantum.StabilizerPGM (9.8s)
+✔ [3448/3577] Built ExactCriticalCurve.Asymptotics.PhysicalWeightProductLimits (5.7s)
+✔ [3449/3577] Built ExactCriticalCurve.Asymptotics.PhysicalWeightFactors (6.0s)
+✔ [3450/3577] Built ExactCriticalCurve.Asymptotics.PhysicalEigenvalueProducts (5.6s)
+✔ [3451/3577] Built ExactCriticalCurve.Asymptotics.PhysicalCriticalFiniteBounds (8.1s)
+✔ [3452/3577] Built ExactCriticalCurve.Asymptotics.CriticalLambdaMovingTails (6.5s)
+⚠ [3453/3577] Built ExactCriticalCurve.Counting.OrthogonalBoundaryRecurrence (6.3s)
+warning: ExactCriticalCurve/Counting/OrthogonalBoundaryRecurrence.lean:26:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3454/3577] Built ExactCriticalCurve.Asymptotics.CriticalPolynomialMovingTails (4.9s)
+warning: ExactCriticalCurve/Asymptotics/CriticalPolynomialMovingTails.lean:31:33: This simp argument is unused:
+  if_true
+
+Hint: Omit it from the simp argument list.
+  simp only [̵h̵u̵,̵h̵t̵,̵a̵n̵d̵_̵f̵a̵l̵s̵e̵,̵i̵f̵_̵t̵r̵u̵e̵,̵i̵f̵_̵f̵a̵l̵s̵e̵,̵i̵t̵e̵_̵s̵e̵l̵f̵]̵[̲h̲u̲,̲ ̲h̲t̲,̲ ̲a̲n̲d̲_̲f̲a̲l̲s̲e̲,̲ ̲i̲f̲_̲f̲a̲l̲s̲e̲,̲ ̲i̲t̲e̲_̲s̲e̲l̲f̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3455/3577] Built ExactCriticalCurve.Asymptotics.CriticalTruncatedMoments (4.8s)
+✔ [3456/3577] Built ExactCriticalCurve.FiniteQuadratic.OrthogonalPolarStrata (7.1s)
+✔ [3457/3577] Built ExactCriticalCurve.Asymptotics.CriticalSqrtBulkExpansion (8.9s)
+✔ [3458/3577] Built ExactCriticalCurve.Quantum.ShorteningFiberCount (11s)
+✔ [3459/3577] Built ExactCriticalCurve.Quantum.StochasticIsometrySupport (5.0s)
+✔ [3460/3577] Built ExactCriticalCurve.Quantum.MixedMoment (6.0s)
+⚠ [3461/3577] Built ExactCriticalCurve.FiniteQuadratic.NonsingularWuFiberFixed (11s)
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuFiberFixed.lean:38:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.FiniteQuadratic.NonsingularWu.projection_companion`:
+  [FiniteDimensional (ZMod 2) V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional (ZMod 2) V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuFiberFixed.lean:119:41: Try `simp at hq` instead of `simpa using hq`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuFiberFixed.lean:103:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.FiniteQuadratic.NonsingularWu.outside_excludes_transvection`:
+  [FiniteDimensional (ZMod 2) V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional (ZMod 2) V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3462/3577] Built ExactCriticalCurve.Quantum.OrdinaryScalarProducts (5.8s)
+✔ [3463/3577] Built ExactCriticalCurve.FiniteQuadratic.SymplecticClosedIncrement (13s)
+✔ [3464/3577] Built ExactCriticalCurve.Asymptotics.PhysicalWeightWindow (5.6s)
+✔ [3465/3577] Built ExactCriticalCurve.Asymptotics.PhysicalWeightCancellation (5.0s)
+✔ [3466/3577] Built ExactCriticalCurve.Asymptotics.CriticalAmplitudeMovingTail (4.8s)
+✔ [3467/3577] Built ExactCriticalCurve.Counting.OrthogonalIncrementSum (5.4s)
+✔ [3468/3577] Built ExactCriticalCurve.Asymptotics.CriticalSqrtPolynomial (4.9s)
+✔ [3469/3577] Built ExactCriticalCurve.Asymptotics.CriticalSqrtBulkError (4.7s)
+⚠ [3470/3577] Built ExactCriticalCurve.FiniteQuadratic.OrthogonalRefinementWeights (8.0s)
+warning: ExactCriticalCurve/FiniteQuadratic/OrthogonalRefinementWeights.lean:58:13: This simp argument is unused:
+  hne
+
+Hint: Omit it from the simp argument list.
+  simp [̵h̵e̵,̵h̵n̵e̵,̵s̵h̵o̵w̵ ̵¬̵m̵<̵m̵-̵1̵[̲h̲e̲,̲ ̲s̲h̲o̲w̲ ̲¬̲m̲ ̲<̲ ̲m̲ ̲-̲ ̲1̲ by o̵m̵e̵g̵a̵,̵s̵h̵o̵w̵ ̵m̵≠̵m̵-̵1̵o̲m̲e̲g̲a̲,̲ ̲s̲h̲o̲w̲ ̲m̲ ̲≠̲ ̲m̲ ̲-̲ ̲1̲ by omega]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3471/3577] Built ExactCriticalCurve.Quantum.RelationDiagonalCount (14s)
+✔ [3472/3577] Built ExactCriticalCurve.Quantum.StochasticCompressedRelations (7.0s)
+✔ [3473/3577] Built ExactCriticalCurve.Quantum.ShorteningWuCompression (8.2s)
+✔ [3474/3577] Built ExactCriticalCurve.Asymptotics.CriticalAmplitudeDecomposition (4.7s)
+⚠ [3475/3577] Built ExactCriticalCurve.FiniteQuadratic.BinarySingularAverage (47s)
+warning: ExactCriticalCurve/FiniteQuadratic/BinarySingularAverage.lean:36:13: This simp argument is unused:
+  if_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [show ∀ a : R, a.val ∈ LinearMap.range (h.val.toLinearMap ̲- ̲LinearMap.id) from
+         ̲ ̲ ̲ ̲fun a => a.property,
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲show ∀ a : { ̲a : W // a ∉ R ̲},
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵a.val ∉ LinearMap.range (h.val.toLinearMap ̲- ̲LinearMap.id) f̵r̵o̵m̵f̲r̲o̲m̲
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲fun a => a.property,
+        if_pos, ̲if̵_̵n̵e̵g̵,̵i̵te_true, ̲ite_false, ̲Finset.sum_const, ̲Finset.card_univ, ̲nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/BinarySingularAverage.lean:36:20: This simp argument is unused:
+  ite_true
+
+Hint: Omit it from the simp argument list.
+  simp only [show ∀ a : R, a.val ∈ LinearMap.range (h.val.toLinearMap ̲- ̲LinearMap.id) from
+         ̲ ̲ ̲ ̲fun a => a.property,
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲show ∀ a : { ̲a : W // a ∉ R ̲},
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵a.val ∉ LinearMap.range (h.val.toLinearMap ̲- ̲LinearMap.id) f̵r̵o̵m̵f̲r̲o̲m̲
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲fun a => a.property,
+        if_pos, ̲if_neg, ̲ite_t̵r̵u̵e̵,̵i̵t̵e̵_̵false, ̲Finset.sum_const, ̲Finset.card_univ, ̲nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/BinarySingularAverage.lean:55:17: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ExactCriticalCurve/FiniteQuadratic/BinarySingularAverage.lean:55:17: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ExactCriticalCurve/FiniteQuadratic/BinarySingularAverage.lean:81:17: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ExactCriticalCurve/FiniteQuadratic/BinarySingularAverage.lean:81:17: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+✔ [3476/3577] Built ExactCriticalCurve.Asymptotics.CriticalSqrtPolynomialTail (10s)
+✔ [3477/3577] Built ExactCriticalCurve.Quantum.RelationPolynomialTransport (11s)
+✔ [3478/3577] Built ExactCriticalCurve.Quantum.StochasticSpanExhaustion (8.8s)
+✔ [3479/3577] Built ExactCriticalCurve.Quantum.CSSSignedPauli (19s)
+✔ [3480/3577] Built ExactCriticalCurve.FiniteQuadratic.OrthogonalQuotientBoundary (14s)
+⚠ [3481/3577] Built ExactCriticalCurve.Quantum.ShorteningQuotientMatrix (8.6s)
+warning: ExactCriticalCurve/Quantum/ShorteningQuotientMatrix.lean:62:37: This simp argument is unused:
+  mul_ite
+
+Hint: Omit it from the simp argument list.
+  simp only [ite_mul, ̲one_mul, ̲zero_mul, ̲Finset.sum_ite_eq, ̲Finset.mem_univ, ̲ite_true,
+          apply_ite, ̲star_one, ̲star_zero, ̲mul_i̵t̵e̵,̵m̵u̵l̵_̵one, ̲mul_zero, ̲Finset.sum_ite_eq']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/Quantum/ShorteningQuotientMatrix.lean:62:62: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  simp only [ite_mul, ̲one_mul, ̲zero_mul, ̲Finset.sum_ite_eq, ̲Finset.mem_univ, ̲ite_true,
+          apply_ite, ̲star_one, ̲star_zero, ̲mul_ite, ̲mul_one, ̲mul_zero,̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵i̵t̵e̵_̵e̵q̵'̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3482/3577] Built ExactCriticalCurve.Asymptotics.CriticalRightTail (6.4s)
+✔ [3483/3577] Built ExactCriticalCurve.Quantum.StochasticDoubleOrbits (7.5s)
+✔ [3484/3577] Built ExactCriticalCurve.Quantum.MixedStabilizerFixed (8.1s)
+⚠ [3485/3577] Built ExactCriticalCurve.FiniteQuadratic.NonsingularWuAverage (27s)
+warning: ExactCriticalCurve/FiniteQuadratic/NonsingularWuAverage.lean:16:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.FiniteQuadratic.NonsingularWu.same_reduction`:
+  [FiniteDimensional (ZMod 2) V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional (ZMod 2) V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3486/3577] Built ExactCriticalCurve.Quantum.CSSQuotientFixedAction (22s)
+warning: ExactCriticalCurve/Quantum/CSSQuotientFixedAction.lean:149:47: unused variable `hN`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3487/3577] Built ExactCriticalCurve.FiniteQuadratic.OrthogonalBoundaryWeights (8.8s)
+✔ [3488/3577] Built ExactCriticalCurve.Asymptotics.CriticalCurveTails (4.4s)
+✔ [3489/3577] Built ExactCriticalCurve.Quantum.ShorteningRelationOperator (7.8s)
+✔ [3490/3577] Built ExactCriticalCurve.FiniteQuadratic.OrthogonalWeightSum (3.9s)
+⚠ [3491/3577] Built ExactCriticalCurve.Quantum.ShorteningRelationSum (3.5s)
+warning: ExactCriticalCurve/Quantum/ShorteningRelationSum.lean:55:15: This simp argument is unused:
+  add_sub_cancel_left
+
+Hint: Omit it from the simp argument list.
+  simp [hw,̵a̵d̵d̵_̵s̵u̵b̵_̵c̵a̵n̵c̵e̵l̵_̵l̵e̵f̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3492/3577] Built ExactCriticalCurve.Quantum.CSSCompressedRay (7.8s)
+✔ [3493/3577] Built ExactCriticalCurve.Quantum.CompressedRelationAlgebra (20s)
+✔ [3494/3577] Built ExactCriticalCurve.Quantum.ShorteningPositive (3.7s)
+✔ [3495/3577] Built ExactCriticalCurve.FiniteQuadratic.OrthogonalActualAverage (6.5s)
+✔ [3496/3577] Built ExactCriticalCurve.Quantum.CompressedCSSMembership (4.3s)
+✔ [3497/3577] Built ExactCriticalCurve.Quantum.CSSCompressionNormalization (5.6s)
+✔ [3498/3577] Built ExactCriticalCurve.Quantum.CompressedOrbitDimension (5.1s)
+✔ [3499/3577] Built ExactCriticalCurve.FiniteQuadratic.OrthogonalClosedAverage (4.8s)
+⚠ [3500/3577] Built ExactCriticalCurve.Quantum.PhysicalSectorExhaustion (4.4s)
+warning: ExactCriticalCurve/Quantum/PhysicalSectorExhaustion.lean:79:37: unused variable `hk`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3501/3577] Built ExactCriticalCurve.Quantum.ShorteningFixedSupport (5.9s)
+✔ [3502/3577] Built ExactCriticalCurve.Quantum.CSSStabilizerCompression (8.9s)
+✔ [3503/3577] Built ExactCriticalCurve.Quantum.ShorteningFixedFiltration (4.1s)
+⚠ [3504/3577] Built ExactCriticalCurve.FiniteQuadratic.OrthogonalClosedIncrement (7.6s)
+warning: ExactCriticalCurve/FiniteQuadratic/OrthogonalClosedIncrement.lean:35:0: automatically included section variable(s) unused in theorem `ExactCriticalCurve.FiniteQuadratic.binaryQuadraticIsometryGroup_zero_card`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrthogonalClosedIncrement.lean:82:35: This simp argument is unused:
+  Module.finrank_self
+
+Hint: Omit it from the simp argument list.
+  simp only [̵M̵o̵d̵u̵l̵e̵.̵f̵i̵n̵r̵a̵n̵k̵_̵p̵i̵,̵M̵o̵d̵u̵l̵e̵.̵f̵i̵n̵r̵a̵n̵k̵_̵s̵e̵l̵f̵,̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵c̵o̵n̵s̵t̵,̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵u̵n̵i̵v̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵f̵i̵n̵,̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵m̵u̵l̵_̵o̵n̵e̵]̵[̲M̲o̲d̲u̲l̲e̲.̲f̲i̲n̲r̲a̲n̲k̲_̲p̲i̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲s̲u̲m̲_̲c̲o̲n̲s̲t̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲c̲a̲r̲d̲_̲u̲n̲i̲v̲,̲ ̲F̲i̲n̲t̲y̲p̲e̲.̲c̲a̲r̲d̲_̲f̲i̲n̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲s̲m̲u̲l̲_̲e̲q̲_̲m̲u̲l̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrthogonalClosedIncrement.lean:82:55: This simp argument is unused:
+  Finset.sum_const
+
+Hint: Omit it from the simp argument list.
+  simp only [̵M̵o̵d̵u̵l̵e̵.̵f̵i̵n̵r̵a̵n̵k̵_̵p̵i̵,̵M̵o̵d̵u̵l̵e̵.̵f̵i̵n̵r̵a̵n̵k̵_̵s̵e̵l̵f̵,̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵c̵o̵n̵s̵t̵,̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵u̵n̵i̵v̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵f̵i̵n̵,̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵m̵u̵l̵_̵o̵n̵e̵]̵[̲M̲o̲d̲u̲l̲e̲.̲f̲i̲n̲r̲a̲n̲k̲_̲p̲i̲,̲ ̲M̲o̲d̲u̲l̲e̲.̲f̲i̲n̲r̲a̲n̲k̲_̲s̲e̲l̲f̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲c̲a̲r̲d̲_̲u̲n̲i̲v̲,̲ ̲F̲i̲n̲t̲y̲p̲e̲.̲c̲a̲r̲d̲_̲f̲i̲n̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲s̲m̲u̲l̲_̲e̲q̲_̲m̲u̲l̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrthogonalClosedIncrement.lean:82:72: This simp argument is unused:
+  Finset.card_univ
+
+Hint: Omit it from the simp argument list.
+  simp only [̵M̵o̵d̵u̵l̵e̵.̵f̵i̵n̵r̵a̵n̵k̵_̵p̵i̵,̵M̵o̵d̵u̵l̵e̵.̵f̵i̵n̵r̵a̵n̵k̵_̵s̵e̵l̵f̵,̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵c̵o̵n̵s̵t̵,̵F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵u̵n̵i̵v̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵f̵i̵n̵,̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵m̵u̵l̵_̵o̵n̵e̵]̵[̲M̲o̲d̲u̲l̲e̲.̲f̲i̲n̲r̲a̲n̲k̲_̲p̲i̲,̲ ̲M̲o̲d̲u̲l̲e̲.̲f̲i̲n̲r̲a̲n̲k̲_̲s̲e̲l̲f̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲s̲u̲m̲_̲c̲o̲n̲s̲t̲,̲ ̲F̲i̲n̲t̲y̲p̲e̲.̲c̲a̲r̲d̲_̲f̲i̲n̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲s̲m̲u̲l̲_̲e̲q̲_̲m̲u̲l̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrthogonalClosedIncrement.lean:83:25: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [Module.finrank_pi, ̲Module.finrank_self, ̲Finset.sum_const, ̲Finset.card_univ,
+          Fintype.card_fin,s̵ ̲mul_e̵q̵_̵m̵u̵l̵,̵m̵u̵l̵_̵one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/FiniteQuadratic/OrthogonalClosedIncrement.lean:83:37: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  simp only [Module.finrank_pi, ̲Module.finrank_self, ̲Finset.sum_const, ̲Finset.card_univ,
+          Fintype.card_fin, ̲smul_eq_mul,̵m̵u̵l̵_̵o̵n̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3505/3577] Built ExactCriticalCurve.Quantum.ShorteningFixedGrades (3.6s)
+✔ [3506/3577] Built ExactCriticalCurve.FiniteQuadratic.OrthogonalHalfScaleAverage (4.9s)
+✔ [3507/3577] Built ExactCriticalCurve.Quantum.ShorteningSectorLabels (3.5s)
+✔ [3508/3577] Built ExactCriticalCurve.Quantum.CSSRelationCompression (8.6s)
+✔ [3509/3577] Built ExactCriticalCurve.Asymptotics.PhysicalEigenvalueGroupCard (9.7s)
+✔ [3510/3577] Built ExactCriticalCurve.Quantum.CSSCompressionDiagonal (7.4s)
+⚠ [3511/3577] Built ExactCriticalCurve.Asymptotics.PhysicalEigenvalueGroupNormalization (6.7s)
+warning: ExactCriticalCurve/Asymptotics/PhysicalEigenvalueGroupNormalization.lean:32:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ExactCriticalCurve/Asymptotics/PhysicalEigenvalueGroupNormalization.lean:32:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [3512/3577] Built ExactCriticalCurve.Quantum.PhysicalSectorScalarExtraction (3.2s)
+✔ [3513/3577] Built ExactCriticalCurve.Quantum.CSSProjectionWeight (5.9s)
+✔ [3514/3577] Built ExactCriticalCurve.Quantum.CSSGammaScalar (2.9s)
+✔ [3515/3577] Built ExactCriticalCurve.Quantum.ShorteningExceptionalScalar (3.4s)
+✔ [3516/3577] Built ExactCriticalCurve.Quantum.ShorteningExceptionalValue (3.1s)
+✔ [3517/3577] Built ExactCriticalCurve.Quantum.CSSQuotientRelativeWitt (150s)
+✔ [3518/3577] Built ExactCriticalCurve.Quantum.CSSQuotientTupleOrbits (9.3s)
+✔ [3519/3577] Built ExactCriticalCurve.Quantum.CSSQuotientTriangularSupport (32s)
+✔ [3520/3577] Built ExactCriticalCurve.Quantum.CSSQuotientFixedRank (5.4s)
+⚠ [3521/3577] Built ExactCriticalCurve.Quantum.CSSQuotientGradeDimensions (4.4s)
+warning: ExactCriticalCurve/Quantum/CSSQuotientGradeDimensions.lean:41:6: 'change P *ᵥ (P *ᵥ y) = P *ᵥ y' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [3522/3577] Built ExactCriticalCurve.Quantum.CSSFiltrationEndpoints (3.7s)
+✔ [3523/3577] Built ExactCriticalCurve.Quantum.CSSQuotientBurnside (18s)
+✔ [3524/3577] Built ExactCriticalCurve.Quantum.PhysicalSectorProjectionSum (3.1s)
+✔ [3525/3577] Built ExactCriticalCurve.Quantum.PhysicalSectorScalarPolynomial (3.4s)
+✔ [3526/3577] Built ExactCriticalCurve.Asymptotics.PhysicalExceptionalWeight (3.7s)
+⚠ [3527/3577] Built ExactCriticalCurve.Quantum.PhysicalSectorPowerTraces (2.0s)
+warning: ExactCriticalCurve/Quantum/PhysicalSectorPowerTraces.lean:66:8: This simp argument is unused:
+  RCLike.real_smul_eq_coe_smul
+
+Hint: Omit it from the simp argument list.
+  simp [̵R̵C̵L̵i̵k̵e̵.̵r̵e̵a̵l̵_̵s̵m̵u̵l̵_̵e̵q̵_̵c̵o̵e̵_̵s̵m̵u̵l̵,̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵m̵u̵l̵_̵c̵o̵m̵m̵]̵[̲s̲m̲u̲l̲_̲e̲q̲_̲m̲u̲l̲,̲ ̲m̲u̲l̲_̲c̲o̲m̲m̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/Quantum/PhysicalSectorPowerTraces.lean:66:37: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  simp [̵R̵C̵L̵i̵k̵e̵.̵r̵e̵a̵l̵_̵s̵m̵u̵l̵_̵e̵q̵_̵c̵o̵e̵_̵s̵m̵u̵l̵,̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵m̵u̵l̵_̵c̵o̵m̵m̵]̵[̲R̲C̲L̲i̲k̲e̲.̲r̲e̲a̲l̲_̲s̲m̲u̲l̲_̲e̲q̲_̲c̲o̲e̲_̲s̲m̲u̲l̲,̲ ̲m̲u̲l̲_̲c̲o̲m̲m̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3528/3577] Built ExactCriticalCurve.Quantum.PhysicalScalarPositivity (3.1s)
+⚠ [3529/3577] Built ExactCriticalCurve.Asymptotics.PhysicalEigenvalueFactorization (4.5s)
+warning: ExactCriticalCurve/Asymptotics/PhysicalEigenvalueFactorization.lean:68:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ExactCriticalCurve/Asymptotics/PhysicalEigenvalueFactorization.lean:68:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [3530/3577] Built ExactCriticalCurve.Quantum.PhysicalTraceContinuation (2.7s)
+✔ [3531/3577] Built ExactCriticalCurve.Quantum.PhysicalSpectrumContinuation (12s)
+⚠ [3532/3577] Built ExactCriticalCurve.Quantum.CSSQuotientGroupReduction (40s)
+warning: ExactCriticalCurve/Quantum/CSSQuotientGroupReduction.lean:20:11: unused variable `g`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/Quantum/CSSQuotientGroupReduction.lean:21:12: unused variable `g`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/Quantum/CSSQuotientGroupReduction.lean:22:11: unused variable `g`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/Quantum/CSSQuotientGroupReduction.lean:22:13: unused variable `h`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3533/3577] Built ExactCriticalCurve.Quantum.CSSQuotientGaussType (6.6s)
+✔ [3534/3577] Built ExactCriticalCurve.Quantum.OddCSSMultiplicity (11s)
+⚠ [3535/3577] Built ExactCriticalCurve.Quantum.OddCSSSuccessor (12s)
+warning: ExactCriticalCurve/Quantum/OddCSSSuccessor.lean:26:8: `ext` did not consume the patterns `x` and `y`
+
+Note: This linter can be disabled with `set_option linter.unusedRCasesPattern false`
+✔ [3536/3577] Built ExactCriticalCurve.Quantum.CSSEvenTwoGeometry (26s)
+⚠ [3537/3577] Built ExactCriticalCurve.Quantum.EvenZeroCSSLevel (25s)
+warning: ExactCriticalCurve/Quantum/EvenZeroCSSLevel.lean:86:11: `ZMod.natCast_zmod_eq_zero_iff_dvd` has been deprecated: Use `ZMod.natCast_eq_zero_iff` instead
+warning: ExactCriticalCurve/Quantum/EvenZeroCSSLevel.lean:92:11: `ZMod.natCast_zmod_eq_zero_iff_dvd` has been deprecated: Use `ZMod.natCast_eq_zero_iff` instead
+warning: ExactCriticalCurve/Quantum/EvenZeroCSSLevel.lean:113:7: `ZMod.natCast_zmod_eq_zero_iff_dvd` has been deprecated: Use `ZMod.natCast_eq_zero_iff` instead
+✔ [3538/3577] Built ExactCriticalCurve.Quantum.CSSEvenTwoDefects (11s)
+✔ [3539/3577] Built ExactCriticalCurve.Quantum.CSSEvenTwoMultiplicities (4.8s)
+✔ [3540/3577] Built ExactCriticalCurve.Quantum.EvenTwoCSSNumericMultiplicity (2.8s)
+⚠ [3541/3577] Built ExactCriticalCurve.Quantum.EvenZeroCSSAverage (17s)
+warning: ExactCriticalCurve/Quantum/EvenZeroCSSAverage.lean:26:5: `ZMod.natCast_zmod_eq_zero_iff_dvd` has been deprecated: Use `ZMod.natCast_eq_zero_iff` instead
+warning: ExactCriticalCurve/Quantum/EvenZeroCSSAverage.lean:71:5: `ZMod.natCast_zmod_eq_zero_iff_dvd` has been deprecated: Use `ZMod.natCast_eq_zero_iff` instead
+✔ [3542/3577] Built ExactCriticalCurve.Quantum.OddCSSEndpoints (69s)
+✔ [3543/3577] Built ExactCriticalCurve.Quantum.OddCSSClosedMultiplicity (7.4s)
+✔ [3544/3577] Built ExactCriticalCurve.Quantum.ExceptionalCSSRange (2.8s)
+✔ [3545/3577] Built ExactCriticalCurve.Quantum.EvenZeroCSSRange (3.1s)
+✔ [3546/3577] Built ExactCriticalCurve.Quantum.ExceptionalCSSMultiplicity (3.9s)
+✔ [3547/3577] Built ExactCriticalCurve.Quantum.ExceptionalCSSEndpoints (3.2s)
+⚠ [3548/3577] Built ExactCriticalCurve.Quantum.EvenZeroCSSMultiplicity (9.9s)
+warning: ExactCriticalCurve/Quantum/EvenZeroCSSMultiplicity.lean:19:5: `ZMod.natCast_zmod_eq_zero_iff_dvd` has been deprecated: Use `ZMod.natCast_eq_zero_iff` instead
+warning: ExactCriticalCurve/Quantum/EvenZeroCSSMultiplicity.lean:38:5: `ZMod.natCast_zmod_eq_zero_iff_dvd` has been deprecated: Use `ZMod.natCast_eq_zero_iff` instead
+warning: ExactCriticalCurve/Quantum/EvenZeroCSSMultiplicity.lean:96:5: `ZMod.natCast_zmod_eq_zero_iff_dvd` has been deprecated: Use `ZMod.natCast_eq_zero_iff` instead
+warning: ExactCriticalCurve/Quantum/EvenZeroCSSMultiplicity.lean:123:5: `ZMod.natCast_zmod_eq_zero_iff_dvd` has been deprecated: Use `ZMod.natCast_eq_zero_iff` instead
+✔ [3549/3577] Built ExactCriticalCurve.Quantum.PhysicalSectorRankPolynomialBasic (3.5s)
+✔ [3550/3577] Built ExactCriticalCurve.Quantum.PhysicalSectorRanges (4.2s)
+⚠ [3551/3577] Built ExactCriticalCurve.Quantum.EvenZeroCSSClosedMultiplicity (5.0s)
+warning: ExactCriticalCurve/Quantum/EvenZeroCSSClosedMultiplicity.lean:28:7: `ZMod.natCast_zmod_eq_zero_iff_dvd` has been deprecated: Use `ZMod.natCast_eq_zero_iff` instead
+warning: ExactCriticalCurve/Quantum/EvenZeroCSSClosedMultiplicity.lean:38:39: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  s̵i̵m̵p̵ ̵o̵n̵l̵y̵ ̵[̵h̵m̵,̵i̵f̵_̵p̵o̵s̵ ̵h̵s̵,̵p̵o̵w̵_̵z̵e̵r̵o̵,̵o̵n̵e̵_̵m̵u̵l̵,̵F̵i̵n̵s̵e̵t̵.̵r̵a̵n̵g̵e̵_̵z̵e̵r̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵i̵n̵s̵e̵t̵.̵p̵r̵o̵d̵_̵e̵m̵p̵t̵y̵,̵m̵u̵l̵_̵o̵n̵e̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵n̵e̵,̵d̵i̵v̵_̵o̵n̵e̵]̵s̲i̲m̲p̲ ̲o̲n̲l̲y̲ ̲[̲h̲m̲,̲ ̲i̲f̲_̲p̲o̲s̲ ̲h̲s̲,̲ ̲p̲o̲w̲_̲z̲e̲r̲o̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲r̲a̲n̲g̲e̲_̲z̲e̲r̲o̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲p̲r̲o̲d̲_̲e̲m̲p̲t̲y̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲o̲n̲e̲,̲ ̲d̲i̲v̲_̲o̲n̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ExactCriticalCurve/Quantum/EvenZeroCSSClosedMultiplicity.lean:53:85: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3552/3577] Built ExactCriticalCurve.Asymptotics.StochasticGroupOrder (9.1s)
+⚠ [3553/3577] Built ExactCriticalCurve.Quantum.EvenZeroCSSNumericMultiplicity (3.2s)
+warning: ExactCriticalCurve/Quantum/EvenZeroCSSNumericMultiplicity.lean:21:5: `ZMod.natCast_zmod_eq_zero_iff_dvd` has been deprecated: Use `ZMod.natCast_eq_zero_iff` instead
+✔ [3554/3577] Built ExactCriticalCurve.Quantum.PhysicalMultiplicityValues (3.6s)
+✔ [3555/3577] Built ExactCriticalCurve.Quantum.PhysicalSectorRankPolynomialRaw (12s)
+ℹ [3556/3577] Built ExactCriticalCurve.Asymptotics.PhysicalWeightExact (4.1s)
+info: ExactCriticalCurve/Asymptotics/PhysicalWeightExact.lean:73:16: Try this:
+  ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [3557/3577] Built ExactCriticalCurve.Quantum.PhysicalSectorRankPolynomial (2.6s)
+warning: ExactCriticalCurve/Quantum/PhysicalSectorRankPolynomial.lean:12:35: unused variable `hk`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3558/3577] Built ExactCriticalCurve.Quantum.PhysicalSpectrum (2.5s)
+✔ [3559/3577] Built ExactCriticalCurve.Asymptotics.PhysicalWeightLimits (5.4s)
+✔ [3560/3577] Built ExactCriticalCurve.Quantum.PhysicalGramSpectrum (4.1s)
+✔ [3561/3577] Built ExactCriticalCurve.Quantum.PhysicalFiniteSuccess (3.3s)
+ℹ [3562/3577] Built ExactCriticalCurve.Asymptotics.PhysicalEigenvaluePrefactor (3.4s)
+info: ExactCriticalCurve/Asymptotics/PhysicalEigenvaluePrefactor.lean:78:4: Try this:
+  ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [3563/3577] Built ExactCriticalCurve.Quantum.PhysicalSectorValues (2.7s)
+⚠ [3564/3577] Built ExactCriticalCurve.Asymptotics.PhysicalCriticalReindex (3.0s)
+warning: ExactCriticalCurve/Asymptotics/PhysicalCriticalReindex.lean:100:25: unused variable `r`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ExactCriticalCurve/Asymptotics/PhysicalCriticalReindex.lean:104:25: unused variable `r`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3565/3577] Built ExactCriticalCurve.Asymptotics.PhysicalEigenvalueLimits (2.8s)
+✔ [3566/3577] Built ExactCriticalCurve.Asymptotics.PhysicalCriticalWindow (3.3s)
+✔ [3567/3577] Built ExactCriticalCurve.FiniteSpectrum.PhysicalClosedSpectrum (3.8s)
+✔ [3568/3577] Built ExactCriticalCurve.Asymptotics.PhysicalCriticalValues (2.7s)
+⚠ [3569/3577] Built ExactCriticalCurve.FiniteSpectrum.FiniteSpectrum (2.9s)
+warning: ExactCriticalCurve/FiniteSpectrum/FiniteSpectrum.lean:16:16: unused variable `N`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3570/3577] Built ExactCriticalCurve.Asymptotics.PhysicalCriticalExceptional (3.4s)
+✔ [3571/3577] Built ExactCriticalCurve.Asymptotics.PhysicalCriticalWeights (6.7s)
+✔ [3572/3577] Built ExactCriticalCurve.Asymptotics.PhysicalCriticalLimit (2.6s)
+✔ [3573/3577] Built ExactCriticalCurve.Asymptotics.CriticalCurve (2.9s)
+✔ [3574/3577] Built ExactCriticalCurve.Asymptotics.PhysicalCriticalSpectralMass (3.3s)
+✔ [3575/3577] Built ExactCriticalCurve.Main (2.4s)
+✔ [3576/3577] Built ExactCriticalCurve (2.4s)
+Build completed successfully (3577 jobs).

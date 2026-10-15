@@ -1,0 +1,87 @@
+{
+  "result": "pass",
+  "git_commit": "ce043d6c1de0cda69dc3ed6163aedf23717833a5",
+  "fresh_project_oleans_before_build": 0,
+  "theorem_declarations": 1639,
+  "total_declarations_audited": 2116,
+  "actual_proof_links": 167,
+  "steps": [
+    {
+      "command": [
+        "lake",
+        "exe",
+        "cache",
+        "get",
+        "Mathlib.Algebra.Field.ZMod",
+        "Mathlib.Algebra.Group.Equiv.Basic",
+        "Mathlib.Analysis.Asymptotics.Lemmas",
+        "Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality",
+        "Mathlib.Analysis.SpecialFunctions.Complex.Circle",
+        "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar",
+        "Mathlib.Analysis.SpecialFunctions.Log.Base",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Analysis.SpecificLimits.Basic",
+        "Mathlib.Data.Fin.Tuple.Basic",
+        "Mathlib.Data.Matrix.Block",
+        "Mathlib.Data.Sym.Card",
+        "Mathlib.Data.Sym.Sym2.Order",
+        "Mathlib.Data.ZMod.Basic",
+        "Mathlib.FieldTheory.Finiteness",
+        "Mathlib.LinearAlgebra.Basis.VectorSpace",
+        "Mathlib.LinearAlgebra.BilinearForm.Orthogonal",
+        "Mathlib.LinearAlgebra.Dimension.Constructions",
+        "Mathlib.LinearAlgebra.Dimension.Free",
+        "Mathlib.LinearAlgebra.Eigenspace.Triangularizable",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas",
+        "Mathlib.LinearAlgebra.Matrix.Basis",
+        "Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Card",
+        "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+        "Mathlib.LinearAlgebra.Matrix.PosDef",
+        "Mathlib.LinearAlgebra.Matrix.Rank",
+        "Mathlib.LinearAlgebra.Matrix.Reindex",
+        "Mathlib.LinearAlgebra.Matrix.SchurComplement",
+        "Mathlib.LinearAlgebra.Matrix.Symmetric",
+        "Mathlib.LinearAlgebra.Matrix.ToLin",
+        "Mathlib.LinearAlgebra.Matrix.Trace",
+        "Mathlib.LinearAlgebra.Pi",
+        "Mathlib.LinearAlgebra.Quotient.Basic",
+        "Mathlib.Order.LiminfLimsup",
+        "Mathlib.Probability.Distributions.Uniform",
+        "Mathlib.Tactic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Topology.Algebra.Order.LiminfLimsup"
+      ],
+      "seconds": 67.954,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "seconds": 150.577,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "seconds": 908.034,
+      "exit_code": 0
+    }
+  ],
+  "total_seconds": 1142.603,
+  "main_status": "statement_only",
+  "release_gate": "correctly_rejected_missing_main_proof",
+  "evidence_directory": "/data/lean/StabilizerLearning-clean-20261011-physical-ce043d6c1de0",
+  "data_free_bytes": 152386961408,
+  "reproduction_json_sha256": "627e1272c3fa2108ef3f624db76822d3b874cbe9691e01681fbe8fa4f483a747",
+  "axioms_log_sha256": "72475aa937931dcac113e77b5cb5f0a413eb1fd6738c8695ffb2f7d204c21c75",
+  "build_log_sha256": "881fa30da611892c55e37538f60c83cd45245cb919900e0978b533ace9ab78ec"
+}

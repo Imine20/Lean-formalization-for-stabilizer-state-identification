@@ -1,0 +1,51 @@
+{
+  "scope": "Original coordinate experiment common asymptotic converse; frame/fixed-W main proof remains absent",
+  "frozen_commit": "08c15fea0aca23c8b8b93839551a222dfa83f857",
+  "reviewer": "asymptotic_normalization independent read-only review",
+  "result": "pass_no_semantic_issue_found",
+  "reviewed_files_sha256": {
+    "StabilizerLearning/Bounds/ConverseAsymptotics.lean": "b5ad277b78339890575dfae29da82c3b653bc96388734f20ec054f6b6ea5c6b9",
+    "StabilizerLearning/Bounds/ConverseEnvelopeAlgebra.lean": "ea5ba329d1520e98e0a2cad8b6749dfcaac5bbbd9232cb51e250b40dd46de780",
+    "StabilizerLearning/Bounds/ConverseExponent.lean": "4d49f953af013da5a39e53cc89f29ff824138e30c0db47ee6d8d4902bac08443",
+    "StabilizerLearning/Bounds/ConverseVariational.lean": "dc703f193149befe33acd82ea4248c382d0837ef8bf26b89e40daf791736c737",
+    "StabilizerLearning/Bounds/CoordinateConverse.lean": "647d45bf145f0423e4d38101b65e116f58daceaaa8a4b371c7b260d00512b323",
+    "StabilizerLearning/Bounds/CoordinateLogLimsup.lean": "9440828cd2c0c1494f78cf432c959e17060c1ceecb1d69509539facfe25cf71a",
+    "StabilizerLearning/Bounds/CoordinateProbabilityPositive.lean": "4d25529368f75c0ec88fc9b07e9a837141e2d9734a0a347d9bc5bd129e69fd89",
+    "StabilizerLearning/Bounds/FiniteConverseEnvelope.lean": "db925d937912dda6d90b966d81408e362eeb8d19d9d6de6dfe003fe81007dbcd",
+    "StabilizerLearning/Bounds/FiniteExponentNormalization.lean": "5b2ac638447850ac2345236e04d3f1e62d86b6e7a1d04295b20acfe58d9c2414",
+    "StabilizerLearning/Bounds/SourceScaling.lean": "7a0ebe1f50257f29d29e428e3d149593a92a9f0e5126dc26aeb069e799eb65b8"
+  },
+  "specific_checks": [
+    "unchanged original little-o assumptions and complete prime domain including two",
+    "true coordinate all-POVM optimum; no critical probability or asymptotic estimate as premise",
+    "full scalar feasibility without extra ell+t>=u or k-a-ell>=0",
+    "ordinary dimension N+1 with exact linear correction; binary enhancement normalization cancellation",
+    "original finite normalization and clipping used before proven domination",
+    "uniform support bound and explicit remainder independent of chosen row/completion variables",
+    "exact scalar maximum and attainment on full closed domain",
+    "alpha=0, beta=1, transition alpha+beta=1; excluded positivity endpoints retain J=0",
+    "beta=1 needs eventual m<=N; k<=N derived from alpha<1",
+    "real log-limsup lower bound from actual always-guess POVM",
+    "root import reachability and proof-term dependency links; strict main release still demands missing theorem"
+  ],
+  "unclosed_boundaries": [
+    "frame/Clifford/fixed-W operational comparison",
+    "unrestricted direct construction and main proof",
+    "named infinite-product prefactor identities",
+    "exact PGM formula and attainment"
+  ],
+  "additional_review": {
+    "reviewer": "completion_normalforms",
+    "scope": "paper common-asymptotic and uniformity graph labels at original P_id semantic level",
+    "result": "coordinate conclusions closed; paper node conservatively partial until physical chart state/target identification is proved; no root-source edits"
+  },
+  "preserved_source_files": {
+    "paper/main-stabilizer2.tex": "c172bf686f08d7c0b643fa45b29323ba07416c494db6531edd5990fced34bd61",
+    "StabilizerLearning/Main.lean": "8590061e1a175697333ab9c7aadf19cae093fca4f4043dfc9fdce1291a73c02e",
+    "StabilizerLearning/Quantum/Finite.lean": "a9698c12fcae47c964fc532102abbca80bde69855d39856c66872a74910455fc",
+    "StabilizerLearning/Quantum/Pauli.lean": "51905c8eed26d3c343d8269a38267c5b8c379d933ec79171b51d4d4bbe2d7d0e",
+    "StabilizerLearning/Quantum/Stabilizer.lean": "00eb0c655930879fb9efe38d6f81ae7dd9a5e015c392b99679666d4f988d775d",
+    "StabilizerLearning/FixedConstraints/Rates.lean": "38dfbbe055c71bd7384abd6de79d85e11e7f84adb93a1b6fd3b9648df40bd357",
+    "StabilizerLearning/FixedConstraints/Task.lean": "9c9d9e5c3b38e0c9b1e111b9e45775f4dc06736b3c19a1820d40fb6738498c42"
+  }
+}

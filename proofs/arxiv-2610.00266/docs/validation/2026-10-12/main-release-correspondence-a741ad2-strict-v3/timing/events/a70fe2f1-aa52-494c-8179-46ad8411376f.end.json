@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "a70fe2f1-aa52-494c-8179-46ad8411376f",
+  "event": "end",
+  "utc": "2026-10-12T13:36:42.435071+00:00",
+  "monotonic_ns": 649028520619453,
+  "host": {
+    "name": "VM-33-3-ubuntu",
+    "system": "Linux",
+    "architecture": "x86_64",
+    "cpus": 8,
+    "boot_id": "d13de06facdd722896652dc0602756dd2d6b653cdb68123a2c94c745b716088b"
+  },
+  "seconds": 0.00632959,
+  "outcome": "ok",
+  "duration_clock": "same-process monotonic",
+  "slot": "/data/lean/.proof-slots/heavy.lock",
+  "wall_clock_drift_seconds": 1.5443645629882423e-05
+}

@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-11T05:37:12.266992+00:00",
+  "logical_cpus": 8,
+  "disk_total_bytes": 42156257280,
+  "disk_used_bytes": 35401654272,
+  "disk_free_bytes": 4912828416,
+  "dependency_strategy": "two independent proof tasks reused the central cache through task-local symlinks; final validation used freshly fetched exact commits and an independent official cache",
+  "fresh_validation_directory": "/home/ubuntu/StabilizerLearning-clean-20261011-finite-probability",
+  "source_only_validation_clone": "/home/ubuntu/lean-tasks/finite-validation",
+  "final_build_and_audit_jobs": "finished",
+  "temporary_proxy_tunnel_closed": true,
+  "cloud_loopback_port_17890_absent": true
+}

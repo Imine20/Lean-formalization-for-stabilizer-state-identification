@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "bundle_id": "evidence-tools-v3",
+  "bundle_directory": "docs/validation/2026-10-12/evidence-tools-v3",
+  "accepted_mathematical_source": "a741ad2633d99a28fb4bbbe86e3a9a0ac5b7970b",
+  "parent_tools_sha256": {
+    "scripts/audit_call_inventory.py": "098b3da14f15aa30b5fb8029dde5dcc68500647012e3aca57a0c308e24c333eb",
+    "scripts/verify_joint_gate_strict.py": "1cae99f8be0cced31e36e39db9002e90a956c96a53e397aa29be47b9c5a0b85b",
+    "scripts/snapshot_verified_release.py": "76736d965061254671ae6483bcfae075787a59d73cd4a8d5c9251cded6d0ef8f"
+  },
+  "tools_sha256": {
+    "audit_call_inventory.py": "1d5a8489c7299ddd1d00024bebfe20ec7d19c74c8a0b0bc364b37e6f09541120",
+    "verify_joint_gate_strict.py": "9baafd93a372062b0dda8540c564a03ed0bd4d2a47de835bff9930fc7d23ce8b",
+    "snapshot_verified_release.py": "f7df1446d37bab4777bae539829d8fbf8f6901f673bc225066668c8f0efce14b"
+  }
+}

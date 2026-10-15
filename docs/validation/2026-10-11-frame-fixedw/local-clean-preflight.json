@@ -1,0 +1,14 @@
+{
+  "frozen_commit": "ff7e57b13fb0bae723c48f969daf72fef590f972",
+  "frozen_input_hashes_match_current": true,
+  "frozen_input_paths": 152,
+  "local_clean_command": [
+    "./scripts/lake.sh",
+    "clean",
+    "stabilizerLearning"
+  ],
+  "scope": "Only local project build directory cleared, then scripts/check.py started. Local dependency cache retained. Independent dependency/cache reconstruction is a separate cloud run.",
+  "shell_sequence": "git status --short && ./scripts/lake.sh clean stabilizerLearning && python3 scripts/check.py --output docs/validation/2026-10-11-frame-fixedw/local",
+  "local_clean_success_evidence": "Subsequent root build executed successfully after shell &&, so the preceding project-clean command exited zero. See local/build.log.",
+  "new_project_olean_count_before_local_build_not_separately_measured": true
+}

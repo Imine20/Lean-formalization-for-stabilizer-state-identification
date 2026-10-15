@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "Please cite the relevant paper(s) and identify the repository commit used."
+type: software
+version: 1.0.0
+date-released: 2026-10-15
+title: "Lean formalization for stabilizer-state identification"
+authors:
+  - family-names: Hayashi
+    given-names: Masahito
+  - family-names: Lu
+    given-names: Yimin
+repository-code: "https://github.com/Imine20/Lean-formalization-for-stabilizer-state-identification"
+url: "https://github.com/Imine20/Lean-formalization-for-stabilizer-state-identification"
+abstract: "Two independent Lean 4 projects formalizing the documented main results of arXiv:2609.13923 and arXiv:2610.00266."
+keywords:
+  - Lean 4
+  - formal verification
+  - stabilizer states
+  - quantum information
+references:
+  - type: article
+    title: "Partial Stabilizer Learning under Fixed Commuting Constraints and the Absence of a Copy-Rate Discount"
+    authors:
+      - family-names: Hayashi
+        given-names: Masahito
+      - family-names: Lu
+        given-names: Yimin
+    year: 2026
+    doi: "10.48550/arXiv.2609.13923"
+    url: "https://arxiv.org/abs/2609.13923"
+  - type: article
+    title: "Exact Critical Curve for Uniform Stabilizer-State Identification"
+    authors:
+      - family-names: Hayashi
+        given-names: Masahito
+      - family-names: Lu
+        given-names: Yimin
+    year: 2026
+    doi: "10.48550/arXiv.2610.00266"
+    url: "https://arxiv.org/abs/2610.00266"

@@ -1,0 +1,6 @@
+compiler 0 1.153
+build 0 766.309
+axioms 0 90.03
+pilot_types 0 6026.464
+release 0 105.442
+{"status": "pass", "scope": "main_release", "paper_main_complete": true, "record": "/data/lean/acceptance/ExactCriticalCurve-correspondence-release-20261012-a741ad2/acceptance/result.json"}

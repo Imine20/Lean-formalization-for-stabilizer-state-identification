@@ -1,0 +1,11 @@
+'StabilizerLearning.Quantum.PGM.sqrt_polynomial_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.PGM.gram_square_diagonal_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.PGM.sqrt_gram_diagonal_ge_one_sub_half_energy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StabilizerLearning.Quantum.PGM.sqrt_gram_diagonal_sq_ge_one_sub_energy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StabilizerLearning.Quantum.PGM.sqrt_gram_diagonal_normSq_ge_one_sub_energy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

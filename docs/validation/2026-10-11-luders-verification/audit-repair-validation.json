@@ -1,0 +1,11 @@
+{
+  "candidate_exit_code": 0,
+  "candidate_source_sha256": "0581c39f23468b3ebce28bc8b9b5fe147431c257fa28b491db2b449396f6ab0b",
+  "candidate_source_identical_to_frozen_audit": true,
+  "formal_frozen_commit": "20e9cd5188a435ac561c64825b20203070e141eb",
+  "candidate_log_sha256": "12dc46b363c286fcc916cdee460fa97597204894bf227cbec486926d74634fa1",
+  "theorem_count": 1741,
+  "all_project_declarations": 2222,
+  "actual_required_links": 206,
+  "candidate_is_not_a_substitute_for_two_formal_validation_runs": true
+}

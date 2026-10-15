@@ -1,0 +1,29 @@
+{
+  "frozen_source_commit": "77a26052318427bdd01798625d1dbecde046159b",
+  "scope": "finite coordinate probability reduction; main statement_only",
+  "files_sha256": {
+    "README.md": "087e9b2979216f8eb3093fb2ee2c4cad84b636cf6d9e161800463a7954d2102a",
+    "backup-receipt.json": "821063b18d51f4d4caf34d9d54f054c0d34d99d9ed33a2f229208919e9918ec6",
+    "cloud/Cli-fetch.log": "1e2c67895abcbc87a404cc41fbb2f4261e5075698d1f9dfb14d0b7fdfb1f385e",
+    "cloud/LeanSearchClient-fetch.log": "ff0ca4bdc03a926eed899053aa38b18673cc8461d915f1ed3ca1a9524984eeca",
+    "cloud/Qq-fetch.log": "17523d50e427d3b072359fc7c5d224229724c1ea8809122e65d7d74c842efd78",
+    "cloud/aesop-fetch.log": "265c876a349c0661f7aeff08a190f2f758b72673fb4661ba906d426dcaaf3cbd",
+    "cloud/axioms.log": "3af8c086d6604e9f78401c818c00c4f72d8baf0f28bf51c7b33b8833601e25c8",
+    "cloud/batteries-fetch.log": "cb24356fe8309c9c36d81d725306ce52613abd026c697d184d675efb24e18bdd",
+    "cloud/build.log": "e5d2e0da847204e5b8469c170cc9958ae28848a7a0057734b88a70a97817d1d3",
+    "cloud/cache.log": "2329940d64be7795f4a3367ea6f7a4b72cc583e1ad9ffe5ef0ebedd2b6b4785a",
+    "cloud/importGraph-fetch.log": "3c27ff3d5297f61abbed18cd5a6b3b2208a0d0944b362ba0e75728c8ff2ef881",
+    "cloud/main-release-gate.log": "94e9c5ec4f100d3c1f52a11b60d4688008f7e9b44c25384257880900b034abc5",
+    "cloud/mathlib-fetch.log": "4dddf689d4d14ec7ba34c9b57726a5fd7e81dd433f83df64a640898d26b5f55a",
+    "cloud/plausible-fetch.log": "8b006ddcd3a83a573732a8e52862b81d8418cf384cb436aeec4d9ea583770972",
+    "cloud/proofwidgets-fetch.log": "893f7a72b079a5115e47f8a8c387ab5e9b0b52bd9a2daf7bbd9ce6dcd8a88739",
+    "cloud/reproduction.json": "305a8b0fbaa830475155b888a6ba6fe8451ffb2737f7bac3ca15fc36274bd87f",
+    "cloud-storage.json": "cd5ca7f5f7e283dbeea5723bc1207d2b9c1184a095bab1410888c99b0697a061",
+    "comparison.json": "cf7a87db40c17c3763b31617b3872dddd3b048d5debde2bb561b16caf6bf7c31",
+    "local/axioms.log": "3af8c086d6604e9f78401c818c00c4f72d8baf0f28bf51c7b33b8833601e25c8",
+    "local/build.log": "b93aafeae3ee493d91a83b95da5f846d6c7a431d249daf59bd2936496a3c5b96",
+    "local/check.json": "5fb9e15150b17ba340f8037f5b37e35d36558bbc09244607b1418dfb45dc5897",
+    "local/main-release-gate.log": "94e9c5ec4f100d3c1f52a11b60d4688008f7e9b44c25384257880900b034abc5",
+    "semantic-review.json": "a11934d5ac36a3c34470a6aa08ec4703ab1946922adef9020cff5428e70fe532"
+  }
+}

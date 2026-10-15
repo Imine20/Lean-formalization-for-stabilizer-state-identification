@@ -1,0 +1,68 @@
+{
+  "scope": "finite coordinate experiment, not the FixedWNoCopyRateDiscount main theorem",
+  "reviewers": [
+    {
+      "agent": "completion_equiv",
+      "scope": "WeightedPOVM, original finite weighted reduction, normalization and positive support",
+      "result": "no semantic defect found; full physical parameter bridge required and subsequently assigned"
+    },
+    {
+      "agent": "completion_rank",
+      "scope": "FiniteProbabilityReduction and CoordinateCharacters",
+      "result": "all POVMs retained; source-domain maximizers are proved outputs; diagonal half scaling, cross terms and binary full Z4 parameters preserved"
+    },
+    {
+      "agent": "completion_normalforms",
+      "scope": "WeightedPOVM through exact counting and clipped finite structure",
+      "result": "no normalization or quantifier defect found; exact PGM formula and full fixed-W task must remain open"
+    },
+    {
+      "agent": "completion_normalforms",
+      "scope": "frozen OddCoordinateProbability commit 1b28d7bf8c5feb681d11bbf774b1d6ab58ae4398",
+      "source_sha256": "e02d7eec0a10ebdac3f66731e174a244bd90fbaf6c3fea865b281148d94d8e32",
+      "result": "no semantic issue: original half-quadratic phase, gamma=-b1, unscaled hidden prior, mixing after tensor power, reversible full POVM range and exact/structural/source bounds preserved"
+    },
+    {
+      "agent": "completion_normalforms",
+      "scope": "frozen BinaryCoordinateProbability commit af7eddf94491fac9d5c21ad49ab6ebb4d06402af",
+      "source_sha256": "30cfaa871ddaad61719e88489bdf0262ec5db3e9f52266367e7a4637bb6db8dc",
+      "result": "no semantic issue: literal alpha/edge phase, full mod-four visible parameters, original uniform prior via the proved parameter equivalence, tensor-before-hidden-average, reversible complete POVM range, clipping and source feasibility retained"
+    }
+  ],
+  "specific_checks": [
+    "n in these Lean modules means lower row count; paper total N=m+n",
+    "full label denominator fixed before conditioning",
+    "ordinary uses augmented all-ones row; binary uses plain rows",
+    "enhanced binary diagonal remains Z4; 2^m appears only in forgetting bound",
+    "actual support rather than all arithmetically feasible row pairs",
+    "empty completion domain contributes zero",
+    "all source-domain maximizers proved to exist, not theorem hypotheses",
+    "arbitrary POVMs, reversible computational basis and report relabeling",
+    "original source and Main statement unchanged",
+    "hidden mixing is after tensor copies, not tensor power of the hidden mixture"
+  ],
+  "remaining_semantic_boundaries": [
+    "uniform Pauli / Clifford / Witt and physical stabilizer equivalences",
+    "frame-to-coordinate and fixed-W operational comparison",
+    "exact PGM formula/attainment not claimed",
+    "specified infinite-product kappa prefactors not identified with the explicit uniform constants",
+    "asymptotic optimization and complete main proof"
+  ],
+  "build_evidence": "local/check.json and cloud/reproduction.json both pass; comparison.json verifies source hashes, dependency graphs and all recursive axiom results agree",
+  "reviewed_source_sha256": {
+    "StabilizerLearning/FiniteCopy/WeightedPOVM.lean": "90918463af0be0916f7e9df7fd1b3ddd9c42e2d490c85b4cc82f14cb506d830e",
+    "StabilizerLearning/Bounds/FiniteProbabilityReduction.lean": "c270f55385c664603625b0b968e050f722d61882cef4ca4e5192cf93bd8c0644",
+    "StabilizerLearning/Bounds/OddCoordinateProbability.lean": "e02d7eec0a10ebdac3f66731e174a244bd90fbaf6c3fea865b281148d94d8e32",
+    "StabilizerLearning/Bounds/BinaryCoordinateProbability.lean": "30cfaa871ddaad61719e88489bdf0262ec5db3e9f52266367e7a4637bb6db8dc"
+  },
+  "review_corrections": [
+    "Removed stale claim that normalized/clipped finite structural interface was still open.",
+    "Downgraded source Appendix B standard-character sum node to partial: the proved full-dual orthogonality is not the literal source coordinate-sum statement."
+  ],
+  "local_frozen_check": "local/check.json",
+  "local_kernel_and_dependency_audit": "local/axioms.log",
+  "main_release_gate": "local/main-release-gate.log",
+  "frozen_source_commit": "77a26052318427bdd01798625d1dbecde046159b",
+  "cloud_fresh_build": "cloud/reproduction.json",
+  "cross_platform_comparison": "comparison.json"
+}

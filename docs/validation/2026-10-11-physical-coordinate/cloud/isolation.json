@@ -1,0 +1,117 @@
+{
+  "checked_at": "2026-10-11T07:28:34.652952+00:00",
+  "source_commit": "ce043d6c1de0cda69dc3ed6163aedf23717833a5",
+  "source_worktree_status": "",
+  "packages_directory_is_symlink": false,
+  "independent_mathlib_cache_directory": "/data/lean/StabilizerLearning-clean-20261011-physical-ce043d6c1de0/mathlib-cache",
+  "mathlib_cache_is_symlink": false,
+  "packages": [
+    {
+      "name": "mathlib",
+      "expected_rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "actual_rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "origin": "https://github.com/leanprover-community/mathlib4.git",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "resolved_directory": "/data/lean/StabilizerLearning-clean-20261011-physical-ce043d6c1de0/project/.lake/packages/mathlib",
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": []
+    },
+    {
+      "name": "plausible",
+      "expected_rev": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "actual_rev": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "origin": "https://github.com/leanprover-community/plausible",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "resolved_directory": "/data/lean/StabilizerLearning-clean-20261011-physical-ce043d6c1de0/project/.lake/packages/plausible",
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": []
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected_rev": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "actual_rev": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "origin": "https://github.com/leanprover-community/LeanSearchClient",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "resolved_directory": "/data/lean/StabilizerLearning-clean-20261011-physical-ce043d6c1de0/project/.lake/packages/LeanSearchClient",
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": []
+    },
+    {
+      "name": "importGraph",
+      "expected_rev": "d768126816be17600904726ca7976b185786e6b9",
+      "actual_rev": "d768126816be17600904726ca7976b185786e6b9",
+      "origin": "https://github.com/leanprover-community/import-graph",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "resolved_directory": "/data/lean/StabilizerLearning-clean-20261011-physical-ce043d6c1de0/project/.lake/packages/importGraph",
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": []
+    },
+    {
+      "name": "proofwidgets",
+      "expected_rev": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "actual_rev": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "origin": "https://github.com/leanprover-community/ProofWidgets4",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "resolved_directory": "/data/lean/StabilizerLearning-clean-20261011-physical-ce043d6c1de0/project/.lake/packages/proofwidgets",
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": []
+    },
+    {
+      "name": "aesop",
+      "expected_rev": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "actual_rev": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "origin": "https://github.com/leanprover-community/aesop",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "resolved_directory": "/data/lean/StabilizerLearning-clean-20261011-physical-ce043d6c1de0/project/.lake/packages/aesop",
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": []
+    },
+    {
+      "name": "Qq",
+      "expected_rev": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "actual_rev": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "origin": "https://github.com/leanprover-community/quote4",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "resolved_directory": "/data/lean/StabilizerLearning-clean-20261011-physical-ce043d6c1de0/project/.lake/packages/Qq",
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": []
+    },
+    {
+      "name": "batteries",
+      "expected_rev": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "actual_rev": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "origin": "https://github.com/leanprover-community/batteries",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "resolved_directory": "/data/lean/StabilizerLearning-clean-20261011-physical-ce043d6c1de0/project/.lake/packages/batteries",
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": []
+    },
+    {
+      "name": "Cli",
+      "expected_rev": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "actual_rev": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "origin": "https://github.com/leanprover/lean4-cli",
+      "tracked_status": "",
+      "directory_is_symlink": false,
+      "resolved_directory": "/data/lean/StabilizerLearning-clean-20261011-physical-ce043d6c1de0/project/.lake/packages/Cli",
+      "git_objects_alternates_present": false,
+      "tracked_olean_files": []
+    }
+  ],
+  "temporary_17892_listener_absent": true,
+  "data_disk_total_bytes": 210240491520,
+  "data_disk_used_bytes": 45249073152,
+  "data_disk_free_bytes": 162827169792,
+  "result": "pass",
+  "post_reproduction_checked_at": "2026-10-11T07:38:06.327037+00:00",
+  "data_disk_free_bytes_after_reproduction": 152386961408,
+  "temporary_17892_listener_absent_after_reproduction": true
+}

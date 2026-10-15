@@ -1,0 +1,49 @@
+{
+  "scope": "Original standard transverse physical P_id, all primes, exact states/targets/priors/all collective POVMs, common J; complete general assignment family separately integrated",
+  "frozen_commit": "ce043d6c1de0cda69dc3ed6163aedf23717833a5",
+  "reviewer": "completion_normalforms, independent read-only review of original paper and final bridge interfaces",
+  "result": "pass_no_semantic_issue_found",
+  "reviewed_files_sha256": {
+    "StabilizerLearning/Quantum/PhysicalChart.lean": "4c4eb45c27537af1839a1490f5b85c1f33d5e3af510657df751e93e04d1a7ca7",
+    "StabilizerLearning/Quantum/CanonicalDirections.lean": "6a416a8a1f3bdccea41a174408d4dddd982770c922c8d78d66818c15cf5ac734",
+    "StabilizerLearning/Quantum/CanonicalReports.lean": "8566f9f21dee81d93ca83ae3a18a8c1fde9a52cbbc256fe76bc0437ec525040b",
+    "StabilizerLearning/Quantum/TransverseGraph.lean": "5bb2a097f9f2b12fac65f5e682bb9a1ced037b05246a329f667be206d3dfc339",
+    "StabilizerLearning/Quantum/OddGraphState.lean": "45848d2e0d35f70bab2b974501df979dee9c4cf8626d49ec9e0713adf0d73b3f",
+    "StabilizerLearning/Quantum/BinaryGraphState.lean": "3fdd9eec698580d307ecce2d12ffa44a4730cff5a73503eb5b808dfc80ea4073",
+    "StabilizerLearning/Quantum/OddCoordinateStateBridge.lean": "6f05ce471affa2ac55be8fa9ea1c3dfff797b634503f1416090afe601681120d",
+    "StabilizerLearning/Quantum/BinaryCoordinateStateBridge.lean": "f9142c9844634c07112545e8823069ac75f5d1621a9567202178ddb536ce798d",
+    "StabilizerLearning/Quantum/OddCanonicalReportBridge.lean": "b9f45d78c436c75018b5c7ee7c2dfd7595fe3fbe34f41d85b4a0528c04d91c1b",
+    "StabilizerLearning/Quantum/BinaryCanonicalReportBridge.lean": "b0b2b0ffa45b47e0d9725d322a234817efa23187bc35c03ed6942176d63ef7d2",
+    "StabilizerLearning/Bounds/PhysicalCoordinateProbability.lean": "1c39aa967fb62ff26f8ebeaca9692999dafea267c2dda3a8031a50d091ff69b8",
+    "StabilizerLearning/Bounds/PhysicalConverse.lean": "b058fe845276fd283de0dcf8efb8601c49b311d2f2ae332bd7ed49fb7e87dd36"
+  },
+  "preserved_source_files": {
+    "paper/main-stabilizer2.tex": "c172bf686f08d7c0b643fa45b29323ba07416c494db6531edd5990fced34bd61",
+    "StabilizerLearning/Main.lean": "8590061e1a175697333ab9c7aadf19cae093fca4f4043dfc9fdce1291a73c02e",
+    "StabilizerLearning/Quantum/Finite.lean": "a9698c12fcae47c964fc532102abbca80bde69855d39856c66872a74910455fc",
+    "StabilizerLearning/Quantum/Pauli.lean": "51905c8eed26d3c343d8269a38267c5b8c379d933ec79171b51d4d4bbe2d7d0e",
+    "StabilizerLearning/Quantum/Stabilizer.lean": "00eb0c655930879fb9efe38d6f81ae7dd9a5e015c392b99679666d4f988d775d",
+    "StabilizerLearning/FixedConstraints/Rates.lean": "38dfbbe055c71bd7384abd6de79d85e11e7f84adb93a1b6fd3b9648df40bd357",
+    "StabilizerLearning/FixedConstraints/Task.lean": "9c9d9e5c3b38e0c9b1e111b9e45775f4dc06736b3c19a1820d40fb6738498c42"
+  },
+  "specific_checks": [
+    "Actual distinct original density matrices, with complete transverse classification and faithful labels; uniform state prior has no multiplicity",
+    "Canonical report contains every feasible direction family and entire original assignment on its actual span; no coordinate-image or realizability premise",
+    "Target constructed from physical Lagrangian projection inverse and original assignment restriction; all reports subsequently proved realizable",
+    "Odd phase correction and report sign retained; full binary ZMod 4 phases retained",
+    "Pointwise score equality for each measurement and a proved equivalence of all POVMs, hence equality of full score ranges and optima",
+    "Take tensor power of each fixed hidden state before averaging; true uniform state bijection gives product law",
+    "All finite m,b,k including zeros; original m<=N and original little-o scaling; alpha=0, beta=1 and alpha+beta=1 boundaries",
+    "physical_common_converse_source directly uses the proved physical optimum equality and the existing full finite-to-common-J theorem",
+    "The standard full-chart m=N endpoint does not mean the unrestricted ensemble of all stabilizer states"
+  ],
+  "unclosed_boundaries": [
+    "arbitrary reference frames, symplectic/Clifford implementation",
+    "fixed-W exact/verification comparisons, incidence and exceptional mass",
+    "unrestricted direct construction and unchanged main theorem",
+    "literal phase-adjusted Weyl/W_A/W_C and named verifier-projector interfaces",
+    "prescribed proper-subspace assignment extension fibers and named infinite-product prefactors"
+  ],
+  "peer_general_assignment_review": "docs/assignment-completeness-review.md; peer full acceptance fb72b95972a5cfc834062260fb7e7a95adde5c09; eight integrated files byte-identical to 79003a8",
+  "main_theorem_complete": false
+}

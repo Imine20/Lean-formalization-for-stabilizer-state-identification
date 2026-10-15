@@ -1,0 +1,9 @@
+{
+  "result": "pass",
+  "checked_at": "2026-10-11T11:45:12.627758+00:00",
+  "frozen_commit": "6d17da20d7a7625333ecf87d23824f031a01a6ae",
+  "received_files_match_cloud_hashes": true,
+  "all_independent_source_hashes_match_current": true,
+  "independently_expanded_expected_statement_compiles": true,
+  "scope": "Supplementary independent transcription and Main axiom check with a new project build; reuses copied version-pinned official dependency cache; not a replacement for the two complete audits."
+}

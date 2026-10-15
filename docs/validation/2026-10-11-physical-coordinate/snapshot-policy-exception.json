@@ -1,0 +1,10 @@
+{
+  "scope": "One-time exact-path addition to static snapshot allowlist; original frozen scripts unmodified",
+  "path": ".github/workflows/lean.yml",
+  "git_blob_sha256": {
+    "4ab6dbf1f5fb5a4f42e2fce7fe313e8b5e6e8b57": "a154a1f41573f4477e09fecf80e04a8763ed929725e0588a52cb1f833aa372fc"
+  },
+  "reason": "Preexisting development-check workflow managed by the other user-assigned process. Read-only source/config backup requested by user; no workflow execution or GitHub write. Original sensitive-path and content checks retained.",
+  "source_freeze": "ce043d6c1de0cda69dc3ed6163aedf23717833a5",
+  "build_audit_affected": false
+}

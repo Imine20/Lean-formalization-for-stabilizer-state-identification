@@ -1,0 +1,55 @@
+{
+  "recorded_at": "2026-10-11T09:26:55.772933+00:00",
+  "status": "accepted_after_three_complete_checks_and_source_comparison",
+  "peer_frozen_commit": "583897b83f2714c9b1a4d27fb1cfd2fc988ee7e8",
+  "local_integration_commit": "9c6bacadd5fd4231f0e59955e17e565e17b7b56e",
+  "all_changed_formal_files_match_peer": true,
+  "reviewed_files_sha256": {
+    "StabilizerLearning/Bounds/GradedAsymptotics.lean": "a8c1f73184005b3830c2dab4122c86103e898645a83407f7e5f1fe9ad2c50c98",
+    "StabilizerLearning/Bounds/VerificationConverse.lean": "e76d59c71ccb4602447f366f4a86c869f2e8de7cad2cc04fe7ad082185c5b25e",
+    "StabilizerLearning/FiniteCopy/BoundedList.lean": "cfbf90c1b817aec742f2409436146dd78ad5d4bee7ba7e14cc13d97da7abd9eb",
+    "StabilizerLearning/FixedConstraints/CompatibleList.lean": "7aee48fbda5aafb6d1cf5b31bfa1f6e09ce0c3f46bba357450ae54f63dbfe7b9",
+    "StabilizerLearning/FixedConstraints/CompatibleListCounting.lean": "23c43e12a4ab47df9f59fe924a6b7df156be7971f01de0bf0632697b459e3cf8",
+    "StabilizerLearning/FixedConstraints/CompatibleVerification.lean": "55935d04141b5f8fc6e0679be20629bfae331689d6d4dc93d54a3bdb853fb109",
+    "StabilizerLearning/FixedConstraints/GradedComparison.lean": "975967d53446782cf46ec064d085ae4191f8146b5fe40530ff63744ed298aec5",
+    "StabilizerLearning/Quantum/AssignmentExtension.lean": "b75ab5226db74a085c7058f43e8c4c4a382eb1cd1461a62032930b07b04f73df",
+    "StabilizerLearning/Verified.lean": "5a83c8baff376505327ede74747c70283dcf31a95a28f32785329f882ee68e56"
+  },
+  "preserved_source_files": {
+    "StabilizerLearning/Main.lean": "8590061e1a175697333ab9c7aadf19cae093fca4f4043dfc9fdce1291a73c02e",
+    "StabilizerLearning/Quantum/Finite.lean": "a9698c12fcae47c964fc532102abbca80bde69855d39856c66872a74910455fc",
+    "StabilizerLearning/Quantum/Pauli.lean": "51905c8eed26d3c343d8269a38267c5b8c379d933ec79171b51d4d4bbe2d7d0e",
+    "StabilizerLearning/Quantum/Stabilizer.lean": "00eb0c655930879fb9efe38d6f81ae7dd9a5e015c392b99679666d4f988d775d",
+    "StabilizerLearning/FixedConstraints/Task.lean": "9c9d9e5c3b38e0c9b1e111b9e45775f4dc06736b3c19a1820d40fb6738498c42",
+    "StabilizerLearning/FixedConstraints/Rates.lean": "38dfbbe055c71bd7384abd6de79d85e11e7f84adb93a1b6fd3b9648df40bd357",
+    "paper/main-stabilizer2.tex": "c172bf686f08d7c0b643fa45b29323ba07416c494db6531edd5990fced34bd61",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lake-manifest.json": "0ae1e12b18776157f4c8215f8491d669c74a10913031b15ac4cc6204994d98fc",
+    "lakefile.toml": "ba692b6fad43933dfd6210cf27b09e98b3dd3e9a4d93531b174a5d8f46adaa66",
+    "toolchain-lock.json": "bb3b3d33c3222054581658ad24aeeda15d75eb0d8018020e166861303870f916"
+  },
+  "local_clean_command": "./scripts/lake.sh clean stabilizerLearning && python3 scripts/check.py --output artifacts/graded-mac-clean",
+  "local_clean_scope": "Project cache only; existing exact dependencies retained. Clean success is ensured by &&; a prebuild zero-olean measurement was not recorded.",
+  "fresh_cloud_directory": "/data/lean/StabilizerLearning-clean-20261011-graded-583897b83f27",
+  "cloud_owning_peer": "01a1290e-923a-75e0-9804-b4e769f99744",
+  "source_frozen_until_checks_finish": true,
+  "github": "Owned by separate process.",
+  "acceptance_requires": [
+    "Both peer Linux runs exit successfully",
+    "Mac clean full check exits successfully",
+    "All source hashes and full recursive audit logs agree",
+    "Independent semantic review has no unresolved blocker",
+    "Actual core proof dependencies close; original Main release still rejects absence of full proof"
+  ],
+  "independent_semantic_review": "pass_no_blocking_semantic_issue_found",
+  "independent_reviewers": [
+    "/root/clifford_implementation",
+    "/root/frame_geometry",
+    "/root/fixedw_geometry"
+  ],
+  "review_document_sha256": "f5be09d885ba7ffc6355004b9a63a03361877a358ebb723aa5796cb9da832c82",
+  "local_root_build": "passed; 3471 Lake jobs are dependency/build coverage only, not proof progress",
+  "local_root_build_log_sha256": "81c6e2d050158a232139bb95d2d049193bd770839fe44e51c2ba075bcb780bb1",
+  "remaining_gates": [],
+  "result_record": "comparison.json"
+}

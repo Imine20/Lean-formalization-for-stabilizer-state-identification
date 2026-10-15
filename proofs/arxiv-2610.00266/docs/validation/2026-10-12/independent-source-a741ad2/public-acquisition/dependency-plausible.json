@@ -1,0 +1,11 @@
+{
+  "name": "plausible",
+  "url": "https://github.com/leanprover-community/plausible",
+  "expected_revision": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+  "commands": [],
+  "started_at": "2026-10-12T12:54:30.241463+00:00",
+  "reused_own_previously_fetched_source": true,
+  "result": "pass",
+  "ended_at": "2026-10-12T12:54:30.262289+00:00",
+  "log_sha256": null
+}

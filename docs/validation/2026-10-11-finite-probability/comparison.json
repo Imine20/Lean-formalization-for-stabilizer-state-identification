@@ -1,0 +1,114 @@
+{
+  "checked_at": "2026-10-11T05:36:50.660242+00:00",
+  "result": "pass",
+  "frozen_commit": "77a26052318427bdd01798625d1dbecde046159b",
+  "local_and_cloud_source_hashes_identical": true,
+  "independent_dependency_checkout_and_cache": true,
+  "fresh_project_oleans_before_build": 0,
+  "compiler_reused_but_pin_checked": true,
+  "kernel_dependency_graphs_identical": true,
+  "recursive_axiom_results_identical": true,
+  "theorem_declarations_audited": 970,
+  "total_declarations_audited": 1340,
+  "required_transitive_proof_links": 82,
+  "reviewed_source_hashes_match": true,
+  "axiom_allowlist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "main_theorem_complete": false,
+  "main_release": "correctly rejected: statement_only",
+  "local_steps": [
+    {
+      "args": [
+        "build"
+      ],
+      "seconds": 49.465,
+      "exit_code": 0,
+      "log": "build.log"
+    },
+    {
+      "args": [
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "seconds": 238.317,
+      "exit_code": 0,
+      "log": "axioms.log"
+    },
+    {
+      "args": [
+        "env",
+        "lean",
+        "scripts/ReleaseAudit.lean"
+      ],
+      "seconds": 10.89,
+      "exit_code": 1,
+      "log": "main-release-gate.log"
+    }
+  ],
+  "cloud_total_seconds": 568.042,
+  "cloud_steps": [
+    {
+      "command": [
+        "lake",
+        "exe",
+        "cache",
+        "get",
+        "Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality",
+        "Mathlib.Analysis.SpecialFunctions.Complex.Circle",
+        "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Analysis.SpecificLimits.Basic",
+        "Mathlib.Data.Matrix.Block",
+        "Mathlib.Data.Sym.Card",
+        "Mathlib.Data.Sym.Sym2.Order",
+        "Mathlib.Data.ZMod.Basic",
+        "Mathlib.FieldTheory.Finiteness",
+        "Mathlib.LinearAlgebra.Basis.VectorSpace",
+        "Mathlib.LinearAlgebra.BilinearForm.Orthogonal",
+        "Mathlib.LinearAlgebra.Dimension.Constructions",
+        "Mathlib.LinearAlgebra.Dimension.Free",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas",
+        "Mathlib.LinearAlgebra.Matrix.Basis",
+        "Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Card",
+        "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+        "Mathlib.LinearAlgebra.Matrix.PosDef",
+        "Mathlib.LinearAlgebra.Matrix.Rank",
+        "Mathlib.LinearAlgebra.Matrix.SchurComplement",
+        "Mathlib.LinearAlgebra.Matrix.Symmetric",
+        "Mathlib.LinearAlgebra.Matrix.Trace",
+        "Mathlib.LinearAlgebra.Pi",
+        "Mathlib.LinearAlgebra.Quotient.Basic",
+        "Mathlib.Probability.Distributions.Uniform",
+        "Mathlib.Tactic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Topology.Algebra.Order.LiminfLimsup"
+      ],
+      "seconds": 58.789,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "seconds": 93.81,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "seconds": 402.387,
+      "exit_code": 0
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "execution": [
+    {
+      "name": "mathlib",
+      "expected_rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "actual_rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "tracked_status": "",
+      "independent_path_without_symlink": false,
+      "no_git_alternates": true
+    },
+    {
+      "name": "plausible",
+      "expected_rev": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "actual_rev": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "tracked_status": "",
+      "independent_path_without_symlink": false,
+      "no_git_alternates": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected_rev": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "actual_rev": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "tracked_status": "",
+      "independent_path_without_symlink": false,
+      "no_git_alternates": true
+    },
+    {
+      "name": "importGraph",
+      "expected_rev": "d768126816be17600904726ca7976b185786e6b9",
+      "actual_rev": "d768126816be17600904726ca7976b185786e6b9",
+      "tracked_status": "",
+      "independent_path_without_symlink": false,
+      "no_git_alternates": true
+    },
+    {
+      "name": "proofwidgets",
+      "expected_rev": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "actual_rev": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "tracked_status": "",
+      "independent_path_without_symlink": false,
+      "no_git_alternates": true
+    },
+    {
+      "name": "aesop",
+      "expected_rev": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "actual_rev": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "tracked_status": "",
+      "independent_path_without_symlink": false,
+      "no_git_alternates": true
+    },
+    {
+      "name": "Qq",
+      "expected_rev": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "actual_rev": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "tracked_status": "",
+      "independent_path_without_symlink": false,
+      "no_git_alternates": true
+    },
+    {
+      "name": "batteries",
+      "expected_rev": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "actual_rev": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "tracked_status": "",
+      "independent_path_without_symlink": false,
+      "no_git_alternates": true
+    },
+    {
+      "name": "Cli",
+      "expected_rev": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "actual_rev": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "tracked_status": "",
+      "independent_path_without_symlink": false,
+      "no_git_alternates": true
+    }
+  ],
+  "fresh": [
+    {
+      "name": "mathlib",
+      "expected_rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "actual_rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "tracked_status": "",
+      "independent_path_without_symlink": true,
+      "no_git_alternates": true
+    },
+    {
+      "name": "plausible",
+      "expected_rev": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "actual_rev": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "tracked_status": "",
+      "independent_path_without_symlink": true,
+      "no_git_alternates": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected_rev": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "actual_rev": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "tracked_status": "",
+      "independent_path_without_symlink": true,
+      "no_git_alternates": true
+    },
+    {
+      "name": "importGraph",
+      "expected_rev": "d768126816be17600904726ca7976b185786e6b9",
+      "actual_rev": "d768126816be17600904726ca7976b185786e6b9",
+      "tracked_status": "",
+      "independent_path_without_symlink": true,
+      "no_git_alternates": true
+    },
+    {
+      "name": "proofwidgets",
+      "expected_rev": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "actual_rev": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "tracked_status": "",
+      "independent_path_without_symlink": true,
+      "no_git_alternates": true
+    },
+    {
+      "name": "aesop",
+      "expected_rev": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "actual_rev": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "tracked_status": "",
+      "independent_path_without_symlink": true,
+      "no_git_alternates": true
+    },
+    {
+      "name": "Qq",
+      "expected_rev": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "actual_rev": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "tracked_status": "",
+      "independent_path_without_symlink": true,
+      "no_git_alternates": true
+    },
+    {
+      "name": "batteries",
+      "expected_rev": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "actual_rev": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "tracked_status": "",
+      "independent_path_without_symlink": true,
+      "no_git_alternates": true
+    },
+    {
+      "name": "Cli",
+      "expected_rev": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "actual_rev": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "tracked_status": "",
+      "independent_path_without_symlink": true,
+      "no_git_alternates": true
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "result": "pass",
+  "checked_at": "2026-10-11T11:45:15.358849+00:00",
+  "frozen_commit": "6d17da20d7a7625333ecf87d23824f031a01a6ae",
+  "main_theorem_complete": true,
+  "main_exact_original_type_verified": true,
+  "frozen_inputs_identical_across_two_runs": true,
+  "formal_input_files": 181,
+  "mac_clean_and_linux_fresh_checks_passed": true,
+  "fresh_project_oleans_before_build": 0,
+  "fresh_dependencies_and_cache_independent": true,
+  "compiler_reused_and_version_archive_pin_checked": true,
+  "complete_audit_logs_byte_identical": true,
+  "audit_sha256": "582de57787468bcfdb132eeb7a7f895127a1751c9b7ed0a6cdcc5fc3217b7b73",
+  "received_cloud_evidence_hashes_verified": true,
+  "theorem_declarations_audited": 2759,
+  "total_declarations_audited": 3448,
+  "required_transitive_proof_links": 345,
+  "main_checked_transitive_links": 20,
+  "peer_pgm_component_acceptance_verified": true,
+  "peer_pgm_component_frozen_commit": "a1f4d122949298a9f8dd465dd16f5680287cb275",
+  "peer_pgm_audit_sha256": "e246de0270be5a7e063e9464bb631517e04d5f0e372e4647c6327a68697fd99e",
+  "independent_semantic_review": "no unresolved blocker",
+  "original_public_definitions_and_paper_unchanged": true,
+  "preexisting_math_files_changed_only": [
+    "StabilizerLearning/Main.lean",
+    "StabilizerLearning/Verified.lean"
+  ],
+  "main_target_definition_unchanged": true,
+  "axiom_allowlist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "closed_scope": "Original fixed-W Main, original all-POVM common-J converse, four uniform direct limits under real k-n divergence, exact liminf/sInf rates one, actual PGM normalization, exact shell counts, all-input postprocessing and dimension-only covariance.",
+  "mac_steps": [
+    {
+      "args": [
+        "build"
+      ],
+      "seconds": 2449.722,
+      "exit_code": 0,
+      "log": "build.log"
+    },
+    {
+      "args": [
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "seconds": 1204.568,
+      "exit_code": 0,
+      "log": "axioms.log"
+    },
+    {
+      "args": [
+        "env",
+        "lean",
+        "scripts/ReleaseAudit.lean"
+      ],
+      "seconds": 9.289,
+      "exit_code": 0,
+      "log": "main-release-gate.log"
+    }
+  ],
+  "cloud_steps": [
+    {
+      "command": [
+        "lake",
+        "exe",
+        "cache",
+        "get",
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Algebra.Field.ZMod",
+        "Mathlib.Algebra.Group.Equiv.Basic",
+        "Mathlib.Analysis.Asymptotics.Lemmas",
+        "Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality",
+        "Mathlib.Analysis.Matrix.Order",
+        "Mathlib.Analysis.SpecialFunctions.Complex.Circle",
+        "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar",
+        "Mathlib.Analysis.SpecialFunctions.Log.Base",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Analysis.SpecificLimits.Basic",
+        "Mathlib.Data.Fin.Tuple.Basic",
+        "Mathlib.Data.Matrix.Block",
+        "Mathlib.Data.Nat.Sqrt",
+        "Mathlib.Data.Sym.Card",
+        "Mathlib.Data.Sym.Sym2.Order",
+        "Mathlib.Data.ZMod.Basic",
+        "Mathlib.FieldTheory.Finiteness",
+        "Mathlib.GroupTheory.Index",
+        "Mathlib.LinearAlgebra.Basis.Prod",
+        "Mathlib.LinearAlgebra.Basis.VectorSpace",
+        "Mathlib.LinearAlgebra.BilinearForm.Orthogonal",
+        "Mathlib.LinearAlgebra.Dimension.Constructions",
+        "Mathlib.LinearAlgebra.Dimension.Free",
+        "Mathlib.LinearAlgebra.Dual.Lemmas",
+        "Mathlib.LinearAlgebra.Eigenspace.Triangularizable",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas",
+        "Mathlib.LinearAlgebra.Matrix.Basis",
+        "Mathlib.LinearAlgebra.Matrix.DotProduct",
+        "Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Card",
+        "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+        "Mathlib.LinearAlgebra.Matrix.PosDef",
+        "Mathlib.LinearAlgebra.Matrix.Rank",
+        "Mathlib.LinearAlgebra.Matrix.Reindex",
+        "Mathlib.LinearAlgebra.Matrix.SchurComplement",
+        "Mathlib.LinearAlgebra.Matrix.Symmetric",
+        "Mathlib.LinearAlgebra.Matrix.ToLin",
+        "Mathlib.LinearAlgebra.Matrix.Trace",
+        "Mathlib.LinearAlgebra.Pi",
+        "Mathlib.LinearAlgebra.Projection",
+        "Mathlib.LinearAlgebra.Quotient.Basic",
+        "Mathlib.LinearAlgebra.UnitaryGroup",
+        "Mathlib.Order.ConditionallyCompleteLattice.Finset",
+        "Mathlib.Order.LiminfLimsup",
+        "Mathlib.Order.Preorder.Finite",
+        "Mathlib.Probability.Distributions.Uniform",
+        "Mathlib.Tactic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Topology.Algebra.Order.LiminfLimsup"
+      ],
+      "seconds": 224.161,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "seconds": 265.661,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "seconds": 2288.61,
+      "exit_code": 0
+    }
+  ],
+  "fresh_cloud_total_seconds": 2842.215,
+  "remaining_scope": "Paper interfaces beyond the closed Main: PGM optimality/equal success, specified kappa constants, product symmetry wrapper, other separately mapped refined interfaces."
+}

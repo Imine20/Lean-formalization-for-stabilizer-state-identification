@@ -1,0 +1,106 @@
+{
+  "root": "StabilizerLearning.fixedConstraint_uniform_converse",
+  "proof_source": "583897b83f2714c9b1a4d27fb1cfd2fc988ee7e8",
+  "main_is_only_a_definition": true,
+  "graph_source": "local/axioms.log",
+  "paths": {
+    "StabilizerLearning.fixedConstraint_exact_uniform_converse": [
+      "StabilizerLearning.fixedConstraint_uniform_converse",
+      "StabilizerLearning.fixedConstraint_exact_uniform_converse"
+    ],
+    "StabilizerLearning.fixedConstraint_verification_uniformLimits_source": [
+      "StabilizerLearning.fixedConstraint_uniform_converse",
+      "StabilizerLearning.fixedConstraint_four_uniform_limits_zero",
+      "StabilizerLearning.fixedConstraint_verification_uniformLimits_source"
+    ],
+    "StabilizerLearning.Quantum.POVM.boundedListDecoder": [
+      "StabilizerLearning.fixedConstraint_uniform_converse",
+      "StabilizerLearning.fixedConstraint_four_uniform_limits_zero",
+      "StabilizerLearning.fixedConstraint_verification_uniformLimits_source",
+      "StabilizerLearning.fixedConstraint_verification_le_countingEnvelope",
+      "StabilizerLearning.FixedConstraints.genericVerificationOptimal_le_graded_exact",
+      "StabilizerLearning.FixedConstraints.genericVerificationPerformance_le_graded_exact",
+      "StabilizerLearning.FixedConstraints.compatibleNearProbability_mean_le_list_mul_exact",
+      "StabilizerLearning.Quantum.POVM.boundedListDecoder"
+    ],
+    "StabilizerLearning.Quantum.natCard_assignmentRestrictionFiber": [
+      "StabilizerLearning.fixedConstraint_uniform_converse",
+      "StabilizerLearning.fixedConstraint_four_uniform_limits_zero",
+      "StabilizerLearning.fixedConstraint_verification_uniformLimits_source",
+      "StabilizerLearning.fixedConstraint_verification_le_countingEnvelope",
+      "StabilizerLearning.genericCompatibleList_mul_exact_le_envelope",
+      "StabilizerLearning.FixedConstraints.genericCompatibleListSize_le_coarse",
+      "StabilizerLearning.FixedConstraints.genericCompatibleListSize_le_phase",
+      "StabilizerLearning.FixedConstraints.card_genericCompatibleList_le_phase",
+      "StabilizerLearning.FixedConstraints.card_phaseReportCover_le",
+      "StabilizerLearning.Quantum.natCard_assignmentRestrictionFiber"
+    ],
+    "StabilizerLearning.FixedConstraints.verificationPayoff_eq_generic_spectrum": [
+      "StabilizerLearning.fixedConstraint_uniform_converse",
+      "StabilizerLearning.fixedConstraint_four_uniform_limits_zero",
+      "StabilizerLearning.fixedConstraint_verification_uniformLimits_source",
+      "StabilizerLearning.fixedConstraint_verification_le_countingEnvelope",
+      "StabilizerLearning.FixedConstraints.genericVerificationOptimal_le_graded_exact",
+      "StabilizerLearning.FixedConstraints.genericVerificationPerformance_le_graded_exact",
+      "StabilizerLearning.FixedConstraints.verificationStatewise_le_compatibleNearProbability_add_tail",
+      "StabilizerLearning.FixedConstraints.verificationPayoff_le_tail_of_not_mem",
+      "StabilizerLearning.FixedConstraints.verificationPayoff_eq_generic_spectrum"
+    ],
+    "StabilizerLearning.card_completionPairs": [
+      "StabilizerLearning.fixedConstraint_uniform_converse",
+      "StabilizerLearning.fixedConstraint_exact_uniform_converse",
+      "StabilizerLearning.fixedConstraint_exact_uniformLimits_source",
+      "StabilizerLearning.fixedConstraint_exact_uniform_envelopes_source",
+      "StabilizerLearning.fixedConstraint_exact_average_le_exceptional_add_converseEnvelope",
+      "StabilizerLearning.physical_probability_le_converseEnvelope",
+      "StabilizerLearning.coordinate_probability_le_converseEnvelope",
+      "StabilizerLearning.binary_coordinate_probability_le_converseEnvelope",
+      "StabilizerLearning.binary_coordinate_probability_source_bound",
+      "StabilizerLearning.binary_probability_source_bound",
+      "StabilizerLearning.binary_probability_finite_structural_bound",
+      "StabilizerLearning.binaryNormalizedMomentAverage_le_finite_structural",
+      "StabilizerLearning.binaryNormalizedMomentAverage_le_exact_supported",
+      "StabilizerLearning.normalized_binary_fiber_le_exact_min",
+      "StabilizerLearning.card_completionPairs"
+    ],
+    "StabilizerLearning.symmetric_rank_bound": [
+      "StabilizerLearning.fixedConstraint_uniform_converse",
+      "StabilizerLearning.fixedConstraint_exact_uniform_converse",
+      "StabilizerLearning.fixedConstraint_exact_uniformLimits_source",
+      "StabilizerLearning.fixedConstraint_exact_uniform_envelopes_source",
+      "StabilizerLearning.fixedConstraint_exact_average_le_exceptional_add_converseEnvelope",
+      "StabilizerLearning.physical_probability_le_converseEnvelope",
+      "StabilizerLearning.coordinate_probability_le_converseEnvelope",
+      "StabilizerLearning.binary_coordinate_probability_le_converseEnvelope",
+      "StabilizerLearning.binary_coordinate_probability_source_bound",
+      "StabilizerLearning.binary_probability_source_bound",
+      "StabilizerLearning.binary_probability_finite_structural_bound",
+      "StabilizerLearning.binaryNormalizedMomentAverage_le_finite_structural",
+      "StabilizerLearning.clipped_binary_completion_le",
+      "StabilizerLearning.clipped_completionCountExpression_le",
+      "StabilizerLearning.completion_count_expression_bound",
+      "StabilizerLearning.completion_rank_summand_bound",
+      "StabilizerLearning.symmetric_rank_bound"
+    ],
+    "StabilizerLearning.rowSpace_event_probability_bound": [
+      "StabilizerLearning.fixedConstraint_uniform_converse",
+      "StabilizerLearning.fixedConstraint_exact_uniform_converse",
+      "StabilizerLearning.fixedConstraint_exact_uniformLimits_source",
+      "StabilizerLearning.fixedConstraint_exact_uniform_envelopes_source",
+      "StabilizerLearning.fixedConstraint_exact_average_le_exceptional_add_converseEnvelope",
+      "StabilizerLearning.physical_probability_le_converseEnvelope",
+      "StabilizerLearning.coordinate_probability_le_converseEnvelope",
+      "StabilizerLearning.binary_coordinate_probability_le_converseEnvelope",
+      "StabilizerLearning.binary_coordinate_probability_source_bound",
+      "StabilizerLearning.binary_probability_source_bound",
+      "StabilizerLearning.binary_probability_finite_structural_bound",
+      "StabilizerLearning.binaryNormalizedMomentAverage_le_finite_structural",
+      "StabilizerLearning.rowSpace_event_probability_bound"
+    ],
+    "StabilizerLearning.tendsto_converseRemainder_div_sq": [
+      "StabilizerLearning.fixedConstraint_uniform_converse",
+      "StabilizerLearning.fixedConstraint_exact_uniform_converse",
+      "StabilizerLearning.tendsto_converseRemainder_div_sq"
+    ]
+  }
+}

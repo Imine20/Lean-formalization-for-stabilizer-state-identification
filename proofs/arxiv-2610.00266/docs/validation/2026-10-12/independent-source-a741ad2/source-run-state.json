@@ -1,0 +1,392 @@
+{
+  "source": "a741ad2633d99a28fb4bbbe86e3a9a0ac5b7970b",
+  "evidence_container": "eb39f8270ea0bb736b388748c456c5b0ab7fee16",
+  "phase": "independent_strict_gate_passed_pending_inventory_and_publication",
+  "pid": 3584015,
+  "started_at": "2026-10-12T15:55:54.545086+00:00",
+  "commands": [
+    {
+      "label": "clone",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "clone",
+        "--no-local",
+        "--no-hardlinks",
+        "--no-checkout",
+        "/data/lean/projects/ExactCriticalCurve",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/project"
+      ],
+      "exit_code": 0,
+      "seconds": 4.219735699007288,
+      "log": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/logs/clone.log",
+      "log_sha256": "95e6ad4c5609ce8714d56ee70388e9dbc70b3e251b2768e7ecb001d8d3c72943"
+    },
+    {
+      "label": "checkout",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "checkout",
+        "--detach",
+        "a741ad2633d99a28fb4bbbe86e3a9a0ac5b7970b"
+      ],
+      "exit_code": 0,
+      "seconds": 0.782277001067996,
+      "log": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/logs/checkout.log",
+      "log_sha256": "46d02dba8af8c28ed56f8e083032e87265ea216e2f17d93fbc9ad512c7d3335d"
+    },
+    {
+      "label": "compiler-bootstrap",
+      "command": [
+        "python3",
+        "scripts/bootstrap.py"
+      ],
+      "exit_code": 0,
+      "seconds": 7.242794646997936,
+      "log": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/logs/compiler-bootstrap.log",
+      "log_sha256": "36c0bbaf090c97bc8217c6ff497ff9144fd83d9003f12cd505162b943aaaee77"
+    },
+    {
+      "label": "copy-independent-mathlib",
+      "command": [
+        "cp",
+        "-a",
+        "--reflink=auto",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/project/.lake/packages/mathlib",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/project/.lake/packages/mathlib"
+      ],
+      "exit_code": 0,
+      "seconds": 24.346075449022464,
+      "log": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/logs/copy-independent-mathlib.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "copy-independent-plausible",
+      "command": [
+        "cp",
+        "-a",
+        "--reflink=auto",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/project/.lake/packages/plausible",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/project/.lake/packages/plausible"
+      ],
+      "exit_code": 0,
+      "seconds": 0.10670915502123535,
+      "log": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/logs/copy-independent-plausible.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "copy-independent-LeanSearchClient",
+      "command": [
+        "cp",
+        "-a",
+        "--reflink=auto",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/project/.lake/packages/LeanSearchClient",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/project/.lake/packages/LeanSearchClient"
+      ],
+      "exit_code": 0,
+      "seconds": 0.0722029289463535,
+      "log": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/logs/copy-independent-LeanSearchClient.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "copy-independent-importGraph",
+      "command": [
+        "cp",
+        "-a",
+        "--reflink=auto",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/project/.lake/packages/importGraph",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/project/.lake/packages/importGraph"
+      ],
+      "exit_code": 0,
+      "seconds": 0.07523810700513422,
+      "log": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/logs/copy-independent-importGraph.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "copy-independent-proofwidgets",
+      "command": [
+        "cp",
+        "-a",
+        "--reflink=auto",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/project/.lake/packages/proofwidgets",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/project/.lake/packages/proofwidgets"
+      ],
+      "exit_code": 0,
+      "seconds": 0.48323258000891656,
+      "log": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/logs/copy-independent-proofwidgets.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "copy-independent-aesop",
+      "command": [
+        "cp",
+        "-a",
+        "--reflink=auto",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/project/.lake/packages/aesop",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/project/.lake/packages/aesop"
+      ],
+      "exit_code": 0,
+      "seconds": 0.8752026429865509,
+      "log": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/logs/copy-independent-aesop.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "copy-independent-Qq",
+      "command": [
+        "cp",
+        "-a",
+        "--reflink=auto",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/project/.lake/packages/Qq",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/project/.lake/packages/Qq"
+      ],
+      "exit_code": 0,
+      "seconds": 0.16001334704924375,
+      "log": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/logs/copy-independent-Qq.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "copy-independent-batteries",
+      "command": [
+        "cp",
+        "-a",
+        "--reflink=auto",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/project/.lake/packages/batteries",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/project/.lake/packages/batteries"
+      ],
+      "exit_code": 0,
+      "seconds": 0.5378004719968885,
+      "log": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/logs/copy-independent-batteries.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "copy-independent-Cli",
+      "command": [
+        "cp",
+        "-a",
+        "--reflink=auto",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/project/.lake/packages/Cli",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/project/.lake/packages/Cli"
+      ],
+      "exit_code": 0,
+      "seconds": 0.10736657294910401,
+      "log": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/logs/copy-independent-Cli.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "copy-independent-download-cache",
+      "command": [
+        "cp",
+        "-a",
+        "--reflink=auto",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/mathlib-cache",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/mathlib-cache"
+      ],
+      "exit_code": 0,
+      "seconds": 3.110833973973058,
+      "log": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/logs/copy-independent-download-cache.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "official-cache-completeness",
+      "command": [
+        "bash",
+        "scripts/lake.sh",
+        "exe",
+        "cache",
+        "get",
+        "Mathlib.Algebra.BigOperators.Fin",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Mathlib.Algebra.BigOperators.GroupWithZero.Finset",
+        "Mathlib.Algebra.BigOperators.Intervals",
+        "Mathlib.Algebra.BigOperators.Pi",
+        "Mathlib.Algebra.CharP.Two",
+        "Mathlib.Algebra.Field.ZMod",
+        "Mathlib.Algebra.Group.Action.Pi",
+        "Mathlib.Algebra.Group.Idempotent",
+        "Mathlib.Algebra.Group.Subgroup.Finite",
+        "Mathlib.Algebra.Module.Submodule.Equiv",
+        "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+        "Mathlib.Algebra.Polynomial.AlgebraMap",
+        "Mathlib.Algebra.Polynomial.BigOperators",
+        "Mathlib.Algebra.Polynomial.Div",
+        "Mathlib.Algebra.Polynomial.Eval.Defs",
+        "Mathlib.Algebra.Polynomial.Eval.Degree",
+        "Mathlib.Algebra.Polynomial.Eval.SMul",
+        "Mathlib.Algebra.Polynomial.Roots",
+        "Mathlib.Analysis.Asymptotics.Lemmas",
+        "Mathlib.Analysis.Matrix.Order",
+        "Mathlib.Analysis.Normed.Group.InfiniteSum",
+        "Mathlib.Analysis.Normed.Group.Tannery",
+        "Mathlib.Analysis.SpecialFunctions.Exp",
+        "Mathlib.Analysis.SpecialFunctions.Log.Summable",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Analysis.SpecialFunctions.Sqrt",
+        "Mathlib.Analysis.SpecificLimits.Basic",
+        "Mathlib.Analysis.SpecificLimits.Normed",
+        "Mathlib.Data.Complex.Basic",
+        "Mathlib.Data.Fin.Tuple.Basic",
+        "Mathlib.Data.Finset.Max",
+        "Mathlib.Data.Finset.Powerset",
+        "Mathlib.Data.Fintype.BigOperators",
+        "Mathlib.Data.Fintype.Card",
+        "Mathlib.Data.Fintype.EquivFin",
+        "Mathlib.Data.List.OfFn",
+        "Mathlib.Data.Multiset.Filter",
+        "Mathlib.Data.Nat.Choose.Basic",
+        "Mathlib.Data.Nat.Factorization.Basic",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Data.Set.Card",
+        "Mathlib.Data.Setoid.Basic",
+        "Mathlib.Data.ZMod.Basic",
+        "Mathlib.FieldTheory.Finiteness",
+        "Mathlib.GroupTheory.GroupAction.Quotient",
+        "Mathlib.GroupTheory.Index",
+        "Mathlib.GroupTheory.Subgroup.Centralizer",
+        "Mathlib.LinearAlgebra.AffineSpace.AffineSubspace.Basic",
+        "Mathlib.LinearAlgebra.AffineSpace.AffineSubspace.Defs",
+        "Mathlib.LinearAlgebra.Basis.Basic",
+        "Mathlib.LinearAlgebra.Basis.Fin",
+        "Mathlib.LinearAlgebra.Basis.VectorSpace",
+        "Mathlib.LinearAlgebra.BilinearForm.Basic",
+        "Mathlib.LinearAlgebra.BilinearForm.Hom",
+        "Mathlib.LinearAlgebra.BilinearForm.Orthogonal",
+        "Mathlib.LinearAlgebra.BilinearForm.Properties",
+        "Mathlib.LinearAlgebra.Dimension.Constructions",
+        "Mathlib.LinearAlgebra.Dimension.Finite",
+        "Mathlib.LinearAlgebra.Dimension.Finrank",
+        "Mathlib.LinearAlgebra.Dimension.Free",
+        "Mathlib.LinearAlgebra.Dimension.RankNullity",
+        "Mathlib.LinearAlgebra.Dual.Lemmas",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Basic",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas",
+        "Mathlib.LinearAlgebra.Finsupp.LinearCombination",
+        "Mathlib.LinearAlgebra.FreeModule.Finite.Matrix",
+        "Mathlib.LinearAlgebra.Isomorphisms",
+        "Mathlib.LinearAlgebra.LinearIndependent.Defs",
+        "Mathlib.LinearAlgebra.Matrix.ConjTranspose",
+        "Mathlib.LinearAlgebra.Matrix.DotProduct",
+        "Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Card",
+        "Mathlib.LinearAlgebra.Matrix.Kronecker",
+        "Mathlib.LinearAlgebra.Matrix.Permutation",
+        "Mathlib.LinearAlgebra.Matrix.PosDef",
+        "Mathlib.LinearAlgebra.Matrix.Rank",
+        "Mathlib.LinearAlgebra.Matrix.Spectrum",
+        "Mathlib.LinearAlgebra.Matrix.ToLin",
+        "Mathlib.LinearAlgebra.Matrix.Trace",
+        "Mathlib.LinearAlgebra.Prod",
+        "Mathlib.LinearAlgebra.Projection",
+        "Mathlib.LinearAlgebra.QuadraticForm.Basic",
+        "Mathlib.LinearAlgebra.QuadraticForm.Dual",
+        "Mathlib.LinearAlgebra.QuadraticForm.IsometryEquiv",
+        "Mathlib.LinearAlgebra.QuadraticForm.Prod",
+        "Mathlib.LinearAlgebra.Quotient.Basic",
+        "Mathlib.LinearAlgebra.Span.Defs",
+        "Mathlib.LinearAlgebra.StdBasis",
+        "Mathlib.LinearAlgebra.Trace",
+        "Mathlib.LinearAlgebra.UnitaryGroup",
+        "Mathlib.LinearAlgebra.Vandermonde",
+        "Mathlib.Logic.Equiv.Fin.Basic",
+        "Mathlib.Order.Filter.AtTopBot.Archimedean",
+        "Mathlib.Tactic",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Topology.Algebra.InfiniteSum.Basic",
+        "Mathlib.Topology.Algebra.InfiniteSum.Constructions",
+        "Mathlib.Topology.Algebra.InfiniteSum.NatInt"
+      ],
+      "exit_code": 0,
+      "seconds": 26.711925961077213,
+      "log": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/logs/official-cache-completeness.log",
+      "log_sha256": "9ea8c4348bbd6646412402ad9bb0a01ba8253d5d9a3ba526b750c1a8e418d653"
+    },
+    {
+      "label": "strict-main-proof",
+      "command": [
+        "python3",
+        "scripts/check.py",
+        "--require-main-proof",
+        "--output",
+        "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/acceptance"
+      ],
+      "exit_code": 0,
+      "seconds": 8421.729787257966,
+      "log": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2/logs/strict-main-proof.log",
+      "log_sha256": "4dd683a11dad69af5e9ca2c28897cc37950c99747c08a4de909028ed7af09ed4"
+    }
+  ],
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "independent_dir": "/data/lean/acceptance/ExactCriticalCurve-independent-a741ad2",
+  "dependency_mode": "Reuse of public pinned dependency sources and official caches obtained independently by this publication task; copied into separately writable directories. No research caches or project oleans reused.",
+  "updated_at": "2026-10-12T18:17:29.963928+00:00",
+  "current_step": "strict-main-proof",
+  "child_pid": null,
+  "project_cache_initially_empty": true,
+  "input_count": 400,
+  "compiler_archive_sha256": "b14f5e5159219dd1a1956c3b806813319f5e94ccd5bdfd56f54520609a5bb5ec",
+  "dependency_sources": [
+    {
+      "name": "mathlib",
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "independent_fetch_receipt": "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/logs-attempt-4/dependency-mathlib.json"
+    },
+    {
+      "name": "plausible",
+      "url": "https://github.com/leanprover-community/plausible",
+      "rev": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "independent_fetch_receipt": "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/logs-attempt-4/dependency-plausible.json"
+    },
+    {
+      "name": "LeanSearchClient",
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "rev": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "independent_fetch_receipt": "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/logs-attempt-4/dependency-LeanSearchClient.json"
+    },
+    {
+      "name": "importGraph",
+      "url": "https://github.com/leanprover-community/import-graph",
+      "rev": "d768126816be17600904726ca7976b185786e6b9",
+      "independent_fetch_receipt": "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/logs-attempt-4/dependency-importGraph.json"
+    },
+    {
+      "name": "proofwidgets",
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "rev": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "independent_fetch_receipt": "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/logs-attempt-4/dependency-proofwidgets.json"
+    },
+    {
+      "name": "aesop",
+      "url": "https://github.com/leanprover-community/aesop",
+      "rev": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "independent_fetch_receipt": "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/logs-attempt-4/dependency-aesop.json"
+    },
+    {
+      "name": "Qq",
+      "url": "https://github.com/leanprover-community/quote4",
+      "rev": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "independent_fetch_receipt": "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/logs-attempt-4/dependency-Qq.json"
+    },
+    {
+      "name": "batteries",
+      "url": "https://github.com/leanprover-community/batteries",
+      "rev": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "independent_fetch_receipt": "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/logs-attempt-4/dependency-batteries.json"
+    },
+    {
+      "name": "Cli",
+      "url": "https://github.com/leanprover/lean4-cli",
+      "rev": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "independent_fetch_receipt": "/data/lean/acceptance/ExactCriticalCurve-independent-2db1594/logs-attempt-4/dependency-Cli.json"
+    }
+  ],
+  "heavy_lock_acquired_at": "2026-10-12T15:56:41.414031+00:00",
+  "result_sha256": "e99579621024ade8f94663373da35bff4a7fb5abcd3f07932d1b7328cf67d13f",
+  "ended_at": "2026-10-12T18:17:29.963916+00:00"
+}

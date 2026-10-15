@@ -1,0 +1,5 @@
+'StabilizerLearning.fixedW_noCopyRateDiscount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndependentAcceptance.independently_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+INDEPENDENT_ACCEPTANCE_OK exact reviewed type; independently transcribed statement; actual axioms [propext,
+ Classical.choice,
+ Quot.sound]

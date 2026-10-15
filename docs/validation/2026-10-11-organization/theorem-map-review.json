@@ -1,0 +1,52 @@
+{
+  "reviewer": "independent read-only statement_review agent",
+  "result": "corrected_missing_partial_coverage",
+  "proof_status_changes_only": true,
+  "formal_source_changed": false,
+  "corrections": {
+    "foundation:rectangular-rank-count": [
+      [
+        "rectangular_rank_bound",
+        "exists_uniform_rectangular_rank_constant",
+        "odd_prime_rectangular_rank_bound",
+        "card_rectangular_rank_le"
+      ],
+      "Actual prescribed-rank set has the proved bound 4*q^(L*(M+S-L)). The original exact product count and prescribed inverse kappa_GL coefficient remain open."
+    ],
+    "prop:lower-block-class-probability": [
+      [
+        "augmentedRowSpace_event_probability_bound",
+        "exists_uniform_rowSpace_event_constant",
+        "lowerAugmentedRealization_eq_augmentRows",
+        "rowSpace_augmentRows"
+      ],
+      "The general augmented-row event bound covers the original finite probability inequality by F=ZMod p, r=n-m, v=1; the actual finite average already uses this specialization. A separately named paper-specific statement is not yet present."
+    ],
+    "lem:integrated-binary-lower-block-probability": [
+      [
+        "rowSpace_event_probability_bound",
+        "exists_uniform_rowSpace_event_constant"
+      ],
+      "The finite event probability inequality is covered by F=ZMod 2, r=n-m with constant 32. Absorbing 32^k into a uniform o(n^2) term for k=O(n) remains unformalized."
+    ],
+    "foundation:subspace-counts": [
+      [
+        "card_rankSubspaces_mul_card_GL_le",
+        "card_rankSubspaces_le"
+      ],
+      "Actual subspace upper bounds are closed. Exact Gaussian formulas, the specified two-sided kappa bounds and positive infinite-product constant remain open."
+    ],
+    "foundation:finite-PSD-basic": [
+      [
+        "MatrixOptimization.blockQuadratic_eq_real",
+        "MatrixOptimization.entry_re_le_diagonal",
+        "MatrixOptimization.rankOneSeed_posSemidef",
+        "MatrixOptimization.blockValue_eq_sum"
+      ],
+      "Concrete PSD and finite-sum lemmas are kernel-checked using mathlib. This does not close spectral pseudoinverse, operational PGM, or quantum probability obligations."
+    ]
+  },
+  "binary_weighted_declarations_corrected": true,
+  "closed_local_results_not_downgraded": true,
+  "note": "Exact ambient count uses the closed chosen-normalizer route; the source arbitrary-normalizer formulation remaining partial does not become an assumed theorem dependency."
+}

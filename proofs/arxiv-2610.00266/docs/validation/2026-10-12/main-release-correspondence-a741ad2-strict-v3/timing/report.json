@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-12T15:34:53.130161+00:00",
+  "packages": {
+    "paper-correspondence-closure-release": {
+      "phase_seconds": {
+        "development": null,
+        "review": null,
+        "integration": null,
+        "dependency_fetch": null,
+        "targeted_build": null,
+        "root_build": null,
+        "full_audit": null,
+        "release_gate": 7007.818353834,
+        "wait_dependency": null,
+        "wait_compute": 0.00632959,
+        "wait_model": null,
+        "paused": null
+      },
+      "activity_count": 2,
+      "outcomes": {
+        "ok": 2
+      },
+      "unknown_phases_are_not_zero": true
+    }
+  },
+  "complete_activities": 2,
+  "open_activities": [],
+  "invalid_clock_or_orphan_events": [],
+  "wall_clock_jumps": [],
+  "raw_utc_active_union_seconds": {
+    "mac": 0,
+    "cloud": 7007.818365097046
+  },
+  "raw_utc_mac_cloud_overlap_seconds": 0,
+  "calibrated_mac_cloud_overlap": null,
+  "interpretation": "Raw UTC overlap is only an estimate. Task seconds are not CPU core-hours, time saved, or proof progress. Missing phases stay null. No speedup inferred."
+}

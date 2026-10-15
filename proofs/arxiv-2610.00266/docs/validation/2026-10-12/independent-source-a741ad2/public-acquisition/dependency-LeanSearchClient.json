@@ -1,0 +1,11 @@
+{
+  "name": "LeanSearchClient",
+  "url": "https://github.com/leanprover-community/LeanSearchClient",
+  "expected_revision": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+  "commands": [],
+  "started_at": "2026-10-12T12:54:30.242861+00:00",
+  "reused_own_previously_fetched_source": true,
+  "result": "pass",
+  "ended_at": "2026-10-12T12:54:30.265536+00:00",
+  "log_sha256": null
+}

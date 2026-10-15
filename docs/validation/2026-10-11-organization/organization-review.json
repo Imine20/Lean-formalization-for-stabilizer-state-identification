@@ -1,0 +1,31 @@
+{
+  "reviewer": "independent read-only organization_review agent",
+  "result": "pass",
+  "reviewed_commit": "2fff4a166ede5a6830ca51c68d1704eb2ec946ff",
+  "reviewer_edits": false,
+  "single_writer": true,
+  "checks": [
+    "one root Lake project and all formal modules reachable from Main",
+    "multi-token imports and nested comments checked; Scratch and local external-root shadows excluded",
+    "frozen Lean, scripts and version locks recorded and compared after validation",
+    "all project constants recursively audited; project mathematical axioms rejected",
+    "release requires a genuine theorem of the exact reviewed target type",
+    "snapshot current files and reachable Git history checked by explicit path/type and credential rules",
+    "custom snapshot destination excluded and UUID prevents overwrites",
+    "reproduction success recorded only after final frozen-input assertion"
+  ],
+  "source_sha256": {
+    "scripts/ReleaseAudit.lean": "a88c348b38f3ac66267f34d75fb20eb8644df9c567de180eba892ff06181c76e",
+    "scripts/bootstrap.py": "397c45eec479906659793330c231cdf92d19ceb9a318be831550d1b6e6c81284",
+    "scripts/cache-imports.txt": "9ee26f7f9842d2e5742018686d41d44adabb169e265930d1440b7ec22d0c09eb",
+    "scripts/check.py": "0df7b3867a620c67793b60721f68cbb0725c3151af18009eb14e5f50da121071",
+    "scripts/check_layout.py": "de219d2bd596c693c80f973df7335989c72191ea23acca48069b4be9157c1b7d",
+    "scripts/lake.sh": "085e5ecb681bcca845b8aed3066ff7432d486a60a8c8c2a42c4c19f371160bff",
+    "scripts/merge_checked.py": "de86d76e76a79cab99fa853a58a19e734d8764c492e1b05b39a8c59cd5976d62",
+    "scripts/reproduce.py": "1b87cbb58ddcfe884b180deba57653b2631c0da8c9e20684107cb5d9e1589279",
+    "scripts/snapshot.py": "578f788d1969ae0837c9b5f539a4ebd23cc400e50cdc23ca729ca8acdb93ed64",
+    "scripts/source_policy.py": "879b6309d6e32b186877977690d1bc514a695d7ec28c92de095baf61c61cae21",
+    "scripts/theorem_map.py": "d73365d53e809c3d3b19a1ac0412bc7b5d5546cdcb847c86cb80fede4c54be19"
+  },
+  "remaining_acceptance": "Collect final cloud evidence and bind each log to a frozen source manifest; main proof still absent."
+}

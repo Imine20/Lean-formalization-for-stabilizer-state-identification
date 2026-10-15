@@ -1,0 +1,28 @@
+{
+  "accepted_scope": "Actual normalized PGM construction, singular support, original-state tensor bridge, Gram identity and statewise direct error comparison",
+  "this_package_remaining_mathematical_work": [],
+  "removed_from_critical_path": [
+    "existence of the actual normalized PGM",
+    "singular support and support-complement completion",
+    "original density to unit-vector bridge",
+    "Gram/Born identity",
+    "unconditional statewise row-energy lower bound"
+  ],
+  "external_integration_dependencies": [
+    "actual overlap energy uniformly bounded over the original ensemble",
+    "all-input fixed-W legal report postprocessing",
+    "original real k-n overhead to four uniform one-limits",
+    "exact copy-rate infima and original complete Main"
+  ],
+  "remaining_duration_estimate": {
+    "calendar_days": null,
+    "reason": "PGM package is closed; the peer coordinates distinct geometric counting and final integration. Their current proof/acceptance state must be checked at their own frozen revision; no estimate is inferred from theorem counts or CPU time."
+  },
+  "paper_statements_not_claimed": [
+    "transitive pure PGM minimum-error optimality",
+    "constant success probabilities",
+    "transitive fixed-center energy bound for average PGM success",
+    "mixed-state PGM optimality and exact finite formula"
+  ],
+  "coordination": "Peer main task owns overlap counting, fixed-W postprocessing, final direct/rate/Main and global theorem-map. This branch supplies an independently audited closed PGM package."
+}

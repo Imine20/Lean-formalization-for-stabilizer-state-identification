@@ -1,0 +1,61 @@
+{
+  "name": "Qq",
+  "url": "https://github.com/leanprover-community/quote4",
+  "expected_revision": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+  "commands": [
+    {
+      "command": [
+        "git",
+        "init"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 0.015788118005730212
+    },
+    {
+      "command": [
+        "git",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/quote4"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 0.0036798359360545874
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "-c",
+        "http.version=HTTP/1.1",
+        "fetch",
+        "--depth=1",
+        "origin",
+        "dea6a3361fa36d5a13f87333dc506ada582e025c"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 6.073475759010762
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "checkout",
+        "--detach",
+        "dea6a3361fa36d5a13f87333dc506ada582e025c"
+      ],
+      "attempt": 1,
+      "exit_code": 0,
+      "seconds": 0.0079399140086025
+    }
+  ],
+  "started_at": "2026-10-12T12:54:36.914832+00:00",
+  "result": "pass",
+  "ended_at": "2026-10-12T12:54:43.024605+00:00",
+  "log_sha256": "ba41384c1c1a72d7c35783810cedff0ab9eecce8ff930db5a775871464c965e7"
+}

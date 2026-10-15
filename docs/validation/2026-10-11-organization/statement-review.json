@@ -1,0 +1,42 @@
+{
+  "reviewer": "independent read-only statement_review agent",
+  "result": "pass_statement_semantics_only",
+  "source": "paper/main-stabilizer2.tex:182\u2013519,692\u2013746,1314\u20131470",
+  "main_proof_complete": false,
+  "edits_by_reviewer": false,
+  "checks": [
+    "all fixed primes including 2, no inverse of two",
+    "explicit XZ Pauli and matching cocycle",
+    "2p phase alphabet includes fourth roots at p=2",
+    "distinct actual complex PSD trace-one rank-one matrices; no parameter multiplicities in prior",
+    "full basis-free state-independent report alphabet",
+    "all valid reports counted on exceptional inputs",
+    "all collective PSD normalized learner POVMs",
+    "actual chronological L\u00fcders game on independent uncounted test copy",
+    "separate exact/verification and sup-inf/uniform-average criteria",
+    "correct alpha,beta domains, integer sequences, J and real exponents",
+    "W-uniform e,C preceding W; four limits at zero and diverging-overhead one",
+    "both exact rates via liminf and infimum; dimension covariance obligation retained"
+  ],
+  "open_obligations": [
+    "phase encoding completeness",
+    "Pauli representation laws",
+    "joint projectors and resolution of identity",
+    "all physical stabilizer states and every valid label represented",
+    "state/report/learner nonemptiness",
+    "Valid equivalent to original K subset L and character restriction",
+    "tensor/Born/POVM probability legitimacy",
+    "Luders outcome-average reduction",
+    "odd/binary section and moment bridges",
+    "dimension covariance and rate infimum properties"
+  ],
+  "source_sha256": {
+    "StabilizerLearning/Main.lean": "8590061e1a175697333ab9c7aadf19cae093fca4f4043dfc9fdce1291a73c02e",
+    "StabilizerLearning/Foundations/Symplectic.lean": "a0cd2354663f4351335c865e32342b61f6eac70a7b1921c1830e0f6dfb82f741",
+    "StabilizerLearning/Quantum/Finite.lean": "a9698c12fcae47c964fc532102abbca80bde69855d39856c66872a74910455fc",
+    "StabilizerLearning/Quantum/Pauli.lean": "51905c8eed26d3c343d8269a38267c5b8c379d933ec79171b51d4d4bbe2d7d0e",
+    "StabilizerLearning/Quantum/Stabilizer.lean": "00eb0c655930879fb9efe38d6f81ae7dd9a5e015c392b99679666d4f988d775d",
+    "StabilizerLearning/FixedConstraints/Task.lean": "9c9d9e5c3b38e0c9b1e111b9e45775f4dc06736b3c19a1820d40fb6738498c42",
+    "StabilizerLearning/FixedConstraints/Rates.lean": "38dfbbe055c71bd7384abd6de79d85e11e7f84adb93a1b6fd3b9648df40bd357"
+  }
+}

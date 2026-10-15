@@ -1,0 +1,157 @@
+{
+  "result": "pass",
+  "baseline_commit": "d8d2b7f",
+  "all_dependency_pins_unchanged": true,
+  "modules": [
+    {
+      "old_module": "StabilizerPilot.FiniteCounting",
+      "new_module": "StabilizerLearning.Foundations.FiniteCounting",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.RankGeometry",
+      "new_module": "StabilizerLearning.Foundations.RankGeometry",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.RankCounting",
+      "new_module": "StabilizerLearning.Foundations.RankCounting",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.UniformGL",
+      "new_module": "StabilizerLearning.Foundations.UniformGL",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.UniformRank",
+      "new_module": "StabilizerLearning.Foundations.UniformRank",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.RectangularRank",
+      "new_module": "StabilizerLearning.Foundations.RectangularRank",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.RankConsequences",
+      "new_module": "StabilizerLearning.Foundations.RankConsequences",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.RadicalRank",
+      "new_module": "StabilizerLearning.Foundations.RadicalRank",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.CompletionNormalForms",
+      "new_module": "StabilizerLearning.Foundations.CompletionNormalForms",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.CompletionTypes",
+      "new_module": "StabilizerLearning.Foundations.CompletionTypes",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.CompletionEquiv",
+      "new_module": "StabilizerLearning.Foundations.CompletionEquiv",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.CompletionParameters",
+      "new_module": "StabilizerLearning.Foundations.CompletionParameters",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.CompletionFormula",
+      "new_module": "StabilizerLearning.Foundations.CompletionFormula",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.CompletionStrata",
+      "new_module": "StabilizerLearning.Foundations.CompletionStrata",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.CompletionBijection",
+      "new_module": "StabilizerLearning.Foundations.CompletionBijection",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.CompletionCounting",
+      "new_module": "StabilizerLearning.Foundations.CompletionCounting",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.RowSpaceDefs",
+      "new_module": "StabilizerLearning.Foundations.RowSpaceDefs",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.RowSpaceGeometry",
+      "new_module": "StabilizerLearning.Foundations.RowSpaceGeometry",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.IntervalSubspaces",
+      "new_module": "StabilizerLearning.Foundations.IntervalSubspaces",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.PrescribedRadicalArithmetic",
+      "new_module": "StabilizerLearning.Foundations.PrescribedRadicalArithmetic",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.PrescribedRadical",
+      "new_module": "StabilizerLearning.Foundations.PrescribedRadical",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.RowSpaceProbabilityBase",
+      "new_module": "StabilizerLearning.Foundations.RowSpaceProbabilityBase",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.RowSpaceProbability",
+      "new_module": "StabilizerLearning.Foundations.RowSpaceProbability",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.MatrixOptimization",
+      "new_module": "StabilizerLearning.FiniteCopy.MatrixOptimization",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.MomentCompletion",
+      "new_module": "StabilizerLearning.OddPrime.MomentCompletion",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.MomentRowSpace",
+      "new_module": "StabilizerLearning.OddPrime.MomentRowSpace",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.BinaryMomentCompletion",
+      "new_module": "StabilizerLearning.Binary.BinaryMomentCompletion",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.BinaryMomentRowSpace",
+      "new_module": "StabilizerLearning.Binary.BinaryMomentRowSpace",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.Asymptotic",
+      "new_module": "StabilizerLearning.Bounds.Asymptotic",
+      "only_namespace_and_import_changes": true
+    },
+    {
+      "old_module": "StabilizerPilot.MomentProbabilityBridge",
+      "new_module": "StabilizerLearning.Bounds.MomentProbabilityBridge",
+      "only_namespace_and_import_changes": true
+    }
+  ]
+}

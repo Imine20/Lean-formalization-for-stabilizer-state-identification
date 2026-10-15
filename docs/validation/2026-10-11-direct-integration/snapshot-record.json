@@ -1,0 +1,11 @@
+{
+  "snapshot": "/Users/fleedom/Documents/ChatGPT/Lean_formalization/artifacts/snapshots/StabilizerLearning-2026-10-11_194700_Asia-Shanghai-a5c8ef1f.tar.gz",
+  "sha256": "984c3db6a4eed4579a47af9918e7791b5251283037eeeb1fdb5ec4884281cd18",
+  "readback_verified": true,
+  "git_bundle_verified": true,
+  "files": 550,
+  "snapshot_commit": "98a928bb60bfb3f4ecf6a167e76df041aa514803",
+  "mathematical_freeze": "6d17da20d7a7625333ecf87d23824f031a01a6ae",
+  "backup_job_id": "7f687abb-4608-4fe4-99fe-9705c2b93653",
+  "size": 5803186
+}

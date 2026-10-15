@@ -1,0 +1,14 @@
+{
+  "status": "accepted_after_full_recursive_audit_and_source_comparison",
+  "source_frozen_commit": "ff7e57b13fb0bae723c48f969daf72fef590f972",
+  "independent_review_complete": true,
+  "pending_acceptance": [],
+  "schedule_update_gate": "Do not update remaining-work or declare this package accepted before comparison.json passes.",
+  "scope_review": "Original ordered-T fibre/marginal, refined wc<=av and general exceptional-input dimension interfaces remain partial despite the closed end-to-end original exact comparison.",
+  "completed_acceptance": [
+    "Mac project-clean check.py pass and original-main release rejection",
+    "Fresh cloud reconstruction pass with independent dependency/cache checkouts and received evidence hashes",
+    "Complete local/cloud axiom logs and checked declaration graphs byte-identical"
+  ],
+  "result_record": "comparison.json"
+}

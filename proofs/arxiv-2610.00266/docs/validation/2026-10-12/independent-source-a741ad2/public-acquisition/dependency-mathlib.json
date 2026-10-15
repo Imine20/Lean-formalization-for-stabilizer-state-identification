@@ -1,0 +1,11 @@
+{
+  "name": "mathlib",
+  "url": "https://github.com/leanprover-community/mathlib4.git",
+  "expected_revision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "commands": [],
+  "started_at": "2026-10-12T12:54:30.241128+00:00",
+  "reused_own_previously_fetched_source": true,
+  "result": "pass",
+  "ended_at": "2026-10-12T12:54:30.400332+00:00",
+  "log_sha256": null
+}

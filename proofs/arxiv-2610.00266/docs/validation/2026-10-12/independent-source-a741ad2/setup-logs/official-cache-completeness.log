@@ -1,0 +1,7 @@
+Current branch: HEAD
+Using cache (Azure) from origin: leanprover-community/mathlib4
+Attempting to download 3 file(s) from leanprover-community/mathlib4 cache
+Downloaded: 1 file(s) [attempted 1/3 = 33%, 9 KB/s]Downloaded: 3 file(s) [attempted 3/3 = 100%, 9 KB/s]
+Decompressing 3194 file(s)
+Unpacked in 68 ms
+Completed successfully!

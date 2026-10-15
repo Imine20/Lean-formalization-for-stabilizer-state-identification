@@ -1,0 +1,22 @@
+
+COMMAND ['git', 'init'] attempt 1
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /data/lean/acceptance/ExactCriticalCurve-independent-2db1594/project/.lake/packages/aesop/.git/
+
+COMMAND ['git', 'remote', 'add', 'origin', 'https://github.com/leanprover-community/aesop'] attempt 1
+
+COMMAND ['git', '-c', 'core.hooksPath=/dev/null', '-c', 'http.version=HTTP/1.1', 'fetch', '--depth=1', 'origin', '725ac8cd67acd70a7beaf47c3725e23484c1ef50'] attempt 1
+From https://github.com/leanprover-community/aesop
+ * branch            725ac8cd67acd70a7beaf47c3725e23484c1ef50 -> FETCH_HEAD
+
+COMMAND ['git', '-c', 'core.hooksPath=/dev/null', 'checkout', '--detach', '725ac8cd67acd70a7beaf47c3725e23484c1ef50'] attempt 1
+HEAD is now at 725ac8c chore: bump toolchain to v4.24.0 (#258)

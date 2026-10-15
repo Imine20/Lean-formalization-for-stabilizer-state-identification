@@ -1,0 +1,12 @@
+{
+  "retained_execution_cache": "/home/ubuntu/StabilizerLearning/.lake",
+  "final_cache_relocated_after_successful_validation": true,
+  "removed_only_redundant_generated_cache": [
+    "/home/ubuntu/StabilizerLearning-clean-20261011-organization/project/.lake",
+    "/home/ubuntu/StabilizerLearning-clean-20261011-organization/mathlib-cache"
+  ],
+  "sources_and_validation_logs_retained": true,
+  "free_bytes": 8924856320,
+  "private_git_mode": "0o700",
+  "tunnel_closed": true
+}

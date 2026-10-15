@@ -1,0 +1,22 @@
+{
+  "frozen_commit": "79003a8b1905f94ed8c681ca4bab8ebdb8a3dc1d",
+  "result": "dependencies_closed_for_listed_local_claims",
+  "main_complete": false,
+  "closed": [
+    "For every prime and isotropic subspace, original Assignment exists, constructed from commuting actual Pauli operators.",
+    "All unit complex assignments satisfying the original cocycle law are exactly represented by the original finite ZMod(2p) assignments.",
+    "Assignment nonempty if and only if the subspace is isotropic.",
+    "Full original assignment type is a character torsor with exactly p^dim(U) elements.",
+    "All original joint projectors are orthogonal, resolve identity and have exact rank p^(n-dim(U)).",
+    "Original joint projector equals the actual common eigenspace projector, also for arbitrary compatible complex phases.",
+    "Actual complete POVM, original Pauli spectral resolution and normalized Born sum on every density matrix."
+  ],
+  "open_in_this_branch": [
+    "Physical standard-chart state, target, prior and all-POVM comparison to J: owned and validated separately by the coordinating task.",
+    "Arbitrary frame/Clifford and fixed-W task comparison, exceptional mass and verification.",
+    "Unrestricted direct construction, total Lagrangian/stabilizer-state counts where needed, and the unchanged main theorem."
+  ],
+  "calendar_deadline": null,
+  "estimate_revision": "Remove general assignment existence, finite-phase completeness, fixed-U exact assignment count and full projector-family completeness from remaining mathematical obligations. Do not infer a total proof duration from compiler wall time; recalibrate at independently audited physical experiment to J bridge.",
+  "coordinating_thread": "01a128cc-ba94-7693-9d6c-ae503e19dcd2"
+}

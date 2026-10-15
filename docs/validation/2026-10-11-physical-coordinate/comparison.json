@@ -1,0 +1,129 @@
+{
+  "checked_at": "2026-10-11T07:39:41.396744+00:00",
+  "result": "pass",
+  "frozen_commit": "ce043d6c1de0cda69dc3ed6163aedf23717833a5",
+  "local_and_cloud_source_hashes_identical": true,
+  "independent_dependency_checkout_and_cache": true,
+  "received_cloud_evidence_hashes_verified": true,
+  "exact_clean_dependency_checkouts_without_links_or_alternates": true,
+  "fresh_project_oleans_before_build": 0,
+  "compiler_reused_but_pin_checked": true,
+  "kernel_dependency_graphs_identical": true,
+  "recursive_axiom_results_identical": true,
+  "theorem_declarations_audited": 1639,
+  "total_declarations_audited": 2116,
+  "required_transitive_proof_links": 167,
+  "reviewed_source_hashes_match": true,
+  "paper_main_and_public_definitions_unchanged": true,
+  "axiom_allowlist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "main_theorem_complete": false,
+  "main_release": "correctly rejected: statement_only",
+  "local_steps": [
+    {
+      "args": [
+        "build"
+      ],
+      "seconds": 70.864,
+      "exit_code": 0,
+      "log": "build.log"
+    },
+    {
+      "args": [
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "seconds": 521.586,
+      "exit_code": 0,
+      "log": "axioms.log"
+    },
+    {
+      "args": [
+        "env",
+        "lean",
+        "scripts/ReleaseAudit.lean"
+      ],
+      "seconds": 22.821,
+      "exit_code": 1,
+      "log": "main-release-gate.log"
+    }
+  ],
+  "cloud_total_seconds": 1142.603,
+  "cloud_steps": [
+    {
+      "command": [
+        "lake",
+        "exe",
+        "cache",
+        "get",
+        "Mathlib.Algebra.Field.ZMod",
+        "Mathlib.Algebra.Group.Equiv.Basic",
+        "Mathlib.Analysis.Asymptotics.Lemmas",
+        "Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality",
+        "Mathlib.Analysis.SpecialFunctions.Complex.Circle",
+        "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar",
+        "Mathlib.Analysis.SpecialFunctions.Log.Base",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Analysis.SpecificLimits.Basic",
+        "Mathlib.Data.Fin.Tuple.Basic",
+        "Mathlib.Data.Matrix.Block",
+        "Mathlib.Data.Sym.Card",
+        "Mathlib.Data.Sym.Sym2.Order",
+        "Mathlib.Data.ZMod.Basic",
+        "Mathlib.FieldTheory.Finiteness",
+        "Mathlib.LinearAlgebra.Basis.VectorSpace",
+        "Mathlib.LinearAlgebra.BilinearForm.Orthogonal",
+        "Mathlib.LinearAlgebra.Dimension.Constructions",
+        "Mathlib.LinearAlgebra.Dimension.Free",
+        "Mathlib.LinearAlgebra.Eigenspace.Triangularizable",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas",
+        "Mathlib.LinearAlgebra.Matrix.Basis",
+        "Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Card",
+        "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+        "Mathlib.LinearAlgebra.Matrix.PosDef",
+        "Mathlib.LinearAlgebra.Matrix.Rank",
+        "Mathlib.LinearAlgebra.Matrix.Reindex",
+        "Mathlib.LinearAlgebra.Matrix.SchurComplement",
+        "Mathlib.LinearAlgebra.Matrix.Symmetric",
+        "Mathlib.LinearAlgebra.Matrix.ToLin",
+        "Mathlib.LinearAlgebra.Matrix.Trace",
+        "Mathlib.LinearAlgebra.Pi",
+        "Mathlib.LinearAlgebra.Quotient.Basic",
+        "Mathlib.Order.LiminfLimsup",
+        "Mathlib.Probability.Distributions.Uniform",
+        "Mathlib.Tactic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Topology.Algebra.Order.LiminfLimsup"
+      ],
+      "seconds": 67.954,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "seconds": 150.577,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "seconds": 908.034,
+      "exit_code": 0
+    }
+  ],
+  "cloud_directory": "/data/lean/StabilizerLearning-clean-20261011-physical-ce043d6c1de0",
+  "comparison_script": "docs/validation/2026-10-11-physical-coordinate/compare.py"
+}

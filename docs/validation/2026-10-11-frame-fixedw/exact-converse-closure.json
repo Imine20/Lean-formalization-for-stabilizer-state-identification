@@ -1,0 +1,24 @@
+{
+  "target": "StabilizerLearning.fixedConstraint_exact_uniform_converse",
+  "source": "local/axioms.log",
+  "audit_sha256": "cd5c2ed2edae7358d1c23a8d4b6dea85f58809791ff177eb6a11df531c327d61",
+  "checked_from_actual_declaration_bodies_and_types": true,
+  "main_proof_present": false,
+  "project_transitive_closure_size": 1928,
+  "selected_transitive_dependencies": {
+    "FixedConstraints.fixedW_exact_operational_comparison_general": false,
+    "FixedConstraints.optimal_exact_worstCase_le_physicalIdentification_general": true,
+    "FixedConstraints.optimal_exact_average_le_physicalIdentification_general": true,
+    "Quantum.exists_unitary_pauli_implementation": true,
+    "Quantum.referenceIdentificationOptimal_eq_physical": true,
+    "FixedConstraints.generic_mean_eq_chart_mixture": true,
+    "FixedConstraints.valid_iff_eq_genericStateReport": true,
+    "FixedConstraints.exceptionalProbability_le": true,
+    "card_completionPairs": true,
+    "symmetric_rank_bound": true,
+    "rowSpace_event_probability_bound": true,
+    "tendsto_converseRemainder_div_sq": true,
+    "tendsto_converseEnvelope_zero": true
+  },
+  "conjunction_wrapper_note": "The final proof calls both component inequalities directly; the convenience conjunction wrapper is not required to occur in the proof body."
+}

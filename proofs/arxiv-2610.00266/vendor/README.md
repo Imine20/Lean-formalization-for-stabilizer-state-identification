@@ -1,0 +1,1 @@
+ProofWidgets display assets for the locked dependency revision. This archive contains JavaScript and its upstream build trace, not Lean proof artifacts. Hashes and provenance are in locks/proofwidgets-js.json. These assets let the mathematical Lean dependencies build from source without requiring an unrelated npm installation.

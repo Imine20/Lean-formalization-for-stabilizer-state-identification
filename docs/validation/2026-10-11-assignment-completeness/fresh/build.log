@@ -1,0 +1,279 @@
+ℹ [3127/3146] Built StabilizerLearning.Foundations.FiniteCounting (7.7s)
+info: StabilizerLearning/Foundations/FiniteCounting.lean:88:0: 'StabilizerLearning.symmetricMatrixEquivUpperTriangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/FiniteCounting.lean:89:0: 'StabilizerLearning.card_upperTriangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/FiniteCounting.lean:90:0: 'StabilizerLearning.card_symmetricMatrices' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/FiniteCounting.lean:91:0: 'StabilizerLearning.card_symmetricMatrices_zmod' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/FiniteCounting.lean:92:0: 'StabilizerLearning.card_symmetricMatrices_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3128/3146] Built StabilizerLearning.Foundations.RowSpaceDefs (9.7s)
+ℹ [3129/3155] Built StabilizerLearning.Foundations.RankCounting (12s)
+info: StabilizerLearning/Foundations/RankCounting.lean:71:0: 'StabilizerLearning.card_rankSubspaces_mul_card_GL_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3170/3203] Built StabilizerLearning.Bounds.Asymptotic (12s)
+info: StabilizerLearning/Bounds/Asymptotic.lean:78:0: 'StabilizerLearning.overhead_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Bounds/Asymptotic.lean:79:0: 'StabilizerLearning.direct_tail_of_copy_overhead' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Bounds/Asymptotic.lean:81:0: 'StabilizerLearning.dampedTail_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Bounds/Asymptotic.lean:82:0: 'StabilizerLearning.dampedTail_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Bounds/Asymptotic.lean:83:0: 'StabilizerLearning.primeBase_tail_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3171/3203] Built StabilizerLearning.Foundations.CompletionTypes (7.2s)
+✔ [3172/3206] Built StabilizerLearning.Foundations.UniformGL (14s)
+✔ [3179/3206] Built StabilizerLearning.Foundations.RankGeometry (11s)
+✔ [3181/3220] Built StabilizerLearning.Foundations.PrescribedRadicalArithmetic (10s)
+✔ [3283/3338] Built StabilizerLearning.Quantum.Finite (7.0s)
+⚠ [3286/3338] Built StabilizerLearning.Foundations.RadicalRank (22s)
+warning: StabilizerLearning/Foundations/RadicalRank.lean:55:0: automatically included section variable(s) unused in theorem `StabilizerLearning.rank_mul_of_rightInverse`:
+  [Fintype i]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype i] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3287/3338] Built StabilizerLearning.Foundations.RowSpaceGeometry (14s)
+warning: StabilizerLearning/Foundations/RowSpaceGeometry.lean:58:8: automatically included section variable(s) unused in theorem `StabilizerLearning.augmentRows_castSucc`:
+  [Field F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Field F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: StabilizerLearning/Foundations/RowSpaceGeometry.lean:62:8: automatically included section variable(s) unused in theorem `StabilizerLearning.augmentRows_last`:
+  [Field F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Field F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3290/3352] Built StabilizerLearning.Foundations.RowSpaceProbabilityBase (12s)
+✔ [3291/3352] Built StabilizerLearning.Foundations.Symplectic (4.8s)
+✔ [3293/3358] Built StabilizerLearning.FiniteCopy.POVMReindex (7.6s)
+✔ [3294/3358] Built StabilizerLearning.Quantum.GroupProjector (8.3s)
+✔ [3301/3358] Built StabilizerLearning.Foundations.CompletionNormalForms (32s)
+✔ [3302/3358] Built StabilizerLearning.Quantum.Pauli (6.1s)
+ℹ [3303/3358] Built StabilizerLearning.Foundations.UniformRank (14s)
+info: StabilizerLearning/Foundations/UniformRank.lean:67:0: 'StabilizerLearning.card_rankSubspaces_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/UniformRank.lean:68:0: 'StabilizerLearning.symmetric_rank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3304/3358] Built StabilizerLearning.Quantum.CommonEigenvector (6.0s)
+✔ [3305/3358] Built StabilizerLearning.FiniteCopy.CharacterEnsemble (9.0s)
+✔ [3306/3358] Built StabilizerLearning.Quantum.Stabilizer (4.0s)
+ℹ [3307/3358] Built StabilizerLearning.FiniteCopy.MatrixOptimization (38s)
+info: StabilizerLearning/FiniteCopy/MatrixOptimization.lean:116:0: 'StabilizerLearning.MatrixOptimization.blockwise_seed_optimum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: StabilizerLearning/FiniteCopy/MatrixOptimization.lean:117:0: 'StabilizerLearning.MatrixOptimization.blockQuadratic_eq_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [3308/3358] Built StabilizerLearning.Quantum.PhaseAlgebra (5.4s)
+⚠ [3309/3358] Built StabilizerLearning.Foundations.CompletionEquiv (14s)
+warning: StabilizerLearning/Foundations/CompletionEquiv.lean:122:41: This simp argument is unused:
+  Equiv.symm_apply_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Equiv.apply_symm_apply,̵ ̵E̵q̵u̵i̵v̵.̵s̵y̵m̵m̵_̵a̵p̵p̵l̵y̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: StabilizerLearning/Foundations/CompletionEquiv.lean:206:66: This simp argument is unused:
+  Matrix.one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [R, Ri, Matrix.fromBlocks_multiply, Matrix.mul_one, M̵a̵t̵r̵i̵x̵.̵o̵n̵e̵_̵m̵u̵l̵,̵Matrix.mul_zero, Matrix.zero_mul,
+  ̲  ̲ ̲ ̲ ̲ ̲add_zero, zero_add, ← Matrix.transpose_mul, hP, Matrix.transpose_one, Matrix.fromBlocks_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: StabilizerLearning/Foundations/CompletionEquiv.lean:237:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3310/3358] Built StabilizerLearning.FixedConstraints.Task (5.4s)
+✔ [3311/3358] Built StabilizerLearning.Quantum.PauliAlgebra (7.7s)
+✔ [3312/3358] Built StabilizerLearning.Quantum.AssignmentAlgebra (7.9s)
+✔ [3313/3358] Built StabilizerLearning.Foundations.IntervalSubspaces (12s)
+ℹ [3314/3358] Built StabilizerLearning.Foundations.RectangularRank (12s)
+info: StabilizerLearning/Foundations/RectangularRank.lean:121:0: 'StabilizerLearning.card_rectangular_rank_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/RectangularRank.lean:122:0: 'StabilizerLearning.rectangular_rank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/RectangularRank.lean:123:0: 'StabilizerLearning.exists_uniform_rectangular_rank_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/RectangularRank.lean:124:0: 'StabilizerLearning.odd_prime_rectangular_rank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3315/3358] Built StabilizerLearning.FixedConstraints.Rates (4.2s)
+✔ [3316/3358] Built StabilizerLearning.Quantum.PhaseEncoding (10s)
+✔ [3317/3358] Built StabilizerLearning.Quantum.PauliSupport (6.9s)
+✔ [3318/3358] Built StabilizerLearning.Quantum.JointProjector (9.7s)
+✔ [3319/3358] Built StabilizerLearning.Quantum.AssignmentExistence (7.2s)
+✔ [3320/3358] Built StabilizerLearning.Quantum.StabilizerEquivalence (3.6s)
+⚠ [3321/3358] Built StabilizerLearning.Foundations.PrescribedRadical (14s)
+warning: StabilizerLearning/Foundations/PrescribedRadical.lean:110:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [3322/3358] Built StabilizerLearning.Quantum.JointEigenspace (6.3s)
+✔ [3323/3358] Built StabilizerLearning.Foundations.RowSpaceProbability (3.6s)
+✔ [3324/3358] Built StabilizerLearning.Quantum.AssignmentCharacters (9.1s)
+✔ [3325/3358] Built StabilizerLearning.Quantum.ComplexProjector (3.9s)
+ℹ [3326/3358] Built StabilizerLearning.Foundations.RankConsequences (19s)
+info: StabilizerLearning/Foundations/RankConsequences.lean:277:0: 'StabilizerLearning.completion_rank_summand_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/RankConsequences.lean:278:0: 'StabilizerLearning.completion_count_expression_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/RankConsequences.lean:280:0: 'StabilizerLearning.symmetric_rank_bound_paper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/RankConsequences.lean:281:0: 'StabilizerLearning.exists_uniform_symmetric_rank_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/RankConsequences.lean:282:0: 'StabilizerLearning.odd_prime_symmetric_rank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/RankConsequences.lean:283:0: 'StabilizerLearning.binary_symmetric_rank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/RankConsequences.lean:284:0: 'StabilizerLearning.symmetric_rank_partial_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/RankConsequences.lean:285:0: 'StabilizerLearning.card_symmetric_rank_le_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: StabilizerLearning/Foundations/RankConsequences.lean:286:0: 'StabilizerLearning.completion_rank_slice_symmetric_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3327/3358] Built StabilizerLearning.Foundations.CompletionParameters (3.4s)
+✔ [3328/3358] Built StabilizerLearning.Foundations.CompletionBijection (2.9s)
+✔ [3329/3358] Built StabilizerLearning.Foundations.CompletionFormula (3.4s)
+✔ [3330/3358] Built StabilizerLearning.Quantum.ProjectorResolution (8.2s)
+✔ [3331/3358] Built StabilizerLearning.Foundations.CompletionStrata (2.8s)
+✔ [3332/3358] Built StabilizerLearning.Quantum.CompleteMeasurement (3.2s)
+✔ [3333/3358] Built StabilizerLearning.Foundations.CompletionCounting (2.4s)
+✔ [3334/3358] Built StabilizerLearning.Binary.BinaryMomentCompletion (3.7s)
+⚠ [3335/3358] Built StabilizerLearning.OddPrime.MomentCompletion (4.6s)
+warning: StabilizerLearning/OddPrime/MomentCompletion.lean:43:0: automatically included section variable(s) unused in theorem `StabilizerLearning.moment_eq_of_lower_visible`:
+  [Field F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Field F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: StabilizerLearning/OddPrime/MomentCompletion.lean:249:0: automatically included section variable(s) unused in theorem `StabilizerLearning.card_visible_coordinate_space`:
+  [Field F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Field F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3336/3358] Built StabilizerLearning.Binary.BinaryMomentRowSpace (2.8s)
+✔ [3337/3358] Built StabilizerLearning.FiniteCopy.MomentMass (2.7s)
+✔ [3338/3358] Built StabilizerLearning.OddPrime.MomentRowSpace (2.7s)
+⚠ [3339/3358] Built StabilizerLearning.FiniteCopy.MomentCoordinates (2.7s)
+warning: StabilizerLearning/FiniteCopy/MomentCoordinates.lean:115:8: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [3340/3358] Built StabilizerLearning.Bounds.MomentProbabilityBridge (4.8s)
+✔ [3341/3358] Built StabilizerLearning.FiniteCopy.MomentNormalization (4.6s)
+⚠ [3342/3358] Built StabilizerLearning.FiniteCopy.MomentAdditivity (7.0s)
+warning: StabilizerLearning/FiniteCopy/MomentAdditivity.lean:18:28: This simp argument is unused:
+  Prod.snd_sum
+
+Hint: Omit it from the simp argument list.
+  simp [Prod.fst_sum, P̵r̵o̵d̵.̵s̵n̵d̵_̵s̵u̵m̵,̵ ̵Finset.sum_apply, Matrix.sum_apply, ordinaryMomentCode,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ordinaryVisibleCoordinatesEquiv, visibleMoment, symmetricMatrixEquivCoordinates,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲fullMoment, Matrix.mul_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: StabilizerLearning/FiniteCopy/MomentAdditivity.lean:18:60: This simp argument is unused:
+  Matrix.sum_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Prod.fst_sum, Prod.snd_sum, Finset.sum_apply, M̵a̵t̵r̵i̵x̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵,̵ ̵ordinaryMomentCode,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ordinaryVisibleCoordinatesEquiv, visibleMoment, symmetricMatrixEquivCoordinates,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲fullMoment, Matrix.mul_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: StabilizerLearning/FiniteCopy/MomentAdditivity.lean:23:42: This simp argument is unused:
+  Finset.sum_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Prod.fst_sum, Prod.snd_sum, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵,̵ ̵Matrix.sum_apply, ordinaryMomentCode,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ordinaryVisibleCoordinatesEquiv, visibleMoment, fullMoment, Matrix.mul_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: StabilizerLearning/FiniteCopy/MomentAdditivity.lean:25:42: This simp argument is unused:
+  Finset.sum_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Prod.fst_sum, Prod.snd_sum, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵,̵ ̵Matrix.sum_apply, ordinaryMomentCode,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ordinaryVisibleCoordinatesEquiv, visibleMoment, fullMoment, Matrix.mulVec, dotProduct]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: StabilizerLearning/FiniteCopy/MomentAdditivity.lean:31:60: This simp argument is unused:
+  Matrix.sum_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Prod.fst_sum, Prod.snd_sum, Finset.sum_apply, M̵a̵t̵r̵i̵x̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵,̵ ̵ordinaryMomentCode,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲fullMomentCoordinatesEquiv, lowerMoment, symmetricMatrixEquivCoordinates, fullMoment,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲Matrix.mul_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: StabilizerLearning/FiniteCopy/MomentAdditivity.lean:34:12: This simp argument is unused:
+  Prod.fst_sum
+
+Hint: Omit it from the simp argument list.
+  simp [Prod.f̵st̵_̵s̵u̵m̵,̵ ̵P̵r̵o̵d̵.̵s̵nd_sum, Finset.sum_apply, Matrix.sum_apply, ordinaryMomentCode,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲fullMomentCoordinatesEquiv, lowerMoment,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵fullMoment, Matrix.mulVec, dotProduct]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: StabilizerLearning/FiniteCopy/MomentAdditivity.lean:34:58: This simp argument is unused:
+  Matrix.sum_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Prod.fst_sum, Prod.snd_sum, Finset.sum_apply, M̵a̵t̵r̵i̵x̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵,̵ ̵ordinaryMomentCode,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲fullMomentCoordinatesEquiv, lowerMoment, fullMoment, Matrix.mulVec, dotProduct]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: StabilizerLearning/FiniteCopy/MomentAdditivity.lean:47:26: This simp argument is unused:
+  Prod.snd_sum
+
+Hint: Omit it from the simp argument list.
+  simp [Prod.fst_sum, P̵r̵o̵d̵.̵s̵n̵d̵_̵s̵u̵m̵,̵ ̵Finset.sum_apply, Matrix.sum_apply, binaryMomentCode,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲binaryVisibleCoordinatesEquiv, binaryUpperMoment, binaryEnhancedCoordinatesEquiv,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲binaryEnhancedMoment]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: StabilizerLearning/FiniteCopy/MomentAdditivity.lean:47:58: This simp argument is unused:
+  Matrix.sum_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Prod.fst_sum, Prod.snd_sum, Finset.sum_apply, M̵a̵t̵r̵i̵x̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵,̵ ̵binaryMomentCode,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲binaryVisibleCoordinatesEquiv, binaryUpperMoment, binaryEnhancedCoordinatesEquiv,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲binaryEnhancedMoment]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: StabilizerLearning/FiniteCopy/MomentAdditivity.lean:51:60: This simp argument is unused:
+  Matrix.sum_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Prod.fst_sum, Prod.snd_sum, Finset.sum_apply, M̵a̵t̵r̵i̵x̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵,̵ ̵binaryMomentCode,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲binaryVisibleCoordinatesEquiv, binaryUpperMoment, binaryEnhancedCoordinatesEquiv,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲binaryEnhancedMoment, Matrix.mul_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: StabilizerLearning/FiniteCopy/MomentAdditivity.lean:54:42: This simp argument is unused:
+  Finset.sum_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Prod.fst_sum, Prod.snd_sum, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵,̵ ̵Matrix.sum_apply, binaryMomentCode,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲binaryVisibleCoordinatesEquiv, binaryUpperMoment, binaryEnhancedCoordinatesEquiv,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲binaryEnhancedMoment, Matrix.mul_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: StabilizerLearning/FiniteCopy/MomentAdditivity.lean:58:58: This simp argument is unused:
+  Matrix.sum_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Prod.fst_sum, Prod.snd_sum, Finset.sum_apply, M̵a̵t̵r̵i̵x̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵,̵ ̵binaryMomentCode, binaryLowerMoment,
+          binaryEnhancedCoordinatesEquiv, binaryEnhancedMoment]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: StabilizerLearning/FiniteCopy/MomentAdditivity.lean:61:12: This simp argument is unused:
+  Prod.fst_sum
+
+Hint: Omit it from the simp argument list.
+  simp [Prod.f̵st̵_̵s̵u̵m̵,̵ ̵P̵r̵o̵d̵.̵s̵nd_sum, Finset.sum_apply, Matrix.sum_apply, binaryMomentCode, binaryLowerMoment,
+          binaryEnhancedCoordinatesEquiv, binaryEnhancedMoment, Matrix.mul_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: StabilizerLearning/FiniteCopy/MomentAdditivity.lean:61:58: This simp argument is unused:
+  Matrix.sum_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Prod.fst_sum, Prod.snd_sum, Finset.sum_apply, M̵a̵t̵r̵i̵x̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵,̵ ̵binaryMomentCode, binaryLowerMoment,
+          binaryEnhancedCoordinatesEquiv, binaryEnhancedMoment, Matrix.mul_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3343/3358] Built StabilizerLearning.FiniteCopy.MomentReduction (4.2s)
+✔ [3344/3358] Built StabilizerLearning.FiniteCopy.TensorEnsemble (4.9s)
+✔ [3345/3358] Built StabilizerLearning.Bounds.FiniteStructure (11s)
+✔ [3346/3358] Built StabilizerLearning.FiniteCopy.CoordinateCharacters (15s)
+✔ [3347/3358] Built StabilizerLearning.FiniteCopy.LabelTransport (4.4s)
+✔ [3348/3358] Built StabilizerLearning.FiniteCopy.WeightedPOVM (19s)
+✔ [3349/3358] Built StabilizerLearning.FiniteCopy.CodedMomentCounts (9.5s)
+✔ [3350/3358] Built StabilizerLearning.Bounds.ClippedMomentReduction (7.2s)
+✔ [3351/3358] Built StabilizerLearning.FiniteCopy.CoordinatePhase (6.0s)
+✔ [3352/3358] Built StabilizerLearning.Bounds.FiniteProbabilityReduction (4.7s)
+✔ [3353/3358] Built StabilizerLearning.Bounds.BinaryCoordinateProbability (3.6s)
+✔ [3354/3358] Built StabilizerLearning.Bounds.OddCoordinateProbability (4.1s)
+✔ [3355/3358] Built StabilizerLearning.Verified (2.3s)
+✔ [3356/3358] Built StabilizerLearning.Main (2.4s)
+✔ [3357/3358] Built StabilizerLearning (2.3s)
+Build completed successfully (3358 jobs).

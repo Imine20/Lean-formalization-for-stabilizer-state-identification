@@ -1,0 +1,1711 @@
+{
+  "kind": "actual checked types and proof bodies; main proof absent",
+  "frozen_commit": "491d0ab769d8073a517d80e47f52e775b08072f0",
+  "quantum_declarations": [
+    {
+      "declaration": "StabilizerLearning.Quantum.labelProjector_injective",
+      "direct_project_dependencies": [
+        "StabilizerLearning.IsIsotropic",
+        "StabilizerLearning.Quantum.jointProjector",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.jointProjector_injective",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.StabilizerLabel",
+        "StabilizerLearning.Quantum.jointProjector_eq_imp_submodule_eq",
+        "StabilizerLearning.Quantum.Lagrangian",
+        "StabilizerLearning.Quantum.Lagrangian._proof_1",
+        "StabilizerLearning.Quantum.labelProjector"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.reindex_symm_reindex",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.eq_of_matrix_eq",
+        "StabilizerLearning.Quantum.DensityMatrix.reindex",
+        "StabilizerLearning.Quantum.DensityMatrix.reindex._proof_1",
+        "StabilizerLearning.Quantum.DensityMatrix.reindex._proof_2",
+        "StabilizerLearning.Quantum.DensityMatrix.mk",
+        "StabilizerLearning.Quantum.DensityMatrix.matrix",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.sectionCocycle",
+      "direct_project_dependencies": [
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.rootPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.relabel._proof_7",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.relabel._proof_6",
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.normalized",
+        "StabilizerLearning.Quantum.POVM.positive",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_5",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_2",
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM.eq_of_effect_eq",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_1",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.relabel._proof_8",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.normalized",
+        "StabilizerLearning.Quantum.POVM.positive",
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_3",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_4"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.reindex._proof_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.positive",
+        "StabilizerLearning.Quantum.DensityMatrix.matrix",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.eigenPhase_neg",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.eigenPhase_eq_stdAddChar",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.pauli_mul",
+      "direct_project_dependencies": [
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.rootPhase_add",
+        "StabilizerLearning.Quantum.rootPhase",
+        "StabilizerLearning.Quantum.sectionCocycle",
+        "StabilizerLearning.Quantum.pauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.born",
+      "direct_project_dependencies": []
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.mk",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.assignmentFintype._proof_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.trace_pauli_conjTranspose_mul",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.pauli_mul",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.pauli_conjTranspose_mul_self",
+        "StabilizerLearning.Quantum.trace_pauli",
+        "StabilizerLearning.Quantum.rootPhase",
+        "StabilizerLearning.Quantum.sectionCocycle",
+        "StabilizerLearning.Quantum.trace_pauli_conjTranspose_mul._simp_1_1",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.pauli_conjTranspose"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.eigenPhase_injective",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.eigenPhase_eq_stdAddChar",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.pauli_conjTranspose._simp_1_2",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase_ne_zero",
+        "StabilizerLearning.Quantum.rootPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.norm_rootPhase",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase_eq_stdAddChar",
+        "StabilizerLearning.Quantum.rootPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.rec",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.StabilizerLabel",
+      "direct_project_dependencies": [
+        "StabilizerLearning.IsIsotropic",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.Lagrangian",
+        "StabilizerLearning.Quantum.Lagrangian._proof_1"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.effect",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.mk.injEq",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM.mk.noConfusion",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.groupAverage_isHermitian",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.groupAverage"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.reindex_matrix",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.reindex",
+        "StabilizerLearning.Quantum.DensityMatrix.matrix",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.relabel._proof_9",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.normalized",
+        "StabilizerLearning.Quantum.POVM.positive",
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_3",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_4"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.assignment_phase_ne_zero",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.eigenPhase",
+        "StabilizerLearning.Quantum.assignment_phase_norm"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.reindex._proof_2",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.normalized",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.noConfusion",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.noConfusionType",
+        "StabilizerLearning.Quantum.DensityMatrix.casesOn",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.mk.noConfusion",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.noConfusion",
+        "StabilizerLearning.Quantum.DensityMatrix.mk",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.mk.noConfusion",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.POVM.noConfusion"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM._sizeOf_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.POVM.rec"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.card_submodule_eq_prime_pow",
+      "direct_project_dependencies": [
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.reindex_payoff",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.reindex_born",
+        "StabilizerLearning.Quantum.POVM.reindex",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.born"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.labelProjector",
+      "direct_project_dependencies": [
+        "StabilizerLearning.IsIsotropic",
+        "StabilizerLearning.Quantum.jointProjector",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.StabilizerLabel",
+        "StabilizerLearning.Quantum.Lagrangian",
+        "StabilizerLearning.Quantum.Lagrangian._proof_1"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.pauli_conjTranspose_mul_self",
+      "direct_project_dependencies": [
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.rootPhase_add",
+        "StabilizerLearning.Quantum.rootPhase_star",
+        "StabilizerLearning.Quantum.rootPhase_zero",
+        "StabilizerLearning.Quantum.rootPhase",
+        "StabilizerLearning.Quantum.pauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.recOn",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.POVM.rec"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.mk.sizeOf_spec",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.POVM._sizeOf_inst"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.noConfusion",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.noConfusionType",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.POVM.casesOn"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.jointProjector_eq_imp_submodule_eq",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.jointProjector",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.trace_pauli_jointProjector_ne_zero_iff",
+        "StabilizerLearning.Quantum.pauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.reindex_born",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.reindex",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.born_reindex",
+        "StabilizerLearning.Quantum.born"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.assignedPauli_add",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.Quantum.pauli_mul",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.sectionCocycle",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.eigenPhase",
+        "StabilizerLearning.Quantum.assignedPauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.jointProjector._proof_2",
+      "direct_project_dependencies": [
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.IsPureStabilizer",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.StabilizerLabel",
+        "StabilizerLearning.Quantum.IsPureStabilizer._proof_1",
+        "StabilizerLearning.Quantum.labelProjector"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.jointProjector_eq_groupAverage",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.Quantum.jointProjector._proof_2",
+        "StabilizerLearning.Quantum.jointProjector",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.card_submodule_eq_prime_pow",
+        "StabilizerLearning.Quantum.groupAverage",
+        "StabilizerLearning.Quantum.jointProjector._proof_1",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.eigenPhase",
+        "StabilizerLearning.Quantum.assignedPauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.labelProjector_isPureStabilizer",
+      "direct_project_dependencies": [
+        "StabilizerLearning.IsIsotropic",
+        "StabilizerLearning.Quantum.labelProjector_trace",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.jointProjector_posSemidef",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.StabilizerLabel",
+        "StabilizerLearning.Quantum.jointProjector_mul_self",
+        "StabilizerLearning.Quantum.jointProjector_isHermitian",
+        "StabilizerLearning.Quantum.IsPureStabilizer",
+        "StabilizerLearning.Quantum.Lagrangian",
+        "StabilizerLearning.Quantum.IsPureStabilizer._proof_1",
+        "StabilizerLearning.Quantum.rank_eq_one_of_hermitian_idempotent_trace_one",
+        "StabilizerLearning.Quantum.Lagrangian._proof_1",
+        "StabilizerLearning.Quantum.labelProjector"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.relabel._proof_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.positive",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.sectionCocycle.eq_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.rootPhase",
+        "StabilizerLearning.Quantum.sectionCocycle"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.pauli_conjTranspose",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.pauli_mul",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.rootPhase_neg",
+        "StabilizerLearning.Quantum.pauli_conjTranspose_mul_self",
+        "StabilizerLearning.Quantum.rootPhase",
+        "StabilizerLearning.Quantum.rootPhase_ne_zero._simp_1",
+        "StabilizerLearning.Quantum.sectionCocycle",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.pauli_zero"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.rootPhase_star",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase_eq_stdAddChar",
+        "StabilizerLearning.Quantum.rootPhase_neg",
+        "StabilizerLearning.Quantum.rootPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.relabel._proof_6",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.normalized",
+        "StabilizerLearning.Quantum.POVM.positive",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_2",
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_1",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.eigenPhase_add",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.eigenPhase_eq_stdAddChar",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.trace_one",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.matrix",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.rootPhase_zero",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase_eq_stdAddChar",
+        "StabilizerLearning.Quantum.rootPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.eigenPhase_ne_zero._simp_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.eigenPhase_ne_zero",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.jointProjector._proof_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.Compatible",
+      "direct_project_dependencies": [
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.sectionCocycle",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.eigenPhase",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase._proof_1"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.ctorIdx",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.reindex.eq_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.reindex",
+        "StabilizerLearning.Quantum.POVM.reindex._proof_2",
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM.reindex._proof_1",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix._sizeOf_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.rec",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.reindex_effect",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.reindex",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.jointProjector_injective",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.Quantum.eigenPhase_injective",
+        "StabilizerLearning.Quantum.jointProjector",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.trace_pauli_jointProjector",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.stabilizerLabelStateEquiv_apply",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.StabilizerLabel",
+        "StabilizerLearning.Quantum.IsPureStabilizer",
+        "StabilizerLearning.Quantum.StabilizerState",
+        "StabilizerLearning.Quantum.stabilizerLabelStateEquiv",
+        "StabilizerLearning.Quantum.labelProjector"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.Lagrangian",
+      "direct_project_dependencies": [
+        "StabilizerLearning.IsIsotropic",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Lagrangian._proof_1"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.trace_pauli",
+      "direct_project_dependencies": [
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.sum_rootPhase_dotProduct",
+        "StabilizerLearning.Quantum.rootPhase",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.pauli_zero"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.assignedPauli_zero",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.assignment_phase_zero",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.eigenPhase",
+        "StabilizerLearning.Quantum.pauli_zero",
+        "StabilizerLearning.Quantum.assignedPauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.jointProjector",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.Quantum.jointProjector._proof_2",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.jointProjector._proof_1",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.rootPhase_add",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase_eq_stdAddChar",
+        "StabilizerLearning.Quantum.rootPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.jointProjector_isHermitian",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.assignedPauli_conjTranspose",
+        "StabilizerLearning.Quantum.jointProjector",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.jointProjector_eq_groupAverage",
+        "StabilizerLearning.Quantum.groupAverage",
+        "StabilizerLearning.Quantum.groupAverage_isHermitian",
+        "StabilizerLearning.Quantum.assignedPauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.jointProjector.eq_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.Quantum.jointProjector._proof_2",
+        "StabilizerLearning.Quantum.jointProjector",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.jointProjector._proof_1",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.norm_eigenPhase",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.eigenPhase_eq_stdAddChar",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.relabel",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_10",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_2",
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_1",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_3",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_4",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_7"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.rootPhase_ne_zero",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase",
+        "StabilizerLearning.Quantum.rootPhase._proof_1"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.stabilizerStateFinite",
+      "direct_project_dependencies": [
+        "StabilizerLearning.IsIsotropic",
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.StabilizerLabel",
+        "StabilizerLearning.phaseSubmodulesFinite",
+        "StabilizerLearning.Quantum.IsPureStabilizer",
+        "StabilizerLearning.Quantum.Lagrangian",
+        "StabilizerLearning.Quantum.StabilizerState",
+        "StabilizerLearning.Quantum.IsPureStabilizer._proof_1",
+        "StabilizerLearning.Quantum.Lagrangian._proof_1",
+        "StabilizerLearning.Quantum.labelProjector"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.normalized",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.mk"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.reindex._proof_2",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.trace_one",
+        "StabilizerLearning.Quantum.trace_basisReindex",
+        "StabilizerLearning.Quantum.DensityMatrix.matrix",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.pauli.eq_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.rootPhase",
+        "StabilizerLearning.Quantum.pauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.reindexEquiv._proof_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.reindex",
+        "StabilizerLearning.Quantum.POVM.reindex_symm_reindex",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.groupAverage",
+      "direct_project_dependencies": []
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.jointProjector_mul_self",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.jointProjector",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.assignedPauli_add",
+        "StabilizerLearning.Quantum.jointProjector_eq_groupAverage",
+        "StabilizerLearning.Quantum.groupAverage",
+        "StabilizerLearning.Quantum.groupAverage_mul_self",
+        "StabilizerLearning.Quantum.assignedPauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.eq_of_effect_eq",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.POVM.casesOn"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.mul_groupAverage",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.groupAverage"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.eigenPhase_eq_one_iff._simp_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.eigenPhase_eq_one_iff",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.Assignment",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.reindex._proof_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.positive",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.positive",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.mk._flat_ctor",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.relabel._proof_5",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.normalized",
+        "StabilizerLearning.Quantum.POVM.positive",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_2",
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_1",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.mk.inj",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM.mk.noConfusion",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.groupAverage_mul_self",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.mul_groupAverage",
+        "StabilizerLearning.Quantum.groupAverage"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.trace_groupAverage_of_trace_vanishes",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.trace_groupAverage",
+        "StabilizerLearning.Quantum.groupAverage"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.matrix",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.casesOn",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.POVM.rec"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.Lagrangian._proof_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.recOn",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.rec",
+        "StabilizerLearning.Quantum.DensityMatrix.mk",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.reindexEquiv._proof_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.reindex",
+        "StabilizerLearning.Quantum.DensityMatrix.reindex_symm_reindex",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.sum_rootPhase_dotProduct",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.rootPhase_eq_one_iff",
+        "StabilizerLearning.Quantum.rootPhase_add",
+        "StabilizerLearning.Quantum.rootPhase_zero",
+        "StabilizerLearning.Quantum.rootPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.rootPhase.eq_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase",
+        "StabilizerLearning.Quantum.rootPhase._proof_1"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.pauli_mul_conjTranspose",
+      "direct_project_dependencies": [
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.pauli_conjTranspose_mul_self",
+        "StabilizerLearning.Quantum.pauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.jointProjector.congr_simp",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.jointProjector",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.reindex",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.reindex._proof_1",
+        "StabilizerLearning.Quantum.DensityMatrix.reindex._proof_2",
+        "StabilizerLearning.Quantum.DensityMatrix.mk",
+        "StabilizerLearning.Quantum.DensityMatrix.matrix",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.tensorPowerMatrixBasis",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.tensorPower",
+        "StabilizerLearning.matrixTupleEquiv"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.tensorPowerMatrixBasis_apply",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.tensorPowerMatrixBasis"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.relabel._proof_3",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.positive",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.rootPhase_eq_one_iff._simp_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase_eq_one_iff",
+        "StabilizerLearning.Quantum.rootPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.rootPhase_neg",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase_eq_stdAddChar",
+        "StabilizerLearning.Quantum.rootPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.assignment_phase_inv_neg",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.rootPhase_neg",
+        "StabilizerLearning.Quantum.rootPhase",
+        "StabilizerLearning.Quantum.assignment_phase_ne_zero",
+        "StabilizerLearning.Quantum.assignment_phase_zero",
+        "StabilizerLearning.Quantum.sectionCocycle",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.born_tensorPower_matrixBasis",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.reindex_born",
+        "StabilizerLearning.Quantum.POVM.reindex",
+        "StabilizerLearning.Quantum.tensorPowerMatrixBasis",
+        "StabilizerLearning.Quantum.tensorPower",
+        "StabilizerLearning.matrixTupleEquiv",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.born"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.reindex_symm_reindex",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.reindex",
+        "StabilizerLearning.Quantum.POVM.reindex._proof_2",
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM.eq_of_effect_eq",
+        "StabilizerLearning.Quantum.POVM.reindex._proof_1",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.rank_eq_one_of_hermitian_idempotent_trace_one",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.trace_eq_rank_of_hermitian_idempotent"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.reindex",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.reindex._proof_2",
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM.reindex._proof_1",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.noConfusionType",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.casesOn",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.trace_basisReindex",
+      "direct_project_dependencies": []
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.rec",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.mk",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.eigenPhase_eq_stdAddChar",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.eigenPhase",
+        "StabilizerLearning.Quantum.rootPhase._proof_1"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.mk",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.assignedPauli.eq_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.eigenPhase",
+        "StabilizerLearning.Quantum.assignedPauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.StabilizerLabel.toState",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.StabilizerLabel",
+        "StabilizerLearning.Quantum.labelProjector_isPureStabilizer",
+        "StabilizerLearning.Quantum.IsPureStabilizer",
+        "StabilizerLearning.Quantum.StabilizerState",
+        "StabilizerLearning.Quantum.labelProjector"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.star_rootPhase",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase_star",
+        "StabilizerLearning.Quantum.rootPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.rootPhase._proof_1",
+      "direct_project_dependencies": []
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.trace_pauli_jointProjector",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.Quantum.eigenPhase_ne_zero._simp_1",
+        "StabilizerLearning.Quantum.jointProjector._proof_2",
+        "StabilizerLearning.Quantum.jointProjector",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.trace_pauli_conjTranspose_mul",
+        "StabilizerLearning.Quantum.jointProjector._proof_1",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.matrixTuplePOVMEquiv",
+      "direct_project_dependencies": [
+        "StabilizerLearning.matrixTupleEquiv",
+        "StabilizerLearning.Quantum.POVM.reindexEquiv",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.trace_pauli_jointProjector_ne_zero_iff",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.Quantum.eigenPhase_ne_zero._simp_1",
+        "StabilizerLearning.Quantum.jointProjector",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.trace_pauli_jointProjector",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.relabel._proof_2",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.normalized",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.reindex_exact_success",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.reindex_born",
+        "StabilizerLearning.Quantum.POVM.reindex",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.born"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.assignment_phase_norm",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.sectionCocycle",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.eigenPhase.eq_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.eigenPhase",
+        "StabilizerLearning.Quantum.rootPhase._proof_1"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.trace_jointProjector",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.Quantum.jointProjector",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.trace_pauli_pow",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.card_submodule_eq_prime_pow",
+        "StabilizerLearning.Quantum.jointProjector_eq_groupAverage",
+        "StabilizerLearning.Quantum.groupAverage",
+        "StabilizerLearning.Quantum.assignment_phase_zero",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.trace_groupAverage_of_trace_vanishes",
+        "StabilizerLearning.Quantum.eigenPhase",
+        "StabilizerLearning.Quantum.pauli_zero",
+        "StabilizerLearning.Quantum.assignedPauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.groupAverage_posSemidef",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.groupAverage",
+        "StabilizerLearning.Quantum.groupAverage_mul_self",
+        "StabilizerLearning.Quantum.groupAverage_isHermitian"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.rootPhase",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase._proof_1"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.StabilizerLabel.toState_injective",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.StabilizerLabel.toState",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.StabilizerLabel",
+        "StabilizerLearning.Quantum.labelProjector_injective",
+        "StabilizerLearning.Quantum.IsPureStabilizer",
+        "StabilizerLearning.Quantum.StabilizerState"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.reindex.eq_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.reindex",
+        "StabilizerLearning.Quantum.DensityMatrix.reindex._proof_1",
+        "StabilizerLearning.Quantum.DensityMatrix.reindex._proof_2",
+        "StabilizerLearning.Quantum.DensityMatrix.mk",
+        "StabilizerLearning.Quantum.DensityMatrix.matrix",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.stabilizerLabelFintype._proof_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.IsIsotropic",
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.phaseSubmodulesFinite",
+        "StabilizerLearning.Quantum.Lagrangian",
+        "StabilizerLearning.Quantum.Lagrangian._proof_1"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.assignment_phase_zero",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.assignment_phase_ne_zero",
+        "StabilizerLearning.Quantum.sectionCocycle",
+        "StabilizerLearning.Quantum.eigenPhase",
+        "StabilizerLearning.Quantum.rootPhase._proof_1"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.eigenPhase_eq_one_iff",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.eigenPhase_zero",
+        "StabilizerLearning.Quantum.eigenPhase_injective",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.eq_of_matrix_eq",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.mk",
+        "StabilizerLearning.Quantum.DensityMatrix.matrix",
+        "StabilizerLearning.Quantum.DensityMatrix.casesOn",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.mk"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.jointProjector_posSemidef",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.assignedPauli_conjTranspose",
+        "StabilizerLearning.Quantum.jointProjector",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.groupAverage_posSemidef",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.assignedPauli_add",
+        "StabilizerLearning.Quantum.jointProjector_eq_groupAverage",
+        "StabilizerLearning.Quantum.groupAverage",
+        "StabilizerLearning.Quantum.assignedPauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.trace_pauli_conjTranspose_mul._simp_1_1",
+      "direct_project_dependencies": []
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.assignedPauli_conjTranspose",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.assignment_phase_inv_neg",
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.rootPhase",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.eigenPhase_star",
+        "StabilizerLearning.Quantum.eigenPhase_neg",
+        "StabilizerLearning.Quantum.eigenPhase",
+        "StabilizerLearning.Quantum.assignedPauli",
+        "StabilizerLearning.Quantum.pauli_conjTranspose"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.eigenvalues_zero_or_one_of_idempotent",
+      "direct_project_dependencies": []
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.tensorPower",
+      "direct_project_dependencies": []
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.rootPhase_injective",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase_eq_stdAddChar",
+        "StabilizerLearning.Quantum.rootPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.casesOn",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.rec",
+        "StabilizerLearning.Quantum.DensityMatrix.mk",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.reindex_ensemble_exact_success",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.reindex_born",
+        "StabilizerLearning.Quantum.POVM.reindex",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.born"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.tensorPower.eq_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.tensorPower"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.reindexEquiv",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.reindex",
+        "StabilizerLearning.Quantum.DensityMatrix.reindex_symm_reindex",
+        "StabilizerLearning.Quantum.DensityMatrix.reindexEquiv._proof_1",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.trace_groupAverage",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.groupAverage"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.card_stabilizerState_eq_labels",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.stabilizerStateFintype",
+        "StabilizerLearning.Quantum.stabilizerLabelFintype",
+        "StabilizerLearning.Quantum.StabilizerLabel",
+        "StabilizerLearning.Quantum.StabilizerState",
+        "StabilizerLearning.Quantum.stabilizerLabelStateEquiv"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.assignmentFintype",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.assignmentFintype._proof_1",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.eigenPhase_star",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.eigenPhase_eq_stdAddChar",
+        "StabilizerLearning.Quantum.eigenPhase_neg",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.mk._flat_ctor",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.mk",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.relabel_effect",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.POVM.relabel"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.rootPhase_eq_stdAddChar",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.eigenPhase_zero",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.eigenPhase_eq_stdAddChar",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.mk.sizeOf_spec",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix._sizeOf_inst",
+        "StabilizerLearning.Quantum.DensityMatrix.mk",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.groupAverage_rank_eq_one",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.trace_groupAverage",
+        "StabilizerLearning.Quantum.groupAverage",
+        "StabilizerLearning.Quantum.groupAverage_mul_self",
+        "StabilizerLearning.Quantum.groupAverage_isHermitian",
+        "StabilizerLearning.Quantum.rank_eq_one_of_hermitian_idempotent_trace_one"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.noConfusionType",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.POVM.casesOn"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.pauli",
+      "direct_project_dependencies": [
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.rootPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.pauli_mul_jointProjector",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.Quantum.jointProjector",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.mul_groupAverage",
+        "StabilizerLearning.Quantum.assignedPauli_add",
+        "StabilizerLearning.Quantum.jointProjector_eq_groupAverage",
+        "StabilizerLearning.Quantum.groupAverage",
+        "StabilizerLearning.Quantum.assignment_phase_ne_zero",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.eigenPhase",
+        "StabilizerLearning.Quantum.assignedPauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.StabilizerLabel.toState_surjective",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.StabilizerLabel.toState",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.StabilizerLabel",
+        "StabilizerLearning.Quantum.IsPureStabilizer",
+        "StabilizerLearning.Quantum.StabilizerState",
+        "StabilizerLearning.Quantum.IsPureStabilizer._proof_1",
+        "StabilizerLearning.Quantum.labelProjector"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.positive",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.matrix",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.relabel._proof_4",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.normalized",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.pauli_zero",
+      "direct_project_dependencies": [
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.rootPhase_zero",
+        "StabilizerLearning.Quantum.rootPhase",
+        "StabilizerLearning.Quantum.pauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.mk.injEq",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.mk.noConfusion",
+        "StabilizerLearning.Quantum.DensityMatrix.mk",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.trace_pauli_pow",
+      "direct_project_dependencies": [
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.trace_pauli",
+        "StabilizerLearning.Quantum.pauli"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.trace_eq_rank_of_hermitian_idempotent",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.eigenvalues_zero_or_one_of_idempotent"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.ctorIdx",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.relabel._proof_10",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_9",
+        "StabilizerLearning.Quantum.POVM.normalized",
+        "StabilizerLearning.Quantum.POVM.positive",
+        "StabilizerLearning.Quantum.POVM.mk",
+        "StabilizerLearning.Quantum.POVM.eq_of_effect_eq",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_3",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_8",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.POVM.relabel._proof_4"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM._sizeOf_inst",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM._sizeOf_1",
+        "StabilizerLearning.Quantum.POVM"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.rootPhase_ne_zero._simp_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase_ne_zero",
+        "StabilizerLearning.Quantum.rootPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.StabilizerState",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.IsPureStabilizer"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix._sizeOf_inst",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix._sizeOf_1",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.reindexEquiv",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.reindex",
+        "StabilizerLearning.Quantum.POVM.reindex_symm_reindex",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.POVM.reindexEquiv._proof_1"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.range_exact_success_reindex",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.reindex_exact_success",
+        "StabilizerLearning.Quantum.POVM.reindex",
+        "StabilizerLearning.Quantum.POVM.reindex_symm_reindex",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.born"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.groupAverage.eq_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.groupAverage"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.IsPureStabilizer._proof_1",
+      "direct_project_dependencies": []
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.labelProjector_trace",
+      "direct_project_dependencies": [
+        "StabilizerLearning.IsIsotropic",
+        "StabilizerLearning.Quantum.jointProjector",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.StabilizerLabel",
+        "StabilizerLearning.Quantum.trace_jointProjector",
+        "StabilizerLearning.Quantum.Lagrangian",
+        "StabilizerLearning.Quantum.Lagrangian._proof_1",
+        "StabilizerLearning.Quantum.labelProjector"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.stabilizerLabelFintype",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.stabilizerLabelFintype._proof_1",
+        "StabilizerLearning.Quantum.StabilizerLabel"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.POVM.optimal_exact_success_reindex",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.POVM.effect",
+        "StabilizerLearning.Quantum.POVM.range_exact_success_reindex",
+        "StabilizerLearning.Quantum.POVM",
+        "StabilizerLearning.Quantum.born"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.rootPhase_eq_one_iff",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.rootPhase_zero",
+        "StabilizerLearning.Quantum.rootPhase",
+        "StabilizerLearning.Quantum.rootPhase_injective"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.stabilizerStateFintype",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.stabilizerStateFinite",
+        "StabilizerLearning.Quantum.StabilizerState"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.eigenPhase_ne_zero",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.eigenPhase",
+        "StabilizerLearning.Quantum.rootPhase._proof_1"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.DensityMatrix.mk.inj",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.DensityMatrix.mk.noConfusion",
+        "StabilizerLearning.Quantum.DensityMatrix.mk",
+        "StabilizerLearning.Quantum.DensityMatrix"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.born_reindex",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.trace_basisReindex",
+        "StabilizerLearning.Quantum.born"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.stabilizerLabelStateEquiv._proof_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.StabilizerLabel.toState_injective",
+        "StabilizerLearning.Quantum.StabilizerLabel.toState",
+        "StabilizerLearning.Quantum.StabilizerLabel",
+        "StabilizerLearning.Quantum.StabilizerLabel.toState_surjective",
+        "StabilizerLearning.Quantum.StabilizerState"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.stabilizerLabelStateEquiv",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.StabilizerLabel.toState",
+        "StabilizerLearning.Quantum.stabilizerLabelStateEquiv._proof_1",
+        "StabilizerLearning.Quantum.StabilizerLabel",
+        "StabilizerLearning.Quantum.StabilizerState"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.assignedPauli",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.Compatible",
+        "StabilizerLearning.PhaseSpace",
+        "StabilizerLearning.Configuration",
+        "StabilizerLearning.Quantum.Assignment",
+        "StabilizerLearning.Quantum.pauli",
+        "StabilizerLearning.Quantum.eigenPhase"
+      ]
+    },
+    {
+      "declaration": "StabilizerLearning.Quantum.born.eq_1",
+      "direct_project_dependencies": [
+        "StabilizerLearning.Quantum.born"
+      ]
+    }
+  ],
+  "new_required_transitive_links": [
+    "StabilizerLearning.Quantum.labelProjector_isPureStabilizer -> StabilizerLearning.Quantum.pauli_mul",
+    "StabilizerLearning.Quantum.labelProjector_isPureStabilizer -> StabilizerLearning.Quantum.trace_pauli_pow",
+    "StabilizerLearning.Quantum.labelProjector_isPureStabilizer -> StabilizerLearning.Quantum.assignment_phase_zero",
+    "StabilizerLearning.Quantum.labelProjector_isPureStabilizer -> StabilizerLearning.Quantum.assignment_phase_inv_neg",
+    "StabilizerLearning.Quantum.labelProjector_isPureStabilizer -> StabilizerLearning.Quantum.card_submodule_eq_prime_pow",
+    "StabilizerLearning.Quantum.labelProjector_isPureStabilizer -> StabilizerLearning.Quantum.groupAverage_posSemidef",
+    "StabilizerLearning.Quantum.labelProjector_isPureStabilizer -> StabilizerLearning.Quantum.trace_eq_rank_of_hermitian_idempotent",
+    "StabilizerLearning.Quantum.labelProjector_injective -> StabilizerLearning.Quantum.trace_pauli_jointProjector",
+    "StabilizerLearning.Quantum.labelProjector_injective -> StabilizerLearning.Quantum.trace_pauli_jointProjector_ne_zero_iff",
+    "StabilizerLearning.Quantum.labelProjector_injective -> StabilizerLearning.Quantum.eigenPhase_injective",
+    "StabilizerLearning.Quantum.stabilizerLabelStateEquiv -> StabilizerLearning.Quantum.labelProjector_isPureStabilizer",
+    "StabilizerLearning.Quantum.stabilizerLabelStateEquiv -> StabilizerLearning.Quantum.labelProjector_injective"
+  ]
+}

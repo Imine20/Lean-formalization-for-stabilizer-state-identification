@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "e7f99579-ccb9-4ead-a48a-42e57f31b0b7",
+  "event": "start",
+  "package": "paper-correspondence-closure-release",
+  "package_definition": {
+    "id": "paper-correspondence-closure-release",
+    "owner": "root",
+    "target": "Integrate both exact wrappers; independently expected-type/body check; original full release gate and clean reproduction; update Chinese correspondence report",
+    "depends_on": [
+      "paper-stochastic-order-closure",
+      "paper-spectral-mass-closure"
+    ],
+    "status": "in_progress",
+    "historical_development_seconds": null,
+    "historical_wait_seconds": null,
+    "human_mathematical_review": "outstanding",
+    "interface_state": "Implemented; both original branch development gates and combined independent ReleaseAudit preflight passed. Fresh frozen-source full release remains required.",
+    "semantic_review": "Independent AI correspondence review found no blocking issue; human review remains outstanding."
+  },
+  "manifest_sha256": "d8c428af539f98ef3cb1127b055ebc1562b8fadcd741ef777230a577824b8b6c",
+  "actor": "root-correspondence-release",
+  "site": "cloud",
+  "host": {
+    "name": "VM-33-3-ubuntu",
+    "system": "Linux",
+    "architecture": "x86_64",
+    "cpus": 8,
+    "boot_id": "d13de06facdd722896652dc0602756dd2d6b653cdb68123a2c94c745b716088b"
+  },
+  "phase": "release_gate",
+  "label": "Original full main release with independent group order and actual spectral mass closure",
+  "cache": "warm-dependencies",
+  "clock": null,
+  "context": {
+    "commit": "a741ad2633d99a28fb4bbbe86e3a9a0ac5b7970b",
+    "dirty": false,
+    "source_fingerprint": "45c2fd0966b20a92eac76ab615cc7dbb0c30c3377e3e78a69187a62b7cf7a646",
+    "fingerprint_file_count": 6386,
+    "locks": {
+      "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+      "lakefile.toml": "b89f476c4c394d9193bd581bbb2ae0bc1c2fd49890ea7a3e5df4f562296744c5",
+      "lake-manifest.json": "91d304b8063c431568eecfdc601ffaae8d7a0af9f122f58d7e64e8b9cfbd53f9"
+    },
+    "machine": {
+      "utc": "2026-10-12T13:36:42.736030+00:00",
+      "load_average": [
+        0.32177734375,
+        0.578125,
+        0.93408203125
+      ],
+      "memory_kib": {
+        "MemAvailable": 30305932,
+        "SwapTotal": 0,
+        "SwapFree": 0
+      }
+    }
+  },
+  "utc": "2026-10-12T13:36:42.736418+00:00",
+  "monotonic_ns": 649028821976841,
+  "process_clock_domain": "ee9a07ca-ff31-42cb-bae7-bcd04f7b8adf"
+}

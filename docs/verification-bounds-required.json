@@ -1,0 +1,21 @@
+[
+  "StabilizerLearning.FixedConstraints.stabilizerState_nonempty",
+  "StabilizerLearning.FixedConstraints.learner_born_nonneg",
+  "StabilizerLearning.FixedConstraints.sum_learner_born",
+  "StabilizerLearning.FixedConstraints.exactStatewise_mem_Icc",
+  "StabilizerLearning.FixedConstraints.verificationStatewise_mem_Icc",
+  "StabilizerLearning.FixedConstraints.exactStatewise_le_verificationStatewise",
+  "StabilizerLearning.FixedConstraints.verificationStatewise_le_affine_exact",
+  "StabilizerLearning.FixedConstraints.statewise_mem_Icc",
+  "StabilizerLearning.FixedConstraints.performance_mem_Icc",
+  "StabilizerLearning.FixedConstraints.performance_le_of_statewise_le",
+  "StabilizerLearning.FixedConstraints.exactPerformance_le_verificationPerformance",
+  "StabilizerLearning.FixedConstraints.performance_worstCase_le_average",
+  "StabilizerLearning.FixedConstraints.verificationPerformance_le_affine_exact",
+  "StabilizerLearning.FixedConstraints.optimal_mem_Icc",
+  "StabilizerLearning.FixedConstraints.optimal_le_of_performance_le",
+  "StabilizerLearning.FixedConstraints.optimal_worstCase_le_average",
+  "StabilizerLearning.FixedConstraints.optimal_exact_le_verification",
+  "StabilizerLearning.FixedConstraints.optimal_verification_le_affine_exact",
+  "StabilizerLearning.FixedConstraints.optimal_exact_eq_one_iff_verification_eq_one"
+]

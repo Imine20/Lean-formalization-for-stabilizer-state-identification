@@ -1,0 +1,62 @@
+[
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationPayoff_eq_born",
+    "dependency": "StabilizerLearning.Quantum.sum_jointProjector"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationPayoff_eq_born",
+    "dependency": "StabilizerLearning.Quantum.projection_sandwich_eq_zero_of_born_zero"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationPayoff_eq_born",
+    "dependency": "StabilizerLearning.FixedConstraints.jointProjector_commute_reportProjector"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationPayoff_eq_born",
+    "dependency": "StabilizerLearning.Quantum.nonempty_assignment_of_isIsotropic"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationPayoff_le_inv_prime_of_not_valid",
+    "dependency": "StabilizerLearning.Quantum.born_jointProjector_overlap"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationPayoff_le_inv_prime_of_not_valid",
+    "dependency": "AddChar.sum_eq_ite"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationPayoff_le_inv_prime_of_not_valid",
+    "dependency": "StabilizerLearning.FixedConstraints.valid_iff_label_restriction"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationPayoff_eq_one_iff_valid",
+    "dependency": "StabilizerLearning.FixedConstraints.valid_iff_reportProjector_mul_eq_self"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationPayoff_eq_one_iff_valid",
+    "dependency": "StabilizerLearning.Quantum.born_projection_eq_one_iff"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationPayoff_mem_Icc",
+    "dependency": "StabilizerLearning.Quantum.born_projection_mem_Icc"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationConditionalScore_mem_Icc",
+    "dependency": "StabilizerLearning.Quantum.normalizedLudersState"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationPayoff_eq_intersection_spectrum",
+    "dependency": "StabilizerLearning.Quantum.born_jointProjector_overlap"
+  },
+  {
+    "target": "StabilizerLearning.FixedConstraints.verificationStatewise_eq_born",
+    "dependency": "StabilizerLearning.FixedConstraints.verificationPayoff_eq_born"
+  },
+  {
+    "target": "StabilizerLearning.Quantum.normalizedLudersState",
+    "dependency": "StabilizerLearning.Quantum.trace_mul_eq_ofReal_born_of_posSemidef"
+  },
+  {
+    "target": "StabilizerLearning.Quantum.DensityMatrix.tensorPower",
+    "dependency": "StabilizerLearning.Quantum.tensorPower_posSemidef"
+  }
+]

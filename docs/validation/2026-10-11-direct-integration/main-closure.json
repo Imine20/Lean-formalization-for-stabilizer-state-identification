@@ -1,0 +1,189 @@
+{
+  "root": "StabilizerLearning.fixedW_noCopyRateDiscount",
+  "exact_target": "StabilizerLearning.FixedWNoCopyRateDiscount",
+  "proof_source": "6d17da20d7a7625333ecf87d23824f031a01a6ae",
+  "graph_source": "local/axioms.log",
+  "paths": {
+    "StabilizerLearning.fixedConstraint_uniform_converse": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_uniform_converse"
+    ],
+    "StabilizerLearning.fixedConstraint_four_uniform_limits_one": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_four_uniform_limits_one"
+    ],
+    "StabilizerLearning.FixedConstraints.exactCopyRate_eq_one": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.FixedConstraints.exactCopyRate_eq_one"
+    ],
+    "StabilizerLearning.Quantum.stabilizerPGM_success_ge_overlap": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_four_uniform_limits_one",
+      "StabilizerLearning.fixedConstraint_direct_finite",
+      "StabilizerLearning.stabilizerPGM_success_ge_bound",
+      "StabilizerLearning.Quantum.stabilizerPGM_success_ge_overlap"
+    ],
+    "StabilizerLearning.Quantum.PGM.supportProjection_idempotent": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_four_uniform_limits_one",
+      "StabilizerLearning.fixedConstraint_direct_finite",
+      "StabilizerLearning.Quantum.stabilizerPGM",
+      "StabilizerLearning.Quantum.PGM.prettyGoodMeasurement",
+      "StabilizerLearning.Quantum.PGM.supportProjection_idempotent"
+    ],
+    "StabilizerLearning.Quantum.PGM.born_prettyGoodMeasurement": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_four_uniform_limits_one",
+      "StabilizerLearning.fixedConstraint_direct_finite",
+      "StabilizerLearning.stabilizerPGM_success_ge_bound",
+      "StabilizerLearning.Quantum.stabilizerPGM_success_ge_overlap",
+      "StabilizerLearning.Quantum.PGM.prettyGoodMeasurement_success_ge_overlap",
+      "StabilizerLearning.Quantum.PGM.prettyGoodMeasurement_success_ge",
+      "StabilizerLearning.Quantum.PGM.born_prettyGoodMeasurement"
+    ],
+    "StabilizerLearning.Quantum.lagrangianShellCount_eq": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_four_uniform_limits_one",
+      "StabilizerLearning.fixedConstraint_direct_finite",
+      "StabilizerLearning.stabilizerPGM_success_ge_bound",
+      "StabilizerLearning.Quantum.stabilizerOverlapEnergy_le_dampedTail",
+      "StabilizerLearning.Quantum.lagrangianShellCount_le_sharp",
+      "StabilizerLearning.Quantum.lagrangianShellCount_eq"
+    ],
+    "StabilizerLearning.Quantum.card_lagrangianIntersectionFiber_eq": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_four_uniform_limits_one",
+      "StabilizerLearning.fixedConstraint_direct_finite",
+      "StabilizerLearning.stabilizerPGM_success_ge_bound",
+      "StabilizerLearning.Quantum.stabilizerOverlapEnergy_le_dampedTail",
+      "StabilizerLearning.Quantum.lagrangianShellCount_le_sharp",
+      "StabilizerLearning.Quantum.lagrangianShellCount_eq",
+      "StabilizerLearning.Quantum.card_lagrangianIntersectionFiber_eq"
+    ],
+    "StabilizerLearning.Quantum.lagrangianIntersectionFiberEquivSymmetricMatrices": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_four_uniform_limits_one",
+      "StabilizerLearning.fixedConstraint_direct_finite",
+      "StabilizerLearning.stabilizerPGM_success_ge_bound",
+      "StabilizerLearning.Quantum.stabilizerOverlapEnergy_le_dampedTail",
+      "StabilizerLearning.Quantum.lagrangianShellCount_le_sharp",
+      "StabilizerLearning.Quantum.lagrangianShellCount_eq",
+      "StabilizerLearning.Quantum.card_lagrangianIntersectionFiber_eq",
+      "StabilizerLearning.Quantum.lagrangianIntersectionFiberEquivSymmetricMatrices"
+    ],
+    "StabilizerLearning.Quantum.card_compatibleAssignments": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_four_uniform_limits_one",
+      "StabilizerLearning.fixedConstraint_direct_finite",
+      "StabilizerLearning.stabilizerPGM_success_ge_bound",
+      "StabilizerLearning.Quantum.stabilizerOverlapEnergy_le_dampedTail",
+      "StabilizerLearning.Quantum.stabilizerOverlapEnergy_eq_shell_sum",
+      "StabilizerLearning.Quantum.stabilizerOverlapEnergy_add_one_eq_lagrangian_sum",
+      "StabilizerLearning.Quantum.sum_assignment_overlap_pow",
+      "StabilizerLearning.Quantum.card_compatibleAssignments"
+    ],
+    "StabilizerLearning.Quantum.dampedOverlapBound_tendsto_zero": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_four_uniform_limits_one",
+      "StabilizerLearning.Quantum.dampedOverlapBound_tendsto_zero"
+    ],
+    "StabilizerLearning.FixedConstraints.valid_fullStateReport": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_four_uniform_limits_one",
+      "StabilizerLearning.fixedConstraint_direct_finite",
+      "StabilizerLearning.FixedConstraints.le_all_optimal_of_fullIdentification",
+      "StabilizerLearning.FixedConstraints.le_optimal_exact_worstCase_of_fullIdentification",
+      "StabilizerLearning.FixedConstraints.fullIdentificationPerformance_le_optimal_exact",
+      "StabilizerLearning.FixedConstraints.fullIdentificationPerformance_le_exactPerformance",
+      "StabilizerLearning.FixedConstraints.fullIdentification_born_le_exactStatewise",
+      "StabilizerLearning.FixedConstraints.valid_fullStateReport"
+    ],
+    "StabilizerLearning.FixedConstraints.fixedWPostprocess": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_four_uniform_limits_one",
+      "StabilizerLearning.fixedConstraint_direct_finite",
+      "StabilizerLearning.FixedConstraints.le_all_optimal_of_fullIdentification",
+      "StabilizerLearning.FixedConstraints.le_optimal_exact_worstCase_of_fullIdentification",
+      "StabilizerLearning.FixedConstraints.fullIdentificationPerformance_le_optimal_exact",
+      "StabilizerLearning.FixedConstraints.fixedWPostprocess"
+    ],
+    "StabilizerLearning.FixedConstraints.hasRate_unitRateCopies": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.FixedConstraints.exactCopyRate_eq_one",
+      "StabilizerLearning.FixedConstraints.achievableExactRate_one",
+      "StabilizerLearning.FixedConstraints.hasRate_unitRateCopies"
+    ],
+    "StabilizerLearning.FixedConstraints.unitRateCopies_overhead": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.FixedConstraints.exactCopyRate_eq_one",
+      "StabilizerLearning.FixedConstraints.achievableExactRate_one",
+      "StabilizerLearning.FixedConstraints.unitRateCopies_overhead"
+    ],
+    "StabilizerLearning.FixedConstraints.constraint_nonempty": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.FixedConstraints.exactCopyRate_eq_one",
+      "StabilizerLearning.FixedConstraints.achievableExactRate_one",
+      "StabilizerLearning.FixedConstraints.constraint_nonempty"
+    ],
+    "StabilizerLearning.symmetric_rank_bound": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_uniform_converse",
+      "StabilizerLearning.fixedConstraint_exact_uniform_converse",
+      "StabilizerLearning.fixedConstraint_exact_uniformLimits_source",
+      "StabilizerLearning.fixedConstraint_exact_uniform_envelopes_source",
+      "StabilizerLearning.fixedConstraint_exact_average_le_exceptional_add_converseEnvelope",
+      "StabilizerLearning.physical_probability_le_converseEnvelope",
+      "StabilizerLearning.coordinate_probability_le_converseEnvelope",
+      "StabilizerLearning.binary_coordinate_probability_le_converseEnvelope",
+      "StabilizerLearning.binary_coordinate_probability_source_bound",
+      "StabilizerLearning.binary_probability_source_bound",
+      "StabilizerLearning.binary_probability_finite_structural_bound",
+      "StabilizerLearning.binaryNormalizedMomentAverage_le_finite_structural",
+      "StabilizerLearning.clipped_binary_completion_le",
+      "StabilizerLearning.clipped_completionCountExpression_le",
+      "StabilizerLearning.completion_count_expression_bound",
+      "StabilizerLearning.completion_rank_summand_bound",
+      "StabilizerLearning.symmetric_rank_bound"
+    ],
+    "StabilizerLearning.card_completionPairs": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_uniform_converse",
+      "StabilizerLearning.fixedConstraint_exact_uniform_converse",
+      "StabilizerLearning.fixedConstraint_exact_uniformLimits_source",
+      "StabilizerLearning.fixedConstraint_exact_uniform_envelopes_source",
+      "StabilizerLearning.fixedConstraint_exact_average_le_exceptional_add_converseEnvelope",
+      "StabilizerLearning.physical_probability_le_converseEnvelope",
+      "StabilizerLearning.coordinate_probability_le_converseEnvelope",
+      "StabilizerLearning.binary_coordinate_probability_le_converseEnvelope",
+      "StabilizerLearning.binary_coordinate_probability_source_bound",
+      "StabilizerLearning.binary_probability_source_bound",
+      "StabilizerLearning.binary_probability_finite_structural_bound",
+      "StabilizerLearning.binaryNormalizedMomentAverage_le_finite_structural",
+      "StabilizerLearning.binaryNormalizedMomentAverage_le_exact_supported",
+      "StabilizerLearning.normalized_binary_fiber_le_exact_min",
+      "StabilizerLearning.card_completionPairs"
+    ],
+    "StabilizerLearning.rowSpace_event_probability_bound": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_uniform_converse",
+      "StabilizerLearning.fixedConstraint_exact_uniform_converse",
+      "StabilizerLearning.fixedConstraint_exact_uniformLimits_source",
+      "StabilizerLearning.fixedConstraint_exact_uniform_envelopes_source",
+      "StabilizerLearning.fixedConstraint_exact_average_le_exceptional_add_converseEnvelope",
+      "StabilizerLearning.physical_probability_le_converseEnvelope",
+      "StabilizerLearning.coordinate_probability_le_converseEnvelope",
+      "StabilizerLearning.binary_coordinate_probability_le_converseEnvelope",
+      "StabilizerLearning.binary_coordinate_probability_source_bound",
+      "StabilizerLearning.binary_probability_source_bound",
+      "StabilizerLearning.binary_probability_finite_structural_bound",
+      "StabilizerLearning.binaryNormalizedMomentAverage_le_finite_structural",
+      "StabilizerLearning.rowSpace_event_probability_bound"
+    ],
+    "StabilizerLearning.tendsto_converseRemainder_div_sq": [
+      "StabilizerLearning.fixedW_noCopyRateDiscount",
+      "StabilizerLearning.fixedConstraint_uniform_converse",
+      "StabilizerLearning.fixedConstraint_exact_uniform_converse",
+      "StabilizerLearning.tendsto_converseRemainder_div_sq"
+    ]
+  }
+}

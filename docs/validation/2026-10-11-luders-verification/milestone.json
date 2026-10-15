@@ -1,0 +1,33 @@
+{
+  "frozen_commit": "20e9cd5188a435ac561c64825b20203070e141eb",
+  "result": "dependencies_closed_for_listed_local_claims",
+  "main_complete": false,
+  "closed": [
+    "actual original normalized Luders experiment, zero-probability outcomes and basis-free outcome-average reduction",
+    "original Valid iff label containment/restriction, score one iff Valid, and exact all-input intersection-character spectrum",
+    "original tensor-copy POVM weights nonnegative and normalized, all statewise/aggregation/optimal unit-interval bounds",
+    "original exact/verification sharp affine sandwich and probability-one equivalence for both aggregations, preserving sup_M inf_x",
+    "actual report-codimension near/far tail, with the input representation supplied internally and no assumed near probability estimate"
+  ],
+  "open_in_this_branch": [
+    "arbitrary-frame symplectic/Clifford implementation and fixed-W operational/incidence comparison, with original quantifiers",
+    "generic target/intersection identification, phase-compatible refinement of the near event, actual bounded-list/counting estimate, exceptional mass and verification decay connected to common J",
+    "unrestricted direct measurement/PGM, overlap shells and state-uniform success/postprocessing",
+    "unchanged original four operational limits and rate=1 main proof, followed by strict main release and clean reconstruction"
+  ],
+  "calendar_deadline": null,
+  "estimate_revision": {
+    "calendar_days": null,
+    "confidence": "not yet calibrated for remaining near-event/counting, frame/fixed-W and direct/main branches",
+    "schedule_change": "Assign zero remaining work to the accepted original Luders/score/probability/near-far package. Remaining critical path is actual graded near-event counting plus arbitrary-frame/fixed-W transport and unrestricted direct/main closure.",
+    "not_used_as_effort_estimates": [
+      "theorem counts",
+      "lines of code",
+      "build or audit seconds",
+      "GPU hours"
+    ],
+    "accepted_packages_remaining_days": 0,
+    "next_calibration_event": "Independently audited end-to-end fixed-W-to-common-J verification conversion or unrestricted direct construction."
+  },
+  "coordinating_thread": "01a128cc-ba94-7693-9d6c-ae503e19dcd2"
+}

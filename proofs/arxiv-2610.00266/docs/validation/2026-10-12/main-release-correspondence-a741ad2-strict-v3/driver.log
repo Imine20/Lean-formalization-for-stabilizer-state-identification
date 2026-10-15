@@ -1,0 +1,13 @@
+clone 0 1.73
+checkout 0 0.3
+copy-mathlib 0 9.59
+copy-plausible 0 0.07
+copy-LeanSearchClient 0 0.02
+copy-importGraph 0 0.02
+copy-proofwidgets 0 0.12
+copy-aesop 0 0.36
+copy-Qq 0 0.09
+copy-batteries 0 1.58
+copy-Cli 0 0.08
+acceptance 0 6993.4
+{"result": "pass", "record": "/data/lean/acceptance/ExactCriticalCurve-correspondence-release-20261012-a741ad2/reproduction.json"}

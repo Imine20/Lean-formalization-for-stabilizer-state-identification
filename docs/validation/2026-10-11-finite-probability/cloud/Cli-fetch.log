@@ -1,0 +1,3 @@
+From https://github.com/leanprover/lean4-cli
+ * branch            91c18fa62838ad0ab7384c03c9684d99d306e1da -> FETCH_HEAD
+HEAD is now at 91c18fa chore: bump toolchain to v4.24.0 (#58)

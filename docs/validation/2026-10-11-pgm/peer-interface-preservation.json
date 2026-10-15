@@ -1,0 +1,21 @@
+{
+  "result": "pass",
+  "pgm_math_freeze": "a1f4d122949298a9f8dd465dd16f5680287cb275",
+  "peer_unified_math_freeze": "6d17da20d7a7625333ecf87d23824f031a01a6ae",
+  "unchanged_files_sha256": {
+    "StabilizerLearning/FiniteCopy/GramEnergy.lean": "739a59feed1212beaade2da93927dd68b59f25f3f3f89ecc7bfa6608cf17aa44",
+    "StabilizerLearning/FiniteCopy/SupportedSynthesis.lean": "7347e9ba49d99bb6c05c20b9041e979be0405be6a3a4f6c024d3eab8915700cd",
+    "StabilizerLearning/Quantum/PureStateVectors.lean": "4b759082c8ac68decec0e394e85d67a2b96593d05095a64886126b5abe3eea5b",
+    "StabilizerLearning/FiniteCopy/ColumnMeasurement.lean": "938e2b0f20deaeaff78deff821e8155b867a3397848f75a33e6e6eac4f644d71",
+    "StabilizerLearning/FiniteCopy/PrettyGoodMeasurement.lean": "d9d36721b04b4ce4ebb677c790c42c1bf51535434bfeecef1dfd26117e7dcdc3",
+    "StabilizerLearning/FiniteCopy/StabilizerPGM.lean": "1955c320d4ccddb45fbfd617c16b788af03b6ffc030bfc282ee461afe65fe0fe",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lakefile.toml": "ba692b6fad43933dfd6210cf27b09e98b3dd3e9a4d93531b174a5d8f46adaa66",
+    "lake-manifest.json": "0ae1e12b18776157f4c8215f8491d669c74a10913031b15ac4cc6204994d98fc",
+    "toolchain-lock.json": "bb3b3d33c3222054581658ad24aeeda15d75eb0d8018020e166861303870f916",
+    "StabilizerLearning/FixedConstraints/Rates.lean": "38dfbbe055c71bd7384abd6de79d85e11e7f84adb93a1b6fd3b9648df40bd357",
+    "StabilizerLearning/FixedConstraints/Task.lean": "9c9d9e5c3b38e0c9b1e111b9e45775f4dc06736b3c19a1820d40fb6738498c42"
+  },
+  "scope": "Six accepted PGM modules, original public task/rate definitions and version locks are byte-identical in the independently coordinated final Main source.",
+  "limitation": "This comparison is source compatibility evidence only. Acceptance of the complete Main belongs to the separate strict Mac/Linux check and fresh reproduction of the peer unified freeze. It does not claim those checks have completed."
+}

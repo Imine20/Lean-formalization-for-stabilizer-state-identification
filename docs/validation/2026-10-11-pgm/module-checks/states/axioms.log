@@ -1,0 +1,24 @@
+'StabilizerLearning.Quantum.exists_normalized_vector_of_hermitian_rank_one_trace_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StabilizerLearning.Quantum.trace_pureVectorDensity_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.born_pureVectorDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.tensorVector_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.tensorVector_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.tensorVector_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.StabilizerState.stateVector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.StabilizerState.stateVector_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StabilizerLearning.Quantum.StabilizerState.stateVector_density' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StabilizerLearning.Quantum.StabilizerState.tensor_stateVector_density' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StabilizerLearning.Quantum.StabilizerState.tensor_stateVector_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StabilizerLearning.Quantum.StabilizerState.tensor_born_eq_normSq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

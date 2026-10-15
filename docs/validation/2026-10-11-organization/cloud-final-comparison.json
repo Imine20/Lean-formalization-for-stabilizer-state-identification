@@ -1,0 +1,14 @@
+{
+  "result": "pass",
+  "commit": "2fff4a166ede5a6830ca51c68d1704eb2ec946ff",
+  "total_seconds": 305.12,
+  "step_seconds": [
+    60.858,
+    68.25,
+    161.948
+  ],
+  "main_status": "statement_only",
+  "frozen_inputs_match": true,
+  "project_graph_matches": true,
+  "cloud_source_status": "Only an untracked .toolchain symlink to the reused pinned Linux compiler; no tracked modifications. Fresh project and dependencies contain no reused project oleans."
+}

@@ -1,0 +1,32 @@
+'StabilizerLearning.Quantum.PGM.gramMatrix_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.PGM.gramInverseRoot_isHermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.PGM.gramSupport_isHermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.PGM.gramInverseRoot_mul_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.PGM.supportedSynthesis_adjoint_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StabilizerLearning.Quantum.PGM.gramInverseRoot_mul_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.PGM.gramSupport_mul_inverseRoot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.PGM.gramInverseRoot_mul_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.PGM.gram_mul_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.PGM.synthesis_mul_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.PGM.supportedSynthesis_mul_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StabilizerLearning.Quantum.PGM.supportedSynthesis_adjoint_self' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StabilizerLearning.Quantum.PGM.supportProjection_isHermitian' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StabilizerLearning.Quantum.PGM.supportProjection_idempotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.PGM.supportProjection_mul_synthesis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StabilizerLearning.Quantum.PGM.supportProjection_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StabilizerLearning.Quantum.PGM.one_sub_supportProjection_posSemidef' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StabilizerLearning.Quantum.PGM.one_sub_supportProjection_mul_synthesis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

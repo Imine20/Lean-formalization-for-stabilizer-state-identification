@@ -1,0 +1,144 @@
+{
+  "result": "pass",
+  "frozen_commit": "a1f4d122949298a9f8dd465dd16f5680287cb275",
+  "base_commit": "87597a5a20d881f12696e3b7bd6946d954c9f6bd",
+  "completed_at": "2026-10-11T11:06:57.722234+00:00",
+  "scope": "Actual normalized singular-support PGM, exact Gram/Born identity, unconditional statewise row-energy bound, and original stabilizer-state k-copy direct interface",
+  "main_theorem_complete": false,
+  "main_release": "correctly_rejected_missing_main_proof",
+  "original_source_and_definitions_unchanged": true,
+  "all_prior_mathematical_sources_unchanged_except_imports": true,
+  "formal_input_files": 166,
+  "fresh_initial_project_oleans": 0,
+  "exact_dependency_checkouts_clean": true,
+  "fresh_dependencies_no_symlinks_or_git_alternates": true,
+  "compiler_archive_sha256_measured": true,
+  "complete_audit_logs_identical": true,
+  "audit_sha256": "e246de0270be5a7e063e9464bb631517e04d5f0e372e4647c6327a68697fd99e",
+  "all_project_theorems": 2509,
+  "all_project_declarations": 3149,
+  "actual_proof_links": 313,
+  "new_actual_proof_links": 30,
+  "axiom_allowlist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "all_project_and_private_declarations_audited": true,
+  "execution_steps": [
+    {
+      "args": [
+        "build"
+      ],
+      "seconds": 217.984,
+      "exit_code": 0,
+      "log": "build.log"
+    },
+    {
+      "args": [
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "seconds": 2355.308,
+      "exit_code": 0,
+      "log": "axioms.log"
+    },
+    {
+      "args": [
+        "env",
+        "lean",
+        "scripts/ReleaseAudit.lean"
+      ],
+      "seconds": 3.763,
+      "exit_code": 1,
+      "log": "main-release-gate.log"
+    }
+  ],
+  "fresh_steps": [
+    {
+      "command": [
+        "lake",
+        "exe",
+        "cache",
+        "get",
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Algebra.Field.ZMod",
+        "Mathlib.Algebra.Group.Equiv.Basic",
+        "Mathlib.Analysis.Asymptotics.Lemmas",
+        "Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality",
+        "Mathlib.Analysis.Matrix.Order",
+        "Mathlib.Analysis.SpecialFunctions.Complex.Circle",
+        "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar",
+        "Mathlib.Analysis.SpecialFunctions.Log.Base",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Analysis.SpecificLimits.Basic",
+        "Mathlib.Data.Fin.Tuple.Basic",
+        "Mathlib.Data.Matrix.Block",
+        "Mathlib.Data.Nat.Sqrt",
+        "Mathlib.Data.Sym.Card",
+        "Mathlib.Data.Sym.Sym2.Order",
+        "Mathlib.Data.ZMod.Basic",
+        "Mathlib.FieldTheory.Finiteness",
+        "Mathlib.GroupTheory.Index",
+        "Mathlib.LinearAlgebra.Basis.Prod",
+        "Mathlib.LinearAlgebra.Basis.VectorSpace",
+        "Mathlib.LinearAlgebra.BilinearForm.Orthogonal",
+        "Mathlib.LinearAlgebra.Dimension.Constructions",
+        "Mathlib.LinearAlgebra.Dimension.Free",
+        "Mathlib.LinearAlgebra.Dual.Lemmas",
+        "Mathlib.LinearAlgebra.Eigenspace.Triangularizable",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas",
+        "Mathlib.LinearAlgebra.Matrix.Basis",
+        "Mathlib.LinearAlgebra.Matrix.DotProduct",
+        "Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Card",
+        "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+        "Mathlib.LinearAlgebra.Matrix.PosDef",
+        "Mathlib.LinearAlgebra.Matrix.Rank",
+        "Mathlib.LinearAlgebra.Matrix.Reindex",
+        "Mathlib.LinearAlgebra.Matrix.SchurComplement",
+        "Mathlib.LinearAlgebra.Matrix.Symmetric",
+        "Mathlib.LinearAlgebra.Matrix.ToLin",
+        "Mathlib.LinearAlgebra.Matrix.Trace",
+        "Mathlib.LinearAlgebra.Pi",
+        "Mathlib.LinearAlgebra.Projection",
+        "Mathlib.LinearAlgebra.Quotient.Basic",
+        "Mathlib.LinearAlgebra.UnitaryGroup",
+        "Mathlib.Order.ConditionallyCompleteLattice.Finset",
+        "Mathlib.Order.LiminfLimsup",
+        "Mathlib.Order.Preorder.Finite",
+        "Mathlib.Probability.Distributions.Uniform",
+        "Mathlib.Tactic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Topology.Algebra.Order.LiminfLimsup"
+      ],
+      "seconds": 188.006,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "seconds": 240.186,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "seconds": 2229.534,
+      "exit_code": 0
+    }
+  ],
+  "fresh_total_seconds": 2684.91,
+  "isolation": "Two Linux project rebuilds on the same host. Execution clone reused read-only pinned dependency cache; fresh project has genuinely independent exact dependency checkouts and official cache, without symlinks/alternates. Existing pinned compiler reused with measured archive checksum. No new OS or Mac/Linux comparison claimed.",
+  "remaining": "Sharp enough overlap counting and all-state fixed-W postprocessing, four uniform one-limits, exact copy-rate identities and complete Main integration remain external to this PGM package; transitive PGM optimality is separately unproved.",
+  "progress_policy": "Counts and runtime show validation coverage and resource cost, not proof-completion percentages or calendar-effort estimates."
+}

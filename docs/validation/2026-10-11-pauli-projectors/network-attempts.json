@@ -1,0 +1,24 @@
+{
+  "attempts": [
+    {
+      "directory": "/data/lean/StabilizerLearning-clean-20261011-pauli-491d0ab",
+      "result": "interrupted_after_optional_Reservoir_download_stalled",
+      "proof_validation_result": null
+    },
+    {
+      "directory": "/data/lean/StabilizerLearning-clean-20261011-pauli-491d0ab-v2",
+      "result": "dependency_fetch_failed",
+      "reason": "mathlib GitHub TLS early EOF",
+      "proof_validation_result": null
+    },
+    {
+      "directory": "/data/lean/StabilizerLearning-clean-20261011-pauli-491d0ab-v3",
+      "result": "passed_full_build_and_recursive_audit",
+      "network": "temporary loopback-only SSH forwarding to existing local public-dependency proxy",
+      "lake_no_cache": true
+    }
+  ],
+  "proxy_port": 17891,
+  "proxy_closed_after_build": true,
+  "global_network_configuration_changed": false
+}

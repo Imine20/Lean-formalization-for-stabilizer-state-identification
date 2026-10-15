@@ -1,0 +1,140 @@
+{
+  "result": "pass",
+  "frozen_commit": "583897b83f2714c9b1a4d27fb1cfd2fc988ee7e8",
+  "base_commit": "ff7e57b13fb0bae723c48f969daf72fef590f972",
+  "completed_at": "2026-10-11T09:48:39.439535+00:00",
+  "scope": "Original phase-compatible list count, constructive graded-to-exact, common J with explicit uniform remainder, original four converse UniformLimits",
+  "main_theorem_complete": false,
+  "main_release": "correctly_rejected_missing_main_proof",
+  "original_source_and_definitions_unchanged": true,
+  "all_prior_mathematical_sources_unchanged_except_imports": true,
+  "fresh_initial_project_oleans": 0,
+  "exact_dependency_checkouts_clean": true,
+  "complete_audit_logs_identical": true,
+  "audit_sha256": "8e22415ed360e727c7313e1605bc6a87e0d0e5e7710ee9fd0e7b41b8b0bfb195",
+  "all_project_theorems": 2434,
+  "all_project_declarations": 3060,
+  "actual_proof_links": 283,
+  "new_actual_proof_links": 28,
+  "axiom_allowlist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "all_project_and_private_declarations_audited": true,
+  "execution_steps": [
+    {
+      "args": [
+        "build"
+      ],
+      "seconds": 319.832,
+      "exit_code": 0,
+      "log": "build.log"
+    },
+    {
+      "args": [
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "seconds": 2001.396,
+      "exit_code": 0,
+      "log": "axioms.log"
+    },
+    {
+      "args": [
+        "env",
+        "lean",
+        "scripts/ReleaseAudit.lean"
+      ],
+      "seconds": 3.189,
+      "exit_code": 1,
+      "log": "main-release-gate.log"
+    }
+  ],
+  "fresh_steps": [
+    {
+      "command": [
+        "lake",
+        "exe",
+        "cache",
+        "get",
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Algebra.Field.ZMod",
+        "Mathlib.Algebra.Group.Equiv.Basic",
+        "Mathlib.Analysis.Asymptotics.Lemmas",
+        "Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality",
+        "Mathlib.Analysis.Matrix.Order",
+        "Mathlib.Analysis.SpecialFunctions.Complex.Circle",
+        "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar",
+        "Mathlib.Analysis.SpecialFunctions.Log.Base",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Analysis.SpecificLimits.Basic",
+        "Mathlib.Data.Fin.Tuple.Basic",
+        "Mathlib.Data.Matrix.Block",
+        "Mathlib.Data.Nat.Sqrt",
+        "Mathlib.Data.Sym.Card",
+        "Mathlib.Data.Sym.Sym2.Order",
+        "Mathlib.Data.ZMod.Basic",
+        "Mathlib.FieldTheory.Finiteness",
+        "Mathlib.GroupTheory.Index",
+        "Mathlib.LinearAlgebra.Basis.Prod",
+        "Mathlib.LinearAlgebra.Basis.VectorSpace",
+        "Mathlib.LinearAlgebra.BilinearForm.Orthogonal",
+        "Mathlib.LinearAlgebra.Dimension.Constructions",
+        "Mathlib.LinearAlgebra.Dimension.Free",
+        "Mathlib.LinearAlgebra.Dual.Lemmas",
+        "Mathlib.LinearAlgebra.Eigenspace.Triangularizable",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas",
+        "Mathlib.LinearAlgebra.Matrix.Basis",
+        "Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Card",
+        "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+        "Mathlib.LinearAlgebra.Matrix.PosDef",
+        "Mathlib.LinearAlgebra.Matrix.Rank",
+        "Mathlib.LinearAlgebra.Matrix.Reindex",
+        "Mathlib.LinearAlgebra.Matrix.SchurComplement",
+        "Mathlib.LinearAlgebra.Matrix.Symmetric",
+        "Mathlib.LinearAlgebra.Matrix.ToLin",
+        "Mathlib.LinearAlgebra.Matrix.Trace",
+        "Mathlib.LinearAlgebra.Pi",
+        "Mathlib.LinearAlgebra.Projection",
+        "Mathlib.LinearAlgebra.Quotient.Basic",
+        "Mathlib.LinearAlgebra.UnitaryGroup",
+        "Mathlib.Order.ConditionallyCompleteLattice.Finset",
+        "Mathlib.Order.LiminfLimsup",
+        "Mathlib.Order.Preorder.Finite",
+        "Mathlib.Probability.Distributions.Uniform",
+        "Mathlib.Tactic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Topology.Algebra.Order.LiminfLimsup"
+      ],
+      "seconds": 92.445,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "seconds": 276.017,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "seconds": 1950.997,
+      "exit_code": 0
+    }
+  ],
+  "fresh_total_seconds": 2334.636,
+  "isolation": "Two Linux project rebuilds; second uses genuinely fresh exact dependency checkouts and independent official cache. Existing host and version-checked pinned compiler reused; not a new OS or Mac/Linux comparison.",
+  "remaining": "Unrestricted direct construction, four limits to one, copy-rate identity and strict full Main release. The sharper paper Gaussian shell sum is still not proved by this sufficient actual-list upper bound.",
+  "progress_policy": "Counts and runtime are audit coverage/performance evidence only, never proof-completion percentages or calendar-effort estimates."
+}

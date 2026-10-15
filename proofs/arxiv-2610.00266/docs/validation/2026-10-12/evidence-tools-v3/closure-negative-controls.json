@@ -1,0 +1,40 @@
+{
+  "source": "a741ad2633d99a28fb4bbbe86e3a9a0ac5b7970b",
+  "scope": "Verifier controls over completed combined ReleaseAudit preflight; not fresh full release acceptance",
+  "preflight_log_sha256": "1be3c224a7284eedd6d08ea3fa658bbd275da6ff30cad154e45bc48d2830adc4",
+  "positive_constant_checks": 35,
+  "positive_original_body_checks": 35,
+  "tests": [
+    {
+      "case": "missing main original body",
+      "target": "ExactCriticalCurve.Asymptotics.criticalSpectralMass",
+      "rejected": true,
+      "reason": "Missing/repeated static body audit markers"
+    },
+    {
+      "case": "missing main original body",
+      "target": "ExactCriticalCurve.Asymptotics.paperStochasticGroup_order",
+      "rejected": true,
+      "reason": "Missing/repeated static body audit markers"
+    },
+    {
+      "case": "missing main original body",
+      "target": "ExactCriticalCurve.criticalCurve",
+      "rejected": true,
+      "reason": "Missing/repeated static body audit markers"
+    },
+    {
+      "case": "missing main original body",
+      "target": "ExactCriticalCurve.criticalCurveTails",
+      "rejected": true,
+      "reason": "Missing/repeated static body audit markers"
+    },
+    {
+      "case": "missing main original body",
+      "target": "ExactCriticalCurve.finiteSpectrum",
+      "rejected": true,
+      "reason": "Missing/repeated static body audit markers"
+    }
+  ],
+  "initial_harness_attempt": "Verifier correctly rejected missing body; initial inline harness caught wrong exception class. This test catches the actual ValueError and preserves all verifier checks."
+}
