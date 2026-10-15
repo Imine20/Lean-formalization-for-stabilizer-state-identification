@@ -1,0 +1,124 @@
+name: Verify both stabilizer-identification papers
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: arXiv 2609.13923 complete Main and independent statement
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    env:
+      LEAN_NUM_THREADS: "2"
+      MATHLIB_NO_CACHE_ON_UPDATE: "1"
+    steps:
+      - name: Check out the exact revision
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+
+      - name: Install archive support
+        run: sudo apt-get update && sudo apt-get install --yes zstd
+
+      - name: Check both project layouts and publication tooling
+        run: |
+          python3 scripts/check_layout.py
+          python3 -m unittest discover -s tests -p 'test_publication_tools.py' -v
+          python3 tests/check_frozen_publication_coverage.py
+
+      - name: Install and verify the pinned compiler
+        run: python3 scripts/bootstrap.py
+
+      - name: Fetch the explicit official Mathlib cache
+        shell: bash
+        run: |
+          mapfile -t cache_modules < scripts/cache-imports.txt
+          ./scripts/lake.sh exe cache get "${cache_modules[@]}"
+
+      - name: Build, audit all declarations, and require the exact Main proof
+        run: python3 scripts/check.py --require-main-proof
+
+      - name: Kernel-check the independent expanded Main statement
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib, json, subprocess, sys, time
+          sys.path.insert(0, 'scripts')
+          from check_layout import check, INDEPENDENT_MAIN
+          output = Path('artifacts/check')
+          def git(*args):
+              return subprocess.check_output(['git', *args], text=True).strip()
+          initial_commit = git('rev-parse', 'HEAD')
+          initial_tree = git('rev-parse', 'HEAD^{tree}')
+          initial_status = git('status', '--porcelain')
+          command = ['./scripts/lake.sh', 'env', 'lean', INDEPENDENT_MAIN]
+          started = time.monotonic()
+          log = output / 'independent-main.log'
+          with log.open('w') as stream:
+              completed = subprocess.run(command, stdout=stream, stderr=subprocess.STDOUT)
+          git_commit = git('rev-parse', 'HEAD')
+          git_tree = git('rev-parse', 'HEAD^{tree}')
+          git_status = git('status', '--porcelain')
+          original_check = json.loads((output / 'check.json').read_text())
+          record = {'command': command, 'exit_code': completed.returncode,
+                    'seconds': time.monotonic() - started,
+                    'git_commit': git_commit, 'git_tree': git_tree, 'git_status': git_status,
+                    'initial_git_commit': initial_commit, 'initial_git_tree': initial_tree,
+                    'initial_git_status': initial_status,
+                    'source_sha256': hashlib.sha256(Path(INDEPENDENT_MAIN).read_bytes()).hexdigest(),
+                    'log_sha256': hashlib.sha256(log.read_bytes()).hexdigest()}
+          passed = (completed.returncode == 0 and 'INDEPENDENT_ACCEPTANCE_OK' in log.read_text()
+                    and not initial_status and not git_status and not original_check['working_tree_status']
+                    and initial_commit == git_commit == original_check['git_commit']
+                    and initial_tree == git_tree
+                    and check()['source_sha256'] == original_check['layout']['source_sha256'])
+          record['result'] = 'pass' if passed else 'fail'
+          (output / 'independent-main.json').write_text(json.dumps(record, indent=2) + '\n')
+          print(json.dumps(record))
+          sys.exit(0 if passed else 1)
+          PY
+
+      - name: Preserve first-paper build, axiom, and independent release records
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: arxiv-2609.13923-verification-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/check/
+          if-no-files-found: warn
+          retention-days: 30
+
+  verify-critical-curve:
+    name: arXiv 2610.00266 complete independent release
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    env:
+      LEAN_NUM_THREADS: "2"
+      MATHLIB_NO_CACHE_ON_UPDATE: "1"
+    steps:
+      - name: Check out the exact revision
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+
+      - name: Install archive support
+        run: sudo apt-get update && sudo apt-get install --yes zstd
+
+      - name: Reconstruct public pins and run every strict check in a fresh checkout
+        run: python3 scripts/verify_arxiv_2610.py --dest "${{ runner.temp }}/arxiv-2610-reproduction"
+
+      - name: Preserve second-paper reproduction and all audit logs
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: arxiv-2610.00266-verification-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/arxiv-2610-reproduction/reproduction.json
+            ${{ runner.temp }}/arxiv-2610-reproduction/logs/
+            ${{ runner.temp }}/arxiv-2610-reproduction/acceptance/
+          if-no-files-found: warn
+          retention-days: 30
